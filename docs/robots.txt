@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://yanncollin23.github.io/riffs-legendes/sitemap.xml
+Sitemap: https://yanncollin23.github.io/iffs-legendes/sitemap.xml

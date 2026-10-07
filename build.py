@@ -22,8 +22,10 @@ OUT = ROOT / "docs"
 
 SITE_NAME = "Riffs & Légendes"
 SITE_TAGLINE = "Le rock de 1950 à 1999, un jour à la fois"
-SITE_URL = "https://yanncollin23.github.io/riffs-legendes"
-BASE = "/riffs-legendes"
+import os
+REPO = os.environ.get("RL_REPO", "iffs-legendes")
+SITE_URL = f"https://yanncollin23.github.io/{REPO}"
+BASE = f"/{REPO}"
 
 CATEGORIES = {
     "ce-jour-la": ("Ce jour-là", "Chaque matin, un anniversaire du rock : une naissance, une disparition, un disque ou un concert qui a compté."),
