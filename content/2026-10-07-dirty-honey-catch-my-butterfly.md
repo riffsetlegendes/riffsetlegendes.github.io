@@ -57,4 +57,12 @@ En France | La Maroquinerie, Paris, 15 mars 2027
 :::ecoute
 When I'm Gone | Dirty Honey | 2019 | 71kqm2IGH5SW7hKbkkIDOO
 Lights Out | Dirty Honey | 2026
+Rolling 7s | Dirty Honey | 2019 | 0TsrzHBOSONnsEeFGZNYlq
+Can't Find the Brakes | Dirty Honey | 2023 | 6XjAQNS6ixTdIPsmxi1M3p
+Won't Take Me Alive | Dirty Honey | 2023 | 30yrLJiv98k8ZhoWXhko3h
+You Make It All Right | Dirty Honey | 2023 | 72xt3WleecO7be01r9IblM
+:::
+
+:::thisis
+Dirty Honey | 37i9dQZF1DZ06evO0vomTE
 :::

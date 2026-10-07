@@ -68,4 +68,11 @@ Instrument | Fender Stratocaster jouée en gaucher
 Hey Joe | Jimi Hendrix | 1966 | 2eMxI1qN0ft88sasJrARw3
 All Along the Watchtower | Jimi Hendrix | 1968 | 2aoo2jlRnM3A0NyLQqMN2f
 Purple Haze (live à Woodstock) | Jimi Hendrix | 1969 | 2lk8WgD5OirqjGNaY8M3hO
+Purple Haze | Jimi Hendrix | 1967 | 23QwfHfgqy3yFOHRnyiK0S
+The Wind Cries Mary | Jimi Hendrix | 1967 | 6M54fO7rzFKyiek3XKT80L
+Little Wing | Jimi Hendrix | 1967 | 1Eolhana7nKHYpcYpdVcT5
+Voodoo Child (Slight Return) | Jimi Hendrix | 1968 | 6d3I7THB2bONUkxOo1DvmZ
+:::
+:::thisis
+Jimi Hendrix | 37i9dQZF1DZ06evO4cWDcc
 :::

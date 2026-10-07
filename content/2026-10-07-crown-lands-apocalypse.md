@@ -61,4 +61,12 @@ Producteurs invités | Nick Raskulinecz, David Bottrill
 Context: Fearless Pt. I | Crown Lands | 2021 | 1hAuhXTkwIpX1yuQyqQhFo
 Blackstar | Crown Lands | 2026 | 4g9Qnsq4aApSqktyvoLMoA
 Apocalypse | Crown Lands | 2026 | 06xDTekrUDTMBRda73UEKI
+Spit It Out | Crown Lands | 2019 | 4ugKpfi9W466aohVCzpLSf
+Starlifter: Fearless Pt. II | Crown Lands | 2022 | 6wcnYkDq91jJIZqzwDuenk
+The Shadow | Crown Lands | 2023 | 32VXHvlSpyG9LLO5rGCoCJ
+Dreamer of the Dawn | Crown Lands | 2023 | 0dxvOSDkhmiHFtw4uQsAfv
+:::
+
+:::thisis
+Crown Lands | 37i9dQZF1DZ06evO0oD1jq
 :::

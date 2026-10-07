@@ -70,4 +70,10 @@ Décès | 9 mai 2020, Tullahoma (Tennessee)
 Tutti Frutti | Little Richard | 1955 | 36w2k0Ovffh6LApFIYmohe
 Long Tall Sally | Little Richard | 1956 | 6yMWZRjUL66UTlziININbT
 Good Golly Miss Molly | Little Richard | 1958 | 7ojv5P29GWTw89c7w6drV9
+Rip It Up | Little Richard | 1956 | 3UnWGDXOG5g4dyqq5GDkTe
+Lucille | Little Richard | 1957 | 1xiHxjBST45jk4YOsN3cRe
+Keep A Knockin' | Little Richard | 1957 | 3vCNGsa1bMTfSTaExELLhW
+:::
+:::thisis
+Little Richard | 37i9dQZF1DZ06evO2EOpcI
 :::

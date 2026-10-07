@@ -46,3 +46,10 @@ Le contenu se lit comme une visite d'atelier : onze maquettes de Townshend, dont
 23 octobre | The Doors, Unbound and Dangerous (live 1970)
 30 octobre | The Who, The Who by Numbers (super deluxe, 5 CD + Blu-ray)
 :::
+
+:::thisis
+The Beatles | 37i9dQZF1DZ06evO2iBPiw
+Jimi Hendrix | 37i9dQZF1DZ06evO4cWDcc
+The Doors | 37i9dQZF1DZ06evO19UBIk
+The Who | 37i9dQZF1DZ06evO3BHSzm
+:::

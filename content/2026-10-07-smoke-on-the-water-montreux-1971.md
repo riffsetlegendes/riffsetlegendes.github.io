@@ -60,4 +60,13 @@ Single américain | 1973, 4e place du Billboard
 
 :::ecoute
 Smoke on the Water | Deep Purple | 1972 | 5dIgg4mrQHOlVm1ZFYHW29
+Highway Star | Deep Purple | 1972 | 2YiRc3PbBjdfTiA0l2PVEJ
+Lazy | Deep Purple | 1972 | 6VcByMYflN7ZSi9y5CFmsF
+Space Truckin' | Deep Purple | 1972 | 7GtdyGtGbEcCcQNYjbAUsF
+Child in Time | Deep Purple | 1970 | 21cp8L9Pei4AgysZVihjSv
+Black Night | Deep Purple | 1970 | 0fOF9wL1IilJvITT7nDlLA
+:::
+
+:::thisis
+Deep Purple | 37i9dQZF1DZ06evO2ZKA1i
 :::

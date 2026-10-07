@@ -61,4 +61,13 @@ En France | Adidas Arena, Paris, 27 mai 2027
 :::ecoute
 Highway Tune | Greta Van Fleet | 2017 | 7aOor99o8NNLZYElOXlBG1
 Saw You Stand | Greta Van Fleet | 2026 | 5bfBYLi32nYvrKbtPi78ek
+Safari Song | Greta Van Fleet | 2017 | 3H5EsEaJZNdmtuyWOWdSC9
+When the Curtain Falls | Greta Van Fleet | 2018 | 2Y6EoqtjczOUNt18ztV8Aa
+Heat Above | Greta Van Fleet | 2021 | 0zlaa4AmbFE7MVDijsyD9Q
+Meeting the Master | Greta Van Fleet | 2023 | 5FLYoUeGaP4vtWP7nORsvM
+Play Your Games | Greta Van Fleet | 2026 | 7JcDWPlzZWGrzaLaak3UG0
+:::
+
+:::thisis
+Greta Van Fleet | 37i9dQZF1DZ06evO2OtQSh
 :::

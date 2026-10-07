@@ -68,4 +68,11 @@ Distinctions | Rock and Roll Hall of Fame (2007), National Book Award pour Just 
 Gloria | Patti Smith | 1975 | 5vyaICnQQCcOROnetueDDT
 Because the Night | Patti Smith Group | 1978 | 6Re7BJ04xUF9F6ExiRCN3m
 Dancing Barefoot | Patti Smith Group | 1979 | 2AsP9MSSXfk5fLlycY4bKW
+Piss Factory | Patti Smith | 1974 | 7rbCUnA0NxdrjEoDWytLdM
+Land | Patti Smith | 1975 | 0KkXMzaRaXL8AyChkWbYCx
+Frederick | Patti Smith Group | 1979 | 1AWSemPzuGu4A9lVhSsFWJ
+People Have the Power | Patti Smith | 1988 | 4c7xNOFJ8YQ7qupSvegTgp
+:::
+:::thisis
+Patti Smith | 37i9dQZF1DZ06evO0eLc3c
 :::

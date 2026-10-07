@@ -69,4 +69,11 @@ Décès | 4 octobre 1970, Los Angeles
 Piece of My Heart | Big Brother & the Holding Company | 1968 | 0jsHRQrycSwnpuKeJL53bS
 Me and Bobby McGee | Janis Joplin | 1971 | 2WbKNC4c7OCiSqv4WGR3BN
 Cry Baby | Janis Joplin | 1971 | 0hYi3u8B6CPp0I7MsXv4Wo
+Summertime | Big Brother & the Holding Company | 1968 | 7Ip06wJp6Fvmvj2MjfuQOh
+Ball and Chain | Big Brother & the Holding Company | 1968 | 2ZCsqGwdW1R4W7j04OOHz0
+Mercedes Benz | Janis Joplin | 1971 | 1MntHPLU1T7a9W4tojbg8g
+:::
+:::thisis
+Janis Joplin | 37i9dQZF1DZ06evO2Oo4IE
+Big Brother & The Holding Company | 37i9dQZF1DZ06evO2LSJ4O
 :::

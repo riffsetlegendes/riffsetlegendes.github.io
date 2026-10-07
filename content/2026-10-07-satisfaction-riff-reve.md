@@ -59,4 +59,13 @@ Classement | N° 1 aux États-Unis le 10 juillet 1965
 
 :::ecoute
 (I Can't Get No) Satisfaction | The Rolling Stones | 1965 | 42gcdHFGqwHukCmkCYNAAa
+The Last Time | The Rolling Stones | 1965 | 5ZjfCTIWOl42mJOFzI1kOY
+Play With Fire | The Rolling Stones | 1965 | 4Q58ZLypkhyAn1p2BPNdzm
+Get Off of My Cloud | The Rolling Stones | 1965 | 3Slqc9I5VrWEBdoqqkodi2
+Paint It, Black | The Rolling Stones | 1966 | 63T7DJ1AFDD6Bn8VzG6JE8
+Jumpin' Jack Flash | The Rolling Stones | 1968 | 1uBsu3PbD2909UBIfEMLvK
+:::
+
+:::thisis
+The Rolling Stones | 37i9dQZF1DZ06evO19s0CZ
 :::

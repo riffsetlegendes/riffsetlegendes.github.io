@@ -60,4 +60,9 @@ Le cochon | Ballon gonflé à l'hélium d'environ 12 mètres, surnommé Algie
 :::ecoute
 Pigs (Three Different Ones) | Pink Floyd | 1977 | 0gEaeqVRHPzRc7HMXtOKc7
 Sheep | Pink Floyd | 1977 | 5Y09vbg5vzqoXFPrVvimbS
+Pigs on the Wing 1 | Pink Floyd | 1977 | 6EDNT1kMvZuCppLS0IJ3tc
+Dogs | Pink Floyd | 1977 | 1ABSzfyYSTmSrUx5NBxYaV
+Pigs on the Wing 2 | Pink Floyd | 1977 | 4vHht4godZQNzucEaZWehL
+Have a Cigar | Pink Floyd | 1975 | 3CmHvyZQQAGkKkTjTBFWN6
+Wish You Were Here | Pink Floyd | 1975 | 6mFkJmJqdDVQ1REhVfGgd1
 :::

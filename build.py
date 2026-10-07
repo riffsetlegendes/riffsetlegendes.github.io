@@ -147,6 +147,15 @@ def render_body(meta):
         r = rows(m.group(1))
         return f'\n<section class="listen" data-queue><h2>À écouter</h2>{listen_head(r)}{render_tracklist(r)}</section>\n'
 
+    def thisis(m):
+        out = []
+        for r in rows(m.group(1)):
+            if len(r) < 2 or not r[1].strip():
+                continue
+            name, pid = r[0].strip(), r[1].strip()
+            out.append(f'''<figure class="thisis"><figcaption><span class="ti-k">Playlist Spotify</span><strong>This Is {esc(name)}</strong><span class="ti-n">L'essentiel de {esc(name)} réuni par Spotify, à écouter ici ou dans l'application.</span><a href="https://open.spotify.com/playlist/{esc(pid)}" rel="noopener" target="_blank">Ouvrir dans Spotify</a></figcaption><iframe title="This Is {esc(name)} sur Spotify" src="https://open.spotify.com/embed/playlist/{esc(pid)}?utm_source=generator" height="452" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></figure>''')
+        return "\n" + "".join(out) + "\n" if out else ""
+
     def tracklist(m):
         r = rows(m.group(1))
         return f'\n<section class="listen listen--full" data-queue>{listen_head(r)}{render_tracklist(r)}</section>\n'
@@ -163,6 +172,7 @@ def render_body(meta):
     body = re.sub(r":::fiche\n(.*?)\n:::", stash(fiche), body, flags=re.S)
     body = re.sub(r":::aussi ([^\n]*)\n(.*?)\n:::", stash(aussi), body, flags=re.S)
     body = re.sub(r":::ecoute\n(.*?)\n:::", stash(ecoute), body, flags=re.S)
+    body = re.sub(r":::thisis\n(.*?)\n:::", stash(thisis), body, flags=re.S)
     body = re.sub(r":::tracklist\n(.*?)\n:::", stash(tracklist), body, flags=re.S)
     out = markdown.markdown(body, extensions=["smarty"], extension_configs={
         "smarty": {"smart_quotes": False, "smart_dashes": False}})

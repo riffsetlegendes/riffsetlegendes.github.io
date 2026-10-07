@@ -60,4 +60,8 @@ Prochain album | Enregistrement à partir de la mi-janvier 2027, sortie espéré
 Pressure and Time | Rival Sons | 2011 | 6XDNRpkuzEc7zpKXSEWkVr
 Do Your Worst | Rival Sons | 2018 | 2nWF6KA4zj0ip61pl0typ2
 Too Bad | Rival Sons | 2019 | 1BQ79HHy2KK1zPipz64SU7
+Keep On Swinging | Rival Sons | 2012 | 2cunU1QCSLVf1fm9YZyD1I
+Bright Light | Rival Sons | 2023 | 7wXJBljsXeoWnq4ziW6sfB
+Rapture | Rival Sons | 2023 | 3zoWYXKwnMt36FC9GBAS2K
+Darkside | Rival Sons | 2023 | 64cKPYjaevIatYaGvWifvE
 :::

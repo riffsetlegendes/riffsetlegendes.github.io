@@ -67,4 +67,12 @@ Premier tube | « Maybellene », enregistré le 21 mai 1955
 Maybellene | Chuck Berry | 1955 | 3SQhmctWreNM0X6Zkm2K5R
 Roll Over Beethoven | Chuck Berry | 1956 | 5kYTYz5GmFOxiaYeteQNSk
 Johnny B. Goode | Chuck Berry | 1958 | 2QfiRTz5Yc8DdShCxG1tB2
+Sweet Little Sixteen | Chuck Berry | 1958 | 4DEbXdYvto9BB3TyYyxLKn
+Rock and Roll Music | Chuck Berry | 1957 | 09hxCc0SgV8u46gWsfeqJA
+Brown Eyed Handsome Man | Chuck Berry | 1956 | 1L9ckQReovpPxd6ZZsRMIA
+No Particular Place to Go | Chuck Berry | 1964 | 2JKv7qEScAtVCvLdiIWqyM
+:::
+
+:::thisis
+Chuck Berry | 37i9dQZF1DZ06evO1dAid2
 :::

@@ -70,4 +70,10 @@ Décès | 3 février 1959, près de Clear Lake (Iowa)
 That'll Be the Day | The Crickets | 1957 | 1tKTkHWwWNdR3Tc5FFWUAp
 Peggy Sue | Buddy Holly | 1957 | 3CojEYtPNtPPUuemEVIeeQ
 Everyday | Buddy Holly | 1957 | 3ozftYu1yZlCGXkNFBYL6p
+Oh Boy! | The Crickets | 1957 | 6ZXsJKgmWRiiIffv8tNGmM
+Rave On | Buddy Holly | 1958 | 3qXCMBMlHBLnGAgIg61O7Z
+It Doesn't Matter Anymore | Buddy Holly | 1959 | 1SOMip5voPNh8pyLjkFjmN
+:::
+:::thisis
+Buddy Holly | 37i9dQZF1DZ06evO23huA8
 :::

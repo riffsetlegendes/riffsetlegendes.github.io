@@ -61,4 +61,12 @@ Enquête du FBI | 31 mois, sans suite
 :::ecoute
 Louie Louie | The Kingsmen | 1963 | 6mrJCpWqWdPSOphCvwG4AG
 Louie Louie | Richard Berry & the Pharaohs | 1957 | 4G0pqxyjT3bZ1GtabRbKdd
+Have Love Will Travel | Richard Berry & the Pharaohs | 1959 | 1QfbtbOMqnAaOKO0IkdtBm
+Money | The Kingsmen | 1964 | 6YWXtwe0O5vScuNsyEukcF
+Death of an Angel | The Kingsmen | 1964 | 4cf0np453N2PNzHye63sH3
+The Jolly Green Giant | The Kingsmen | 1965 | 7qxOKnhFyYuRg9UohYcF2g
+:::
+
+:::thisis
+The Kingsmen | 37i9dQZF1DZ06evO1joIAs
 :::

@@ -58,4 +58,12 @@ Guitare de séance | Joe Moretti
 Shakin' All Over | Johnny Kidd & the Pirates | 1960 | 6gVonza2jBVEuQPRRR7N1b
 I'll Never Get Over You | Johnny Kidd & the Pirates | 1963 | 0q1ly7duuQ28vtWJMq1N4Z
 Shakin' All Over | The Guess Who | 1965 | 342VmIYwsBAoA5GabEHB2c
+Please Don't Touch | Johnny Kidd & the Pirates | 1959 | 5zjYbVucw9cHYVl2IIpYH0
+Restless | Johnny Kidd & the Pirates | 1960 | 1bgxemnpWzbubZIxNVq798
+Hungry for Love | Johnny Kidd & the Pirates | 1963 | 3Hi2GY89wJKnDAlefhGTs3
+A Shot of Rhythm and Blues | Johnny Kidd & the Pirates | 1963 | 2SNPRXjLV0WitUi1oIlqmD
+:::
+
+:::thisis
+Johnny Kidd & The Pirates | 37i9dQZF1DZ06evO2XAwRl
 :::
