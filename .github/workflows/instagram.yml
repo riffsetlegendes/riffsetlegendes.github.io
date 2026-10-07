@@ -58,4 +58,5 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
         run: |
+          case "$IG_TOKEN" in EAA*) echo "Jeton de Page Facebook : pas d expiration, rien à faire"; exit 0;; esac
           curl -fsS "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_TOKEN}" | python -c "import json,sys; d=json.load(sys.stdin); print('Jeton prolongé, valable', d.get('expires_in',0)//86400, 'jours')"

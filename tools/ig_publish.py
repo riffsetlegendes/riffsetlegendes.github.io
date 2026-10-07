@@ -16,7 +16,11 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
-API = "https://graph.instagram.com"
+# Deux variantes possibles du jeton :
+#  - connexion Instagram (commence par « IG ») : graph.instagram.com
+#  - connexion Facebook (commence par « EAA ») : graph.facebook.com, compte Instagram relié à une Page
+FB = os.environ.get("IG_TOKEN", "").strip().startswith("EAA")
+API = "https://graph.facebook.com/v21.0" if FB else "https://graph.instagram.com"
 MEDIA_BRANCH = "ig-media"
 
 
@@ -103,8 +107,22 @@ def main():
     if dry:
         log("Essai à blanc : rien n'est publié sur Instagram.")
         return
-    me = call("GET", "me", fields="user_id,username")
-    uid = me.get("user_id") or me.get("id")
+    if FB:
+        uid = None
+        try:  # jeton de Page
+            uid = (call("GET", "me", fields="instagram_business_account").get("instagram_business_account") or {}).get("id")
+        except Exception:
+            pass
+        if not uid:  # jeton utilisateur : on cherche la Page reliée à Instagram
+            for pg in call("GET", "me/accounts", fields="instagram_business_account,name").get("data", []):
+                if pg.get("instagram_business_account"):
+                    uid = pg["instagram_business_account"]["id"]
+                    break
+        if not uid:
+            raise SystemExit("Aucun compte Instagram professionnel relié à une Page Facebook n'a été trouvé avec ce jeton.")
+    else:
+        me = call("GET", "me", fields="user_id,username")
+        uid = me.get("user_id") or me.get("id")
     log(f"Compte : @{me.get('username')}")
     children = []
     for u in urls:
