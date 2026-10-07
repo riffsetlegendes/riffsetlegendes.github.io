@@ -23,9 +23,28 @@ OUT = ROOT / "docs"
 SITE_NAME = "Riffs & Légendes"
 SITE_TAGLINE = "Le rock de 1950 à 1999, un jour à la fois"
 import os
-REPO = os.environ.get("RL_REPO", "iffs-legendes")
-SITE_URL = f"https://yanncollin23.github.io/{REPO}"
-BASE = f"/{REPO}"
+# Adresse du site. Dépôt « <compte>.github.io » : site servi à la racine.
+def _origin():
+    """Déduit le compte et le dépôt GitHub depuis le remote « origin »."""
+    import subprocess
+    try:
+        u = subprocess.run(["git", "remote", "get-url", "origin"], cwd=Path(__file__).parent,
+                           capture_output=True, text=True, check=True).stdout.strip()
+        parts = u.rstrip("/").removesuffix(".git").split("/")
+        return parts[-2], parts[-1]
+    except Exception:
+        return "riffsetlegendes", "riffsetlegendes.github.io"
+
+
+_o, _r = _origin()
+OWNER = os.environ.get("RL_OWNER", _o)
+REPO = os.environ.get("RL_REPO", _r)
+if REPO.endswith(".github.io"):
+    SITE_URL = f"https://{REPO}"
+    BASE = ""
+else:
+    SITE_URL = f"https://{OWNER}.github.io/{REPO}"
+    BASE = f"/{REPO}"
 
 CATEGORIES = {
     "ce-jour-la": ("Ce jour-là", "Chaque matin, un anniversaire du rock : une naissance, une disparition, un disque ou un concert qui a compté."),
