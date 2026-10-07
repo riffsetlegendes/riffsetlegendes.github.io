@@ -123,7 +123,7 @@ def main():
     else:
         me = call("GET", "me", fields="user_id,username")
         uid = me.get("user_id") or me.get("id")
-    log(f"Compte : @{me.get('username')}")
+    log(f"Compte Instagram : {uid}")
     children = []
     for u in urls:
         r = call("POST", f"{uid}/media", image_url=u, is_carousel_item="true")
