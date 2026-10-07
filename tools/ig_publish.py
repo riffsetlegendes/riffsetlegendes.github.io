@@ -145,6 +145,27 @@ def main():
        "commit", "-q", "-m", f"Instagram publié : {key}", cwd=ROOT)
     sh("git", "pull", "-q", "--rebase", "origin", "main", cwd=ROOT)
     sh("git", "push", "-q", "origin", "HEAD:main", cwd=ROOT)
+    try:
+        publish_story(uid, folder, key, kind)
+    except (Exception, SystemExit) as e:  # la story ne doit jamais bloquer le post
+        log(f"::warning title=Story Instagram::{str(e)[:300]}")
+
+
+def publish_story(uid, folder, key, kind):
+    """Story de visibilité : couverture du carrousel en 9:16, publiée juste après le post."""
+    sys.path.insert(0, str(ROOT / "tools"))
+    import story
+    sfolder = story.make(folder, kind)
+    url = upload_images(sfolder, key + "-story")[0]
+    cid = call("POST", f"{uid}/media", image_url=url, media_type="STORIES")["id"]
+    for _ in range(30):
+        st = call("GET", cid, fields="status_code").get("status_code")
+        if st == "FINISHED":
+            break
+        if st == "ERROR":
+            raise SystemExit("Instagram a refusé la story.")
+        time.sleep(5)
+    log(f"Story publiée : {call('POST', f'{uid}/media_publish', creation_id=cid)}")
 
 
 if __name__ == "__main__":
