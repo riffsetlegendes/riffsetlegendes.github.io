@@ -5,26 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rechercher | Riffs &amp; Légendes</title>
 <meta name="description" content="Rechercher un artiste, un album ou une année.">
-<link rel="canonical" href="https://yanncollin23.github.io/iffs-legendes/recherche/">
+<link rel="canonical" href="https://riffsetlegendes.github.io/recherche/">
 <meta property="og:site_name" content="Riffs &amp; Légendes">
 <meta property="og:title" content="Rechercher">
 <meta property="og:description" content="Rechercher un artiste, un album ou une année.">
 <meta property="og:locale" content="fr_FR">
 
 <meta name="theme-color" content="#1b2390">
-<link rel="icon" href="/iffs-legendes/assets/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="Riffs &amp; Légendes" href="/iffs-legendes/feed.xml">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Riffs &amp; Légendes" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap">
-<link rel="stylesheet" href="/iffs-legendes/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body class="">
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="site-head">
   <div class="wrap head-row">
-    <a class="wordmark" href="/iffs-legendes/" aria-label="Riffs &amp; Légendes, accueil">Riffs <span class="amp">&amp;</span> Légendes</a>
-    <nav class="nav" aria-label="Rubriques"><a href="/iffs-legendes/rubriques/ce-jour-la/">Ce jour-là</a><a href="/iffs-legendes/rubriques/legendes/">Légendes</a><a href="/iffs-legendes/rubriques/anecdotes/">Anecdotes</a><a href="/iffs-legendes/rubriques/playlists/">Playlists</a><a href="/iffs-legendes/rubriques/actu/">Actu</a><a class="nav-search" href="/iffs-legendes/recherche/">Rechercher</a></nav>
+    <a class="wordmark" href="/" aria-label="Riffs &amp; Légendes, accueil">Riffs <span class="amp">&amp;</span> Légendes</a>
+    <nav class="nav" aria-label="Rubriques"><a href="/rubriques/ce-jour-la/">Ce jour-là</a><a href="/rubriques/legendes/">Légendes</a><a href="/rubriques/anecdotes/">Anecdotes</a><a href="/rubriques/playlists/">Playlists</a><a href="/rubriques/actu/">Actu</a><a class="nav-search" href="/recherche/">Rechercher</a></nav>
   </div>
 </header>
 <main id="contenu">
@@ -45,7 +45,7 @@
     count.textContent=t?(hits.length?hits.length+' résultat'+(hits.length>1?'s':''):'Aucun résultat. Essayez un nom d\'artiste ou une année.'):'Tous les articles';
     res.innerHTML=hits.map(function(a){return '<article class="card"><a class="card-link" href="'+a.url+'"><div class="sleeve">'+(a.image?'<div class="riso"><img src="'+a.image+'" alt="" loading="lazy"></div>':'<div class="riso type-cover"><span class="tc-cat">'+esc(a.cat)+'</span><span class="tc-year">'+esc(a.year)+'</span></div>')+'</div><h3>'+esc(a.title)+'</h3></a><p class="card-meta">'+esc(a.cat)+'</p><p class="card-ex">'+esc(a.excerpt)+'</p></article>'}).join('');
   }
-  fetch('/iffs-legendes/search.json').then(function(r){return r.json()}).then(function(d){idx=d.map(function(a){a.hay=norm(a.title+' '+a.excerpt+' '+a.text+' '+a.cat);return a});var p=new URLSearchParams(location.search).get('q');if(p)q.value=p;show()});
+  fetch('/search.json').then(function(r){return r.json()}).then(function(d){idx=d.map(function(a){a.hay=norm(a.title+' '+a.excerpt+' '+a.text+' '+a.cat);return a});var p=new URLSearchParams(location.search).get('q');if(p)q.value=p;show()});
   q.addEventListener('input',show);
 })();
 </script>
@@ -67,11 +67,11 @@
     <p class="foot-mark">Riffs <span class="amp">&amp;</span> Légendes</p>
     <div class="foot-row">
       <p>Le rock de 1950 à 1999, un jour à la fois. Un article chaque matin, des portraits, des histoires et des disques à écouter.</p>
-      <nav aria-label="Pied de page"><a href="/iffs-legendes/archives/">Archives</a><a href="/iffs-legendes/a-propos/">À propos</a><a href="/iffs-legendes/credits/">Crédits photos</a><a href="/iffs-legendes/mentions-legales/">Mentions légales</a><a href="/iffs-legendes/feed.xml">Flux RSS</a></nav>
+      <nav aria-label="Pied de page"><a href="/archives/">Archives</a><a href="/a-propos/">À propos</a><a href="/credits/">Crédits photos</a><a href="/mentions-legales/">Mentions légales</a><a href="/feed.xml">Flux RSS</a></nav>
     </div>
     <p class="foot-small">Textes originaux, sources citées sous chaque article. Photos d'archives : Wikimedia Commons, licences libres. Extraits musicaux : Spotify.</p>
   </div>
 </footer>
-<script src="/iffs-legendes/assets/site.js" defer></script>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
