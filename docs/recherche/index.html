@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rechercher | Riffs &amp; Légendes</title>
+<meta name="description" content="Rechercher un artiste, un album ou une année.">
+<link rel="canonical" href="https://yanncollin23.github.io/riffs-legendes/recherche/">
+<meta property="og:site_name" content="Riffs &amp; Légendes">
+<meta property="og:title" content="Rechercher">
+<meta property="og:description" content="Rechercher un artiste, un album ou une année.">
+<meta property="og:locale" content="fr_FR">
+
+<meta name="theme-color" content="#1b2390">
+<link rel="icon" href="/riffs-legendes/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Riffs &amp; Légendes" href="/riffs-legendes/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap">
+<link rel="stylesheet" href="/riffs-legendes/assets/style.css">
+</head>
+<body class="">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="wordmark" href="/riffs-legendes/" aria-label="Riffs &amp; Légendes, accueil">Riffs <span class="amp">&amp;</span> Légendes</a>
+    <nav class="nav" aria-label="Rubriques"><a href="/riffs-legendes/rubriques/ce-jour-la/">Ce jour-là</a><a href="/riffs-legendes/rubriques/legendes/">Légendes</a><a href="/riffs-legendes/rubriques/anecdotes/">Anecdotes</a><a href="/riffs-legendes/rubriques/playlists/">Playlists</a><a href="/riffs-legendes/rubriques/actu/">Actu</a><a class="nav-search" href="/riffs-legendes/recherche/">Rechercher</a></nav>
+  </div>
+</header>
+<main id="contenu">
+<section class="cat-head wrap"><h1>Rechercher</h1><p>Un artiste, un album, une année : tout le site est passé en revue.</p>
+<form class="search" role="search" onsubmit="return false">
+  <label for="q" class="sr">Rechercher sur le site</label>
+  <input id="q" type="search" placeholder="Hendrix, 1971, Montreux…" autocomplete="off">
+</form></section>
+<section class="block wrap"><p id="count" class="search-count" aria-live="polite"></p><div id="results" class="bin bin--3"></div></section>
+<script>
+(function(){
+  var idx=[],q=document.getElementById('q'),res=document.getElementById('results'),count=document.getElementById('count');
+  function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function show(){
+    var t=norm(q.value.trim());
+    var hits=t?idx.filter(function(a){return a.hay.indexOf(t)>-1}):idx;
+    count.textContent=t?(hits.length?hits.length+' résultat'+(hits.length>1?'s':''):'Aucun résultat. Essayez un nom d\'artiste ou une année.'):'Tous les articles';
+    res.innerHTML=hits.map(function(a){return '<article class="card"><a class="card-link" href="'+a.url+'"><div class="sleeve"><div class="riso"><img src="'+a.image+'?w=600" alt="" loading="lazy"></div></div><h3>'+esc(a.title)+'</h3></a><p class="card-meta">'+esc(a.cat)+'</p><p class="card-ex">'+esc(a.excerpt)+'</p></article>'}).join('');
+  }
+  fetch('/riffs-legendes/search.json').then(function(r){return r.json()}).then(function(d){idx=d.map(function(a){a.hay=norm(a.title+' '+a.excerpt+' '+a.text+' '+a.cat);return a});var p=new URLSearchParams(location.search).get('q');if(p)q.value=p;show()});
+  q.addEventListener('input',show);
+})();
+</script>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="foot-mark">Riffs <span class="amp">&amp;</span> Légendes</p>
+    <div class="foot-row">
+      <p>Le rock de 1950 à 1999, un jour à la fois. Un article chaque matin, des portraits, des histoires et des disques à écouter.</p>
+      <nav aria-label="Pied de page"><a href="/riffs-legendes/a-propos/">À propos</a><a href="/riffs-legendes/feed.xml">Flux RSS</a><a href="/riffs-legendes/recherche/">Rechercher</a></nav>
+    </div>
+    <p class="foot-small">Illustrations générées par IA. Textes originaux, sources citées sous chaque article.</p>
+  </div>
+</footer>
+</body>
+</html>

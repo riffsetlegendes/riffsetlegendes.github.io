@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yanncollin23.github.io/riffs-legendes/sitemap.xml
