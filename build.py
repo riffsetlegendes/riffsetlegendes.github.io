@@ -192,6 +192,9 @@ def load_articles():
 
 # ---------------------------------------------------------------- gabarits
 
+import hashlib as _h
+ASSET_V = _h.md5((ROOT / "assets" / "style.css").read_bytes() + (ROOT / "assets" / "site.js").read_bytes()).hexdigest()[:8]
+
 FONTS = ("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900"
          "&family=Big+Shoulders+Display:wght@600..900&family=DM+Mono:wght@500"
          "&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap")
@@ -220,7 +223,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="{BASE}/assets/style.css">
+<link rel="stylesheet" href="{BASE}/assets/style.css?v={ASSET_V}">
 </head>
 <body class="{body_class}">
 <a class="skip" href="#contenu">Aller au contenu</a>
@@ -255,7 +258,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
     <p class="foot-small">Textes originaux, sources citées sous chaque article. Photos d'archives : Wikimedia Commons, licences libres. Extraits musicaux : Spotify.</p>
   </div>
 </footer>
-<script src="{BASE}/assets/site.js" defer></script>
+<script src="{BASE}/assets/site.js?v={ASSET_V}" defer></script>
 </body>
 </html>
 """
