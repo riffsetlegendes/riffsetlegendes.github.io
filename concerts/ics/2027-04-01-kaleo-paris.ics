@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2027-04-01-kaleo-paris@riffsetlegendes
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:Kaleo en concert
+LOCATION:Zénith Paris La Villette, Paris
+DESCRIPTION:Infos et billets : https://www.songkick.com/concerts/43300619-kaleo-at-zenith-paris-la-villette
+END:VEVENT
+END:VCALENDAR

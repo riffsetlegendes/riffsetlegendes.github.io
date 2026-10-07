@@ -216,7 +216,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <header class="site-head">
   <div class="wrap head-row">
     <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil">Riffs <span class="amp">&amp;</span> Légendes</a>
-    <nav class="nav" aria-label="Rubriques">{nav}<a class="nav-search" href="{url('recherche')}">Rechercher</a></nav>
+    <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a class="nav-search" href="{url('recherche')}">Rechercher</a></nav>
   </div>
 </header>
 <main id="contenu">
@@ -317,7 +317,7 @@ def card(a, extra=""):
 
 # ---------------------------------------------------------------- pages
 
-def page_home(arts):
+def page_home(arts, concerts=()):
     by = {k: [a for a in arts if a["category"] == k] for k in CATEGORIES}
     today = by["ce-jour-la"][0] if by["ce-jour-la"] else arts[0]
     d = today["date_obj"]
@@ -341,6 +341,12 @@ def page_home(arts):
 
     legends = "".join(card(a) for a in by["legendes"][:4])
     releve = "".join(card(a) for a in by["releve"][:4])
+    concerts_block = ""
+    if concerts:
+        concerts_block = f"""<section class="block wrap concerts-home">
+  <div class="block-head"><h2>Concerts</h2><a class="more" href="{url('concerts')}">Tout le calendrier</a></div>
+  <div class="tickets tickets--home">{''.join(ticket(c, compact=True) for c in concerts[:4])}</div>
+</section>"""
     anecdotes = "".join(f"""<article class="anec">
   <a href="{a['url']}" class="anec-img">{art(a, "riso--yellow")}</a>
   <p class="anec-year">{esc(a.get('event_year',''))}</p>
@@ -376,6 +382,7 @@ def page_home(arts):
     <div class="anec-grid">{anecdotes}</div>
   </div>
 </section>
+{concerts_block}
 <section class="block wrap releve">
   <div class="block-head"><h2>La relève</h2><a class="more" href="{url('rubriques/releve')}">Toute la relève</a></div>
   <p class="block-intro">Ils ont vingt ou trente ans et jouent comme en 1971. L'actualité des groupes qui font vivre l'héritage.</p>
@@ -474,6 +481,135 @@ def page_about():
     return layout("À propos", body, "Le projet Riffs & Légendes.", f"{SITE_URL}/a-propos/")
 
 
+# ---------------------------------------------------------------- concerts
+
+TYPE_LABEL = {"legende": "Légende", "releve": "La relève"}
+DAYS_SHORT = ["lun.", "mar.", "mer.", "jeu.", "ven.", "sam.", "dim."]
+MONTHS_SHORT = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+
+
+def load_concerts():
+    f = ROOT / "concerts.json"
+    if not f.exists():
+        return []
+    today = dt.datetime.now(dt.timezone(dt.timedelta(hours=2))).date()
+    out = []
+    for c in json.loads(f.read_text(encoding="utf-8")):
+        c["d"] = dt.date.fromisoformat(c["date"])
+        if c["d"] >= today:
+            import unicodedata
+            raw = unicodedata.normalize("NFKD", f'{c["date"]}-{c["artist"]}-{c["city"]}').encode("ascii", "ignore").decode()
+            c["id"] = re.sub(r"[^a-z0-9]+", "-", raw.lower()).strip("-")
+            out.append(c)
+    out.sort(key=lambda c: (c["d"], c["artist"]))
+    return out
+
+
+def ics(c):
+    start = c["d"].strftime("%Y%m%d")
+    if c.get("time"):
+        hh, mm = c["time"].split(":")
+        dtstart = f"DTSTART;TZID=Europe/Paris:{start}T{hh}{mm}00"
+        dtend = f"DTEND;TZID=Europe/Paris:{start}T{(int(hh) + 3) % 24:02d}{mm}00"
+    else:
+        nxt = (c["d"] + dt.timedelta(days=1)).strftime("%Y%m%d")
+        dtstart, dtend = f"DTSTART;VALUE=DATE:{start}", f"DTEND;VALUE=DATE:{nxt}"
+    return "\r\n".join([
+        "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Riffs & Legendes//Concerts//FR", "BEGIN:VEVENT",
+        f"UID:{c['id']}@riffsetlegendes", f"DTSTAMP:{start}T000000Z", dtstart, dtend,
+        f"SUMMARY:{c['artist']} en concert", f"LOCATION:{c['venue']}, {c['city']}",
+        f"DESCRIPTION:Infos et billets : {c['source']}", "END:VEVENT", "END:VCALENDAR", ""])
+
+
+def ticket(c, compact=False):
+    d = c["d"]
+    time = ""
+    if c.get("time"):
+        hh, mm = c["time"].split(":")
+        time = f", {int(hh)} h" + ("" if mm == "00" else f" {mm}")
+    tag = TYPE_LABEL.get(c.get("type"), "")
+    art = f'<a class="tk-more" href="{url("articles/" + c["article"])}">Lire l\'article</a>' if c.get("article") else ""
+    actions = "" if compact else (
+        f'<div class="tk-actions"><a href="{esc(c["source"])}" target="_blank" rel="noopener">Infos et billets</a>'
+        f'<a href="{BASE}/concerts/ics/{c["id"]}.ics" download>Ajouter à mon agenda</a>{art}</div>')
+    return f"""<article class="ticket" data-city="{esc(c['city'])}" data-type="{esc(c.get('type',''))}" id="{c['id']}">
+  <div class="tk-date"><span class="tk-dow">{DAYS_SHORT[d.weekday()]}</span><span class="tk-day">{d.day}</span><span class="tk-mon">{MONTHS_SHORT[d.month-1]} {d.year}</span></div>
+  <div class="tk-body"><span class="tk-tag tk-tag--{esc(c.get('type',''))}">{tag}</span><h3>{f'<a href="{url("concerts")}#{c["id"]}">{esc(c["artist"])}</a>' if compact else esc(c['artist'])}</h3>
+  <p class="tk-place">{esc(c['venue'])}, {esc(c['city'])}{time}</p>{actions}</div>
+</article>"""
+
+
+def month_grid(year, month, concerts):
+    import calendar
+    cal = calendar.Calendar(firstweekday=0)
+    by_day = {}
+    for c in concerts:
+        if c["d"].year == year and c["d"].month == month:
+            by_day.setdefault(c["d"].day, []).append(c)
+    head = "".join(f"<span class='cg-h'>{x[:3]}</span>" for x in ["lun", "mar", "mer", "jeu", "ven", "sam", "dim"])
+    cells = ""
+    for wk in cal.monthdayscalendar(year, month):
+        for day in wk:
+            if day == 0:
+                cells += "<span class='cg-c cg-empty'></span>"
+            elif day in by_day:
+                names = "".join(f"<a href='#{c['id']}' data-city=\"{esc(c['city'])}\" data-type=\"{esc(c.get('type',''))}\">{esc(c['artist'])}</a>" for c in by_day[day])
+                cells += f"<span class='cg-c cg-on'><b>{day}</b>{names}</span>"
+            else:
+                cells += f"<span class='cg-c'><b>{day}</b></span>"
+    return f"<div class='cg' aria-hidden='true'>{head}{cells}</div>"
+
+
+def page_concerts(concerts):
+    cities = sorted({c["city"] for c in concerts})
+    opts = "".join(f'<option value="{esc(x)}">{esc(x)}</option>' for x in cities)
+    months = {}
+    for c in concerts:
+        months.setdefault((c["d"].year, c["d"].month), []).append(c)
+    blocks = ""
+    for (y, m), items in months.items():
+        blocks += f"""<section class="cmonth" data-month="{y}-{m:02d}">
+  <div class="cmonth-head"><h2>{MONTHS[m-1].capitalize()} <span>{y}</span></h2></div>
+  <div class="cmonth-grid">{month_grid(y, m, concerts)}<div class="tickets">{''.join(ticket(c) for c in items)}</div></div>
+</section>"""
+    if not blocks:
+        blocks = '<p class="empty">Aucun concert à venir pour l\'instant. Les prochaines dates arrivent bientôt.</p>'
+    body = f"""<section class="cat-head wrap"><h1>Concerts</h1>
+<p>Les dates à venir en France des légendes du rock et de la relève. Ajoutez un concert à votre agenda en un clic.</p>
+<form class="cfilters" onsubmit="return false">
+  <div class="chips" role="group" aria-label="Type de concert">
+    <button type="button" class="chip is-on" data-filter-type="">Tous</button>
+    <button type="button" class="chip" data-filter-type="legende">Légendes</button>
+    <button type="button" class="chip" data-filter-type="releve">La relève</button>
+  </div>
+  <label class="csel"><span>Ville</span><select id="city"><option value="">Toute la France</option>{opts}</select></label>
+</form></section>
+<div class="wrap cal">{blocks}<p id="cempty" class="empty" hidden>Aucun concert ne correspond à ces filtres.</p>
+<p class="cnote">Dates et salles vérifiées auprès des billetteries et des médias spécialisés, sous réserve de modification par les organisateurs. Vérifiez toujours sur le lien « Infos et billets ».</p></div>
+<script>
+(function(){{
+  var type='', city='';
+  function apply(){{
+    var any=false;
+    document.querySelectorAll('.ticket').forEach(function(t){{
+      var ok=(!type||t.dataset.type===type)&&(!city||t.dataset.city===city); t.hidden=!ok; if(ok) any=true;
+    }});
+    document.querySelectorAll('.cg-on a').forEach(function(a){{
+      a.classList.toggle('is-off', !((!type||a.dataset.type===type)&&(!city||a.dataset.city===city)));
+    }});
+    document.querySelectorAll('.cmonth').forEach(function(m){{
+      m.hidden=!m.querySelector('.ticket:not([hidden])');
+    }});
+    document.getElementById('cempty').hidden=any;
+  }}
+  document.querySelectorAll('[data-filter-type]').forEach(function(b){{b.addEventListener('click',function(){{
+    type=b.dataset.filterType; document.querySelectorAll('[data-filter-type]').forEach(function(x){{x.classList.toggle('is-on',x===b)}}); apply();}})}});
+  document.getElementById('city').addEventListener('change',function(e){{city=e.target.value;apply();}});
+}})();
+</script>"""
+    return layout("Concerts", body, "Les prochains concerts rock en France : légendes et relève, avec calendrier.", f"{SITE_URL}/concerts/")
+
+
 def page_credits(arts):
     rows_ = "".join(
         f'<li><a href="{a["url"]}">{esc(a["title"])}</a><span>{esc(a.get("image_caption", ""))} '
@@ -532,7 +668,7 @@ def write(path, text):
 def main():
     arts = load_articles()
     generated = ["index.html", "404.html", "feed.xml", "search.json", "sitemap.xml", "robots.txt",
-                 "articles", "rubriques", "recherche", "a-propos", "credits", "archives", "mentions-legales"]
+                 "articles", "rubriques", "recherche", "concerts", "a-propos", "credits", "archives", "mentions-legales"]
     if OUT == ROOT:
         for g in generated:
             t = OUT / g
@@ -545,7 +681,11 @@ def main():
             shutil.rmtree(OUT)
         OUT.mkdir()
         shutil.copytree(ASSETS, OUT / "assets")
-    write("index.html", page_home(arts))
+    concerts = load_concerts()
+    write("index.html", page_home(arts, concerts))
+    write("concerts/index.html", page_concerts(concerts))
+    for c in concerts:
+        write(f"concerts/ics/{c['id']}.ics", ics(c))
     for a in arts:
         write(f"articles/{a['slug']}/index.html", page_article(a, arts))
     for k in CATEGORIES:
@@ -560,7 +700,7 @@ def main():
               "excerpt": a["excerpt"], "text": re.sub(r"[#*:|]", " ", a["body_md"])} for a in arts]
     write("search.json", json.dumps(index, ensure_ascii=False))
     urls = [SITE_URL + "/"] + [SITE_URL + a["url"].replace(BASE, "") for a in arts] + \
-           [f"{SITE_URL}/rubriques/{k}/" for k in CATEGORIES]
+           [f"{SITE_URL}/rubriques/{k}/" for k in CATEGORIES] + [f"{SITE_URL}/concerts/"]
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{u}</loc></url>" for u in urls) + "</urlset>\n")
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")

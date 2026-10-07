@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2026-11-28-indochine-paris@riffsetlegendes
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Paris:20261128T200000
+DTEND;TZID=Europe/Paris:20261128T230000
+SUMMARY:Indochine en concert
+LOCATION:La Seine Musicale, Paris
+DESCRIPTION:Infos et billets : https://www.jds.fr/actu/indochine-annonce-9-concerts-exceptionnels-la-france-aura-droit-a-trois-soirees-tres-attendues-a-paris-1632007_A
+END:VEVENT
+END:VCALENDAR

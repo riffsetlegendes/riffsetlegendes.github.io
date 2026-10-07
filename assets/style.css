@@ -403,3 +403,52 @@ body.has-dock { padding-bottom: 9.5rem; }
 
 /* la relève */
 .block-intro { font-size: 1.15rem; color: var(--ink-soft); max-width: 40rem; margin: -1rem 0 2rem; }
+
+/* concerts */
+.tickets { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 1rem; align-content: start; }
+.tickets--home { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.ticket { display: grid; grid-template-columns: 6.2rem minmax(0, 1fr); background: var(--paper); border: 2px solid var(--ink); min-width: 0; position: relative; }
+.ticket[hidden] { display: none; }
+.ticket::before, .ticket::after { content: ""; position: absolute; left: calc(6.2rem - 9px); width: 16px; height: 16px; border-radius: 50%; background: var(--paper); border: 2px solid var(--ink); z-index: 1; }
+.ticket::before { top: -9px; clip-path: inset(50% 0 0 0); }
+.ticket::after { bottom: -9px; clip-path: inset(0 0 50% 0); }
+.tk-date { background: var(--ink); color: var(--paper); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: .9rem .4rem; text-align: center; border-right: 2px dashed var(--paper); font-family: var(--f-display); line-height: 1; }
+.tk-dow { font-weight: 600; font-size: .85rem; opacity: .8; }
+.tk-day { font-weight: 900; font-stretch: 125%; font-size: 2.6rem; letter-spacing: -.03em; margin: .2rem 0; color: var(--yellow); }
+.tk-mon { font-weight: 700; font-size: .85rem; }
+.tk-body { padding: .9rem 1.1rem 1rem; min-width: 0; display: flex; flex-direction: column; gap: .3rem; }
+.tk-body h3 { font-weight: 800; font-size: 1.35rem; line-height: 1.1; }
+.tk-place { color: var(--ink-soft); font-size: 1rem; line-height: 1.4; }
+.tk-tag { align-self: flex-start; font-family: var(--f-display); font-weight: 700; font-size: .78rem; padding: .15rem .5rem; background: var(--yellow); color: var(--on-yellow); }
+.tk-tag--releve { background: var(--riso); color: #fff; }
+.tk-actions { display: flex; flex-wrap: wrap; gap: .3rem 1rem; margin-top: .4rem; font-family: var(--f-display); font-weight: 600; font-size: .9rem; }
+.tk-actions a { text-decoration-thickness: 2px; text-underline-offset: .2em; }
+.tk-actions a:hover { color: var(--riso-text); }
+.cfilters { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; margin-top: .5rem; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip { font-family: var(--f-display); font-weight: 700; font-size: .95rem; padding: .55rem 1rem; border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 999px; cursor: pointer; }
+.chip.is-on, .chip:hover { background: var(--ink); color: var(--paper); }
+.csel { display: flex; align-items: center; gap: .7rem; font-family: var(--f-display); font-weight: 700; }
+.csel select { font: inherit; font-weight: 600; padding: .5rem .8rem; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); border-radius: 0; }
+.cal { padding-block: clamp(2rem, 4vw, 3rem) clamp(2rem, 5vw, 4rem); }
+.cmonth[hidden] { display: none; }
+.cmonth + .cmonth { margin-top: 3.5rem; }
+.cmonth-head { border-top: 3px solid var(--ink); padding-top: 1rem; margin-bottom: 1.5rem; }
+.cmonth-head h2 { font-stretch: 125%; font-weight: 900; font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -.025em; line-height: .95; }
+.cmonth-head h2 span { color: var(--ink-soft); }
+.cmonth-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2rem; align-items: start; }
+.cg { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 3px; }
+.cg-h { font-family: var(--f-display); font-weight: 700; font-size: .8rem; color: var(--ink-soft); text-align: center; padding-bottom: .3rem; }
+.cg-c { min-height: 4.4rem; border: 1px solid var(--line); padding: .35rem; display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+.cg-c b { font-family: var(--f-display); font-weight: 700; font-size: .85rem; color: var(--ink-soft); }
+.cg-empty { border-color: transparent; }
+.cg-on { background: var(--yellow); border-color: var(--yellow); }
+.cg-on b { color: var(--on-yellow); }
+.cg-on a { font-family: var(--f-display); font-weight: 800; font-size: .72rem; line-height: 1.1; color: var(--on-yellow); text-decoration: none; hyphens: auto; overflow-wrap: break-word; }
+.cg-on a:hover { text-decoration: underline; }
+.cg-on a.is-off { opacity: .25; }
+.cnote { margin-top: 3rem; font-size: .95rem; color: var(--ink-soft); max-width: 46rem; }
+.ticket:target { outline: 3px solid var(--riso); outline-offset: 3px; }
+@media (max-width: 960px) { .cmonth-grid { grid-template-columns: minmax(0, 1fr); } .cg { display: none; } }
+.tk-body h3 a { text-decoration: none; }
+.tk-body h3 a:hover { color: var(--riso-text); }

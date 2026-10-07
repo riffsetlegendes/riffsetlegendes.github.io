@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2027-05-27-greta-van-fleet-paris@riffsetlegendes
+DTSTAMP:20270527T000000Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+SUMMARY:Greta Van Fleet en concert
+LOCATION:Adidas Arena, Paris
+DESCRIPTION:Infos et billets : https://www.loudersound.com/bands-artists/greta-van-fleet-announce-into-the-beginning-tour-across-north-america-and-europe
+END:VEVENT
+END:VCALENDAR

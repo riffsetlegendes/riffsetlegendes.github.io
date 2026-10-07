@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2026-10-15-les-negresses-vertes-paris@riffsetlegendes
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Les Négresses Vertes en concert
+LOCATION:La Maroquinerie, Paris
+DESCRIPTION:Infos et billets : https://www.eventworld.co/paris/les-negresses-vertes-tickets-2026-10-15-542011/
+END:VEVENT
+END:VCALENDAR

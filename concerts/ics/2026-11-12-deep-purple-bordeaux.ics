@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2026-11-12-deep-purple-bordeaux@riffsetlegendes
+DTSTAMP:20261112T000000Z
+DTSTART;TZID=Europe/Paris:20261112T200000
+DTEND;TZID=Europe/Paris:20261112T230000
+SUMMARY:Deep Purple en concert
+LOCATION:Arkéa Arena, Bordeaux
+DESCRIPTION:Infos et billets : https://www.jds.fr/artistes/deep-purple-3418_N
+END:VEVENT
+END:VCALENDAR

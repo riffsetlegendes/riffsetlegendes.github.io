@@ -1,0 +1,124 @@
+[
+ {
+  "date": "2026-10-14",
+  "artist": "Les Négresses Vertes",
+  "city": "Paris",
+  "venue": "La Maroquinerie",
+  "type": "legende",
+  "source": "https://www.eventworld.co/paris/les-negresses-vertes-tickets-2026-10-14-512747/"
+ },
+ {
+  "date": "2026-10-15",
+  "artist": "Les Négresses Vertes",
+  "city": "Paris",
+  "venue": "La Maroquinerie",
+  "type": "legende",
+  "source": "https://www.eventworld.co/paris/les-negresses-vertes-tickets-2026-10-15-542011/"
+ },
+ {
+  "date": "2026-10-22",
+  "time": "20:00",
+  "artist": "Deep Purple",
+  "city": "Paris",
+  "venue": "Adidas Arena",
+  "type": "legende",
+  "source": "https://www.jds.fr/artistes/deep-purple-3418_N"
+ },
+ {
+  "date": "2026-10-28",
+  "time": "20:00",
+  "artist": "Duran Duran",
+  "city": "Paris",
+  "venue": "Accor Arena",
+  "type": "legende",
+  "source": "https://www.jds.fr/artistes/duran-duran-24230_N"
+ },
+ {
+  "date": "2026-11-10",
+  "time": "20:00",
+  "artist": "Deep Purple",
+  "city": "Strasbourg",
+  "venue": "Zénith de Strasbourg",
+  "type": "legende",
+  "source": "https://www.jds.fr/artistes/deep-purple-3418_N"
+ },
+ {
+  "date": "2026-11-12",
+  "time": "20:00",
+  "artist": "Deep Purple",
+  "city": "Bordeaux",
+  "venue": "Arkéa Arena",
+  "type": "legende",
+  "source": "https://www.jds.fr/artistes/deep-purple-3418_N"
+ },
+ {
+  "date": "2026-11-13",
+  "time": "20:00",
+  "artist": "Deep Purple",
+  "city": "Nantes",
+  "venue": "Zénith de Nantes",
+  "type": "legende",
+  "source": "https://www.jds.fr/artistes/deep-purple-3418_N"
+ },
+ {
+  "date": "2026-11-15",
+  "time": "19:00",
+  "artist": "Deep Purple",
+  "city": "Lyon",
+  "venue": "LDLC Arena",
+  "type": "legende",
+  "source": "https://www.jds.fr/artistes/deep-purple-3418_N"
+ },
+ {
+  "date": "2026-11-24",
+  "artist": "The Pretty Reckless",
+  "city": "Paris",
+  "venue": "Zénith Paris La Villette",
+  "type": "releve",
+  "source": "https://www.infoconcert.com/actualites/the-pretty-reckless-en-concert-au-zenith-de-paris-en-novembre-2026-loccasion-de-decouvrir-en-live-les-titres-de-leur-nouvel-album-dear-god-22023"
+ },
+ {
+  "date": "2026-11-26",
+  "time": "20:00",
+  "artist": "Indochine",
+  "city": "Paris",
+  "venue": "La Seine Musicale",
+  "type": "legende",
+  "source": "https://www.jds.fr/actu/indochine-annonce-9-concerts-exceptionnels-la-france-aura-droit-a-trois-soirees-tres-attendues-a-paris-1632007_A"
+ },
+ {
+  "date": "2026-11-27",
+  "time": "20:00",
+  "artist": "Indochine",
+  "city": "Paris",
+  "venue": "La Seine Musicale",
+  "type": "legende",
+  "source": "https://www.jds.fr/actu/indochine-annonce-9-concerts-exceptionnels-la-france-aura-droit-a-trois-soirees-tres-attendues-a-paris-1632007_A"
+ },
+ {
+  "date": "2026-11-28",
+  "time": "20:00",
+  "artist": "Indochine",
+  "city": "Paris",
+  "venue": "La Seine Musicale",
+  "type": "legende",
+  "source": "https://www.jds.fr/actu/indochine-annonce-9-concerts-exceptionnels-la-france-aura-droit-a-trois-soirees-tres-attendues-a-paris-1632007_A"
+ },
+ {
+  "date": "2027-04-01",
+  "artist": "Kaleo",
+  "city": "Paris",
+  "venue": "Zénith Paris La Villette",
+  "type": "releve",
+  "source": "https://www.songkick.com/concerts/43300619-kaleo-at-zenith-paris-la-villette"
+ },
+ {
+  "date": "2027-05-27",
+  "artist": "Greta Van Fleet",
+  "city": "Paris",
+  "venue": "Adidas Arena",
+  "type": "releve",
+  "source": "https://www.loudersound.com/bands-artists/greta-van-fleet-announce-into-the-beginning-tour-across-north-america-and-europe",
+  "article": "greta-van-fleet-palace-for-the-people"
+ }
+]

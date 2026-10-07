@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2026-11-24-the-pretty-reckless-paris@riffsetlegendes
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:The Pretty Reckless en concert
+LOCATION:Zénith Paris La Villette, Paris
+DESCRIPTION:Infos et billets : https://www.infoconcert.com/actualites/the-pretty-reckless-en-concert-au-zenith-de-paris-en-novembre-2026-loccasion-de-decouvrir-en-live-les-titres-de-leur-nouvel-album-dear-god-22023
+END:VEVENT
+END:VCALENDAR
