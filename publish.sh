@@ -8,6 +8,8 @@ NAME="Yann Collin"; MAIL="yanncollin23@users.noreply.github.com"
 git add -A
 git -c user.name="$NAME" -c user.email="$MAIL" commit -qm "${1:-Mise à jour du site}" || true
 git push -q origin main
+# Dépôt <compte>.github.io : le site est servi directement depuis main.
+case "$(git remote get-url origin)" in *.github.io*) echo "Site publié."; exit 0;; esac
 TMP="$(mktemp -d)"
 cp -r docs/. "$TMP"
 cd "$TMP"

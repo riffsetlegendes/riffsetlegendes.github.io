@@ -18,7 +18,7 @@ import markdown
 ROOT = Path(__file__).parent
 CONTENT = ROOT / "content"
 ASSETS = ROOT / "assets"
-OUT = ROOT / "docs"
+OUT = ROOT / "docs"  # remplacé plus bas par la racine pour un dépôt <compte>.github.io
 
 SITE_NAME = "Riffs & Légendes"
 SITE_TAGLINE = "Le rock de 1950 à 1999, un jour à la fois"
@@ -42,6 +42,7 @@ REPO = os.environ.get("RL_REPO", _r)
 if REPO.endswith(".github.io"):
     SITE_URL = f"https://{REPO}"
     BASE = ""
+    OUT = ROOT  # GitHub Pages sert la branche main à la racine
 else:
     SITE_URL = f"https://{OWNER}.github.io/{REPO}"
     BASE = f"/{REPO}"
@@ -523,10 +524,20 @@ def write(path, text):
 
 def main():
     arts = load_articles()
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    OUT.mkdir()
-    shutil.copytree(ASSETS, OUT / "assets")
+    generated = ["index.html", "404.html", "feed.xml", "search.json", "sitemap.xml", "robots.txt",
+                 "articles", "rubriques", "recherche", "a-propos", "credits", "archives", "mentions-legales"]
+    if OUT == ROOT:
+        for g in generated:
+            t = OUT / g
+            if t.is_dir():
+                shutil.rmtree(t)
+            elif t.exists():
+                t.unlink()
+    else:
+        if OUT.exists():
+            shutil.rmtree(OUT)
+        OUT.mkdir()
+        shutil.copytree(ASSETS, OUT / "assets")
     write("index.html", page_home(arts))
     for a in arts:
         write(f"articles/{a['slug']}/index.html", page_article(a, arts))
