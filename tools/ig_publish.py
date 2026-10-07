@@ -104,9 +104,6 @@ def main():
     caption = (folder / "legende.txt").read_text(encoding="utf-8").strip()
     urls = upload_images(folder, key)
     log("Images en ligne :\n" + "\n".join(urls))
-    if dry:
-        log("Essai à blanc : rien n'est publié sur Instagram.")
-        return
     if FB:
         uid = None
         try:  # jeton de Page
@@ -124,6 +121,9 @@ def main():
         me = call("GET", "me", fields="user_id,username")
         uid = me.get("user_id") or me.get("id")
     log(f"Compte Instagram : {uid}")
+    if dry:
+        log("Essai à blanc : rien n'est publié sur Instagram.")
+        return
     children = []
     for u in urls:
         r = call("POST", f"{uid}/media", image_url=u, is_carousel_item="true")
