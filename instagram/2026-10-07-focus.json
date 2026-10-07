@@ -1,0 +1,15 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1976",
+  "title": "Le jour où le cochon de Pink Floyd s'est envolé",
+  "slides": [
+    {"head": "Décembre 1976", "big": "Pink Floyd veut un cochon géant au-dessus d'une centrale.", "text": "Pour la pochette d'Animals, Roger Waters et le studio Hipgnosis font gonfler Algie, un ballon de douze mètres, entre les cheminées de Battersea."},
+    {"head": "3 décembre", "big": "Les amarres cèdent.", "text": "Algie s'envole au-dessus de Londres et dérive vers Heathrow. La police lance des hélicoptères à sa poursuite."},
+    {"head": "L'atterrissage", "big": "Le cochon finit sa course dans un champ du Kent.", "text": "À la séance suivante, un tireur d'élite est là au cas où. Mais la lumière a changé et les photos ne conviennent pas."},
+    {"head": "Le secret", "big": "La pochette d'Animals est un montage.", "text": "Le cochon a été découpé puis collé sur une autre photo de la centrale. L'image la plus célèbre de la séance est entièrement truquée."}
+  ],
+  "tracks": [["Pigs (Three Different Ones)", "Pink Floyd", "1977"], ["Sheep", "Pink Floyd", "1977"]],
+  "caption": "Décembre 1976 : pour la pochette d'Animals, Pink Floyd fait flotter un cochon gonflable de douze mètres au-dessus de la centrale de Battersea. Le ballon s'échappe, dérive vers Heathrow et finit dans un champ du Kent. Et la pochette finale ? Un montage.\n\nL'histoire complète est sur le site, lien en bio.",
+  "hashtags": ["pinkfloyd", "animals", "battersea", "rockhistory", "anecdote", "histoiredurock", "vinyle", "riffsetlegendes"]
+}

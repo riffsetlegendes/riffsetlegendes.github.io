@@ -1,0 +1,17 @@
+{
+  "type": "jour",
+  "label": "Ce jour-là",
+  "big": "7 octobre",
+  "title": "1966 : la route s'arrête pour Johnny Kidd",
+  "sticker": "60 ans",
+  "disc": "1966",
+  "slides": [
+    {"head": "Londres, 1960", "big": "Avant les Beatles, l'Angleterre cherchait encore son rock.", "text": "Johnny Kidd sort « Shakin' All Over », numéro 1 au Royaume-Uni, porté par un riff tendu joué par Joe Moretti."},
+    {"head": "Le look", "big": "Un cache-œil et des costumes de pirates.", "text": "Sur scène, Kidd et ses Pirates jouent les flibustiers. Leur formule guitare, basse, batterie annonce tout le rock anglais à venir."},
+    {"head": "7 octobre 1966", "big": "Au retour d'un concert, la route s'arrête.", "text": "Johnny Kidd meurt dans un accident près de Bolton, dans le Lancashire. Il avait 26 ans."},
+    {"head": "L'héritage", "big": "Sa chanson, elle, n'a pas pris une ride.", "text": "The Guess Who en font un tube en 1965, et The Who la gravent sur Live at Leeds en 1970."}
+  ],
+  "tracks": [["Shakin' All Over", "Johnny Kidd & the Pirates", "1960"], ["I'll Never Get Over You", "Johnny Kidd & the Pirates", "1963"], ["Shakin' All Over", "The Guess Who", "1965"]],
+  "caption": "Il y a 60 ans jour pour jour, Johnny Kidd disparaissait sur une route du Lancashire. Avec « Shakin' All Over », il avait signé en 1960 l'un des rares grands classiques du rock anglais d'avant les Beatles.\n\nL'histoire complète et les morceaux à écouter sont sur le site, lien en bio.",
+  "hashtags": ["cejourla", "rock", "rocknroll", "johnnykidd", "shakinallover", "histoiredurock", "vinyle", "riffsetlegendes"]
+}
