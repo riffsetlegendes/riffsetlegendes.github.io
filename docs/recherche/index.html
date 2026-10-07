@@ -43,7 +43,7 @@
     var t=norm(q.value.trim());
     var hits=t?idx.filter(function(a){return a.hay.indexOf(t)>-1}):idx;
     count.textContent=t?(hits.length?hits.length+' résultat'+(hits.length>1?'s':''):'Aucun résultat. Essayez un nom d\'artiste ou une année.'):'Tous les articles';
-    res.innerHTML=hits.map(function(a){return '<article class="card"><a class="card-link" href="'+a.url+'"><div class="sleeve"><div class="riso"><img src="'+a.image+'?w=600" alt="" loading="lazy"></div></div><h3>'+esc(a.title)+'</h3></a><p class="card-meta">'+esc(a.cat)+'</p><p class="card-ex">'+esc(a.excerpt)+'</p></article>'}).join('');
+    res.innerHTML=hits.map(function(a){return '<article class="card"><a class="card-link" href="'+a.url+'"><div class="sleeve">'+(a.image?'<div class="riso"><img src="'+a.image+'" alt="" loading="lazy"></div>':'<div class="riso type-cover"><span class="tc-cat">'+esc(a.cat)+'</span><span class="tc-year">'+esc(a.year)+'</span></div>')+'</div><h3>'+esc(a.title)+'</h3></a><p class="card-meta">'+esc(a.cat)+'</p><p class="card-ex">'+esc(a.excerpt)+'</p></article>'}).join('');
   }
   fetch('/iffs-legendes/search.json').then(function(r){return r.json()}).then(function(d){idx=d.map(function(a){a.hay=norm(a.title+' '+a.excerpt+' '+a.text+' '+a.cat);return a});var p=new URLSearchParams(location.search).get('q');if(p)q.value=p;show()});
   q.addEventListener('input',show);

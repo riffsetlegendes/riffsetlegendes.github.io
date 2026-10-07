@@ -67,6 +67,8 @@ def parse_article(path):
     head, body = raw.split("\n---\n", 1)
     meta = {}
     for line in head.strip().splitlines():
+        if ":" not in line:
+            continue
         k, v = line.split(":", 1)
         meta[k.strip()] = v.strip()
     meta["date_obj"] = dt.datetime.strptime(meta["date"], "%Y-%m-%d %H:%M")
@@ -196,11 +198,28 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 """
 
 
-def sleeve(a, size="", eager=False):
+def img_src(a, w=1000):
+    src = a.get("image", "")
+    if not src:
+        return ""
+    if src.startswith("http"):
+        return f"{src}?w={w}" if "wordpress.com" in src else src
+    return f"{BASE}/{src.lstrip('/')}"
+
+
+def art(a, extra="", eager=False):
+    """Visuel bichrome de l'article, ou pochette typographique s'il n'a pas d'image."""
+    if not a.get("image"):
+        label = a.get("event_year") or str(a["date_obj"].year)
+        return (f'<div class="riso type-cover {extra}" role="img" aria-label="{esc(a["title"])}">'
+                f'<span class="tc-cat">{esc(a["cat_name"])}</span><span class="tc-year">{esc(label)}</span></div>')
     loading = "eager" if eager else "lazy"
-    return (f'<div class="sleeve {size}"><div class="riso">'
-            f'<img src="{esc(a["image"])}?w=1000" alt="{esc(a["image_alt"])}" loading="{loading}" decoding="async">'
-            f'</div></div>')
+    return (f'<div class="riso {extra}"><img src="{esc(img_src(a))}" alt="{esc(a.get("image_alt", ""))}" '
+            f'loading="{loading}" decoding="async"></div>')
+
+
+def sleeve(a, size="", eager=False):
+    return f'<div class="sleeve {size}">{art(a, eager=eager)}</div>'
 
 
 def anniversary(a):
@@ -246,7 +265,7 @@ def page_home(arts):
 
     legends = "".join(card(a) for a in by["legendes"][:4])
     anecdotes = "".join(f"""<article class="anec">
-  <a href="{a['url']}" class="anec-img"><div class="riso riso--yellow"><img src="{esc(a['image'])}?w=1000" alt="{esc(a['image_alt'])}" loading="lazy"></div></a>
+  <a href="{a['url']}" class="anec-img">{art(a, "riso--yellow")}</a>
   <p class="anec-year">{esc(a.get('event_year',''))}</p>
   <h3><a href="{a['url']}">{esc(a['title'])}</a></h3>
   <p>{esc(a['excerpt'])}</p>
@@ -288,7 +307,7 @@ def page_home(arts):
   <div class="block-head"><h2>L'actu des classiques</h2><a class="more" href="{url('rubriques/actu')}">Toute l'actu</a></div>
   <ul class="news-list">{news}</ul>
 </section>"""
-    return layout(SITE_NAME, body, SITE_TAGLINE, SITE_URL + "/", today["image"] + "?w=1200", "home")
+    return layout(SITE_NAME, body, SITE_TAGLINE, SITE_URL + "/", img_src(today, 1200), "home")
 
 
 def page_article(a, arts):
@@ -324,7 +343,7 @@ def page_article(a, arts):
 <script>
 document.querySelectorAll('[data-copy]').forEach(function(b){{b.addEventListener('click',function(){{var t=b.getAttribute('data-copy');var done=function(){{b.textContent='Lien copié';setTimeout(function(){{b.textContent='Copier le lien'}},2000)}};if(navigator.clipboard){{navigator.clipboard.writeText(t).then(done,function(){{prompt('Copiez ce lien :',t)}})}}else{{prompt('Copiez ce lien :',t)}}}})}});
 </script>"""
-    return layout(a["title"], body, a["excerpt"], SITE_URL + a["url"].replace(BASE, ""), a["image"] + "?w=1200", "article")
+    return layout(a["title"], body, a["excerpt"], SITE_URL + a["url"].replace(BASE, ""), img_src(a, 1200), "article")
 
 
 def page_category(key, arts):
@@ -352,7 +371,7 @@ def page_search():
     var t=norm(q.value.trim());
     var hits=t?idx.filter(function(a){{return a.hay.indexOf(t)>-1}}):idx;
     count.textContent=t?(hits.length?hits.length+' résultat'+(hits.length>1?'s':''):'Aucun résultat. Essayez un nom d\\'artiste ou une année.'):'Tous les articles';
-    res.innerHTML=hits.map(function(a){{return '<article class="card"><a class="card-link" href="'+a.url+'"><div class="sleeve"><div class="riso"><img src="'+a.image+'?w=600" alt="" loading="lazy"></div></div><h3>'+esc(a.title)+'</h3></a><p class="card-meta">'+esc(a.cat)+'</p><p class="card-ex">'+esc(a.excerpt)+'</p></article>'}}).join('');
+    res.innerHTML=hits.map(function(a){{return '<article class="card"><a class="card-link" href="'+a.url+'"><div class="sleeve">'+(a.image?'<div class="riso"><img src="'+a.image+'" alt="" loading="lazy"></div>':'<div class="riso type-cover"><span class="tc-cat">'+esc(a.cat)+'</span><span class="tc-year">'+esc(a.year)+'</span></div>')+'</div><h3>'+esc(a.title)+'</h3></a><p class="card-meta">'+esc(a.cat)+'</p><p class="card-ex">'+esc(a.excerpt)+'</p></article>'}}).join('');
   }}
   fetch('{BASE}/search.json').then(function(r){{return r.json()}}).then(function(d){{idx=d.map(function(a){{a.hay=norm(a.title+' '+a.excerpt+' '+a.text+' '+a.cat);return a}});var p=new URLSearchParams(location.search).get('q');if(p)q.value=p;show()}});
   q.addEventListener('input',show);
@@ -401,7 +420,7 @@ def main():
     write("recherche/index.html", page_search())
     write("a-propos/index.html", page_about())
     write("feed.xml", feed(arts))
-    index = [{"title": a["title"], "url": a["url"], "image": a["image"], "cat": a["cat_name"],
+    index = [{"title": a["title"], "url": a["url"], "image": img_src(a, 600), "cat": a["cat_name"], "year": a.get("event_year", ""),
               "excerpt": a["excerpt"], "text": re.sub(r"[#*:|]", " ", a["body_md"])} for a in arts]
     write("search.json", json.dumps(index, ensure_ascii=False))
     urls = [SITE_URL + "/"] + [SITE_URL + a["url"].replace(BASE, "") for a in arts] + \
