@@ -148,4 +148,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except SystemExit as e:
+        if e.code not in (None, 0):
+            msg = str(e.code).replace(os.environ.get("IG_TOKEN", "§"), "***").replace("\n", " ")[:900]
+            print(f"::error title=Instagram::{msg}", flush=True)
+        raise
+    except Exception as e:
+        msg = repr(e).replace(os.environ.get("IG_TOKEN", "§"), "***")[:900]
+        print(f"::error title=Instagram::{msg}", flush=True)
+        raise
