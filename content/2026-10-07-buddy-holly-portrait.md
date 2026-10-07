@@ -20,7 +20,7 @@ De l'autre côté de l'Atlantique, de jeunes Anglais l'écoutent en boucle. John
 En pleine tournée d'hiver dans le Midwest, Holly affrète un petit avion pour éviter un trajet en bus glacial. L'appareil s'écrase peu après son décollage près de Clear Lake, dans l'Iowa. Buddy Holly, Ritchie Valens, The Big Bopper et le pilote Roger Peterson sont tués. Holly avait 22 ans. Douze ans plus tard, Don McLean fera de cette nuit le point de départ de sa chanson « American Pie ».
 
 :::ecoute
-That'll Be the Day | The Crickets | 1957
-Peggy Sue | Buddy Holly | 1957
-Everyday | Buddy Holly | 1957
+That'll Be the Day | The Crickets | 1957 | 1tKTkHWwWNdR3Tc5FFWUAp
+Peggy Sue | Buddy Holly | 1957 | 3CojEYtPNtPPUuemEVIeeQ
+Everyday | Buddy Holly | 1957 | 3ozftYu1yZlCGXkNFBYL6p
 :::

@@ -34,7 +34,7 @@ Le tube | « Shakin' All Over », 1960, n°1 au Royaume-Uni
 :::
 
 :::ecoute
-Shakin' All Over | Johnny Kidd & the Pirates | 1960
-I'll Never Get Over You | Johnny Kidd & the Pirates | 1963
-Shakin' All Over (live) | The Who | 1970
+Shakin' All Over | Johnny Kidd & the Pirates | 1960 | 6gVonza2jBVEuQPRRR7N1b
+I'll Never Get Over You | Johnny Kidd & the Pirates | 1963 | 0q1ly7duuQ28vtWJMq1N4Z
+Shakin' All Over | The Guess Who | 1965 | 342VmIYwsBAoA5GabEHB2c
 :::

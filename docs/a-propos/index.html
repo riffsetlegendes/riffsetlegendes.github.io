@@ -35,6 +35,18 @@
 <p>Les faits sont vérifiés dans plusieurs sources, citées sous chaque article. Les illustrations sont générées par intelligence artificielle : elles évoquent une époque ou une ambiance, jamais une personne réelle.</p>
 </div></section>
 </main>
+<div class="dock" id="dock" hidden>
+  <div class="dock-in">
+    <div class="dock-now"><span class="dock-disc" aria-hidden="true"></span>
+      <p class="dock-text" aria-live="polite"><span class="dock-title"></span><span class="dock-artist"></span></p></div>
+    <div class="dock-ctrl">
+      <button type="button" class="dock-btn" data-act="prev" aria-label="Morceau précédent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z" fill="currentColor"/></svg></button>
+      <button type="button" class="dock-btn" data-act="next" aria-label="Morceau suivant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z" fill="currentColor"/></svg></button>
+      <button type="button" class="dock-btn" data-act="close" aria-label="Fermer le lecteur"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4L12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z" fill="currentColor"/></svg></button>
+    </div>
+    <div class="dock-embed"><div id="spotify-embed"></div></div>
+  </div>
+</div>
 <footer class="site-foot">
   <div class="wrap">
     <p class="foot-mark">Riffs <span class="amp">&amp;</span> Légendes</p>
@@ -45,5 +57,6 @@
     <p class="foot-small">Illustrations générées par IA. Textes originaux, sources citées sous chaque article.</p>
   </div>
 </footer>
+<script src="/iffs-legendes/assets/site.js" defer></script>
 </body>
 </html>

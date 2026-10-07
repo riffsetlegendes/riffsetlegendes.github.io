@@ -10,12 +10,12 @@ excerpt: Les années où tout a commencé : huit morceaux pour comprendre commen
 Entre 1955 et 1960, une poignée d'artistes venus du blues, du gospel et de la country inventent une musique que les adolescents vont s'approprier. Touchez un titre pour l'écouter.
 
 :::tracklist
-Maybellene | Chuck Berry | 1955
-Tutti Frutti | Little Richard | 1955
-Heartbreak Hotel | Elvis Presley | 1956
-Be-Bop-A-Lula | Gene Vincent | 1956
-That'll Be the Day | The Crickets | 1957
-Great Balls of Fire | Jerry Lee Lewis | 1957
-Summertime Blues | Eddie Cochran | 1958
-Shakin' All Over | Johnny Kidd & the Pirates | 1960
+Maybellene | Chuck Berry | 1955 | 3SQhmctWreNM0X6Zkm2K5R
+Tutti Frutti | Little Richard | 1955 | 36w2k0Ovffh6LApFIYmohe
+Heartbreak Hotel | Elvis Presley | 1956 | 6xNwKNYZcvgV3XTIwsgNio
+Be-Bop-A-Lula | Gene Vincent | 1956 | 3hm6QO9vWjyaa5dtdaNKez
+That'll Be the Day | The Crickets | 1957 | 1tKTkHWwWNdR3Tc5FFWUAp
+Great Balls of Fire | Jerry Lee Lewis | 1957 | 5jw1zzcYFivmuJK52JrnMK
+Summertime Blues | Eddie Cochran | 1958 | 6ewFtDIW6Ki78z9ggsbFRI
+Shakin' All Over | Johnny Kidd & the Pirates | 1960 | 6gVonza2jBVEuQPRRR7N1b
 :::

@@ -18,5 +18,5 @@ En studio, Richards joue le riff à travers une pédale fuzz Gibson Maestro. Dan
 Le pari est gagnant : « (I Can't Get No) Satisfaction » devient le premier numéro 1 des Stones aux États-Unis à l'été 1965, et ce riff de trois notes reste l'un des plus reconnaissables du rock.
 
 :::ecoute
-(I Can't Get No) Satisfaction | The Rolling Stones | 1965
+(I Can't Get No) Satisfaction | The Rolling Stones | 1965 | 42gcdHFGqwHukCmkCYNAAa
 :::

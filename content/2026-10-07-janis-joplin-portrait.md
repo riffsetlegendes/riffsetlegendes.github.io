@@ -20,7 +20,7 @@ Elle quitte ensuite Big Brother pour mener sa propre carrière, chante à Woodst
 Janis Joplin meurt d'une overdose le 4 octobre 1970 à Los Angeles, en plein enregistrement. Elle avait 27 ans. L'album *Pearl* sort quelques mois plus tard, en 1971, et sa reprise de « Me and Bobby McGee », écrite par Kris Kristofferson, devient un numéro 1 posthume. Le disque ressort en vinyle le 17 octobre 2026, à l'occasion du National Album Day britannique.
 
 :::ecoute
-Piece of My Heart | Big Brother & the Holding Company | 1968
-Me and Bobby McGee | Janis Joplin | 1971
-Cry Baby | Janis Joplin | 1971
+Piece of My Heart | Big Brother & the Holding Company | 1968 | 0jsHRQrycSwnpuKeJL53bS
+Me and Bobby McGee | Janis Joplin | 1971 | 2WbKNC4c7OCiSqv4WGR3BN
+Cry Baby | Janis Joplin | 1971 | 0hYi3u8B6CPp0I7MsXv4Wo
 :::

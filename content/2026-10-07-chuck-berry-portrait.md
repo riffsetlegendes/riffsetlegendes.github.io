@@ -20,7 +20,7 @@ Sur scène, il invente le duck walk, cette démarche accroupie, une jambe tendue
 En 1986, il fait partie de la toute première promotion du Rock and Roll Hall of Fame. Et « Johnny B. Goode » voyage aujourd'hui hors du système solaire, gravé sur le disque d'or embarqué à bord des sondes Voyager en 1977. Chuck Berry est mort le 18 mars 2017, à 90 ans.
 
 :::ecoute
-Maybellene | Chuck Berry | 1955
-Roll Over Beethoven | Chuck Berry | 1956
-Johnny B. Goode | Chuck Berry | 1958
+Maybellene | Chuck Berry | 1955 | 3SQhmctWreNM0X6Zkm2K5R
+Roll Over Beethoven | Chuck Berry | 1956 | 5kYTYz5GmFOxiaYeteQNSk
+Johnny B. Goode | Chuck Berry | 1958 | 2QfiRTz5Yc8DdShCxG1tB2
 :::

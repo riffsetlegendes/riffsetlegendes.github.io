@@ -83,14 +83,30 @@ def rows(block):
 
 def render_tracklist(items, cls="tracklist"):
     out = [f'<ol class="{cls}">']
-    for i, (title, artist, year) in enumerate(items, 1):
-        out.append(
-            f'<li><a href="{esc(yt(title, artist))}" target="_blank" rel="noopener">'
-            f'<span class="tl-n">{i}</span>'
-            f'<span class="tl-t">{esc(title)}<span class="tl-a">{esc(artist)}, {esc(year)}</span></span>'
-            f'<span class="tl-play" aria-hidden="true"></span></a></li>')
+    for i, row in enumerate(items, 1):
+        title, artist, year = row[:3]
+        sid = row[3] if len(row) > 3 else ""
+        inner = (f'<span class="tl-n">{i}</span>'
+                 f'<span class="tl-t">{esc(title)}<span class="tl-a">{esc(artist)}, {esc(year)}</span></span>'
+                 f'<span class="tl-play" aria-hidden="true"></span>')
+        if sid:
+            out.append(f'<li><button type="button" class="tl-row" data-uri="spotify:track:{esc(sid)}" '
+                       f'data-title="{esc(title)}" data-artist="{esc(artist)}" '
+                       f'aria-label="Écouter {esc(title)}, {esc(artist)}">{inner}</button></li>')
+        else:
+            out.append(f'<li><a class="tl-row" href="{esc(yt(title, artist))}" target="_blank" rel="noopener">{inner}</a></li>')
     out.append("</ol>")
     return "\n".join(out)
+
+
+PLAY_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg>'
+
+
+def listen_head(items):
+    if not any(len(r) > 3 for r in items):
+        return ""
+    return (f'<div class="listen-cta"><button type="button" class="btn" data-play-all>{PLAY_ICON}Écouter</button>'
+            f'<p>Lecture via Spotify : extraits de 30 secondes, titres complets si vous êtes connecté à votre compte.</p></div>')
 
 
 def render_body(meta):
@@ -107,10 +123,12 @@ def render_body(meta):
         return f'\n<section class="also"><h2>{esc(title)}</h2><ul>{lis}</ul></section>\n'
 
     def ecoute(m):
-        return f'\n<section class="listen"><h2>À écouter</h2>{render_tracklist(rows(m.group(1)))}</section>\n'
+        r = rows(m.group(1))
+        return f'\n<section class="listen" data-queue><h2>À écouter</h2>{listen_head(r)}{render_tracklist(r)}</section>\n'
 
     def tracklist(m):
-        return f'\n<section class="listen listen--full">{render_tracklist(rows(m.group(1)))}</section>\n'
+        r = rows(m.group(1))
+        return f'\n<section class="listen listen--full" data-queue>{listen_head(r)}{render_tracklist(r)}</section>\n'
 
     placeholders = {}
 
@@ -183,6 +201,18 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <main id="contenu">
 {body}
 </main>
+<div class="dock" id="dock" hidden>
+  <div class="dock-in">
+    <div class="dock-now"><span class="dock-disc" aria-hidden="true"></span>
+      <p class="dock-text" aria-live="polite"><span class="dock-title"></span><span class="dock-artist"></span></p></div>
+    <div class="dock-ctrl">
+      <button type="button" class="dock-btn" data-act="prev" aria-label="Morceau précédent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z" fill="currentColor"/></svg></button>
+      <button type="button" class="dock-btn" data-act="next" aria-label="Morceau suivant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z" fill="currentColor"/></svg></button>
+      <button type="button" class="dock-btn" data-act="close" aria-label="Fermer le lecteur"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4L12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z" fill="currentColor"/></svg></button>
+    </div>
+    <div class="dock-embed"><div id="spotify-embed"></div></div>
+  </div>
+</div>
 <footer class="site-foot">
   <div class="wrap">
     <p class="foot-mark">Riffs <span class="amp">&amp;</span> Légendes</p>
@@ -193,6 +223,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
     <p class="foot-small">Illustrations générées par IA. Textes originaux, sources citées sous chaque article.</p>
   </div>
 </footer>
+<script src="{BASE}/assets/site.js" defer></script>
 </body>
 </html>
 """
@@ -203,19 +234,22 @@ def img_src(a, w=1000):
     if not src:
         return ""
     if src.startswith("http"):
-        return f"{src}?w={w}" if "wordpress.com" in src else src
+        if "wordpress.com" in src:
+            return "https://i0.wp.com/" + src.split("://", 1)[1] + f"?w={w}"
+        return src
     return f"{BASE}/{src.lstrip('/')}"
 
 
 def art(a, extra="", eager=False):
     """Visuel bichrome de l'article, ou pochette typographique s'il n'a pas d'image."""
+    label = esc(a.get("event_year") or str(a["date_obj"].year))
+    cat = esc(a["cat_name"])
     if not a.get("image"):
-        label = a.get("event_year") or str(a["date_obj"].year)
         return (f'<div class="riso type-cover {extra}" role="img" aria-label="{esc(a["title"])}">'
-                f'<span class="tc-cat">{esc(a["cat_name"])}</span><span class="tc-year">{esc(label)}</span></div>')
+                f'<span class="tc-cat">{cat}</span><span class="tc-year">{label}</span></div>')
     loading = "eager" if eager else "lazy"
-    return (f'<div class="riso {extra}"><img src="{esc(img_src(a))}" alt="{esc(a.get("image_alt", ""))}" '
-            f'loading="{loading}" decoding="async"></div>')
+    return (f'<div class="riso {extra}" data-cat="{cat}" data-label="{label}"><img src="{esc(img_src(a))}" '
+            f'alt="{esc(a.get("image_alt", ""))}" loading="{loading}" decoding="async"></div>')
 
 
 def sleeve(a, size="", eager=False):
@@ -280,12 +314,12 @@ def page_home(arts):
   <div class="pl-body">
     <h3><a href="{a['url']}">{esc(a['title'])}</a></h3>
     <p class="pl-years">{esc(a.get('event_year',''))}</p>
-    {render_tracklist(tracks, 'tracklist tracklist--compact')}
+    <div data-queue>{render_tracklist(tracks, 'tracklist tracklist--compact')}</div>
     <a class="more" href="{a['url']}">Toute la playlist</a>
   </div>
 </article>"""
 
-    news = "".join(f"""<li><a href="{a['url']}"><time datetime="{a['date_obj']:%Y-%m-%d}">{fr_date(a['date_obj'])}</time>
+    news = "".join(f"""<li><a href="{a['url']}"><span class="news-thumb">{art(a)}</span><time datetime="{a['date_obj']:%Y-%m-%d}">{fr_date(a['date_obj'])}</time>
 <span class="news-t">{esc(a['title'])}</span><span class="news-ex">{esc(a['excerpt'])}</span></a></li>""" for a in by["actu"][:4])
 
     body = f"""{hero}
@@ -350,7 +384,9 @@ def page_category(key, arts):
     name, desc = CATEGORIES[key]
     items = [a for a in arts if a["category"] == key]
     grid = "".join(card(a) for a in items) or '<p class="empty">Les premiers articles arrivent bientôt.</p>'
-    body = f"""<section class="cat-head wrap"><h1>{esc(name)}</h1><p>{esc(desc)}</p></section>
+    stack = "".join(f'<div class="sleeve">{art(a)}</div>' for a in items[:3])
+    body = f"""<section class="cat-head cat-head--stack wrap"><div class="cat-text"><h1>{esc(name)}</h1><p>{esc(desc)}</p></div>
+<div class="cat-stack" aria-hidden="true">{stack}</div></section>
 <section class="block wrap"><div class="bin bin--3">{grid}</div></section>"""
     return layout(name, body, desc, f"{SITE_URL}/rubriques/{key}/")
 

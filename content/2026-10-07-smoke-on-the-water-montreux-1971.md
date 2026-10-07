@@ -18,5 +18,5 @@ C'est le bassiste Roger Glover qui trouve le titre en contemplant ce spectacle. 
 Son riff de quatre notes est devenu le premier morceau appris par des millions de guitaristes débutants.
 
 :::ecoute
-Smoke on the Water | Deep Purple | 1972
+Smoke on the Water | Deep Purple | 1972 | 5dIgg4mrQHOlVm1ZFYHW29
 :::
