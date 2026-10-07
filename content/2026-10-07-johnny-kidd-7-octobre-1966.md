@@ -3,6 +3,8 @@ slug: johnny-kidd-7-octobre-1966
 date: 2026-10-07 07:00
 category: ce-jour-la
 event_year: 1966
+cover_artist: Johnny Kidd & the Pirates
+cover_sub: « Shakin' All Over », 1960
 image:
 excerpt: Dans la nuit du 7 au 8 octobre 1966 disparaissait le chanteur au bandeau de pirate, porteur de « Shakin' All Over », numéro 1 britannique de l'été 1960 et l'un des premiers grands classiques du rock anglais.
 sources: [45-rpm.org.uk](https://45-rpm.org.uk/dirj/johnnyk.htm), [Wikipedia – Johnny Kidd](https://en.wikipedia.org/wiki/Johnny_Kidd_(singer)), [uDiscover Music](https://www.udiscovermusic.com/stories/johnny-kidd-tribute/), [Wikipedia – October 7](https://en.wikipedia.org/wiki/October_7), [Songfacts Calendar](https://calendar.songfacts.com/october/7)

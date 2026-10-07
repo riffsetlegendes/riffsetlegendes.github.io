@@ -298,8 +298,13 @@ def art(a, extra="", eager=False):
     label = esc(a.get("event_year") or str(a["date_obj"].year))
     cat = esc(a["cat_name"])
     if not a.get("image"):
+        cat_no = f'R&amp;L {a["date_obj"].strftime("%m%d")}'
+        who = esc(a.get("cover_artist", ""))
+        sub = esc(a.get("cover_sub", ""))
+        foot = (f'<span class="tc-who">{who}</span>' if who else "") + (f'<span class="tc-sub">{sub}</span>' if sub else "")
         return (f'<div class="riso type-cover {extra}" role="img" aria-label="{esc(a["title"])}">'
-                f'<span class="tc-cat">{cat}</span><span class="tc-year">{label}</span></div>')
+                f'<span class="tc-top"><span class="tc-cat">{cat}</span><span class="tc-no">{cat_no}</span></span>'
+                f'<span class="tc-main"><span class="tc-year">{label}</span>{foot}</span></div>')
     loading = "eager" if eager else "lazy"
     return (f'<div class="riso {extra}" data-cat="{cat}" data-label="{label}"><img src="{esc(img_src(a))}" '
             f'alt="{esc(a.get("image_alt", ""))}" loading="{loading}" decoding="async"></div>')
