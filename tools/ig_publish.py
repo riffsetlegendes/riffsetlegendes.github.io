@@ -172,6 +172,8 @@ def main():
        "commit", "-q", "-m", f"Instagram publié : {key}", cwd=ROOT)
     sh("git", "pull", "-q", "--rebase", "origin", "main", cwd=ROOT)
     sh("git", "push", "-q", "origin", "HEAD:main", cwd=ROOT)
+    if os.environ.get("IG_AUTO_STORY") != "1":  # stories partagées à la main depuis le post
+        return
     try:
         publish_story(uid, folder, key, kind)
     except (Exception, SystemExit) as e:  # la story ne doit jamais bloquer le post
