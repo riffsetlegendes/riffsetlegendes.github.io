@@ -86,8 +86,35 @@ def upload_images(folder, key):
     return urls
 
 
+def get_uid():
+    if FB:
+        uid = None
+        try:
+            uid = (call("GET", "me", fields="instagram_business_account").get("instagram_business_account") or {}).get("id")
+        except (Exception, SystemExit):
+            pass
+        if not uid:
+            for pg in call("GET", "me/accounts", fields="instagram_business_account,name").get("data", []):
+                if pg.get("instagram_business_account"):
+                    return pg["instagram_business_account"]["id"]
+        if not uid:
+            raise SystemExit("Aucun compte Instagram professionnel relié à une Page Facebook n'a été trouvé avec ce jeton.")
+        return uid
+    me = call("GET", "me", fields="user_id,username")
+    return me.get("user_id") or me.get("id")
+
+
+def story_only(key):
+    """Publie seulement la story d'un carrousel déjà préparé (ex. story:2026-10-07-jour)."""
+    spec = ROOT / "instagram" / f"{key}.json"
+    sh(sys.executable, str(ROOT / "tools" / "instagram.py"), str(spec))
+    publish_story(get_uid(), ROOT / "out" / "instagram" / key, key, key.rsplit("-", 1)[-1])
+
+
 def main():
     kind = sys.argv[1]
+    if kind.startswith("story:"):
+        return story_only(kind.split(":", 1)[1])
     dry = "--dry-run" in sys.argv
     today = dt.datetime.now(ZoneInfo("Europe/Paris")).date().isoformat()
     key = f"{today}-{kind}"
