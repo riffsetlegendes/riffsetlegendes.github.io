@@ -452,3 +452,55 @@ body.has-dock { padding-bottom: 9.5rem; }
 @media (max-width: 960px) { .cmonth-grid { grid-template-columns: minmax(0, 1fr); } .cg { display: none; } }
 .tk-body h3 a { text-decoration: none; }
 .tk-body h3 a:hover { color: var(--riso-text); }
+
+/* ================================================ typographie v2 + logo
+   Titres : Big Shoulders Display, grotesque condensée héritée des affiches de Chicago.
+   Texte : Newsreader. Interface : Archivo. Dates, années et numéros : DM Mono, comme un numéro de catalogue. */
+:root {
+  --f-head: "Big Shoulders Display", "Arial Narrow", "Archivo", sans-serif;
+  --f-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+h1, h2,
+.hero h1, .post-title h1, .cat-head h1, .block-head h2, .cmonth-head h2, .archive-month h2,
+.tc-year, .anec-year, .foot-mark, .news-t {
+  font-family: var(--f-head); font-stretch: normal; font-weight: 900;
+  text-transform: uppercase; letter-spacing: -.005em;
+}
+.hero h1 { font-size: clamp(2.9rem, 6.6vw, 6.2rem); line-height: .88; }
+.post-title h1 { font-size: clamp(2.7rem, 6.2vw, 5.6rem); line-height: .9; }
+.block-head h2 { font-size: clamp(2.8rem, 7.5vw, 6rem); line-height: .9; }
+.cat-head h1 { font-size: clamp(3.6rem, 14vw, 10.5rem); line-height: .85; }
+.cmonth-head h2 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.archive-month h2 { font-size: clamp(2rem, 4.4vw, 3rem); }
+.tc-year { font-size: clamp(3.2rem, 9vw, 7rem); letter-spacing: -.01em; }
+.anec .type-cover .tc-year { font-size: clamp(3.2rem, 7.5vw, 5.6rem); }
+.anec-year { font-size: clamp(3.8rem, 9vw, 7.2rem); }
+.news-t { font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1; }
+.prose h2 { font-weight: 800; text-transform: none; font-size: clamp(2rem, 3.6vw, 2.7rem); line-height: 1; letter-spacing: 0; }
+.notes h2, .also h2, .listen h2 { font-size: 1.45rem; letter-spacing: .03em; }
+h3 { font-family: var(--f-display); }
+.amp { text-transform: none; }
+.hero-date, .post-kicker, .news-list time, .tl-n, .tk-date, .anec .kicker, time {
+  font-family: var(--f-mono); font-weight: 500; letter-spacing: .02em;
+}
+.tk-date { font-family: var(--f-head); }
+
+/* logo : un 45-tours avec son adaptateur à trois branches */
+.wordmark { display: inline-flex; align-items: center; gap: .6rem; font-stretch: normal; }
+.mark { width: 2.6em; height: 2.6em; flex: none; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.wordmark:hover .mark { transform: rotate(120deg); }
+@media (prefers-reduced-motion: reduce) { .wordmark:hover .mark { transform: none; } }
+.mk-disc { fill: var(--vinyl); }
+.mk-groove { fill: none; stroke: #f1f1eb; stroke-opacity: .28; stroke-width: 1.2; }
+.mk-label { fill: var(--yellow); }
+.mk-spider { fill: #151b5e; stroke: #151b5e; stroke-width: 4.2; stroke-linecap: round; }
+.mk-spider circle { stroke: none; }
+.mk-hole { fill: var(--yellow); }
+.wm-text { display: flex; flex-direction: column; font-family: var(--f-head); font-weight: 900; text-transform: uppercase; line-height: .92; letter-spacing: .015em; gap: .12em; }
+.wm-1 { font-size: .78em; }
+.wm-2 { font-size: 1.12em; }
+.wm-1 .amp { font-size: 1.15em; line-height: 0; }
+.wordmark { font-size: clamp(1.25rem, 2.4vw, 1.6rem); }
+.prose > p:first-child::first-letter { font-family: var(--f-head); font-weight: 900; font-stretch: normal; }
+.type-cover { container-type: inline-size; }
+.tc-year, .anec .type-cover .tc-year { font-size: 24cqw; line-height: .86; overflow-wrap: normal; word-break: normal; hyphens: none; }

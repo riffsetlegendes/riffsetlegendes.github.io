@@ -1,4 +1,4 @@
-title: Rock d'ici, quarante ans de guitares en français
+title: Rock d'ici, trente ans de guitares en français
 slug: playlist-rock-francais
 date: 2026-10-07 05:40
 category: playlists
@@ -6,9 +6,10 @@ event_year: 1964–1992
 image: commons:Sylvie_Vartan_(Frans_zangeresje)_getrouwd_met_Johnny_Hallyday,_Bestanddeelnr_918-9045.jpg
 image_alt: Johnny Hallyday et Sylvie Vartan le jour de leur mariage, en 1965.
 image_caption: Johnny Hallyday et Sylvie Vartan le jour de leur mariage, en 1965.
-excerpt: Des yéyés au rock alternatif, sept morceaux qui prouvent que le rock se chante aussi très bien en français.
+excerpt: De 1964 à 1992, sept morceaux chantés en français qui racontent comment le rock a trouvé ses propres mots de ce côté-ci de l'Atlantique et de la Manche.
+sources: [Wikipedia – Ça plane pour moi](https://fr.wikipedia.org/wiki/%C3%87a_plane_pour_moi), [Wikipedia – Dure Limite](https://en.wikipedia.org/wiki/Dure_Limite), [Wikipedia – Marcia Baïla](https://fr.wikipedia.org/wiki/Marcia_Ba%C3%AFla), [Wikipedia – Tostaky](https://en.wikipedia.org/wiki/Tostaky)
 ---
-Longtemps, le rock français a été accusé de copier l'Amérique et l'Angleterre. Ces sept titres racontent une autre histoire, de Johnny Hallyday à Noir Désir. Touchez un titre pour l'écouter.
+Faire sonner le français sur une rythmique rock n'a jamais été simple : la langue accentue peu, ses syllabes muettes résistent aux temps forts, et chaque génération a dû inventer sa solution. Cette sélection suit ce chantier sur près de trente ans, de l'adaptation inspirée des années yéyé jusqu'au rock tendu du début des années 90, en passant par le punk belge, le hard rock de banlieue et la new wave. Touchez un titre pour l'écouter.
 
 :::tracklist
 Le pénitencier | Johnny Hallyday | 1964 | 1owgqjfWB4ezv8oJRHomcH
@@ -19,3 +20,31 @@ L'aventurier | Indochine | 1982 | 0qlKdRj8W819GwfKPBUmvh
 Marcia Baïla | Les Rita Mitsouko | 1984 | 7M2VfEfw9x4ssYMNAEdiGE
 Tostaky | Noir Désir | 1992 | 4jF8Eq0IiuhlhoHhiBugdv
 :::
+
+## Le pénitencier, Johnny Hallyday (1964)
+
+Johnny Hallyday reprend ici la mélodie traditionnelle « The House of the Rising Sun », que les Animals venaient de transformer en succès électrique. Le texte français, signé Hugues Aufray et Vline Buggy, déplace l'histoire : il ne s'agit plus d'une maison close de La Nouvelle-Orléans mais d'un homme qui revient sur la faute qui l'a mené derrière les barreaux. Le morceau devient l'un des piliers de son répertoire de scène pendant des décennies. À écouter : la façon dont Hallyday étire les voyelles en fin de vers pour épouser le balancement à trois temps, une manière très personnelle de plier la langue au tempo.
+
+## Ça plane pour moi, Plastic Bertrand (1977)
+
+Petit détour par Bruxelles. La musique est de Lou Deprijck, le texte d'Yvan Lacomblez, et l'enregistrement se fait dans les studios de la société RKM. Les paroles alignent des images absurdes sur un débit de mitraillette, et le single passe la Manche au point d'atteindre la huitième place des ventes en Angleterre, chose rarissime pour une chanson en français. Qui chante vraiment sur la bande ? La question a longtemps nourri les journaux et les tribunaux, sans retirer au disque sa bonne humeur. Écoutez les « ouh ouh ouh » du refrain, conçus pour être hurlés par n'importe qui.
+
+## Antisocial, Trust (1980)
+
+Second album du groupe, Répression contient ce brûlot écrit par le chanteur Bernie Bonvoisin et le guitariste Norbert « Nono » Krief. Le texte vise la routine du métro, du boulot et des cadences imposées, avec une colère que le public reprend en chœur dès les premiers concerts. La force du morceau tient à son riff, découpé net, et à une diction qui claque chaque consonne. Le groupe américain Anthrax en enregistrera une version en 1988, preuve que le titre a voyagé bien au-delà du périphérique.
+
+## Ça (c'est vraiment toi), Téléphone (1982)
+
+Pour l'album Dure limite, paru chez Virgin en mai 1982, Téléphone travaille avec le producteur canadien Bob Ezrin. Jean-Louis Aubert signe cette chanson d'amour qui ne prend jamais la pose : couplets ramassés, refrain qui tombe pile, guitare de Louis Bertignac qui commente plutôt qu'elle ne démontre. La production, plus ample que sur les disques précédents, laisse respirer la batterie de Richard Kolinka et la basse de Corine Marienneau. C'est le titre du groupe qu'on chante encore spontanément dans les fêtes, et on comprend pourquoi en entendant l'enchaînement couplet-refrain.
+
+## L'aventurier, Indochine (1982)
+
+Nicola Sirkis et ses camarades empruntent leur héros aux romans de Bob Morane, créé par Henri Vernes : jungle, ennemis masqués, coups de théâtre. Le disque de 1982 qui l'accueille porte le même titre. Sur une boîte à rythmes sèche, une ligne de synthé et une guitare aux accents orientaux, le texte égrène les noms propres comme un générique de feuilleton. Le succès est fulgurant et installe durablement le groupe. Tendez l'oreille vers la basse, qui tient tout le morceau en mouvement.
+
+## Marcia Baïla, Les Rita Mitsouko (1984)
+
+Catherine Ringer et Fred Chichin dédient cette chanson à Marcia Moretto, danseuse argentine qui avait tourné avec eux et qui est morte d'un cancer en mai 1983, à trente-six ans. Le texte parle de la maladie sans détour, mais la musique danse, et c'est tout le paradoxe du morceau. Le clip de Philippe Gautier, plein de couleurs et de silhouettes découpées, l'a fait entrer dans les foyers. Le titre figure sur le premier album du duo, Rita Mitsouko. Écoutez la voix de Ringer passer du murmure au cri sans jamais perdre la mesure.
+
+## Tostaky, Noir Désir (1992)
+
+Le quatrième album studio des Bordelais, produit par l'Américain Ted Niceley, sort chez Barclay en 1992. Le mot du titre déforme l'espagnol « todo está aquí », « tout est là ». Le morceau éponyme, sous-titré « Le continent », déroule plus de cinq minutes de tension : guitares saturées, rythmique qui s'emballe, chant de Bertrand Cantat à bout de souffle. Le son est plus brut et plus frontal que sur les disques précédents du groupe. À écouter fort, en suivant la montée qui ne relâche jamais vraiment la pression.

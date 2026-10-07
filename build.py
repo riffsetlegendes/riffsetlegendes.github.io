@@ -51,7 +51,7 @@ CATEGORIES = {
     "ce-jour-la": ("Ce jour-là", "Chaque matin, un anniversaire du rock : une naissance, une disparition, un disque ou un concert qui a compté."),
     "legendes": ("Légendes", "Les portraits de celles et ceux qui ont fait le rock, de 1950 à la fin du siècle."),
     "anecdotes": ("Anecdotes", "Les petites histoires derrière les grands morceaux."),
-    "releve": ("La relève", "Les groupes d'aujourd'hui qui font revivre le son des années 60 et 70 : sorties, tournées et coups de cœur."),
+    "releve": ("La relève", "Les groupes d'aujourd'hui qui jouent un rock à guitares, chaud et organique : sorties, tournées et coups de cœur."),
     "playlists": ("Playlists", "Des sélections à écouter, par époque, par humeur, par route."),
     "actu": ("Actu", "Rééditions, archives, coffrets et tournées des grands noms du rock."),
 }
@@ -183,6 +183,7 @@ def load_articles():
 # ---------------------------------------------------------------- gabarits
 
 FONTS = ("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900"
+         "&family=Big+Shoulders+Display:wght@600..900&family=DM+Mono:wght@500"
          "&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap")
 
 
@@ -215,7 +216,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="site-head">
   <div class="wrap head-row">
-    <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil">Riffs <span class="amp">&amp;</span> Légendes</a>
+    <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><circle class="mk-disc" cx="32" cy="32" r="31"/><circle class="mk-groove" cx="32" cy="32" r="25.5"/><circle class="mk-groove" cx="32" cy="32" r="20.5"/><circle class="mk-label" cx="32" cy="32" r="14.5"/><g class="mk-spider"><circle cx="32" cy="32" r="5.2"/><path d="M32 32V19.5M32 32l10.8 6.25M32 32l-10.8 6.25"/></g><circle class="mk-hole" cx="32" cy="32" r="2.4"/></svg><span class="wm-text"><span class="wm-1">Riffs <span class="amp">&amp;</span></span><span class="wm-2">Légendes</span></span></a>
     <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a class="nav-search" href="{url('recherche')}">Rechercher</a></nav>
   </div>
 </header>
@@ -385,7 +386,7 @@ def page_home(arts, concerts=()):
 {concerts_block}
 <section class="block wrap releve">
   <div class="block-head"><h2>La relève</h2><a class="more" href="{url('rubriques/releve')}">Toute la relève</a></div>
-  <p class="block-intro">Ils ont vingt ou trente ans et jouent comme en 1971. L'actualité des groupes qui font vivre l'héritage.</p>
+  <p class="block-intro">Des groupes d'aujourd'hui qui jouent un rock à guitares, chaud et organique : leurs disques, leurs tournées, leur histoire.</p>
   <div class="bin">{releve}</div>
 </section>
 <section class="block wrap">
