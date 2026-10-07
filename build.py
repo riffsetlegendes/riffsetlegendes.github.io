@@ -51,6 +51,7 @@ CATEGORIES = {
     "ce-jour-la": ("Ce jour-là", "Chaque matin, un anniversaire du rock : une naissance, une disparition, un disque ou un concert qui a compté."),
     "legendes": ("Légendes", "Les portraits de celles et ceux qui ont fait le rock, de 1950 à la fin du siècle."),
     "anecdotes": ("Anecdotes", "Les petites histoires derrière les grands morceaux."),
+    "releve": ("La relève", "Les groupes d'aujourd'hui qui font revivre le son des années 60 et 70 : sorties, tournées et coups de cœur."),
     "playlists": ("Playlists", "Des sélections à écouter, par époque, par humeur, par route."),
     "actu": ("Actu", "Rééditions, archives, coffrets et tournées des grands noms du rock."),
 }
@@ -339,6 +340,7 @@ def page_home(arts):
 </section>"""
 
     legends = "".join(card(a) for a in by["legendes"][:4])
+    releve = "".join(card(a) for a in by["releve"][:4])
     anecdotes = "".join(f"""<article class="anec">
   <a href="{a['url']}" class="anec-img">{art(a, "riso--yellow")}</a>
   <p class="anec-year">{esc(a.get('event_year',''))}</p>
@@ -373,6 +375,11 @@ def page_home(arts):
     <div class="block-head"><h2>Anecdotes</h2><a class="more" href="{url('rubriques/anecdotes')}">Toutes les histoires</a></div>
     <div class="anec-grid">{anecdotes}</div>
   </div>
+</section>
+<section class="block wrap releve">
+  <div class="block-head"><h2>La relève</h2><a class="more" href="{url('rubriques/releve')}">Toute la relève</a></div>
+  <p class="block-intro">Ils ont vingt ou trente ans et jouent comme en 1971. L'actualité des groupes qui font vivre l'héritage.</p>
+  <div class="bin">{releve}</div>
 </section>
 <section class="block wrap">
   <div class="block-head"><h2>Playlists</h2><a class="more" href="{url('rubriques/playlists')}">Toutes les playlists</a></div>

@@ -400,3 +400,6 @@ body.has-dock { padding-bottom: 9.5rem; }
 /* sur la page article, la photo d'archive s'affiche telle quelle */
 .post-cover .riso img { filter: none; }
 .post-cover .riso::after { display: none; }
+
+/* la relève */
+.block-intro { font-size: 1.15rem; color: var(--ink-soft); max-width: 40rem; margin: -1rem 0 2rem; }
