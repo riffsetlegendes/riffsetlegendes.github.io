@@ -378,3 +378,25 @@ body.has-dock { padding-bottom: 9.5rem; }
 }
 .cat-stack .tc-year { font-size: 2.3rem; }
 .cat-stack .tc-cat { font-size: .8rem; }
+
+/* crédits, archives, pages */
+.post-cover-in { margin: 0; }
+.post-cover-art { position: relative; }
+.credit { margin-top: .9rem; font-size: .9rem; line-height: 1.45; color: var(--ink-soft); max-width: 30rem; }
+.credit a { color: inherit; text-underline-offset: .2em; }
+.credits-list, .archive-list { list-style: none; margin: 0; padding: 0; }
+.credits-list li { display: grid; gap: .3rem; padding-block: 1.1rem; border-top: 1px solid var(--line); }
+.credits-list li > a { font-family: var(--f-display); font-weight: 800; font-size: 1.15rem; text-decoration: none; }
+.credits-list span { color: var(--ink-soft); }
+.archive-month + .archive-month { margin-top: 3rem; }
+.archive-month h2 { font-stretch: 125%; font-weight: 900; font-size: clamp(1.6rem, 3.5vw, 2.4rem); border-top: 3px solid var(--ink); padding-top: .8rem; margin-bottom: .5rem; }
+.archive-list a { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1rem; padding-block: .8rem; border-bottom: 1px solid var(--line); text-decoration: none; }
+.ar-cat { font-family: var(--f-display); font-weight: 600; color: var(--ink-soft); }
+.ar-t { font-family: var(--f-display); font-weight: 800; font-size: 1.1rem; line-height: 1.2; }
+.archive-list a:hover .ar-t { color: var(--riso-text); }
+.prose--page { grid-column: auto; border-top: 0; padding-top: 0; }
+.prose--page > p:first-child::first-letter, .prose--page p::first-letter { float: none; font: inherit; color: inherit; padding: 0; }
+@media (max-width: 760px) { .archive-list a { grid-template-columns: minmax(0, 1fr); gap: .2rem; } }
+/* sur la page article, la photo d'archive s'affiche telle quelle */
+.post-cover .riso img { filter: none; }
+.post-cover .riso::after { display: none; }

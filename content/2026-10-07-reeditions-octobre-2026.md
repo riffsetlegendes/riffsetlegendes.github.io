@@ -3,8 +3,9 @@ slug: reeditions-octobre-2026
 date: 2026-10-07 06:55
 category: actu
 event_year: Octobre 2026
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/chez-le-disquaire.png
-image_alt: Des bacs de vinyles et des coffrets chez un disquaire.
+image: commons:The_Beatles_arrive_at_Schiphol_Airport_1964-06-05_-_Press_Conference_916-5124.jpg
+image_alt: Les Beatles en conférence de presse à Schiphol, le 5 juin 1964.
+image_caption: Les Beatles en conférence de presse à Schiphol, le 5 juin 1964.
 excerpt: Marquee Moon augmenté, un Hendrix en concert à Berkeley, un coffret géant pour The Who : le calendrier des sorties à ne pas manquer ce mois-ci.
 sources: [Ultimate Classic Rock](https://ultimateclassicrock.com/october-2026-new-music-releases/). Dates de sortie internationales, sous réserve de changement
 ---

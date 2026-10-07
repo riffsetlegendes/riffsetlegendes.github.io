@@ -3,8 +3,9 @@ slug: buddy-holly-portrait
 date: 2026-10-07 06:40
 category: legendes
 event_year: 1936–1959
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/micro-annees-50.png
-image_alt: Un micro chromé des années 50 dans un studio sombre.
+image: commons:Buddy_Holly_Brunswick_Records.jpg
+image_alt: Buddy Holly, photo promotionnelle du label Brunswick.
+image_caption: Buddy Holly, photo promotionnelle du label Brunswick.
 excerpt: Des lunettes à grosse monture, une Stratocaster et des chansons qu'il écrivait lui-même : en moins de deux ans de succès, le Texan a inventé le modèle du groupe de rock moderne.
 ---
 Charles Hardin Holley naît le 7 septembre 1936 à Lubbock, au Texas. Il joue d'abord de la country, puis découvre Elvis en concert dans sa ville. Le déclic est immédiat. Avec son groupe, les Crickets, il enregistre à Clovis, au Nouveau-Mexique, dans le studio du producteur Norman Petty.

@@ -218,9 +218,9 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
     <p class="foot-mark">Riffs <span class="amp">&amp;</span> Légendes</p>
     <div class="foot-row">
       <p>{esc(SITE_TAGLINE)}. Un article chaque matin, des portraits, des histoires et des disques à écouter.</p>
-      <nav aria-label="Pied de page"><a href="{url('a-propos')}">À propos</a><a href="{BASE}/feed.xml">Flux RSS</a><a href="{url('recherche')}">Rechercher</a></nav>
+      <nav aria-label="Pied de page"><a href="{url('archives')}">Archives</a><a href="{url('a-propos')}">À propos</a><a href="{url('credits')}">Crédits photos</a><a href="{url('mentions-legales')}">Mentions légales</a><a href="{BASE}/feed.xml">Flux RSS</a></nav>
     </div>
-    <p class="foot-small">Illustrations générées par IA. Textes originaux, sources citées sous chaque article.</p>
+    <p class="foot-small">Textes originaux, sources citées sous chaque article. Photos d'archives : Wikimedia Commons, licences libres. Extraits musicaux : Spotify.</p>
   </div>
 </footer>
 <script src="{BASE}/assets/site.js" defer></script>
@@ -229,15 +229,36 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 """
 
 
+def commons_file(a):
+    src = a.get("image", "")
+    return src.split(":", 1)[1].strip() if src.startswith("commons:") else ""
+
+
+def commons_page(name):
+    return "https://commons.wikimedia.org/wiki/File:" + urllib.parse.quote(name)
+
+
 def img_src(a, w=1000):
     src = a.get("image", "")
     if not src:
         return ""
+    f = commons_file(a)
+    if f:
+        return f"https://commons.wikimedia.org/wiki/Special:FilePath/{urllib.parse.quote(f)}?width={w}"
     if src.startswith("http"):
         if "wordpress.com" in src:
             return "https://i0.wp.com/" + src.split("://", 1)[1] + f"?w={w}"
         return src
     return f"{BASE}/{src.lstrip('/')}"
+
+
+def credit(a):
+    f = commons_file(a)
+    cap = esc(a.get("image_caption", ""))
+    if f:
+        return (f'<figcaption class="credit">{cap} Photo : <a href="{esc(commons_page(f))}" target="_blank" rel="noopener">'
+                f'Wikimedia Commons</a>, licence libre (auteur et licence sur la page de la photo).</figcaption>')
+    return f'<figcaption class="credit">{cap}</figcaption>' if cap else ""
 
 
 def art(a, extra="", eager=False):
@@ -355,7 +376,7 @@ def page_article(a, arts):
     sources = f'<p class="sources">Sources : {markdown.markdown(a["sources"])[3:-4]}.</p>' if a.get("sources") else ""
     share = urllib.parse.quote(SITE_URL + a["url"].replace(BASE, ""), safe="")
     body = f"""<article class="post wrap">
-  <div class="post-cover"><div class="post-cover-in">{sleeve(a, eager=True)}{sticker}</div></div>
+  <div class="post-cover"><figure class="post-cover-in"><div class="post-cover-art">{sleeve(a, eager=True)}{sticker}</div>{credit(a)}</figure></div>
   <header class="post-title">
     <p class="post-kicker"><a href="{url('rubriques/' + a['category'])}">{esc(a['cat_name'])}</a>, <time datetime="{d:%Y-%m-%d}">{fr_date(d)}</time></p>
     <h1>{esc(a['title'])}</h1>
@@ -421,9 +442,48 @@ def page_about():
 <section class="block wrap"><div class="prose">
 <p>Riffs &amp; Légendes raconte le rock de 1950 à 1999, un jour à la fois. Chaque matin, un anniversaire : la naissance d'un artiste, une disparition, la sortie d'un disque ou un concert qui a compté.</p>
 <p>Autour de ce rendez-vous quotidien, le site publie des portraits de légendes, les histoires qui se cachent derrière les grands morceaux, des playlists à écouter et l'actualité des rééditions.</p>
-<p>Les faits sont vérifiés dans plusieurs sources, citées sous chaque article. Les illustrations sont générées par intelligence artificielle : elles évoquent une époque ou une ambiance, jamais une personne réelle.</p>
+<p>Les faits sont vérifiés dans plusieurs sources, citées sous chaque article. Les photos sont des documents d'époque issus de Wikimedia Commons, sous licence libre. Les morceaux s'écoutent directement sur le site grâce au lecteur Spotify.</p>
 </div></section>"""
     return layout("À propos", body, "Le projet Riffs & Légendes.", f"{SITE_URL}/a-propos/")
+
+
+def page_credits(arts):
+    rows_ = "".join(
+        f'<li><a href="{a["url"]}">{esc(a["title"])}</a><span>{esc(a.get("image_caption", ""))} '
+        f'<a href="{esc(commons_page(commons_file(a)))}" target="_blank" rel="noopener">Voir la photo, son auteur et sa licence sur Wikimedia Commons</a></span></li>'
+        for a in arts if commons_file(a))
+    body = f"""<section class="cat-head wrap"><h1>Crédits photos</h1><p>Les photos d'archives du site proviennent de Wikimedia Commons et sont publiées sous licence libre : domaine public, CC0 ou Creative Commons. Chaque lien mène à la page de la photo, avec son auteur et sa licence exacte.</p></section>
+<section class="block wrap"><ul class="credits-list">{rows_}</ul></section>"""
+    return layout("Crédits photos", body, "Crédits des photos utilisées sur le site.", f"{SITE_URL}/credits/")
+
+
+def page_archives(arts):
+    groups = {}
+    for a in arts:
+        groups.setdefault((a["date_obj"].year, a["date_obj"].month), []).append(a)
+    out = ""
+    for (y, m), items in groups.items():
+        lis = "".join(f'<li><a href="{a["url"]}"><span class="ar-cat">{esc(a["cat_name"])}</span><span class="ar-t">{esc(a["title"])}</span></a></li>' for a in items)
+        out += f'<section class="archive-month"><h2>{MONTHS[m-1].capitalize()} {y}</h2><ul class="archive-list">{lis}</ul></section>'
+    body = f"""<section class="cat-head wrap"><h1>Archives</h1><p>Tous les articles publiés depuis le lancement du site, du plus récent au plus ancien.</p></section>
+<section class="block wrap">{out}</section>"""
+    return layout("Archives", body, "Tous les articles de Riffs & Légendes.", f"{SITE_URL}/archives/")
+
+
+def page_legal():
+    body = f"""<section class="cat-head wrap"><h1>Mentions légales</h1></section>
+<section class="block wrap"><div class="prose prose--page">
+<h2>Éditeur</h2>
+<p>Riffs &amp; Légendes est un site personnel et non commercial consacré à l'histoire du rock.</p>
+<h2>Hébergement</h2>
+<p>GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
+<h2>Contenus</h2>
+<p>Les textes sont originaux. Les faits sont vérifiés dans plusieurs sources, citées sous les articles. Aucune parole de chanson n'est reproduite.</p>
+<p>Les photos proviennent de Wikimedia Commons, sous licence libre : voir la page <a href="{url('credits')}">Crédits photos</a>. Les extraits musicaux sont diffusés par le lecteur officiel de Spotify.</p>
+<h2>Données personnelles</h2>
+<p>Le site ne dépose aucun cookie et ne collecte aucune donnée. Le lecteur Spotify ne se charge que lorsque vous lancez un morceau ; Spotify applique alors sa propre politique de confidentialité.</p>
+</div></section>"""
+    return layout("Mentions légales", body, "Mentions légales du site.", f"{SITE_URL}/mentions-legales/")
 
 
 def feed(arts):
@@ -455,6 +515,9 @@ def main():
         write(f"rubriques/{k}/index.html", page_category(k, arts))
     write("recherche/index.html", page_search())
     write("a-propos/index.html", page_about())
+    write("credits/index.html", page_credits(arts))
+    write("archives/index.html", page_archives(arts))
+    write("mentions-legales/index.html", page_legal())
     write("feed.xml", feed(arts))
     index = [{"title": a["title"], "url": a["url"], "image": img_src(a, 600), "cat": a["cat_name"], "year": a.get("event_year", ""),
               "excerpt": a["excerpt"], "text": re.sub(r"[#*:|]", " ", a["body_md"])} for a in arts]

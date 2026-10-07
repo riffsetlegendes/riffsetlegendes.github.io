@@ -3,8 +3,9 @@ slug: janis-joplin-portrait
 date: 2026-10-07 06:30
 category: legendes
 event_year: 1943–1970
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/annees-psychedeliques.png
-image_alt: Nature morte psychédélique : boa, lunettes rondes et tambourin.
+image: commons:Janis_Joplin_1970.JPG
+image_alt: Janis Joplin en 1970.
+image_caption: Janis Joplin en 1970.
 excerpt: Partie d'une ville pétrolière du Texas, elle a apporté au rock une intensité blues que personne n'avait osée. Portrait, alors que Pearl ressort le 17 octobre.
 ---
 Janis Lyn Joplin naît le 19 janvier 1943 à Port Arthur, au Texas. Adolescente en décalage avec son environnement, elle se réfugie dans les disques de Bessie Smith et de Lead Belly. Elle finit par partir pour San Francisco, au moment où la ville devient le centre de la contre-culture.

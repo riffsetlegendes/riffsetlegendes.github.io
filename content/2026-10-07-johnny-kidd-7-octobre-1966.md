@@ -3,8 +3,7 @@ slug: johnny-kidd-7-octobre-1966
 date: 2026-10-07 07:00
 category: ce-jour-la
 event_year: 1966
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/scene-des-annees-60.png
-image_alt: Une petite scène des années 60, vide, avec un ampli et une guitare sous un projecteur.
+image:
 excerpt: Il y a soixante ans disparaissait le chanteur au cache-œil, auteur de « Shakin' All Over », l'un des rares grands classiques du rock'n'roll anglais d'avant les Beatles.
 sources: [45-rpm.org.uk](https://45-rpm.org.uk/dirj/johnnyk.htm)
 ---

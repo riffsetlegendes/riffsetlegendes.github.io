@@ -3,8 +3,9 @@ slug: smoke-on-the-water-montreux-1971
 date: 2026-10-07 06:10
 category: anecdotes
 event_year: 1971
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/fumee-sur-le-lac.png
-image_alt: De la fumée s'étend sur un lac suisse la nuit, avec les montagnes au loin.
+image: commons:Deep_Purple_(1971).JPG
+image_alt: Deep Purple en 1971.
+image_caption: Deep Purple en 1971.
 excerpt: Deep Purple venait enregistrer un album au bord du lac Léman. Un concert de Frank Zappa, une fusée éclairante et un casino en flammes ont changé le programme.
 ---
 Décembre 1971. Deep Purple arrive à Montreux, en Suisse, avec le studio mobile des Rolling Stones. Le plan est simple : enregistrer le prochain album dans la salle du casino, une fois la saison de concerts terminée. Le dernier spectacle programmé est celui de Frank Zappa et des Mothers of Invention, le 4 décembre.

@@ -3,8 +3,9 @@ slug: playlist-route-annees-70
 date: 2026-10-07 05:50
 category: playlists
 event_year: 1971–1979
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/route-des-annees-70.png
-image_alt: Une route du désert au coucher du soleil, vue depuis une voiture des années 70.
+image: commons:George_Kooymans_(l)_en_Barry_Hay_van_de_band_Golden_Earring,_Bestanddeelnr_934-4537.jpg
+image_alt: George Kooymans et Barry Hay, de Golden Earring.
+image_caption: George Kooymans et Barry Hay, de Golden Earring.
 excerpt: Fenêtres ouvertes, volume au maximum : sept classiques taillés pour les longues lignes droites.
 ---
 Les années 70 ont fait de la voiture le premier lieu d'écoute du rock. Voici de quoi tenir jusqu'à la prochaine station-service. Touchez un titre pour l'écouter.

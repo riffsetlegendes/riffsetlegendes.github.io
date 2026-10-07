@@ -3,8 +3,9 @@ slug: chuck-berry-portrait
 date: 2026-10-07 06:50
 category: legendes
 event_year: 1926–2017
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/guitare-et-voiture-annees-50.png
-image_alt: Une guitare demi-caisse posée contre une voiture américaine des années 50.
+image: commons:Chuck_Berry_1957.jpg
+image_alt: Chuck Berry en 1957, photo promotionnelle.
+image_caption: Chuck Berry en 1957, photo promotionnelle.
 excerpt: Les intros de guitare, les histoires de voitures, de lycée et d'amours adolescentes : avant d'être un genre, le rock'n'roll a été une langue, et c'est Chuck Berry qui l'a écrite.
 ---
 Né le 18 octobre 1926 à Saint-Louis, dans le Missouri, Charles Edward Anderson Berry grandit en écoutant autant le blues que la country. C'est ce mélange qui va tout changer. En 1955, il enregistre à Chicago pour le label Chess un morceau inspiré d'un vieil air de fiddle : « Maybellene ». Une course-poursuite en voiture racontée sur un rythme qui ne laisse aucun répit. Le disque devient un succès national.

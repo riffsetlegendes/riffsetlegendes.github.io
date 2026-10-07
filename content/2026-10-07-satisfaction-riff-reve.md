@@ -3,8 +3,9 @@ slug: satisfaction-riff-reve
 date: 2026-10-07 06:20
 category: anecdotes
 event_year: 1965
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/magnetophone-de-nuit.png
-image_alt: Un magnétophone à cassette sur une table de nuit, la nuit.
+image: commons:Aankomst_van_de_Rolling_Stones_op_Schiphol,_Bestanddeelnr_916-7420.jpg
+image_alt: Les Rolling Stones à leur arrivée à l'aéroport de Schiphol, aux Pays-Bas, en 1964.
+image_caption: Les Rolling Stones à leur arrivée à l'aéroport de Schiphol, aux Pays-Bas, en 1964.
 excerpt: Une chambre d'hôtel en Floride, un magnétophone à cassette, et l'un des riffs les plus célèbres de l'histoire enregistré entre deux ronflements.
 ---
 Mai 1965. Les Rolling Stones sont en tournée aux États-Unis et font étape à Clearwater, en Floride. Keith Richards raconte s'être réveillé au milieu de la nuit avec une mélodie en tête. Il attrape sa guitare, appuie sur le bouton d'enregistrement de son petit magnétophone à cassette Philips, joue le riff… puis se rendort sans arrêter la machine.

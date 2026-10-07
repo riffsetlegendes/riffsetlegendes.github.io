@@ -3,8 +3,9 @@ slug: playlist-pionniers-rock-and-roll
 date: 2026-10-07 06:00
 category: playlists
 event_year: 1955–1960
-image: https://riffslegendes.wordpress.com/wp-content/uploads/2026/10/juke-box.png
-image_alt: Un juke-box des années 50 illuminé dans un diner américain.
+image: commons:Elvis_Presley_Publicity_Still,_1956.jpg
+image_alt: Elvis Presley en 1956, photo promotionnelle.
+image_caption: Elvis Presley en 1956, photo promotionnelle.
 excerpt: Les années où tout a commencé : huit morceaux pour comprendre comment le rock'n'roll a pris le pouvoir sur les juke-box.
 ---
 Entre 1955 et 1960, une poignée d'artistes venus du blues, du gospel et de la country inventent une musique que les adolescents vont s'approprier. Touchez un titre pour l'écouter.
