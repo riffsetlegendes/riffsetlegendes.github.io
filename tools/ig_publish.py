@@ -70,7 +70,7 @@ def upload_images(folder, key):
         names.append(name)
     sh("git", "add", "-A", cwd=work)
     sh("git", "-c", "user.name=Riffs & Légendes", "-c", "user.email=bot@users.noreply.github.com",
-       "commit", "-q", "-m", f"Images Instagram {key}", cwd=work)
+       "commit", "-q", "--allow-empty", "-m", f"Images Instagram {key}", cwd=work)
     sh("git", "push", "-q", "origin", MEDIA_BRANCH, cwd=work)
     base = f"https://raw.githubusercontent.com/{repo}/{MEDIA_BRANCH}/{key}/"
     urls = [base + n for n in names]
