@@ -111,7 +111,7 @@ def main():
         uid = None
         try:  # jeton de Page
             uid = (call("GET", "me", fields="instagram_business_account").get("instagram_business_account") or {}).get("id")
-        except Exception:
+        except (Exception, SystemExit):
             pass
         if not uid:  # jeton utilisateur : on cherche la Page reliée à Instagram
             for pg in call("GET", "me/accounts", fields="instagram_business_account,name").get("data", []):
