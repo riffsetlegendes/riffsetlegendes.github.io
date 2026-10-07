@@ -229,7 +229,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="site-head">
   <div class="wrap head-row">
-    <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><circle class="mk-disc" cx="32" cy="32" r="31"/><circle class="mk-groove" cx="32" cy="32" r="25.5"/><circle class="mk-groove" cx="32" cy="32" r="20.5"/><circle class="mk-label" cx="32" cy="32" r="14.5"/><g class="mk-spider"><circle cx="32" cy="32" r="5.2"/><path d="M32 32V19.5M32 32l10.8 6.25M32 32l-10.8 6.25"/></g><circle class="mk-hole" cx="32" cy="32" r="2.4"/></svg><span class="wm-text"><span class="wm-1">Riffs <span class="amp">&amp;</span></span><span class="wm-2">Légendes</span></span></a>
+    <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><img class="mark" src="{BASE}/assets/symbole.svg" alt="" width="42" height="42"><span class="wm-text"><span class="wm-1">Riffs <span class="amp">&amp;</span></span><span class="wm-2">Légendes</span></span></a>
     <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a class="nav-search" href="{url('recherche')}">Rechercher</a></nav>
   </div>
 </header>
