@@ -61,10 +61,10 @@ def get_photo(spec, local=None):
     return None
 
 
-def cover_fit(img, w, h, zoom, focus_y=0.3):
+def cover_fit(img, w, h, zoom, focus_y=0.3, focus_x=0.5):
     s = max(w / img.width, h / img.height) * zoom
-    im = img.resize((math.ceil(img.width * s), math.ceil(img.height * s)), Image.LANCZOS)
-    x = (im.width - w) // 2
+    im = img.resize((math.ceil(img.width * s), math.ceil(img.height * s)), Image.BILINEAR)
+    x = int((im.width - w) * focus_x)
     y = int((im.height - h) * focus_y)
     return im.crop((x, y, x + w, y + h))
 
@@ -88,30 +88,34 @@ def main():
     while ys > 120 and ImageDraw.Draw(Image.new("RGB", (1, 1))).textlength(str(year), font=head(ys)) > W - 140:
         ys -= 10
     fy = head(ys)
+    sys.path.insert(0, str(ROOT / "tools"))
+    import music
+    wav = music.make(out / "reel.wav", DUR, seed=sum(map(ord, spec_path.stem)))
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
-                             "-r", str(FPS), "-i", "-", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest",
+                             "-r", str(FPS), "-i", "-", "-i", str(wav), "-shortest",
                              "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "medium", "-crf", "20",
                              "-c:a", "aac", "-movflags", "+faststart", str(out / "reel.mp4")], stdin=subprocess.PIPE)
     PH = 1240  # hauteur de la zone photo
     seg = 2.3
     t_slides, t_end = 2.6, 2.6 + seg * len(slides)
-    vinyl = Image.new("RGBA", (760, 760), (0, 0, 0, 0))
-    vd = ImageDraw.Draw(vinyl)
-    vd.ellipse((0, 0, 759, 759), fill=VINYL)
-    for r in range(370, 140, -9):
-        vd.ellipse((380 - r, 380 - r, 380 + r, 380 + r), outline=(40, 42, 60), width=1)
-    vd.ellipse((380 - 135, 380 - 135, 380 + 135, 380 + 135), fill=YELLOW)
-    lab = "RIFFS & LÉGENDES"
-    vd.text((380, 300), lab, font=head(40), fill=NAVY, anchor="mm")
-    vd.text((380, 460), str(year), font=head(64), fill=NAVY, anchor="mm")
-    vd.ellipse((370, 370, 390, 390), fill=VINYL)
+    vinyl = Image.open(ROOT / "tools" / "symbole.png").convert("RGBA").resize((640, 640), Image.LANCZOS)
     for i in range(int(DUR * FPS)):
         t = i / FPS
         im = Image.new("RGB", (W, H), NAVY)
         d = ImageDraw.Draw(im)
         if t < t_end:
             if photo:
-                im.paste(cover_fit(photo, W, PH, 1.0 + 0.1 * t / t_end), (0, 0))
+                segi = 0 if t < t_slides else 1 + int((t - t_slides) // seg)
+                t0 = 0 if segi == 0 else t_slides + (segi - 1) * seg
+                p = ease((t - t0) / (t_slides if segi == 0 else seg)) * 0.85 + 0.15 * ((t - t0) / (t_slides if segi == 0 else seg))
+                moves = [(1.25, 1.05, 0.5, 0.5, 0.25, 0.3),   # dézoom d'ouverture
+                         (1.05, 1.22, 0.35, 0.6, 0.3, 0.3),  # zoom avant + glissé
+                         (1.22, 1.10, 0.65, 0.45, 0.2, 0.35),
+                         (1.10, 1.28, 0.5, 0.5, 0.35, 0.2),
+                         (1.28, 1.06, 0.4, 0.6, 0.25, 0.3)]
+                z0, z1, x0, x1, y0, y1 = moves[segi % len(moves)]
+                z = z0 + (z1 - z0) * p
+                im.paste(cover_fit(photo, W, PH, z, y0 + (y1 - y0) * p, x0 + (x1 - x0) * p), (0, 0))
             else:
                 for r in range(200, 1700, 16):
                     d.ellipse((W // 2 - r, PH // 2 - r, W // 2 + r, PH // 2 + r), outline=(32, 40, 125), width=2)
@@ -134,12 +138,14 @@ def main():
                 for j, ln in enumerate(lines):
                     off = int(70 * (1 - ease((lt - 0.08 * j) / 0.6)))
                     d.text((70, PH + 140 + j * 118 + off), ln, font=fb, fill=PAPER)
-                d.rectangle((70, H - 70, 70 + int((W - 140) * min(1, lt / seg)), H - 62), fill=YELLOW)
+                d.rectangle((0, PH, int(W * min(1, lt / seg)), PH + 8), fill=YELLOW)
         else:  # fin : disque qui tourne
             lt = t - t_end
             a = ease(lt / 0.7)
-            v = vinyl.rotate(-lt * 200, resample=Image.BICUBIC)
-            im.paste(v, ((W - 760) // 2, 330 - int(120 * (1 - a))), v)
+            v = vinyl.rotate(-lt * 120, resample=Image.BICUBIC)
+            sc = 0.85 + 0.15 * a
+            v = v.resize((int(640 * sc), int(640 * sc)), Image.BICUBIC)
+            im.paste(v, ((W - v.width) // 2, 640 - v.height // 2), v)
             d.text((W // 2, 1250), "L'HISTOIRE COMPLÈTE", font=head(120), fill=PAPER, anchor="mm")
             d.text((W // 2, 1370), "sur le site, lien en bio", font=serif(56), fill=YELLOW, anchor="mm")
             d.text((W // 2, 1500), "riffsetlegendes.github.io", font=mono(40), fill=PAPER, anchor="mm")
