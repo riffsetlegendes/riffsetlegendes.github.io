@@ -68,8 +68,13 @@ def fr_date(d, weekday=False):
     return (DAYS[d.weekday()] + " " + s) if weekday else s
 
 
+def fr_typo(s):
+    s = (s or "").replace("« ", "«\u00a0").replace(" »", "\u00a0»")
+    return re.sub(r" ([;?!:])(?=\s|$)", "\u00a0\\1", s)
+
+
 def esc(s):
-    return html.escape(s or "", quote=True)
+    return html.escape(fr_typo(s if isinstance(s, str) else str(s or "")), quote=True)
 
 
 def yt(title, artist):
@@ -132,6 +137,10 @@ def listen_head(items):
 
 def render_body(meta):
     body = meta["body_md"]
+    # typographie française : espaces insécables devant : ; ? ! et dans les guillemets
+    body = body.replace("« ", "«\u00a0").replace(" »", "\u00a0»")
+    body = re.sub(r" ([;?!])", "\u202f\\1", body)
+    body = re.sub(r"(\w) :(\s)", "\\1\u00a0:\\2", body)
 
     def fiche(m):
         items = rows(m.group(1))
@@ -200,7 +209,7 @@ FONTS = ("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400
          "&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap")
 
 
-def layout(title, body, description="", canonical="", og_image="", body_class=""):
+def layout(title, body, description="", canonical="", og_image="", body_class="", head_extra=""):
     full_title = f"{title} | {SITE_NAME}" if title != SITE_NAME else f"{SITE_NAME} : {SITE_TAGLINE.lower()}"
     nav = "".join(f'<a href="{url("rubriques/" + k)}">{v[0]}</a>' for k, v in CATEGORIES.items())
     og = f'<meta property="og:image" content="{esc(og_image)}">' if og_image else ""
@@ -220,9 +229,12 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <meta name="theme-color" content="#1b2390">
 <link rel="icon" href="{BASE}/assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)}" href="{BASE}/feed.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="{FONTS}">
+<link rel="preload" href="{BASE}/assets/fonts/bigshoulders.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="{BASE}/assets/fonts/newsreader.woff" as="font" type="font/woff" crossorigin>
+<link rel="manifest" href="{BASE}/manifest.webmanifest">
+<link rel="apple-touch-icon" href="{BASE}/assets/icon-512.png">
+<meta name="twitter:card" content="summary_large_image">
+{head_extra}
 <link rel="stylesheet" href="{BASE}/assets/style.css?v={ASSET_V}">
 </head>
 <body class="{body_class}">
@@ -428,10 +440,12 @@ def page_article(a, arts):
     rel = "".join(card(r) for r in related)
     sources = f'<p class="sources">Sources : {markdown.markdown(a["sources"])[3:-4]}.</p>' if a.get("sources") else ""
     share = urllib.parse.quote(SITE_URL + a["url"].replace(BASE, ""), safe="")
-    body = f"""<article class="post wrap">
+    reading = max(1, round(len(re.sub(r":::.*?:::", "", a["body_md"], flags=re.S).split()) / 220))
+    body = f"""<div class="read-progress" aria-hidden="true"><span></span></div>
+<article class="post wrap">
   <div class="post-cover"><figure class="post-cover-in"><div class="post-cover-art">{sleeve(a, eager=True)}{sticker}</div>{credit(a)}</figure></div>
   <header class="post-title">
-    <p class="post-kicker"><a href="{url('rubriques/' + a['category'])}">{esc(a['cat_name'])}</a>, <time datetime="{d:%Y-%m-%d}">{fr_date(d)}</time></p>
+    <p class="post-kicker"><a href="{url('rubriques/' + a['category'])}">{esc(a['cat_name'])}</a>, <time datetime="{d:%Y-%m-%d}">{fr_date(d)}</time>, {reading} min de lecture</p>
     <h1>{esc(a['title'])}</h1>
     <p class="post-lede">{esc(a['excerpt'])}</p>
   </header>
@@ -451,7 +465,15 @@ def page_article(a, arts):
 <script>
 document.querySelectorAll('[data-copy]').forEach(function(b){{b.addEventListener('click',function(){{var t=b.getAttribute('data-copy');var done=function(){{b.textContent='Lien copié';setTimeout(function(){{b.textContent='Copier le lien'}},2000)}};if(navigator.clipboard){{navigator.clipboard.writeText(t).then(done,function(){{prompt('Copiez ce lien :',t)}})}}else{{prompt('Copiez ce lien :',t)}}}})}});
 </script>"""
-    return layout(a["title"], body, a["excerpt"], SITE_URL + a["url"].replace(BASE, ""), img_src(a, 1200), "article")
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": a["title"], "description": a["excerpt"],
+          "datePublished": f"{d:%Y-%m-%d}", "inLanguage": "fr", "mainEntityOfPage": SITE_URL + a["url"].replace(BASE, ""),
+          "author": {"@type": "Organization", "name": SITE_NAME}, "publisher": {"@type": "Organization", "name": SITE_NAME,
+          "logo": {"@type": "ImageObject", "url": SITE_URL + "/assets/icon-512.png"}}}
+    if a.get("image"):
+        ld["image"] = img_src(a, 1200)
+    extra = (f'<meta property="og:type" content="article"><meta property="article:published_time" content="{d:%Y-%m-%d}">'
+             f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>')
+    return layout(a["title"], body, a["excerpt"], SITE_URL + a["url"].replace(BASE, ""), img_src(a, 1200), "article", extra)
 
 
 def page_category(key, arts):
@@ -686,7 +708,7 @@ def write(path, text):
 
 def main():
     arts = load_articles()
-    generated = ["index.html", "404.html", "feed.xml", "search.json", "sitemap.xml", "robots.txt",
+    generated = ["index.html", "404.html", "feed.xml", "search.json", "sitemap.xml", "robots.txt", "manifest.webmanifest",
                  "articles", "rubriques", "recherche", "concerts", "a-propos", "credits", "archives", "mentions-legales"]
     if OUT == ROOT:
         for g in generated:
@@ -722,6 +744,9 @@ def main():
            [f"{SITE_URL}/rubriques/{k}/" for k in CATEGORIES] + [f"{SITE_URL}/concerts/"]
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{u}</loc></url>" for u in urls) + "</urlset>\n")
+    write("manifest.webmanifest", json.dumps({"name": SITE_NAME, "short_name": "Riffs & Légendes", "lang": "fr",
+        "start_url": BASE + "/", "display": "standalone", "background_color": "#f1f1eb", "theme_color": "#151b5e",
+        "icons": [{"src": BASE + "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"}]}, ensure_ascii=False))
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
     write(".nojekyll", "")
     write("404.html", layout("Page introuvable", f'<section class="cat-head wrap"><h1>Face introuvable</h1><p>Cette page n\'existe pas ou a changé d\'adresse.</p><p><a class="btn" href="{url()}">Revenir à l\'accueil</a></p></section>'))

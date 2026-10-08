@@ -22,6 +22,17 @@
     else img.addEventListener("error", function () { fallback(img); });
   });
 
+  /* ---------- Transition : la pochette cliquée glisse vers la couverture de l'article */
+  document.addEventListener("click", function (ev) {
+    var link = ev.target.closest("a.card-link, a.record");
+    if (!link) return;
+    var sl = link.querySelector(".sleeve");
+    if (sl) sl.style.viewTransitionName = "cover";
+  });
+  window.addEventListener("pageshow", function () {
+    document.querySelectorAll(".card-link .sleeve, .record .sleeve").forEach(function (s) { s.style.viewTransitionName = ""; });
+  });
+
   /* ---------- Lecteur */
   var dock = document.getElementById("dock");
   if (!dock) return;
