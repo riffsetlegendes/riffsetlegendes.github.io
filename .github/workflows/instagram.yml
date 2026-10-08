@@ -3,6 +3,7 @@ name: Publication Instagram
 on:
   schedule:
     - cron: "5 6 * * *"    # vers 8 h à Paris (7 h en hiver) : post « Ce jour-là »
+    - cron: "5 11 * * *"   # vers 13 h à Paris (12 h en hiver) : anecdote du jour
     - cron: "5 16 * * *"   # vers 18 h à Paris (17 h en hiver) : post focus
     - cron: "0 9 * * 1"    # chaque lundi : prolongation du jeton Instagram
   workflow_dispatch:
@@ -46,6 +47,8 @@ jobs:
             EXTRA=$([ "${{ inputs.dry_run }}" = "true" ] && echo "--dry-run" || echo "")
           elif [ "${{ github.event.schedule }}" = "5 6 * * *" ]; then
             KIND=jour; EXTRA=""
+          elif [ "${{ github.event.schedule }}" = "5 11 * * *" ]; then
+            KIND=anecdote; EXTRA=""
           else
             KIND=focus; EXTRA=""
           fi
