@@ -115,7 +115,7 @@ def sort_key(artist):
     return "".join(c for c in unicodedata.normalize("NFD", a) if unicodedata.category(c) != "Mn")
 
 
-BUDGET = {"left": int(os.environ.get("SPOTIFY_SEARCH_BUDGET", "300")), "t0": time.time()}
+BUDGET = {"left": int(os.environ.get("SPOTIFY_SEARCH_BUDGET", "60")), "t0": time.time()}
 
 
 def resolve(h, line, cache):
@@ -125,6 +125,7 @@ def resolve(h, line, cache):
     if BUDGET["left"] <= 0 or time.time() - BUDGET["t0"] > 1200:
         return None  # sera cherché à la prochaine exécution
     BUDGET["left"] -= 1
+    time.sleep(1.0)
     y, artist, title = [c.strip() for c in line.split("|")][:3]
     q = f'track:"{title}" artist:"{artist}"'
     r = http("GET", "https://api.spotify.com/v1/search?" + urllib.parse.urlencode({"q": q, "type": "track", "limit": 5, "market": "FR"}), headers=h)
