@@ -159,7 +159,7 @@ def sync():
     print(f"{len(new)} morceaux ajoutés, {len(state['added'])} au total, {miss} introuvables. https://open.spotify.com/playlist/{state['playlist']}")
 
 
-if __name__ == "__main__":
+def _main():
     cmd = sys.argv[1]
     if not CID or not SECRET:
         raise SystemExit("Secrets SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET manquants")
@@ -169,3 +169,12 @@ if __name__ == "__main__":
         auth(sys.argv[2])
     else:
         sync()
+
+
+if __name__ == "__main__":
+    try:
+        _main()
+    except BaseException as e:
+        if not (isinstance(e, SystemExit) and e.code in (None, 0)):
+            print(f"::error title=Spotify::{str(e)[:800]}".replace("\n", " "), flush=True)
+        raise
