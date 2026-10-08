@@ -1,0 +1,19 @@
+name: Bibliothèque musicale
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Catalogue Incompetech (CC BY 4.0)
+        run: |
+          mkdir -p music
+          curl -fsSL -A "RiffsEtLegendes/1.0" "https://incompetech.com/music/royalty-free/pieces.json" -o music/incompetech.json
+          python3 -c "import json; d=json.load(open('music/incompetech.json')); print(len(d), 'morceaux')"
+      - name: Enregistrer
+        run: |
+          git config user.name "Riffs & Légendes"; git config user.email bot@users.noreply.github.com
+          git add music && git commit -m "Catalogue musical" && git push || echo rien
