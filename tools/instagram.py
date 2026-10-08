@@ -127,12 +127,12 @@ body {{ background: #888; }}
 .pg, .end li .n {{ font-family: "DM Mono"; font-weight: 500; }}
 .avatar .rec div {{ font-size: 200px; line-height: .85; }}
 .cover-photo {{ background: var(--paper); display: flex; flex-direction: column; }}
-.cover-photo .ph {{ position: relative; height: 860px; overflow: hidden; background: #fff; isolation: isolate; }}
+.cover-photo .ph {{ position: relative; height: 780px; flex: none; overflow: hidden; background: #fff; isolation: isolate; }}
 .cover-photo .ph img {{ width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 25%); filter: grayscale(1) contrast(1.25) brightness(1.08); }}
 .cover-photo .ph::after {{ content: ""; position: absolute; inset: 0; background: var(--riso); mix-blend-mode: lighten; }}
 .cover-photo .ph .yr {{ position: absolute; z-index: 3; left: 72px; bottom: 40px; font-family: "Big Shoulders Display"; font-weight: 900; font-size: 190px; line-height: .8; color: var(--yellow); }}
 .cover-photo .ph .lb {{ position: absolute; z-index: 3; left: 72px; top: 64px; font-family: "Archivo"; font-weight: 700; font-size: 34px; color: var(--yellow); }}
-.cover-photo .tt {{ padding: 54px 72px 0; font-family: "Big Shoulders Display"; font-weight: 900; text-transform: uppercase; font-size: 104px; line-height: .9; color: var(--ink); text-wrap: balance; }}
+.cover-photo .tt {{ padding: 44px 0 0; font-family: "Big Shoulders Display"; font-weight: 900; text-transform: uppercase; font-size: 92px; line-height: .9; color: var(--ink); text-wrap: balance; max-height: 340px; overflow: hidden; }}
 .cover-photo .sticker {{ top: 40px; right: 60px; left: auto; }}
 .cover-photo.dark {{ background: var(--ink); color: var(--paper); }} .cover-photo.dark .tt {{ color: var(--paper); }}
 """
