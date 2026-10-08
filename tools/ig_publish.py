@@ -44,7 +44,11 @@ def call(method, path, **params):
 
 
 def sh(*cmd, cwd=None):
-    subprocess.run(cmd, check=True, cwd=cwd)
+    r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
+    if r.stdout:
+        print(r.stdout, end="", flush=True)
+    if r.returncode:
+        raise SystemExit(f"Échec de {Path(str(cmd[1] if len(cmd) > 1 else cmd[0])).name} : {r.stderr.strip()[-600:]}")
 
 
 def upload_images(folder, key):
