@@ -1,0 +1,41 @@
+name: Playlist Spotify
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "setup, auth ou sync"
+        default: "sync"
+      code:
+        description: "Code d'autorisation (action auth)"
+        default: ""
+  schedule:
+    - cron: "40 6 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: spotify
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q cryptography
+      - name: Spotify
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          ACTION: ${{ inputs.action || 'sync' }}
+          CODE: ${{ inputs.code }}
+        run: |
+          if [ "$ACTION" = "sync" ] && [ ! -f spotify/token.enc ]; then echo "Pas encore autorisé"; exit 0; fi
+          python tools/spotify_sync.py "$ACTION" "$CODE"
+      - name: Enregistrer
+        if: always()
+        run: |
+          git config user.name "Riffs & Légendes"; git config user.email bot@users.noreply.github.com
+          git add spotify && git commit -q -m "Spotify : $ACTION" && git pull -q --rebase && git push -q || echo "rien à enregistrer"
+        env:
+          ACTION: ${{ inputs.action || 'sync' }}
