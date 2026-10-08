@@ -560,3 +560,12 @@ h3 { font-family: var(--f-display); }
   .read-progress span { animation: rp linear both; animation-timeline: scroll(root); }
   @keyframes rp { to { transform: scaleX(1); } }
 }
+
+/* Instagram */
+.nav-ig { display: inline-flex; align-items: center; }
+.ig-follow { margin-top: 2.6rem; display: grid; grid-template-columns: auto 1fr auto; gap: 1rem 1.4rem; align-items: center;
+  background: var(--band); color: var(--band-ink); padding: 1.4rem 1.6rem; border-radius: 4px; }
+.ig-follow p { margin: 0; display: flex; flex-direction: column; gap: .2rem; font-size: 1rem; }
+.ig-follow strong { font-family: var(--f-head); font-weight: 800; text-transform: uppercase; font-size: 1.6rem; line-height: 1; letter-spacing: .01em; }
+.ig-follow .btn { background: var(--yellow); color: var(--on-yellow); }
+@media (max-width: 640px) { .ig-follow { grid-template-columns: auto 1fr; } .ig-follow .btn { grid-column: 1 / -1; justify-self: start; } }

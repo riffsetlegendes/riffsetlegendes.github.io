@@ -242,7 +242,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <header class="site-head">
   <div class="wrap head-row">
     <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><img class="mark" src="{BASE}/assets/symbole.svg" alt="" width="42" height="42"><span class="wm-text"><span class="wm-1">Riffs <span class="amp">&amp;</span></span><span class="wm-2">Légendes</span></span></a>
-    <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a class="nav-search" href="{url('recherche')}">Rechercher</a></nav>
+    <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a class="nav-search" href="{url('recherche')}">Rechercher</a><a class="nav-ig" href="https://www.instagram.com/riffsetlegendes/" target="_blank" rel="noopener" aria-label="Instagram @riffsetlegendes"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg></a></nav>
   </div>
 </header>
 <main id="contenu">
@@ -265,12 +265,13 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
     <p class="foot-mark">Riffs <span class="amp">&amp;</span> Légendes</p>
     <div class="foot-row">
       <p>{esc(SITE_TAGLINE)}. Un article chaque matin, des portraits, des histoires et des disques à écouter.</p>
-      <nav aria-label="Pied de page"><a href="{url('archives')}">Archives</a><a href="{url('a-propos')}">À propos</a><a href="{url('credits')}">Crédits photos</a><a href="{url('mentions-legales')}">Mentions légales</a><a href="{BASE}/feed.xml">Flux RSS</a></nav>
+      <nav aria-label="Pied de page"><a href="{url('archives')}">Archives</a><a href="{url('a-propos')}">À propos</a><a href="{url('credits')}">Crédits photos</a><a href="{url('mentions-legales')}">Mentions légales</a><a href="https://www.instagram.com/riffsetlegendes/" rel="me noopener" target="_blank">Instagram</a><a href="{BASE}/feed.xml">Flux RSS</a></nav>
     </div>
     <p class="foot-small">Textes originaux, sources citées sous chaque article. Photos d'archives : Wikimedia Commons, licences libres. Extraits musicaux : Spotify.</p>
   </div>
 </footer>
 <script src="{BASE}/assets/site.js?v={ASSET_V}" defer></script>
+<script data-goatcounter="https://riffetlegendes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
 """
@@ -456,6 +457,7 @@ def page_article(a, arts):
         <button type="button" class="btn btn--ghost" data-copy="{esc(SITE_URL + a['url'].replace(BASE, ''))}">Copier le lien</button>
         <a class="btn btn--ghost" href="https://www.facebook.com/sharer/sharer.php?u={share}" target="_blank" rel="noopener">Partager sur Facebook</a>
       </div>
+      <aside class="ig-follow"><img src="{BASE}/assets/symbole.svg" alt="" width="64" height="64"><p><strong>Une histoire de rock chaque jour sur Instagram</strong>Un carrousel le matin, un Reel le soir.</p><a class="btn" href="https://www.instagram.com/riffsetlegendes/" target="_blank" rel="noopener">Suivre @riffsetlegendes</a></aside>
     </div>
 </article>
 <section class="block wrap">
