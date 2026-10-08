@@ -35,7 +35,7 @@ jobs:
         run: |
           pip install -q playwright pillow
           python -m playwright install --with-deps chromium
-          if [[ "${{ inputs.kind }}" == reel:* ]]; then sudo apt-get install -y -qq ffmpeg >/dev/null; fi
+          sudo apt-get install -y -qq ffmpeg >/dev/null
       - name: Publier
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}

@@ -168,6 +168,13 @@ def main():
     kind = sys.argv[1]
     if kind.startswith("reel:"):
         return reel(kind.split(":", 1)[1], "--dry-run" in sys.argv)
+    # créneau du soir : Reel si le contenu est prévu en Reel
+    today_key = f"{dt.datetime.now(ZoneInfo('Europe/Paris')).date().isoformat()}-{kind}"
+    sp = ROOT / "instagram" / f"{today_key}.json"
+    if sp.exists() and json.loads(sp.read_text(encoding="utf-8")).get("reel"):
+        if (ROOT / "instagram" / "publies" / f"{today_key}-reel.txt").exists():
+            return log("Reel déjà publié.")
+        return reel(today_key, "--dry-run" in sys.argv)
     if kind.startswith("story:"):
         return story_only(kind.split(":", 1)[1])
     dry = "--dry-run" in sys.argv
