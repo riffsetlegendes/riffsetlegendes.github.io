@@ -120,7 +120,7 @@ body {{ background: #888; }}
 .cover-jour .date, .cover-jour .title, .cover-focus .years, .cover-focus .name, .story .big, .end .cta, .end li .t, .avatar .rec div {{
   font-family: "Big Shoulders Display"; font-stretch: normal; font-weight: 900; text-transform: uppercase; letter-spacing: 0; }}
 .cover-jour .date {{ font-size: 230px; }} .cover-jour .title {{ font-size: 104px; line-height: .9; }}
-.cover-focus .years {{ font-size: 250px; }} .cover-focus .name {{ font-size: 118px; line-height: .9; padding-bottom: 150px; }}
+.cover-focus .years {{ font-size: 250px; }} .cover-focus .name {{ font-size: 112px; line-height: 1.02; padding-bottom: 150px; }}
 .story .big {{ font-size: 124px; line-height: .92; }} .end .cta {{ font-size: 140px; }} .end li .t {{ font-weight: 800; font-size: 56px; line-height: 1; }}
 .end .cta small, .amp, .end li .a {{ text-transform: none; }}
 .end li .a {{ font-family: "Newsreader"; font-weight: 400; letter-spacing: 0; }}
