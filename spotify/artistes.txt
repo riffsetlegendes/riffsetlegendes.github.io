@@ -1,0 +1,405 @@
+# Artistes de la bibliothèque (un par ligne), en complément de ceux de encyclopedie.txt et des articles
+# Hard rock, heavy, glam, prog, sudiste (années 70)
+Led Zeppelin
+Deep Purple
+Black Sabbath
+Uriah Heep
+Nazareth
+Thin Lizzy
+UFO
+Scorpions
+Judas Priest
+Rainbow
+Whitesnake
+Bad Company
+Free
+Humble Pie
+Mountain
+Grand Funk Railroad
+Blue Öyster Cult
+Kiss
+Aerosmith
+Ted Nugent
+Montrose
+Van Halen
+Boston
+Foreigner
+Journey
+Styx
+REO Speedwagon
+Kansas
+Cheap Trick
+Rush
+Golden Earring
+Status Quo
+Slade
+Sweet
+T. Rex
+Mott the Hoople
+Roxy Music
+David Bowie
+Suzi Quatro
+Gary Glitter
+New York Dolls
+Alice Cooper
+Queen
+Genesis
+Yes
+King Crimson
+Emerson, Lake & Palmer
+Jethro Tull
+Gentle Giant
+Camel
+Caravan
+Van der Graaf Generator
+Soft Machine
+Pink Floyd
+Supertramp
+Electric Light Orchestra
+Kraftwerk
+Can
+Neu!
+Tangerine Dream
+Magma
+Ange
+Lynyrd Skynyrd
+The Allman Brothers Band
+ZZ Top
+The Marshall Tucker Band
+Molly Hatchet
+.38 Special
+The Outlaws
+Blackfoot
+Little Feat
+The Doobie Brothers
+Steely Dan
+Eagles
+Fleetwood Mac
+Bruce Springsteen
+Tom Petty and the Heartbreakers
+Bob Seger
+Meat Loaf
+Thin White Rope
+Motörhead
+Iron Maiden
+Saxon
+Def Leppard
+Diamond Head
+Girlschool
+AC/DC
+Rose Tattoo
+The Angels
+Trust
+Téléphone
+Bijou
+Starshooter
+Little Bob Story
+Shakin' Street
+Océan
+Vulcain
+Warning
+Satan Jokers
+Ganafoul
+# Punk, new wave, post-punk
+Ramones
+Television
+Patti Smith
+Blondie
+Talking Heads
+Richard Hell & The Voidoids
+Dead Boys
+The Stooges
+MC5
+Sex Pistols
+The Clash
+The Damned
+Buzzcocks
+The Jam
+Stiff Little Fingers
+The Undertones
+Siouxsie and the Banshees
+X-Ray Spex
+Wire
+Gang of Four
+Joy Division
+New Order
+The Cure
+Echo & the Bunnymen
+Magazine
+Public Image Ltd
+The Pretenders
+Elvis Costello
+Nick Lowe
+Dr. Feelgood
+Ian Dury and the Blockheads
+The Police
+The Specials
+Madness
+The Selecter
+XTC
+Devo
+The B-52's
+The Cars
+Gary Numan
+Ultravox
+Simple Minds
+U2
+Dead Kennedys
+Black Flag
+Bad Brains
+Minor Threat
+Hüsker Dü
+The Replacements
+Métal Urbain
+Marquis de Sade
+Taxi Girl
+Stinky Toys
+# Années 80
+R.E.M.
+The Smiths
+The Stone Roses
+Happy Mondays
+Pixies
+Sonic Youth
+Dinosaur Jr.
+The Jesus and Mary Chain
+Echo & the Bunnymen
+The Waterboys
+The Pogues
+Big Country
+Tears for Fears
+Depeche Mode
+INXS
+Midnight Oil
+Hoodoo Gurus
+The Church
+Crowded House
+Dire Straits
+The Fixx
+Talk Talk
+Prefab Sprout
+Simple Minds
+The Psychedelic Furs
+Bauhaus
+The Sisters of Mercy
+The Mission
+Fields of the Nephilim
+Guns N' Roses
+Bon Jovi
+Mötley Crüe
+Def Leppard
+Europe
+Whitesnake
+Poison
+Skid Row
+Metallica
+Megadeth
+Slayer
+Anthrax
+Faith No More
+Living Colour
+Jane's Addiction
+Red Hot Chili Peppers
+The Cult
+Violent Femmes
+Talking Heads
+Los Lobos
+John Mellencamp
+Huey Lewis and the News
+Bryan Adams
+Indochine
+Les Rita Mitsouko
+Noir Désir
+Les Négresses Vertes
+Mano Negra
+Bérurier Noir
+Les Wampas
+Kat Onoma
+Les Thugs
+Ludwig von 88
+OTH
+Parabellum
+Les Garçons Bouchers
+Gamine
+Daniel Darc
+Étienne Daho
+Jean-Louis Aubert
+Hubert-Félix Thiéfaine
+Alain Bashung
+Les Satellites
+Les Innocents
+# Années 90
+Nirvana
+Pearl Jam
+Soundgarden
+Alice In Chains
+Stone Temple Pilots
+Screaming Trees
+Mudhoney
+Smashing Pumpkins
+Hole
+L7
+Babes in Toyland
+Rage Against the Machine
+Tool
+Kyuss
+Queens of the Stone Age
+Fu Manchu
+Monster Magnet
+Weezer
+Pavement
+Beck
+Foo Fighters
+Green Day
+The Offspring
+Bad Religion
+Blur
+Oasis
+Pulp
+Suede
+Radiohead
+Supergrass
+Elastica
+Ash
+Manic Street Preachers
+The Verve
+Primal Scream
+Kula Shaker
+Ocean Colour Scene
+Placebo
+Muse
+Jeff Buckley
+PJ Harvey
+Garbage
+The Cranberries
+Live
+Counting Crows
+The Black Crowes
+Lenny Kravitz
+Spin Doctors
+Blues Traveler
+Collective Soul
+Silverchair
+Bush
+Everclear
+Third Eye Blind
+Matchbox Twenty
+Louise Attaque
+Dionysos
+Miossec
+Les Wriggles
+Sinsemilia
+Les Ogres de Barback
+Mass Hysteria
+Lofofora
+No One Is Innocent
+Aston Villa
+Saez
+Silmarils
+Superbus
+Kyo
+# La relève
+The Amazons
+Greta Van Fleet
+Dirty Honey
+Rival Sons
+Crown Lands
+The Struts
+Larkin Poe
+Blues Pills
+Kaleo
+The Black Keys
+The White Stripes
+The Raconteurs
+Jack White
+The Dead Weather
+Wolfmother
+Ayron Jones
+The Blue Stones
+The Pretty Reckless
+Black Pistol Fire
+Gary Clark Jr.
+Royal Blood
+Kadavar
+Graveyard
+Witchcraft
+Orange Goblin
+Clutch
+The Sword
+Uncle Acid & the Deadbeats
+Thee Oh Sees
+Osees
+Ty Segall
+King Gizzard & the Lizard Wizard
+Fuzz
+Khruangbin
+Fontaines D.C.
+Idles
+Shame
+The Murder Capital
+The Hives
+The Strokes
+The Vines
+The Libertines
+Arctic Monkeys
+The Last Shadow Puppets
+Jet
+Wolf Alice
+Mammoth WVH
+Airbourne
+The Answer
+Rival Kings
+Starcrawler
+Amyl and the Sniffers
+The Lemon Twigs
+Temples
+Tame Impala
+Band of Skulls
+Wolf Parade
+The Darkness
+Biffy Clyro
+Nothing But Thieves
+Highly Suspect
+Halestorm
+Monster Truck
+The Glorious Sons
+The Record Company
+Marcus King
+The Teskey Brothers
+Them Crooked Vultures
+Eagles of Death Metal
+Rival Sons
+Barns Courtney
+Cage the Elephant
+Kings of Leon
+Catfish and the Bottlemen
+Royal Republic
+Danko Jones
+The Sheepdogs
+Goodbye June
+White Reaper
+Bones UK
+Dead Poet Society
+Inglorious
+Thunder
+Tyler Bryant & the Shakedown
+Black Stone Cherry
+Blackberry Smoke
+Whiskey Myers
+The Allman Betts Band
+Samantha Fish
+Joe Bonamassa
+Last Train
+Lysistrata
+Johnny Mafia
+The Inspector Cluzo
+Mademoiselle K
+BB Brunes
+Les Plasticines
+Shaka Ponk
+Skip the Use
+Tagada Jones
+Blankass
+Feu! Chatterton
+Mustang
+La Femme

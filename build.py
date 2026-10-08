@@ -668,6 +668,11 @@ def page_library(arts):
         c = [x.strip() for x in l.split("|")]
         if len(c) >= 3 and not l.startswith("#"):
             names.setdefault(lib_key(c[1]), c[1])
+    extra = ROOT / "spotify" / "artistes.txt"
+    if extra.exists():
+        for l in extra.read_text(encoding="utf-8").splitlines():
+            if l.strip() and not l.startswith("#"):
+                names.setdefault(lib_key(l), l.strip())
     for a in arts:
         for block in re.findall(r":::(?:ecoute|tracklist)\n(.*?)\n:::", a["body_md"], re.S):
             for row in block.splitlines():
