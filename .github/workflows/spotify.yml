@@ -9,7 +9,7 @@ on:
         description: "Code d'autorisation (action auth)"
         default: ""
   schedule:
-    - cron: "40 6 * * *"
+    - cron: "40 * * * *"   # toutes les heures : recherche par lots, puis mises à jour du site
 permissions:
   contents: write
 concurrency:
@@ -17,6 +17,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

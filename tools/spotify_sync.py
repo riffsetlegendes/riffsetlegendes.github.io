@@ -17,6 +17,10 @@ DESC = ("Le rock de 1950 à 1999 et la relève, classé par artiste de A à Z. T
         "et bien plus. Mise à jour chaque jour.")
 
 
+class RateLimited(Exception):
+    pass
+
+
 def fernet():
     return Fernet(base64.urlsafe_b64encode(hashlib.sha256(SECRET.encode()).digest()))
 
@@ -38,7 +42,11 @@ def http(method, url, data=None, headers=None, form=False):
                 return json.loads(raw) if raw else {}
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                time.sleep(int(e.headers.get("Retry-After", "5")) + 1)
+                wait = int(e.headers.get("Retry-After", "5")) + 1
+                if wait > 120:
+                    BUDGET["left"] = 0
+                    raise RateLimited(wait)
+                time.sleep(wait)
                 continue
             if e.code >= 500 and attempt < 5:
                 time.sleep(3)
@@ -103,10 +111,16 @@ def sort_key(artist):
     return "".join(c for c in unicodedata.normalize("NFD", a) if unicodedata.category(c) != "Mn")
 
 
+BUDGET = {"left": int(os.environ.get("SPOTIFY_SEARCH_BUDGET", "300")), "t0": time.time()}
+
+
 def resolve(h, line, cache):
-    """« année | artiste | titre » -> ID Spotify (recherche), mis en cache."""
+    """« année | artiste | titre » -> ID Spotify (recherche), mis en cache. Budget limité par exécution."""
     if line in cache:
         return cache[line]
+    if BUDGET["left"] <= 0 or time.time() - BUDGET["t0"] > 1200:
+        return None  # sera cherché à la prochaine exécution
+    BUDGET["left"] -= 1
     y, artist, title = [c.strip() for c in line.split("|")][:3]
     q = f'track:"{title}" artist:"{artist}"'
     r = http("GET", "https://api.spotify.com/v1/search?" + urllib.parse.urlencode({"q": q, "type": "track", "limit": 5, "market": "FR"}), headers=h)
@@ -136,7 +150,11 @@ def sync():
         for l in lines:
             cols = [c.strip() for c in l.split("|")]
             y = re.search(r"\d{4}", cols[0])
-            tid = resolve(h, l, state["cache"])
+            try:
+                tid = resolve(h, l, state["cache"])
+            except RateLimited as rl:
+                print(f"Limite Spotify atteinte (attente demandée {rl.args[0]} s), suite à la prochaine exécution")
+                tid = None
             if tid:
                 wanted.append((sort_key(cols[1]), int(y.group()) if y else 2100, tid))
     wanted += site_tracks()
@@ -146,6 +164,7 @@ def sync():
         if tid not in seen:
             seen.add(tid)
             order.append(tid)
+    state_f.write_text(json.dumps(state, ensure_ascii=False, indent=0))
     if order != state["added"]:  # on réécrit la playlist entière pour garder l'ordre alphabétique
         uris = ["spotify:track:" + t for t in order]
         http("PUT", f"https://api.spotify.com/v1/playlists/{state['playlist']}/items", {"uris": uris[:100]}, h)
