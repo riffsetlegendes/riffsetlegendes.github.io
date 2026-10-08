@@ -162,6 +162,31 @@ def sync():
                 tid = None
             if tid:
                 wanted.append((sort_key(cols[1]), int(y.group()) if y else 2100, tid))
+    # artistes de la bibliothèque absents de la base : leurs 5 titres les plus pertinents selon Spotify
+    known = {sort_key(l.split("|")[1]) for l in (enc.read_text(encoding="utf-8").splitlines() if enc.exists() else []) if l.count("|") >= 2 and not l.startswith("#")}
+    af2 = SP / "artistes.txt"
+    if af2.exists():
+        for name in [l.strip() for l in af2.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")]:
+            if sort_key(name) in known:
+                continue
+            key = "artist:" + name
+            if key not in state["cache"]:
+                if BUDGET["left"] <= 0 or time.time() - BUDGET["t0"] > 1200:
+                    continue
+                BUDGET["left"] -= 1
+                try:
+                    r = http("GET", "https://api.spotify.com/v1/search?" + urllib.parse.urlencode({"q": f'artist:"{name}"', "type": "track", "limit": 10, "market": "FR"}), headers=h)
+                except RateLimited:
+                    break
+                ids = []
+                for t in r.get("tracks", {}).get("items", []):
+                    if t["artists"] and t["artists"][0]["name"].casefold() == name.casefold() and not re.search(r"\b(live|karaoke|remix|demo)\b", t["name"].lower()):
+                        ARTISTS.setdefault(name, t["artists"][0]["id"])
+                        if t["id"] not in ids:
+                            ids.append(t["id"])
+                state["cache"][key] = ids[:5]
+            for tid in state["cache"][key] or []:
+                wanted.append((sort_key(name), 2100, tid))
     wanted += site_tracks()
     wanted.sort(key=lambda x: (x[0], x[1]))
     seen, order = set(), []
