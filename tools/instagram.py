@@ -126,9 +126,6 @@ body {{ background: #888; }}
 .end li .a {{ font-family: "Newsreader"; font-weight: 400; letter-spacing: 0; }}
 .pg, .end li .n {{ font-family: "DM Mono"; font-weight: 500; }}
 .avatar .rec div {{ font-size: 200px; line-height: .85; }}
-"""
-
-
 .cover-photo {{ background: var(--paper); display: flex; flex-direction: column; }}
 .cover-photo .ph {{ position: relative; height: 860px; overflow: hidden; background: #fff; isolation: isolate; }}
 .cover-photo .ph img {{ width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 25%); filter: grayscale(1) contrast(1.25) brightness(1.08); }}
@@ -138,6 +135,8 @@ body {{ background: #888; }}
 .cover-photo .tt {{ padding: 54px 72px 0; font-family: "Big Shoulders Display"; font-weight: 900; text-transform: uppercase; font-size: 104px; line-height: .9; color: var(--ink); text-wrap: balance; }}
 .cover-photo .sticker {{ top: 40px; right: 60px; left: auto; }}
 .cover-photo.dark {{ background: var(--ink); color: var(--paper); }} .cover-photo.dark .tt {{ color: var(--paper); }}
+"""
+
 
 
 def fetch_photo(name):
