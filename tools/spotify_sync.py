@@ -13,7 +13,7 @@ REDIRECT = "https://riffsetlegendes.github.io/spotify/"
 SCOPES = "playlist-modify-public playlist-modify-private playlist-read-private ugc-image-upload"
 CID, SECRET = os.environ.get("SPOTIFY_CLIENT_ID", "").strip(), os.environ.get("SPOTIFY_CLIENT_SECRET", "").strip()
 NAME = "Riffs & Légendes : l'encyclopédie du rock"
-DESC = ("Le rock de 1950 à 1999, dans l'ordre, puis la relève. Tous les morceaux dont on parle sur riffsetlegendes.github.io, "
+DESC = ("Le rock de 1950 à 1999 et la relève, classé par artiste de A à Z. Tous les morceaux dont on parle sur riffsetlegendes.github.io, "
         "et bien plus. Mise à jour chaque jour.")
 
 
@@ -91,8 +91,16 @@ def site_tracks():
                 cols = [c.strip() for c in line.split("|")]
                 if len(cols) >= 4 and re.fullmatch(r"[A-Za-z0-9]{22}", cols[3]):
                     y = re.search(r"\d{4}", cols[2])
-                    out.append((int(y.group()) if y else 2100, cols[3]))
+                    out.append((sort_key(cols[1]), int(y.group()) if y else 2100, cols[3]))
     return out
+
+
+def sort_key(artist):
+    """Ordre alphabétique par artiste, comme dans un bac de disquaire (sans « The », « Les », « Le », « La »)."""
+    a = artist.strip().casefold()
+    a = re.sub(r"^(the|les|le|la|l')\s*", "", a)
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", a) if unicodedata.category(c) != "Mn")
 
 
 def resolve(h, line, cache):
@@ -127,21 +135,25 @@ def sync():
     if enc.exists():
         lines = [l for l in enc.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#") and l.count("|") >= 2]
         for l in lines:
-            y = re.search(r"\d{4}", l.split("|")[0])
+            cols = [c.strip() for c in l.split("|")]
+            y = re.search(r"\d{4}", cols[0])
             tid = resolve(h, l, state["cache"])
             if tid:
-                wanted.append((int(y.group()) if y else 2100, tid))
+                wanted.append((sort_key(cols[1]), int(y.group()) if y else 2100, tid))
     wanted += site_tracks()
-    wanted.sort(key=lambda x: x[0])
-    have = set(state["added"])
-    new = []
-    for _, tid in wanted:
-        if tid not in have:
-            have.add(tid)
-            new.append(tid)
-    for i in range(0, len(new), 100):
-        http("POST", f"https://api.spotify.com/v1/playlists/{state['playlist']}/tracks", {"uris": ["spotify:track:" + t for t in new[i:i + 100]]}, h)
-    state["added"] += new
+    wanted.sort(key=lambda x: (x[0], x[1]))
+    seen, order = set(), []
+    for _, _, tid in wanted:
+        if tid not in seen:
+            seen.add(tid)
+            order.append(tid)
+    if order != state["added"]:  # on réécrit la playlist entière pour garder l'ordre alphabétique
+        uris = ["spotify:track:" + t for t in order]
+        http("PUT", f"https://api.spotify.com/v1/playlists/{state['playlist']}/tracks", {"uris": uris[:100]}, h)
+        for i in range(100, len(uris), 100):
+            http("POST", f"https://api.spotify.com/v1/playlists/{state['playlist']}/tracks", {"uris": uris[i:i + 100]}, h)
+    new = [t for t in order if t not in set(state["added"])]
+    state["added"] = order
     state_f.write_text(json.dumps(state, ensure_ascii=False, indent=0))
     miss = sum(1 for v in state["cache"].values() if not v)
     print(f"{len(new)} morceaux ajoutés, {len(state['added'])} au total, {miss} introuvables. https://open.spotify.com/playlist/{state['playlist']}")
