@@ -17,6 +17,10 @@ DESC = ("Le rock de 1950 à 1999 et la relève, classé par artiste de A à Z. T
         "et bien plus. Mise à jour chaque jour.")
 
 
+AF = ROOT / "spotify" / "artists.json"
+ARTISTS = json.loads(AF.read_text(encoding="utf-8")) if AF.exists() else {}
+
+
 class RateLimited(Exception):
     pass
 
@@ -130,6 +134,7 @@ def resolve(h, line, cache):
         tn = t["name"].lower()
         if artist.lower().split(" ")[0] in names and not re.search(r"\b(live|karaoke|cover|remix|instrumental)\b", tn):
             best = t["id"]
+            ARTISTS.setdefault(artist, t["artists"][0]["id"])
             break
     cache[line] = best
     return best
@@ -165,6 +170,7 @@ def sync():
             seen.add(tid)
             order.append(tid)
     state_f.write_text(json.dumps(state, ensure_ascii=False, indent=0))
+    AF.write_text(json.dumps(ARTISTS, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     if order != state["added"]:  # on réécrit la playlist entière pour garder l'ordre alphabétique
         uris = ["spotify:track:" + t for t in order]
         http("PUT", f"https://api.spotify.com/v1/playlists/{state['playlist']}/items", {"uris": uris[:100]}, h)

@@ -242,7 +242,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <header class="site-head">
   <div class="wrap head-row">
     <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><img class="mark" src="{BASE}/assets/symbole.svg" alt="" width="42" height="42"><span class="wm-text"><span class="wm-1">Riffs <span class="amp">&amp;</span></span><span class="wm-2">Légendes</span></span></a>
-    <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a class="nav-search" href="{url('recherche')}">Rechercher</a><a class="nav-ig" href="https://www.instagram.com/riffsetlegendes/" target="_blank" rel="noopener" aria-label="Instagram @riffsetlegendes"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg></a></nav>
+    <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a href="{url('bibliotheque')}">Bibliothèque</a><a class="nav-search" href="{url('recherche')}">Rechercher</a><a class="nav-ig" href="https://www.instagram.com/riffsetlegendes/" target="_blank" rel="noopener" aria-label="Instagram @riffsetlegendes"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg></a></nav>
   </div>
 </header>
 <main id="contenu">
@@ -653,6 +653,58 @@ def page_concerts(concerts):
     return layout("Concerts", body, "Les prochains concerts rock en France : légendes et relève, avec calendrier.", f"{SITE_URL}/concerts/")
 
 
+def lib_key(name):
+    import unicodedata
+    a = re.sub(r"^(the|les|le|la|l')\s*", "", name.strip().casefold())
+    return "".join(c for c in unicodedata.normalize("NFD", a) if unicodedata.category(c) != "Mn")
+
+
+def page_library(arts):
+    """Bibliothèque : tous les artistes du site et de la playlist encyclopédique, de A à Z."""
+    names = {}
+    enc = ROOT / "spotify" / "encyclopedie.txt"
+    lines = enc.read_text(encoding="utf-8").splitlines() if enc.exists() else []
+    for l in lines:
+        c = [x.strip() for x in l.split("|")]
+        if len(c) >= 3 and not l.startswith("#"):
+            names.setdefault(lib_key(c[1]), c[1])
+    for a in arts:
+        for block in re.findall(r":::(?:ecoute|tracklist)\n(.*?)\n:::", a["body_md"], re.S):
+            for row in block.splitlines():
+                c = [x.strip() for x in row.split("|")]
+                if len(c) >= 2 and c[1]:
+                    names.setdefault(lib_key(c[1]), c[1])
+    ids = {}
+    af = ROOT / "spotify" / "artists.json"
+    if af.exists():
+        ids = json.loads(af.read_text(encoding="utf-8"))
+    groups = {}
+    for k in sorted(names):
+        letter = k[:1].upper() if k[:1].isalpha() else "#"
+        groups.setdefault(letter, []).append(names[k])
+    def link(n):
+        href = f"https://open.spotify.com/artist/{ids[n]}" if ids.get(n) else "https://open.spotify.com/search/" + urllib.parse.quote(n) + "/artists"
+        return f'<li><a href="{esc(href)}" target="_blank" rel="noopener">{esc(n)}</a></li>'
+    index = "".join(f'<a href="#lettre-{l}">{l}</a>' for l in groups)
+    body_groups = "".join(f'<section class="lib-letter" id="lettre-{l}"><h2>{l}</h2><ul>{"".join(link(n) for n in ns)}</ul></section>' for l, ns in groups.items())
+    pl = ""
+    st = ROOT / "spotify" / "state.json"
+    if st.exists():
+        pid = json.loads(st.read_text()).get("playlist")
+        if pid:
+            pl = f'<p><a class="btn" href="https://open.spotify.com/playlist/{pid}" target="_blank" rel="noopener">Écouter la playlist encyclopédique</a></p>'
+    body = f"""<section class="wrap cat-head"><h1>Bibliothèque</h1>
+<p class="block-intro">{len(names)} artistes, de A à Z. Chaque nom ouvre sa page Spotify.</p>{pl}
+<input class="lib-filter" type="search" placeholder="Trouver un artiste" aria-label="Trouver un artiste" autocomplete="off">
+<nav class="lib-index" aria-label="Lettres">{index}</nav></section>
+<div class="wrap lib">{body_groups}</div>
+<script>
+var q=document.querySelector('.lib-filter');q.addEventListener('input',function(){{var v=q.value.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+document.querySelectorAll('.lib-letter').forEach(function(s){{var any=false;s.querySelectorAll('li').forEach(function(li){{var t=li.textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');var ok=!v||t.indexOf(v)>-1;li.hidden=!ok;any=any||ok}});s.hidden=!any}})}});
+</script>"""
+    return layout("Bibliothèque des artistes", body, f"{len(names)} artistes du rock de 1950 à aujourd'hui, de A à Z, avec leur page Spotify.", SITE_URL + "/bibliotheque/")
+
+
 def page_credits(arts):
     rows_ = "".join(
         f'<li><a href="{a["url"]}">{esc(a["title"])}</a><span>{esc(a.get("image_caption", ""))} '
@@ -710,7 +762,7 @@ def write(path, text):
 
 def main():
     arts = load_articles()
-    generated = ["index.html", "404.html", "feed.xml", "search.json", "sitemap.xml", "robots.txt", "manifest.webmanifest",
+    generated = ["index.html", "404.html", "feed.xml", "search.json", "sitemap.xml", "robots.txt", "manifest.webmanifest", "bibliotheque",
                  "articles", "rubriques", "recherche", "concerts", "a-propos", "credits", "archives", "mentions-legales"]
     if OUT == ROOT:
         for g in generated:
@@ -743,9 +795,10 @@ def main():
               "excerpt": a["excerpt"], "text": re.sub(r"[#*:|]", " ", a["body_md"])} for a in arts]
     write("search.json", json.dumps(index, ensure_ascii=False))
     urls = [SITE_URL + "/"] + [SITE_URL + a["url"].replace(BASE, "") for a in arts] + \
-           [f"{SITE_URL}/rubriques/{k}/" for k in CATEGORIES] + [f"{SITE_URL}/concerts/"]
+           [f"{SITE_URL}/rubriques/{k}/" for k in CATEGORIES] + [f"{SITE_URL}/concerts/", f"{SITE_URL}/bibliotheque/"]
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{u}</loc></url>" for u in urls) + "</urlset>\n")
+    write("bibliotheque/index.html", page_library(arts))
     write("manifest.webmanifest", json.dumps({"name": SITE_NAME, "short_name": "Riffs & Légendes", "lang": "fr",
         "start_url": BASE + "/", "display": "standalone", "background_color": "#f1f1eb", "theme_color": "#151b5e",
         "icons": [{"src": BASE + "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"}]}, ensure_ascii=False))
