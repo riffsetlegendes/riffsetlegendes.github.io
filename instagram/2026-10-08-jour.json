@@ -1,0 +1,17 @@
+{
+  "type": "jour",
+  "label": "Ce jour-là",
+  "big": "8 octobre",
+  "title": "1976 : les Sex Pistols signent chez EMI",
+  "sticker": "50 ans",
+  "disc": "1976",
+  "slides": [
+    {"head": "Londres, 1976", "big": "La maison des Beatles signe le groupe le plus mal élevé de Londres.", "text": "Le 8 octobre, EMI engage les Sex Pistols pour deux ans. L'avance la plus citée : 40 000 livres."},
+    {"head": "26 novembre", "big": "« Anarchy in the U.K. » sort enfin.", "text": "Produit par Chris Thomas aux Wessex Studios, le premier single du groupe grimpe à la 38e place britannique."},
+    {"head": "1er décembre", "big": "Deux minutes de direct qui font scandale.", "text": "Dans l'émission « Today » de Bill Grundy, les jurons pleuvent. La presse s'enflamme, les concerts sont annulés."},
+    {"head": "6 janvier 1977", "big": "EMI rompt le contrat.", "text": "Moins de trois mois, un seul 45 tours. Le groupe répondra plus tard avec une chanson intitulée « EMI »."}
+  ],
+  "tracks": [["Anarchy in the U.K.", "Sex Pistols", "1976"], ["EMI (Unlimited Edition)", "Sex Pistols", "1977"], ["Pretty Vacant", "Sex Pistols", "1977"]],
+  "caption": "Il y a 50 ans jour pour jour, EMI, la maison des Beatles, signait les Sex Pistols. Trois mois, un single et un scandale télévisé plus tard, tout était fini.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["cejourla", "sexpistols", "punk", "punkrock", "emi", "histoiredurock", "vinyle", "riffsetlegendes"]
+}

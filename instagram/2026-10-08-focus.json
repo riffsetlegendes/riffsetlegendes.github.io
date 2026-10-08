@@ -1,0 +1,15 @@
+{
+  "type": "focus",
+  "label": "Légende",
+  "big": "1940–1980",
+  "title": "John Lennon, l'homme qui ne voulait plus faire semblant",
+  "slides": [
+    {"head": "Liverpool, 1957", "big": "Une fête paroissiale, une rencontre décisive.", "text": "Le 6 juillet, à Woolton, Paul McCartney vient écouter les Quarrymen, le groupe que Lennon a fondé à quinze ans."},
+    {"head": "1970", "big": "Un premier album solo à nu.", "text": "John Lennon/Plastic Ono Band : piano, guitare, basse, batterie et une voix qui ne cherche plus à séduire."},
+    {"head": "1971", "big": "Imagine, puis New York.", "text": "L'album mêle tendresse et acidité. En août, Lennon s'installe à New York avec Yoko Ono."},
+    {"head": "1975-1980", "big": "Cinq ans de silence, puis un retour.", "text": "Après la naissance de Sean, il se retire. Double Fantasy sort en novembre 1980, trois semaines avant sa mort."}
+  ],
+  "tracks": [["Instant Karma!", "John Lennon", "1970"], ["Imagine", "John Lennon", "1971"], ["Jealous Guy", "John Lennon", "1971"]],
+  "caption": "John Lennon aurait eu 86 ans demain, 9 octobre. Des Quarrymen aux années new-yorkaises, portrait d'un musicien qui a passé sa vie à se mettre à nu en chansons.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["johnlennon", "lennon", "beatles", "imagine", "legende", "histoiredurock", "vinyle", "riffsetlegendes"]
+}
