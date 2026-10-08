@@ -129,6 +129,31 @@ body {{ background: #888; }}
 """
 
 
+.cover-photo {{ background: var(--paper); display: flex; flex-direction: column; }}
+.cover-photo .ph {{ position: relative; height: 860px; overflow: hidden; background: #fff; isolation: isolate; }}
+.cover-photo .ph img {{ width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 25%); filter: grayscale(1) contrast(1.25) brightness(1.08); }}
+.cover-photo .ph::after {{ content: ""; position: absolute; inset: 0; background: var(--riso); mix-blend-mode: lighten; }}
+.cover-photo .ph .yr {{ position: absolute; z-index: 3; left: 72px; bottom: 40px; font-family: "Big Shoulders Display"; font-weight: 900; font-size: 190px; line-height: .8; color: var(--yellow); }}
+.cover-photo .ph .lb {{ position: absolute; z-index: 3; left: 72px; top: 64px; font-family: "Archivo"; font-weight: 700; font-size: 34px; color: var(--yellow); }}
+.cover-photo .tt {{ padding: 54px 72px 0; font-family: "Big Shoulders Display"; font-weight: 900; text-transform: uppercase; font-size: 104px; line-height: .9; color: var(--ink); text-wrap: balance; }}
+.cover-photo .sticker {{ top: 40px; right: 60px; left: auto; }}
+.cover-photo.dark {{ background: var(--ink); color: var(--paper); }} .cover-photo.dark .tt {{ color: var(--paper); }}
+
+
+def fetch_photo(name):
+    """Photo Wikimedia Commons en base64 (None si indisponible : on garde la couverture typographique)."""
+    import base64, urllib.parse, urllib.request
+    url = "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(name) + "?width=1200"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "RiffsEtLegendes/1.0 (riffsetlegendes.github.io)"})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            data, ctype = r.read(), r.headers.get_content_type()
+        return f"data:{ctype};base64," + base64.b64encode(data).decode()
+    except Exception as ex:
+        print(f"Photo indisponible ({ex}), couverture typographique.", file=sys.stderr)
+        return None
+
+
 def e(s):
     return html.escape(s or "")
 
@@ -145,7 +170,14 @@ def build(spec):
     if spec.get("sticker"):
         num, _, rest = spec["sticker"].partition(" ")
         sticker = f'<div class="sticker"><b>{e(num)}</b>{e(rest)}</div>'
-    if spec["type"] == "jour":
+    photo = fetch_photo(spec["photo"]) if spec.get("photo") else None
+    if photo:
+        dark = " dark" if spec["type"] == "focus" else ""
+        pos = e(spec.get("photo_pos", "50% 25%"))
+        out.append(f"""<section class="slide cover-photo{dark}"><div class="ph" style="--pos:{pos}"><img src="{photo}" alt="">
+<p class="lb">{e(spec['label'])}</p><p class="yr">{e(spec.get('disc') or spec['big'])}</p></div>{sticker}
+<h1 class="tt">{e(spec['title'])}</h1>{footer(1, total)}</section>""")
+    elif spec["type"] == "jour":
         out.append(f"""<section class="slide cover-jour"><p class="label">{e(spec['label'])}</p>
 <p class="date">{e(spec['big'])}</p><div class="disc"><div class="lab"><span>{e(spec.get('disc',''))}</span></div></div>{sticker}
 <h1 class="title">{e(spec['title'])}</h1>{footer(1, total)}</section>""")
