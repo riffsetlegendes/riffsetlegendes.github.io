@@ -589,3 +589,4 @@ h3 { font-family: var(--f-display); }
 .wm-logo img { height: 2.7em; width: auto; max-width: 62vw; }
 .wordmark .mark { width: 2.5em; height: 2.5em; }
 @media (max-width: 420px) { .wm-logo img { height: 1.9em; } .wordmark .mark { width: 2.1em; height: 2.1em; } }
+.foot-mark img { display: block; width: min(100%, 980px); height: auto; margin-left: -.6%; }

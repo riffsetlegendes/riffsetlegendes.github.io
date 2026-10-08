@@ -15,17 +15,18 @@ def tight(body, x0,y0,x1,y1, bg=None):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0} {y0} {w} {h}" width="{w}" height="{h}">{bgr}{body}</svg>'
 
 # 1. wordmark seul, une ligne, fond transparent (en-tête du site)
-def wordmark(dark):
+def wordmark(dark, face=YEL, shine=SH):
     s=170; base=200; x=40
     side=RISO if dark else BAND; outl=VINYL if dark else INK; kl=PAPER if dark else None
     d1,w1=text_path(F,'Riffs',s,x,base,tracking=-3)
     _,wa=text_path(AMP,'&',175,0,0)
     ax=x+w1+34; amp,_=text_path(AMP,'&',175,ax,base+4)
     x2=ax+wa+30; d2,w2=text_path(F,'Légendes',s,x2,base,tracking=-4)
-    body=''.join(relief(d,side=side,outline=outl,depth=11,ow=4,shine=SH,keyline=kl) for d in (d1,amp,d2))
+    body=''.join(relief(d,face=face,side=side,outline=outl,depth=11,ow=4,shine=shine,keyline=kl) for d in (d1,amp,d2))
     pad=12 if dark else 6
     return tight(body, x-pad-8, 40, x2+w2+30, 290)
 save('wordmark.svg', wordmark(False)); save('wordmark-sombre.svg', wordmark(True))
+save('wordmark-sur-jaune.svg', wordmark(False, face=PAPER, shine=None))  # bandeau jaune du pied de page
 
 # 2. symbole : vinyle + étiquette + esperluette
 def symbole(body_col=VINYL, label=YEL, amp_col=INK, bg=None, size=320):

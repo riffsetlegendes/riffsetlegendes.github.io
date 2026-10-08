@@ -262,7 +262,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 </div>
 <footer class="site-foot">
   <div class="wrap">
-    <p class="foot-mark">Riffs <span class="amp">&amp;</span> Légendes</p>
+    <p class="foot-mark"><img src="{BASE}/assets/wordmark-sur-jaune.svg?v={ASSET_V}" alt="Riffs &amp; Légendes" width="1288" height="250"></p>
     <div class="foot-row">
       <p>{esc(SITE_TAGLINE)}. Un article chaque matin, des portraits, des histoires et des disques à écouter.</p>
       <nav aria-label="Pied de page"><a href="{url('archives')}">Archives</a><a href="{url('a-propos')}">À propos</a><a href="{url('credits')}">Crédits photos</a><a href="{url('mentions-legales')}">Mentions légales</a><a href="https://www.instagram.com/riffsetlegendes/" rel="me noopener" target="_blank">Instagram</a><a href="{BASE}/feed.xml">Flux RSS</a></nav>
