@@ -126,8 +126,7 @@ def sync():
     state_f = SP / "state.json"
     state = json.loads(state_f.read_text()) if state_f.exists() else {"playlist": None, "added": [], "cache": {}}
     if not state.get("playlist"):
-        me = http("GET", "https://api.spotify.com/v1/me", headers=h)
-        pl = http("POST", f"https://api.spotify.com/v1/users/{me['id']}/playlists", {"name": NAME, "description": DESC, "public": True}, h)
+        pl = http("POST", "https://api.spotify.com/v1/me/playlists", {"name": NAME, "description": DESC, "public": True}, h)
         state["playlist"] = pl["id"]
         print("Playlist créée :", pl["external_urls"]["spotify"])
     wanted = []
@@ -149,9 +148,9 @@ def sync():
             order.append(tid)
     if order != state["added"]:  # on réécrit la playlist entière pour garder l'ordre alphabétique
         uris = ["spotify:track:" + t for t in order]
-        http("PUT", f"https://api.spotify.com/v1/playlists/{state['playlist']}/tracks", {"uris": uris[:100]}, h)
+        http("PUT", f"https://api.spotify.com/v1/playlists/{state['playlist']}/items", {"uris": uris[:100]}, h)
         for i in range(100, len(uris), 100):
-            http("POST", f"https://api.spotify.com/v1/playlists/{state['playlist']}/tracks", {"uris": uris[i:i + 100]}, h)
+            http("POST", f"https://api.spotify.com/v1/playlists/{state['playlist']}/items", {"uris": uris[i:i + 100]}, h)
     new = [t for t in order if t not in set(state["added"])]
     state["added"] = order
     state_f.write_text(json.dumps(state, ensure_ascii=False, indent=0))
