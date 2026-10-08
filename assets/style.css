@@ -583,3 +583,9 @@ h3 { font-family: var(--f-display); }
 .lib-letter li a { text-decoration: none; }
 .lib-letter li a:hover { text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 3px; }
 @media (max-width: 640px) { .lib-letter { grid-template-columns: 1fr; } .lib-letter h2 { font-size: 3rem; } }
+
+/* logo v2 : wordmark rétro en relief (Fraunces + esperluette Young Serif), généré par tools/logo/build_logo.py */
+.wm-logo { display: block; line-height: 0; }
+.wm-logo img { height: 2.7em; width: auto; max-width: 62vw; }
+.wordmark .mark { width: 2.5em; height: 2.5em; }
+@media (max-width: 420px) { .wm-logo img { height: 1.9em; } .wordmark .mark { width: 2.1em; height: 2.1em; } }

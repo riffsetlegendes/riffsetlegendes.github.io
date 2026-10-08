@@ -241,7 +241,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="site-head">
   <div class="wrap head-row">
-    <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><img class="mark" src="{BASE}/assets/symbole.svg" alt="" width="42" height="42"><span class="wm-text"><span class="wm-1">Riffs <span class="amp">&amp;</span></span><span class="wm-2">Légendes</span></span></a>
+    <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><img class="mark" src="{BASE}/assets/disque.svg?v={ASSET_V}" alt="" width="42" height="42"><picture class="wm-logo"><source srcset="{BASE}/assets/wordmark-sombre.svg?v={ASSET_V}" media="(prefers-color-scheme: dark)"><img src="{BASE}/assets/wordmark.svg?v={ASSET_V}" alt="" width="1288" height="250"></picture></a>
     <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a href="{url('bibliotheque')}">Bibliothèque</a><a class="nav-search" href="{url('recherche')}">Rechercher</a><a class="nav-ig" href="https://www.instagram.com/riffsetlegendes/" target="_blank" rel="noopener" aria-label="Instagram @riffsetlegendes"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg></a></nav>
   </div>
 </header>
