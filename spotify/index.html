@@ -1,0 +1,10 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Connexion Spotify | Riffs & Légendes</title>
+<style>body{font-family:system-ui,sans-serif;background:#151b5e;color:#f1f1eb;display:grid;place-items:center;min-height:100vh;margin:0;padding:24px}
+main{max-width:560px}a.b{display:inline-block;background:#f5bf1d;color:#151b5e;padding:14px 22px;font-weight:700;text-decoration:none;border-radius:4px}
+code{display:block;background:#0b0c18;padding:14px;word-break:break-all;margin:12px 0;user-select:all;border-radius:4px}</style>
+<main><h1>Relier Spotify à Riffs & Légendes</h1><div id="x"></div></main>
+<script>var c=new URLSearchParams(location.search).get('code'),e=new URLSearchParams(location.search).get('error'),x=document.getElementById('x');
+if(c){x.innerHTML='<p>C\'est autorisé. Copie ce code et envoie-le à Claude (il ne sert qu\'une fois et expire dans 10 minutes) :</p><code>'+c+'</code>';}
+else if(e){x.innerHTML='<p>Autorisation refusée ('+e+'). Tu peux réessayer.</p><p><a class="b" href="https://accounts.spotify.com/authorize?client_id=c3c14db09c2c4a209b1f46b8eb479a81&response_type=code&redirect_uri=https%3A%2F%2Friffsetlegendes.github.io%2Fspotify%2F&scope=playlist-modify-public+playlist-modify-private+playlist-read-private+ugc-image-upload">Autoriser Spotify</a></p>';}
+else{x.innerHTML='<p>Un clic suffit : connecte-toi à Spotify et accepte que Riffs & Légendes gère ses playlists sur ton compte.</p><p><a class="b" href="https://accounts.spotify.com/authorize?client_id=c3c14db09c2c4a209b1f46b8eb479a81&response_type=code&redirect_uri=https%3A%2F%2Friffsetlegendes.github.io%2Fspotify%2F&scope=playlist-modify-public+playlist-modify-private+playlist-read-private+ugc-image-upload">Autoriser Spotify</a></p>';}</script></html>
