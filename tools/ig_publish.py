@@ -111,8 +111,59 @@ def story_only(key):
     publish_story(get_uid(), ROOT / "out" / "instagram" / key, key, key.rsplit("-", 1)[-1])
 
 
+def reel(key, dry):
+    """Reel à partir d'un carrousel préparé (ex. reel:2026-10-08-focus)."""
+    spec = ROOT / "instagram" / f"{key}.json"
+    sh(sys.executable, str(ROOT / "tools" / "reel.py"), str(spec))
+    folder = ROOT / "out" / "instagram" / key
+    vdir = folder / "video"
+    vdir.mkdir(exist_ok=True)
+    (vdir / "reel.mp4").write_bytes((folder / "reel.mp4").read_bytes())
+    repo = os.environ["GITHUB_REPOSITORY"]
+    work = Path("/tmp/ig-media")
+    if work.exists():
+        sh("rm", "-rf", str(work))
+    remote = f"https://x-access-token:{os.environ['GITHUB_TOKEN']}@github.com/{repo}.git"
+    sh("git", "clone", "-q", "--depth", "1", "--branch", MEDIA_BRANCH, remote, str(work))
+    dest = work / (key + "-reel")
+    dest.mkdir(parents=True, exist_ok=True)
+    (dest / "reel.mp4").write_bytes((vdir / "reel.mp4").read_bytes())
+    sh("git", "add", "-A", cwd=work)
+    sh("git", "-c", "user.name=Riffs & Légendes", "-c", "user.email=bot@users.noreply.github.com",
+       "commit", "-q", "--allow-empty", "-m", f"Reel {key}", cwd=work)
+    sh("git", "push", "-q", "origin", MEDIA_BRANCH, cwd=work)
+    url = f"https://raw.githubusercontent.com/{repo}/{MEDIA_BRANCH}/{key}-reel/reel.mp4"
+    log(f"Reel en ligne : {url}")
+    if dry:
+        return
+    data = json.loads(spec.read_text(encoding="utf-8"))
+    credit = (folder / "reel_credit.txt").read_text(encoding="utf-8").strip()
+    caption = data.get("caption", "").strip() + ("\n\n" + credit if credit else "") + "\n\n" + " ".join("#" + h for h in data.get("hashtags", []))
+    uid = get_uid()
+    time.sleep(20)
+    cid = call("POST", f"{uid}/media", media_type="REELS", video_url=url, caption=caption.strip(), share_to_feed="true")["id"]
+    for _ in range(60):
+        st = call("GET", cid, fields="status_code").get("status_code")
+        if st == "FINISHED":
+            break
+        if st == "ERROR":
+            raise SystemExit("Instagram a refusé le Reel.")
+        time.sleep(10)
+    post = call("POST", f"{uid}/media_publish", creation_id=cid)
+    log(f"Reel publié : {post}")
+    done = ROOT / "instagram" / "publies" / f"{key}-reel.txt"
+    done.write_text(json.dumps(post) + "\n", encoding="utf-8")
+    sh("git", "add", str(done), cwd=ROOT)
+    sh("git", "-c", "user.name=Riffs & Légendes", "-c", "user.email=bot@users.noreply.github.com",
+       "commit", "-q", "-m", f"Reel publié : {key}", cwd=ROOT)
+    sh("git", "pull", "-q", "--rebase", "origin", "main", cwd=ROOT)
+    sh("git", "push", "-q", "origin", "HEAD:main", cwd=ROOT)
+
+
 def main():
     kind = sys.argv[1]
+    if kind.startswith("reel:"):
+        return reel(kind.split(":", 1)[1], "--dry-run" in sys.argv)
     if kind.startswith("story:"):
         return story_only(kind.split(":", 1)[1])
     dry = "--dry-run" in sys.argv
