@@ -173,8 +173,10 @@ def build(spec):
     if photo:
         dark = " dark" if spec["type"] == "focus" else ""
         pos = e(spec.get("photo_pos", "50% 25%"))
+        yv = spec.get('disc') or spec.get('big') or ''
+        yr = f'<p class="yr">{e(yv)}</p>' if yv and not spec.get('no_year') else ''
         out.append(f"""<section class="slide cover-photo{dark}"><div class="ph" style="--pos:{pos}"><img src="{photo}" alt="">
-<p class="lb">{e(spec['label'])}</p><p class="yr">{e(spec.get('disc') or spec['big'])}</p></div>{sticker}
+<p class="lb">{e(spec['label'])}</p>{yr}</div>{sticker}
 <h1 class="tt">{e(spec['title'])}</h1>{footer(1, total)}</section>""")
     elif spec["type"] == "jour":
         out.append(f"""<section class="slide cover-jour"><p class="label">{e(spec['label'])}</p>
