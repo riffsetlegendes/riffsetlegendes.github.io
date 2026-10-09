@@ -1,0 +1,20 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1986",
+  "title": "Sweet Child O' Mine, l'exercice de guitare devenu numéro un",
+  "slides": [
+    {"head": "Los Angeles, 1986", "big": "Slash joue un exercice qu'il trouve ridicule.", "text": "Une figure de doigts circulaire, presque une blague. Il ne pense pas en faire une chanson."},
+    {"head": "Quelques minutes plus tard", "big": "Le groupe s'en empare.", "text": "Izzy Stradlin pose des accords, Duff McKagan une basse, Steven Adler un tempo. Axl Rose commence à écrire."},
+    {"head": "La fin", "big": "Une question devient la coda.", "text": "Le morceau ne savait pas comment finir. « Where do we go now ? » devient sa dernière partie."},
+    {"head": "Septembre 1988", "big": "Numéro un aux États-Unis.", "text": "Le seul numéro un du Billboard Hot 100 de Guns N' Roses, tiré d'Appetite for Destruction."}
+  ],
+  "tracks": [
+    ["Sweet Child O' Mine", "Guns N' Roses", "1987"],
+    ["Welcome to the Jungle", "Guns N' Roses", "1987"],
+    ["Patience", "Guns N' Roses", "1988"]
+  ],
+  "caption": "Un exercice de guitare que Slash jugeait sans intérêt est devenu l'une des intros les plus célèbres du rock, et le seul numéro un américain de @gunsnroses.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["rock", "histoiredurock", "hardrock", "rock80s", "guitarriff", "vinyle", "gunsnroses", "slash", "sweetchildomine", "appetitefordestruction", "riffsetlegendes"],
+  "photo": "Slash,_Guitarist_of_Guns_N'_Roses_in_2017.jpg"
+}

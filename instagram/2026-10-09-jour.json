@@ -1,0 +1,60 @@
+{
+  "type": "jour",
+  "label": "Ce jour-là",
+  "big": "9 octobre",
+  "title": "1965 : « Yesterday » au sommet",
+  "disc": "1965",
+  "slides": [
+    {
+      "head": "9 octobre 1965",
+      "big": "Un Beatle seul au sommet du Billboard.",
+      "text": "« Yesterday » prend la première place du Hot 100 et y reste quatre semaines."
+    },
+    {
+      "head": "Au réveil",
+      "big": "Une mélodie arrivée en dormant.",
+      "text": "McCartney se réveille avec l'air en tête. Titre provisoire : « Scrambled Eggs », des œufs brouillés."
+    },
+    {
+      "head": "Abbey Road, juin 1965",
+      "big": "Une guitare et un quatuor à cordes.",
+      "text": "Les autres Beatles ne jouent pas. George Martin propose les cordes, McCartney exige zéro vibrato."
+    },
+    {
+      "head": "Pas de single anglais",
+      "big": "Trop sage pour le Royaume-Uni.",
+      "text": "Le groupe refuse le 45 tours chez lui. Capitol le sort aux États-Unis le 13 septembre 1965."
+    }
+  ],
+  "tracks": [
+    [
+      "Yesterday",
+      "The Beatles",
+      "1965"
+    ],
+    [
+      "Act Naturally",
+      "The Beatles",
+      "1965"
+    ],
+    [
+      "Michelle",
+      "The Beatles",
+      "1965"
+    ]
+  ],
+  "caption": "Le 9 octobre 1965, @thebeatles décrochaient un numéro un américain avec une chanson où un seul d'entre eux joue. Une guitare, un quatuor, deux minutes.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "cejourla",
+    "histoiredurock",
+    "vinyle",
+    "60s",
+    "britishinvasion",
+    "abbeyroad",
+    "thebeatles",
+    "paulmccartney",
+    "yesterday",
+    "riffsetlegendes"
+  ],
+  "photo": "Beatles_ad_1965_just_the_beatles_crop.jpg"
+}

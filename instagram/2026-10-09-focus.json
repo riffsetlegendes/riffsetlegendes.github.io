@@ -1,0 +1,24 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1956",
+  "title": "Elvis chez Ed Sullivan, filmé au-dessus de la ceinture",
+  "slides": [
+    {"head": "Été 1956", "big": "Ed Sullivan ne voulait pas d'Elvis.", "text": "Puis Steve Allen l'invite sur NBC et bat Sullivan à l'audience. Contrat signé : 50 000 dollars pour trois passages."},
+    {"head": "9 septembre 1956", "big": "Soixante millions d'Américains devant l'écran.", "text": "Sullivan, convalescent, est remplacé par Charles Laughton. Elvis chante depuis Hollywood, où il tourne Love Me Tender."},
+    {"head": "28 octobre 1956", "big": "La poignée de main à New York.", "text": "Cette fois, Sullivan est là. Don't Be Cruel, Love Me Tender, Love Me et Hound Dog."},
+    {"head": "6 janvier 1957", "big": "La caméra ne descend plus sous la taille.", "text": "Sept chansons, dont le gospel Peace in the Valley. Sullivan conclut : un garçon vraiment correct."}
+  ],
+  "tracks": [["Don't Be Cruel", "Elvis Presley", "1956"], ["Love Me Tender", "Elvis Presley", "1956"], ["Hound Dog", "Elvis Presley", "1956"]],
+  "caption": "Ed Sullivan avait juré de ne jamais l'inviter. Trois dimanches plus tard, il présentait Elvis comme un garçon bien, après l'avoir fait filmer au-dessus de la ceinture.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["rocknroll", "histoiredurock", "vinyle", "fifties", "rockabilly", "tvvintage", "elvispresley", "elvis", "edsullivanshow", "hounddog", "riffsetlegendes"],
+  "photo": "Elvis_Presley_and_Ed_Sullivan_October_1956.jpg",
+  "photos": [
+    "Elvis_Presley_and_Ed_Sullivan_October_1956.jpg",
+    "Elvis_at_Eds.jpg",
+    "Elvis_Presley_first_national_television_appearance_1956.jpg",
+    "Elvis_Presley_Publicity_Still,_1956.jpg"
+  ],
+  "music_mood": "fifties",
+  "reel": true
+}
