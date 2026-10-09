@@ -22,6 +22,7 @@ import asyncio
 import base64
 import html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -154,7 +155,9 @@ def fetch_photo(name):
 
 
 def e(s):
-    return html.escape(s or "")
+    s = (s or "").replace("« ", "«\u00a0").replace(" »", "\u00a0»")
+    s = re.sub(r" ([;?!:])", "\u00a0\\1", s)
+    return html.escape(s)
 
 
 def footer(i, n, dark=False):
