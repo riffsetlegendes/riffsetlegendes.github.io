@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1965",
+  "title": "Tony Iommi, les doigts coupés qui ont alourdi Black Sabbath",
+  "slides": [
+    {"head": "Birmingham, vers 1965", "big": "Dernier jour à l'usine, une presse se referme.", "text": "Tony Iommi, 17 ans, perd le bout de deux doigts de la main droite."},
+    {"head": "Le déclic", "big": "Un disque de Django Reinhardt.", "text": "Le contremaître lui fait écouter un guitariste qui a rebâti son jeu après une blessure à la main."},
+    {"head": "Le bricolage", "big": "Plastique fondu et cuir de veste.", "text": "Il façonne des coiffes avec un flacon de liquide vaisselle et les gaine de cuir."},
+    {"head": "Le son", "big": "Cordes fines, accordage plus grave.", "text": "Cordes de banjo puis Picato, guitare détendue : sur Master of Reality (1971), Sabbath joue en do dièse."}
+  ],
+  "tracks": [
+    ["Iron Man", "Black Sabbath", "1970"],
+    ["Paranoid", "Black Sabbath", "1970"],
+    ["Children of the Grave", "Black Sabbath", "1971"]
+  ],
+  "caption": "Un accident d'usine aurait pu mettre fin à la carrière de Tony Iommi avant qu'elle commence. Des prothèses bricolées, des cordes de banjo et un accordage abaissé ont fini par façonner le son de Black Sabbath.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["rock", "histoiredurock", "heavymetal", "rock70s", "guitarriff", "vinyle", "blacksabbath", "tonyiommi", "masterofreality", "paranoid", "riffsetlegendes"]
+}

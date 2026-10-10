@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "Légende",
+  "big": "1967",
+  "title": "Jimi Hendrix, quatre ans pour réinventer la guitare",
+  "slides": [
+    {"head": "24 septembre 1966", "big": "Il arrive à Londres sans contrat.", "text": "Chas Chandler, bassiste des Animals, l'a repéré au Cafe Wha? de Greenwich Village. En quelques jours, Noel Redding et Mitch Mitchell le rejoignent."},
+    {"head": "Mai 1967", "big": "Are You Experienced.", "text": "Deuxième au classement britannique, derrière Sgt. Pepper. Le larsen n'est plus un accident : il devient une matière."},
+    {"head": "18 juin 1967", "big": "Monterey, la guitare en feu.", "text": "Après Wild Thing, il l'asperge d'essence et l'enflamme. L'Amérique découvre son propre enfant."},
+    {"head": "18 septembre 1970", "big": "Tout s'arrête à 27 ans.", "text": "Trois albums studio, Woodstock, Band of Gypsys et un studio à son nom, Electric Lady."}
+  ],
+  "tracks": [["Purple Haze", "Jimi Hendrix", "1967"], ["Little Wing", "Jimi Hendrix", "1967"], ["All Along the Watchtower", "Jimi Hendrix", "1968"]],
+  "caption": "Moins de quatre ans entre son arrivée à Londres, inconnu, et sa mort dans la même ville. Entre les deux, Jimi Hendrix a changé ce qu'une guitare électrique pouvait dire.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["classicrock", "histoiredurock", "vinyle", "guitarhero", "psychedelicrock", "sixties", "jimihendrix", "hendrix", "monterey1967", "stratocaster", "riffsetlegendes"],
+  "photo": "Jimi_Hendrix_1967_uncropped.jpg",
+  "photos": ["Jimi_Hendrix_1967_uncropped.jpg", "Jimi_Hendrix_1967.png", "Jimi-Hendrix-1967-Helsinki-d.jpg", "Jimi_Hendrix_experience_1968.jpg"],
+  "music_mood": "blues",
+  "reel": true
+}

@@ -1,0 +1,59 @@
+{
+  "type": "jour",
+  "label": "Ce jour-là",
+  "big": "1969",
+  "title": "10 octobre 1969 : King Crimson ouvre sa cour",
+  "slides": [
+    {
+      "head": "10 octobre 1969",
+      "big": "Un premier album, cinq morceaux.",
+      "text": "Island publie In the Court of the Crimson King. Aucun titre sous les six minutes."
+    },
+    {
+      "head": "Hyde Park, juillet 1969",
+      "big": "Sans disque, devant une foule immense.",
+      "text": "Le 5 juillet, le groupe ouvre pour les Rolling Stones au concert gratuit de Londres."
+    },
+    {
+      "head": "Wessex Studios",
+      "big": "Ils se produisent eux-mêmes.",
+      "text": "Après un faux départ avec Tony Clarke, huit pistes, un Mellotron capricieux et des bandes repiquées."
+    },
+    {
+      "head": "La pochette",
+      "big": "Un visage peint dans un miroir.",
+      "text": "L'œuvre de Barry Godber, programmeur, mort en février 1970. Sa seule pochette."
+    }
+  ],
+  "tracks": [
+    [
+      "21st Century Schizoid Man",
+      "King Crimson",
+      "1969"
+    ],
+    [
+      "Epitaph",
+      "King Crimson",
+      "1969"
+    ],
+    [
+      "The Court of the Crimson King",
+      "King Crimson",
+      "1969"
+    ]
+  ],
+  "caption": "Le 10 octobre 1969, King Crimson publiait son premier album, produit par le groupe lui-même, six mois après son premier concert. Un visage hurlant, un Mellotron, quarante-trois minutes.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "cejourla",
+    "histoiredurock",
+    "vinyle",
+    "rockprogressif",
+    "mellotron",
+    "britishrock",
+    "kingcrimson",
+    "robertfripp",
+    "greglake",
+    "inthecourtofthecrimsonking",
+    "riffsetlegendes"
+  ]
+}

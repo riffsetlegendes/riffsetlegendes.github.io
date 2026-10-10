@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2026-10-22-the-strokes-paris@riffsetlegendes
+DTSTAMP:20261022T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:The Strokes en concert
+LOCATION:Accor Arena, Paris
+DESCRIPTION:Infos et billets : https://www.accorarena.com/en/events-and-tickets/the-strokes--27510
+END:VEVENT
+END:VCALENDAR

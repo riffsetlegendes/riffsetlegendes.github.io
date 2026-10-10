@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2026-11-25-placebo-paris@riffsetlegendes
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Placebo en concert
+LOCATION:Accor Arena, Paris
+DESCRIPTION:Infos et billets : https://www.fnacspectacles.com/magazine/concerts/placebo-concert-2026-tournee-france
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Riffs & Legendes//Concerts//FR
+BEGIN:VEVENT
+UID:2026-11-13-fontaines-d-c-paris@riffsetlegendes
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Fontaines D.C. en concert
+LOCATION:Accor Arena, Paris
+DESCRIPTION:Infos et billets : https://www.accorarena.com/en/events-and-tickets/fontaines-dc--613b6
+END:VEVENT
+END:VCALENDAR

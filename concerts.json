@@ -25,6 +25,14 @@
   "source": "https://www.jds.fr/artistes/deep-purple-3418_N"
  },
  {
+  "date": "2026-10-22",
+  "artist": "The Strokes",
+  "city": "Paris",
+  "venue": "Accor Arena",
+  "type": "releve",
+  "source": "https://www.accorarena.com/en/events-and-tickets/the-strokes--27510"
+ },
+ {
   "date": "2026-10-28",
   "time": "20:00",
   "artist": "Duran Duran",
@@ -61,6 +69,14 @@
   "source": "https://www.jds.fr/artistes/deep-purple-3418_N"
  },
  {
+  "date": "2026-11-13",
+  "artist": "Fontaines D.C.",
+  "city": "Paris",
+  "venue": "Accor Arena",
+  "type": "releve",
+  "source": "https://www.accorarena.com/en/events-and-tickets/fontaines-dc--613b6"
+ },
+ {
   "date": "2026-11-15",
   "time": "19:00",
   "artist": "Deep Purple",
@@ -70,12 +86,28 @@
   "source": "https://www.jds.fr/artistes/deep-purple-3418_N"
  },
  {
+  "date": "2026-11-23",
+  "artist": "Placebo",
+  "city": "Lyon",
+  "venue": "LDLC Arena",
+  "type": "legende",
+  "source": "https://www.fnacspectacles.com/magazine/concerts/placebo-concert-2026-tournee-france"
+ },
+ {
   "date": "2026-11-24",
   "artist": "The Pretty Reckless",
   "city": "Paris",
   "venue": "Zénith Paris La Villette",
   "type": "releve",
   "source": "https://www.infoconcert.com/actualites/the-pretty-reckless-en-concert-au-zenith-de-paris-en-novembre-2026-loccasion-de-decouvrir-en-live-les-titres-de-leur-nouvel-album-dear-god-22023"
+ },
+ {
+  "date": "2026-11-25",
+  "artist": "Placebo",
+  "city": "Paris",
+  "venue": "Accor Arena",
+  "type": "legende",
+  "source": "https://www.fnacspectacles.com/magazine/concerts/placebo-concert-2026-tournee-france"
  },
  {
   "date": "2026-11-26",
@@ -103,6 +135,15 @@
   "venue": "La Seine Musicale",
   "type": "legende",
   "source": "https://www.jds.fr/actu/indochine-annonce-9-concerts-exceptionnels-la-france-aura-droit-a-trois-soirees-tres-attendues-a-paris-1632007_A"
+ },
+ {
+  "date": "2026-12-09",
+  "time": "19:00",
+  "artist": "Polyphia",
+  "city": "Paris",
+  "venue": "Zénith Paris La Villette",
+  "type": "releve",
+  "source": "https://www.jds.fr/paris/concerts/rock/polyphia-tour-mmxxvi-1598969_A"
  },
  {
   "date": "2027-04-01",
