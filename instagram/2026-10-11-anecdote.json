@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1969",
+  "title": "« Whole Lotta Love », l'écho qui arrive avant la voix",
+  "slides": [
+    {"head": "Londres, avril 1969", "big": "Le riff passe aux Olympic Studios.", "text": "Led Zeppelin grave la base du morceau entre deux tournées."},
+    {"head": "Le truc de Page", "big": "Un écho qui précède le son.", "text": "Bande retournée, écho ajouté, bande remise à l'endroit : le souffle arrive avant la note."},
+    {"head": "L'accident gardé", "big": "Une voix fantôme sur la bande.", "text": "À New York, Eddie Kramer noie dans la réverb une ancienne prise de chant impossible à effacer."},
+    {"head": "Le résultat", "big": "N° 4 aux États-Unis.", "text": "Le seul single du groupe dans le top 10 américain. Pas de 45 tours au Royaume-Uni."}
+  ],
+  "tracks": [
+    ["Whole Lotta Love", "Led Zeppelin", "1969"],
+    ["Dazed and Confused", "Led Zeppelin", "1969"],
+    ["When the Levee Breaks", "Led Zeppelin", "1971"]
+  ],
+  "caption": "Un écho inversé, une fuite de bande transformée en effet, un thérémine au milieu du chaos : « Whole Lotta Love » s'est fabriqué autant à la console qu'à la guitare.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["ledzeppelin", "jimmypage", "wholelottalove", "ledzeppelinii", "studiorecording", "classicrock", "rock60s", "rockhistory", "vinyl", "anecdoterock", "eddiekramer"]
+}

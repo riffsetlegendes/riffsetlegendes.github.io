@@ -1,0 +1,48 @@
+{
+  "type": "jour",
+  "label": "Ce jour-là",
+  "big": "1975",
+  "title": "11 octobre 1975 : Billy Preston et Janis Ian ouvrent le bal de Saturday Night",
+  "photo": "Billy_Preston_perforning_in_1971.jpg",
+  "slides": [
+    {
+      "head": "11 octobre 1975",
+      "big": "Première émission, en direct.",
+      "text": "NBC's Saturday Night démarre au Studio 8H, à New York. George Carlin présente."
+    },
+    {
+      "head": "Une troupe inconnue",
+      "big": "Belushi, Chase, Radner, Aykroyd…",
+      "text": "Lorne Michaels a réuni des comédiens que personne ne connaît encore."
+    },
+    {
+      "head": "Billy Preston",
+      "big": "Le claviériste des Beatles.",
+      "text": "Il joue « Nothing from Nothing » et « Fancy Lady »."
+    },
+    {
+      "head": "Janis Ian",
+      "big": "Le silence après la fête.",
+      "text": "Elle chante « At Seventeen » et « In the Winter »."
+    }
+  ],
+  "tracks": [
+    ["Nothin' From Nothin'", "Billy Preston", "1974"],
+    ["At Seventeen", "Janis Ian", "1975"],
+    ["In the Winter", "Janis Ian", "1975"]
+  ],
+  "caption": "Le 11 octobre 1975, la future Saturday Night Live passait pour la première fois à l'antenne. Au programme musical : Billy Preston, l'homme des claviers des Beatles, et Janis Ian.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "cejourla",
+    "histoiredurock",
+    "vinyle",
+    "rock70s",
+    "soulrock",
+    "televisionmusicale",
+    "billypreston",
+    "janisian",
+    "saturdaynightlive",
+    "snl",
+    "riffsetlegendes"
+  ]
+}

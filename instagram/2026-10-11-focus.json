@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "La relève",
+  "big": "2026",
+  "title": "The Warning, trois sœurs de Monterrey face au grand saut",
+  "slides": [
+    {"head": "2013, Monterrey", "big": "Trois sœurs, un trio.", "text": "Dany à la guitare et au chant, Pau à la batterie, Ale à la basse. Toutes trois passent aussi par le piano."},
+    {"head": "2014", "big": "Une vidéo fait le tour du monde.", "text": "Leur reprise d'Enter Sandman dépasse les 26 millions de vues. Kirk Hammett salue la batteuse."},
+    {"head": "28 août 2026", "big": "Everything's Falling.", "text": "Cinquième album, enregistré à Monterrey. Kerosene devient numéro un du Mainstream Rock Airplay de Billboard."},
+    {"head": "Mars 2027", "big": "Lyon, puis le Zénith de Paris.", "text": "Après un premier stade en tête d'affiche à Mexico, le 5 février."}
+  ],
+  "tracks": [["Kerosene", "The Warning", "2026"], ["MORE", "The Warning", "2024"], ["CHOKE", "The Warning", "2021"]],
+  "caption": "Elles ont quitté la route pour écrire chez elles, à Monterrey. Les sœurs Villarreal reviennent avec Everything's Falling, un numéro un rock aux États-Unis et une tournée qui passera par Lyon et Paris en mars 2027.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["thewarning", "larelève", "rockactuel", "hardrock", "everythingsfalling", "monterrey", "rockmexicain", "newrock", "zenithparis", "riffsetlegendes"],
+  "photo": "The_Warning_at_Sound_of_Music_2022-1.jpg",
+  "photos": ["The_Warning_at_Sound_of_Music_2022-1.jpg", "The_Warning_at_Sound_of_Music_2022-2_(cropped).jpg", "The_Warning_-_2024213170217_2024-07-31_Wacken_-_Sven_-_1D_X_MK_II_-_1380_-_AK8I8671.jpg", "Paulina_Villarreal_-_The_Warning_-_Rock_im_Park_2023_03_(cropped).jpg"],
+  "music_mood": "punk",
+  "reel": true
+}
