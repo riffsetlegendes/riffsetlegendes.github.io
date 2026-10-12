@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1974",
+  "title": "« Born to Run », six mois pour une seule chanson",
+  "slides": [
+    {"head": "Blauvelt, janvier 1974", "big": "Un petit studio, seize pistes.", "text": "Springsteen attaque son troisième album par une seule chanson."},
+    {"head": "L'obsession", "big": "72 pistes sur 16.", "text": "Guitares, claviers, percussions, sax : tout s'empile pendant six mois."},
+    {"head": "Avant tout le monde", "big": "La radio d'abord.", "text": "En novembre 1974, Mike Appel envoie le morceau aux stations, des mois avant l'album."},
+    {"head": "Le dénouement", "big": "25 août 1975.", "text": "L'album sort, monte au n° 3, et Springsteen fait la une de Time et Newsweek."}
+  ],
+  "tracks": [
+    ["Born to Run", "Bruce Springsteen", "1975"],
+    ["Thunder Road", "Bruce Springsteen", "1975"],
+    ["Jungleland", "Bruce Springsteen", "1975"]
+  ],
+  "caption": "Six mois, soixante-douze pistes comprimées sur seize, un batteur et un pianiste partis en cours de route : « Born to Run » a été construit couche après couche, jusqu'à l'épuisement.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["brucespringsteen", "borntorun", "estreetband", "clarenceclemons", "thunderroad", "rock70s", "americanrock", "recordingstudio", "histoiredurock", "vinylcollection"]
+}

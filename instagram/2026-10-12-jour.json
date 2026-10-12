@@ -1,0 +1,47 @@
+{
+  "type": "jour",
+  "label": "Ce jour-là",
+  "big": "1971",
+  "title": "12 octobre 1971 : Jesus Christ Superstar monte sur Broadway",
+  "photo": "Jesus_Christ_Superstar_Elliman_Neeley_1973.jpg",
+  "slides": [
+    {
+      "head": "12 octobre 1971",
+      "big": "Première à Broadway.",
+      "text": "L'opéra rock de Lloyd Webber et Rice arrive au Mark Hellinger Theatre."
+    },
+    {
+      "head": "D'abord un disque",
+      "big": "Numéro un aux États-Unis.",
+      "text": "Le double album de 1970, avec Ian Gillan en Jésus, a précédé la scène."
+    },
+    {
+      "head": "Sur le trottoir",
+      "big": "Manifestants et critiques mitigées.",
+      "text": "Pancartes devant le théâtre, avis partagés dans la presse."
+    },
+    {
+      "head": "Le public tranche",
+      "big": "711 représentations.",
+      "text": "Le spectacle tient jusqu'en juillet 1973 et décroche cinq nominations aux Tony."
+    }
+  ],
+  "tracks": [
+    ["Child in Time", "Deep Purple", "1970"],
+    ["If I Can't Have You (live)", "Yvonne Elliman", "1977"],
+    ["One Night in Bangkok", "Murray Head", "1984"]
+  ],
+  "caption": "Le 12 octobre 1971, Jesus Christ Superstar passait du vinyle aux planches de Broadway. Un opéra rock né en studio, des manifestants devant le théâtre et 711 représentations.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "annees70",
+    "operarock",
+    "jesuschristsuperstar",
+    "broadway",
+    "andrewlloydwebber",
+    "timrice",
+    "iangillan",
+    "yvonneelliman",
+    "rock1971",
+    "comediemusicale"
+  ]
+}

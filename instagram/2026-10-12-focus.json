@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "Légende",
+  "big": "1979",
+  "title": "The Clash, dix ans pour faire tenir le monde dans le punk",
+  "slides": [
+    {"head": "Londres, 1976", "big": "Quatre garçons, un choc.", "text": "Strummer, Jones, Simonon et Terry Chimes montent un groupe dans l'onde de choc des Sex Pistols."},
+    {"head": "1977", "big": "White Riot.", "text": "Signature chez CBS, premier album sec et frontal. Topper Headon prend ensuite la batterie."},
+    {"head": "Fin 1979", "big": "London Calling.", "text": "Un double album où se croisent reggae, rockabilly et ska. Train in Vain, absent de la pochette, devient leur premier succès américain."},
+    {"head": "1982–1986", "big": "Le tube, puis la fin.", "text": "Combat Rock et Rock the Casbah, le renvoi de Mick Jones, puis la séparation en 1986."}
+  ],
+  "tracks": [["London Calling", "The Clash", "1979"], ["The Guns of Brixton", "The Clash", "1979"], ["Rock the Casbah", "The Clash", "1982"]],
+  "caption": "Partis de trois accords et d'une colère londonienne, The Clash ont ouvert le punk au reggae, au dub et au rockabilly en six albums.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["theclash", "punkrock", "punk", "londoncalling", "joestrummer", "mickjones", "paulsimonon", "classicrock", "histoiredurock", "vinyle", "riffsetlegendes"],
+  "photo": "Clash_21051980_12_800.jpg",
+  "photos": ["Clash_21051980_12_800.jpg", "JoeStrummer1980.jpg", "MickJones1980.jpg", "Paul_Simonon_The_Clash_September_20_1979_Palladium_NYC.jpg"],
+  "music_mood": "punk",
+  "reel": true
+}
