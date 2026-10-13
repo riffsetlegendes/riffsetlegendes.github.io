@@ -209,7 +209,23 @@ async def render(pages, folder, avatar=False):
         await pg.set_content(doc)
         await pg.evaluate("document.fonts.ready")
         await pg.wait_for_timeout(400)
-        sel = ".avatar" if avatar else ".slide"
+        # Ajustement automatique : aucun texte ne doit déborder ni toucher le pied de page.
+        await pg.evaluate("""() => {
+          for (const s of document.querySelectorAll('.slide')) {
+            const limit = s.getBoundingClientRect().bottom - 120;
+            const els = [...s.querySelectorAll('.tt,.title,.name,.big,.text,.cta,ol')];
+            for (let k = 0; k < 40; k++) {
+              const over = els.some(e => e.getBoundingClientRect().bottom > limit);
+              if (!over) break;
+              for (const e of els) {
+                const fs = parseFloat(getComputedStyle(e).fontSize);
+                e.style.fontSize = (fs * 0.95) + 'px';
+              }
+            }
+          }
+        }""")
+        await pg.wait_for_timeout(100)
+        sel =".avatar" if avatar else ".slide"
         els = await pg.query_selector_all(sel)
         files = []
         for i, el in enumerate(els, 1):
