@@ -1,0 +1,48 @@
+{
+  "type": "jour",
+  "label": "Ce jour-là",
+  "big": "1966",
+  "title": "13 octobre 1966 : le Jimi Hendrix Experience joue pour la première fois, à Évreux",
+  "photo": "Jimi-Hendrix-1967-Helsinki.jpg",
+  "slides": [
+    {
+      "head": "13 octobre 1966",
+      "big": "Premier concert, à Évreux.",
+      "text": "Le trio ouvre pour Johnny Hallyday au cinéma Novelty."
+    },
+    {
+      "head": "Un groupe tout neuf",
+      "big": "Hendrix, Redding, Mitchell.",
+      "text": "Assemblé à Londres par Chas Chandler quelques jours plus tôt."
+    },
+    {
+      "head": "Quatre dates en France",
+      "big": "Final à l'Olympia.",
+      "text": "Le 18 octobre, le trio joue à Paris. Le concert est enregistré."
+    },
+    {
+      "head": "Retour à Londres",
+      "big": "« Hey Joe » en single.",
+      "text": "Enregistré fin octobre, il sort en décembre 1966."
+    }
+  ],
+  "tracks": [
+    ["Hey Joe", "The Jimi Hendrix Experience", "1966"],
+    ["Stone Free", "The Jimi Hendrix Experience", "1966"],
+    ["Killing Floor (BBC Sessions)", "The Jimi Hendrix Experience", "1967"]
+  ],
+  "caption": "Le 13 octobre 1966, dans un cinéma d'Évreux, le Jimi Hendrix Experience donnait son tout premier concert, en ouverture de Johnny Hallyday. Quelques reprises soul et « Hey Joe » : le début de tout.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "jimihendrix",
+    "jimihendrixexperience",
+    "evreux",
+    "johnnyhallyday",
+    "heyjoe",
+    "noelredding",
+    "mitchmitchell",
+    "rock1966",
+    "annees60",
+    "olympia",
+    "premierconcert"
+  ]
+}

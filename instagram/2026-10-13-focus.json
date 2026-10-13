@@ -1,0 +1,66 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1968",
+  "title": "Johnny Cash à Folsom, le concert donné derrière les murs",
+  "slides": [
+    {
+      "head": "13 janvier 1968",
+      "big": "Folsom, Californie.",
+      "text": "Johnny Cash entre dans la prison d'État avec ses musiciens et les magnétophones de Columbia."
+    },
+    {
+      "head": "Deux concerts",
+      "big": "Matin et après-midi.",
+      "text": "Deux concerts sont enregistrés le même jour, par précaution. Le premier sera jugé le meilleur."
+    },
+    {
+      "head": "Glen Sherley",
+      "big": "La chanson d'un détenu.",
+      "text": "Cash chante Greystone Chapel, écrite par un prisonnier assis dans la salle, qui n'était pas prévenu."
+    },
+    {
+      "head": "Mai 1968",
+      "big": "N° 1 country.",
+      "text": "At Folsom Prison grimpe en tête du classement country et relance la carrière de Cash."
+    }
+  ],
+  "tracks": [
+    [
+      "Folsom Prison Blues (Live)",
+      "Johnny Cash",
+      "1968"
+    ],
+    [
+      "Jackson (Live)",
+      "Johnny Cash",
+      "1968"
+    ],
+    [
+      "Greystone Chapel (Live)",
+      "Johnny Cash",
+      "1968"
+    ]
+  ],
+  "caption": "Le 13 janvier 1968, Johnny Cash joue deux fois devant les détenus de Folsom et termine sur une chanson écrite par l'un d'eux.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "johnnycash",
+    "folsomprison",
+    "atfolsomprison",
+    "junecarter",
+    "country",
+    "rockabilly",
+    "live",
+    "1968",
+    "histoiredurock",
+    "riffsetlegendes"
+  ],
+  "photo": "FolsomStatePrison.jpg",
+  "photos": [
+    "FolsomStatePrison.jpg",
+    "East_Gate_Folsom_Prison_(5434836534).jpg",
+    "JohnnyCashJuneCarterCash1969.jpg"
+  ],
+  "music_mood": "fifties",
+  "reel": true
+}

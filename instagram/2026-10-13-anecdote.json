@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1981",
+  "title": "« In the Air Tonight », la batterie qui s'arrête net",
+  "slides": [
+    {"head": "Londres, fin 1979", "big": "Un bouton de trop.", "text": "À la Townhouse, Hugh Padgham ouvre le micro d'écoute pendant que Phil Collins joue."},
+    {"head": "La recette", "big": "Pierre, compresseur, porte.", "text": "Une pièce aux murs de pierre, un son écrasé, puis coupé net après chaque coup."},
+    {"head": "Le premier essai", "big": "« Intruder », 1980.", "text": "Peter Gabriel demande à Collins de jouer sans cymbales. L'effet est né."},
+    {"head": "Le choc", "big": "3 min 40 d'attente.", "text": "Janvier 1981 : les toms entrent enfin, et le single monte au n° 2 britannique."}
+  ],
+  "tracks": [
+    ["In the Air Tonight", "Phil Collins", "1981"],
+    ["I Missed Again", "Phil Collins", "1981"],
+    ["Mama", "Genesis", "1983"]
+  ],
+  "caption": "Un micro qui ne devait servir qu'à entendre les musiciens parler, une console neuve et une pièce en pierre : le son de batterie d'« In the Air Tonight » est né d'un accident de studio.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["philcollins", "intheairtonight", "gatedreverb", "hughpadgham", "petergabriel", "facevalue", "genesis", "drumsound", "studiohistory", "rock80s", "anecdoterock"]
+}
