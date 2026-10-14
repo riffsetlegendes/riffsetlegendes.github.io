@@ -225,7 +225,7 @@ def main():
         (out / "reel_credit.txt").write_text("", encoding="utf-8")
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                              "-r", str(FPS), "-i", "-", *audio, "-t", f"{dur:.2f}", *afilter, "-map", "0:v", "-map", "1:a",
-                             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "medium", "-crf", "20",
+                             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "medium", "-crf", "27" if fmt == "docu" else "22", "-maxrate", "8M", "-bufsize", "16M",
                              "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(out / "reel.mp4")], stdin=subprocess.PIPE)
     for i in range(int(dur * FPS)):
         proc.stdin.write(draw(i / FPS, spec, pics, segs).convert("RGB").tobytes())
