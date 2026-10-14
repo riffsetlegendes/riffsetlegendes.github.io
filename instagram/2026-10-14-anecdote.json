@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "Anecdote",
+  "big": "1978",
+  "title": "La « Frankenstrat », guitare en pièces détachées",
+  "slides": [
+    {"head": "Azusa, 1977", "big": "50 dollars le corps.", "text": "Chez Wayne Charvel, Eddie Van Halen achète un corps en frêne de second choix."},
+    {"head": "Le greffon", "big": "Un micro de Gibson.", "text": "Il retire l'humbucker de sa ES-335 et le monte, en biais, dans un corps façon Fender."},
+    {"head": "La finition", "big": "Du ruban adhésif.", "text": "Noir, puis blanc par-dessus des bandes collées : les rayures naissent à la main."},
+    {"head": "10 février 1978", "big": "En pochette.", "text": "La guitare rayée apparaît sur le premier album. Le rouge viendra en mars 1979."}
+  ],
+  "tracks": [
+    ["Eruption", "Van Halen", "1978"],
+    ["Ain't Talkin' 'Bout Love", "Van Halen", "1978"],
+    ["Unchained", "Van Halen", "1981"]
+  ],
+  "caption": "Un corps à 50 dollars, un manche à 80, un micro pris sur une Gibson et beaucoup de ruban adhésif : la « Frankenstrat » d'Eddie Van Halen est née d'un bricolage de 1977.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["vanhalen", "eddievanhalen", "frankenstrat", "eruption", "guitarhistory", "superstrat", "rock78", "hardrock", "guitargear", "classicrock"]
+}

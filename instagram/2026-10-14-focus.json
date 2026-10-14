@@ -1,0 +1,19 @@
+{
+  "type": "focus",
+  "label": "Légende",
+  "big": "1976",
+  "title": "Ramones, vingt-deux ans à jouer vite et court",
+  "slides": [
+    {"head": "Queens, 1974", "big": "Une famille inventée.", "text": "Joey, Johnny, Dee Dee et Tommy prennent le même nom et débutent le 30 mars 1974."},
+    {"head": "1976", "big": "Blitzkrieg Bop.", "text": "Premier album chez Sire, puis premiers concerts à Londres en juillet."},
+    {"head": "1980", "big": "Le mur du son.", "text": "Phil Spector produit End of the Century, leur album le mieux classé aux États-Unis."},
+    {"head": "6 août 1996", "big": "Dernier concert.", "text": "Au Palace d'Hollywood, après vingt-deux ans de route. Hall of Fame en 2002."}
+  ],
+  "tracks": [["Blitzkrieg Bop", "Ramones", "1976"], ["Sheena Is a Punk Rocker", "Ramones", "1977"], ["I Wanna Be Sedated", "Ramones", "1978"]],
+  "caption": "Des chansons de deux minutes, des concerts sans temps mort, un nom de famille partagé : les Ramones ont tenu leur ligne de 1974 à 1996.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": ["ramones", "punkrock", "punk", "joeyramone", "johnnyramone", "deedeeramone", "cbgb", "classicrock", "histoiredurock", "vinyle", "riffsetlegendes"],
+  "photo": "Ramones_Toronto_1976.jpg",
+  "photos": ["Ramones_Toronto_1976.jpg", "Ramones_1983_b.jpg", "Joey_Ramone.jpg", "Johnny_Ramone.jpg"],
+  "music_mood": "punk",
+  "reel": true
+}

@@ -1,0 +1,47 @@
+{
+  "type": "jour",
+  "label": "Ce jour-là",
+  "big": "1977",
+  "title": "14 octobre 1977 : Bowie publie « Heroes »",
+  "photo": "David_bowie_05061978_01_150.jpg",
+  "slides": [
+    {
+      "head": "14 octobre 1977",
+      "big": "« Heroes » sort chez RCA.",
+      "text": "Deuxième volet de la période berlinoise de Bowie."
+    },
+    {
+      "head": "Studio Hansa",
+      "big": "Enregistré près du Mur.",
+      "text": "Juillet-août 1977, à Berlin-Ouest, avec Eno et Visconti."
+    },
+    {
+      "head": "Robert Fripp",
+      "big": "Six heures de guitare.",
+      "text": "Sans répéter, en premières prises, selon Brian Eno."
+    },
+    {
+      "head": "Trois micros",
+      "big": "Une voix qui s'ouvre.",
+      "text": "Visconti laisse la salle entrer dans le chant à mesure qu'il monte."
+    }
+  ],
+  "tracks": [
+    ["Beauty and the Beast", "David Bowie", "1977"],
+    ["\"Heroes\"", "David Bowie", "1977"],
+    ["V-2 Schneider", "David Bowie", "1977"]
+  ],
+  "caption": "Le 14 octobre 1977, David Bowie publiait « Heroes », enregistré l'été précédent au studio Hansa, à deux pas du Mur de Berlin. Avec Brian Eno, Tony Visconti et la guitare de Robert Fripp.\n\nL'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "davidbowie",
+    "heroes",
+    "berlin",
+    "hansastudios",
+    "brianeno",
+    "tonyvisconti",
+    "robertfripp",
+    "rock1977",
+    "annees70",
+    "trilogieberlinoise"
+  ]
+}
