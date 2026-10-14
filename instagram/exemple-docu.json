@@ -1,0 +1,46 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "hashtags": [
+  "riffsetlegendes"
+ ],
+ "caption": "Exemple de format, non publié.",
+ "format": "docu",
+ "label": "Légende",
+ "big": "1974",
+ "title": "Les Ramones, vingt-deux ans à toute vitesse",
+ "song": {
+  "title": "Blitzkrieg Bop",
+  "artist": "Ramones"
+ },
+ "music_mood": "punk",
+ "photos": [
+  "Ramones_Toronto_1976.jpg",
+  "Ramones_1983_b.jpg",
+  "Joey_Ramone.jpg",
+  "Johnny_Ramone.jpg"
+ ],
+ "slides": [
+  {
+   "head": "1974",
+   "big": "Quatre gars du Queens montent sur la scène du CBGB, à New York."
+  },
+  {
+   "head": "1976",
+   "big": "Premier album : quatorze titres, presque tous sous les trois minutes."
+  },
+  {
+   "head": "Juillet 1976",
+   "big": "Concert à Londres. Le punk anglais est en train de naître."
+  },
+  {
+   "head": "1980",
+   "big": "Phil Spector produit « End of the Century »."
+  },
+  {
+   "head": "6 août 1996",
+   "big": "Dernier concert. Après vingt-deux ans, les Ramones raccrochent."
+  }
+ ]
+}

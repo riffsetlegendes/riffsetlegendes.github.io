@@ -1,0 +1,38 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "hashtags": [
+  "riffsetlegendes"
+ ],
+ "caption": "Exemple de format, non publié.",
+ "format": "countdown",
+ "label": "Anecdote",
+ "big": "1968",
+ "hook": "Johnny Cash a enregistré son plus grand album… dans une prison.",
+ "title": "Johnny Cash à Folsom",
+ "song": {
+  "title": "Folsom Prison Blues",
+  "artist": "Johnny Cash"
+ },
+ "music_mood": "fifties",
+ "photos": [
+  "FolsomStatePrison.jpg",
+  "East_Gate_Folsom_Prison_(5434836534).jpg",
+  "JohnnyCashJuneCarterCash1969.jpg"
+ ],
+ "slides": [
+  {
+   "big": "Deux concerts le même jour",
+   "text": "Le 13 janvier 1968, Cash joue deux fois devant les détenus de Folsom, en Californie."
+  },
+  {
+   "big": "Une chanson écrite par un détenu",
+   "text": "« Greystone Chapel », de Glen Sherley, prisonnier à Folsom, referme le concert."
+  },
+  {
+   "big": "Numéro 1",
+   "text": "L'album sort en mai 1968 et prend la tête du classement country américain."
+  }
+ ]
+}

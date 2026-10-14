@@ -1,0 +1,41 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "hashtags": [
+  "riffsetlegendes"
+ ],
+ "caption": "Exemple de format, non publié.",
+ "format": "journal",
+ "label": "Ce jour-là",
+ "big": "1966",
+ "dateline": "Jeudi 13 octobre 1966 · Évreux",
+ "title": "Un guitariste inconnu ouvre pour Johnny Hallyday",
+ "song": {
+  "title": "Hey Joe",
+  "artist": "The Jimi Hendrix Experience"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Jimi-Hendrix-1967-Helsinki.jpg",
+  "Jimi_Hendrix_1967_uncropped.jpg"
+ ],
+ "slides": [
+  {
+   "head": "Évreux, cinéma Novelty",
+   "big": "Le Jimi Hendrix Experience joue son tout premier concert, en première partie de Johnny Hallyday."
+  },
+  {
+   "head": "Un trio tout neuf",
+   "big": "Hendrix, Noel Redding et Mitch Mitchell ont été réunis à Londres par Chas Chandler quelques jours plus tôt."
+  },
+  {
+   "head": "Cinq jours plus tard",
+   "big": "Le 18 octobre, le trio joue à l'Olympia, à Paris. Le concert est enregistré."
+  },
+  {
+   "head": "Décembre 1966",
+   "big": "« Hey Joe » sort en single. Le reste appartient à l'histoire."
+  }
+ ]
+}

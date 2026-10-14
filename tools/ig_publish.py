@@ -118,7 +118,8 @@ def story_only(key):
 def reel(key, dry):
     """Reel à partir d'un carrousel préparé (ex. reel:2026-10-08-focus)."""
     spec = ROOT / "instagram" / f"{key}.json"
-    sh(sys.executable, str(ROOT / "tools" / "reel.py"), str(spec))
+    gen = "reel_formats.py" if json.loads(spec.read_text(encoding="utf-8")).get("format") else "reel.py"
+    sh(sys.executable, str(ROOT / "tools" / gen), str(spec))
     folder = ROOT / "out" / "instagram" / key
     vdir = folder / "video"
     vdir.mkdir(exist_ok=True)
