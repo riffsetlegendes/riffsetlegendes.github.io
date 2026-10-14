@@ -58,7 +58,8 @@ def photos(spec, local):
     out = []
     for n in names:
         try:
-            data = fetch("https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(n) + "?width=1400")
+            url = n if n.startswith("http") else "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(n) + "?width=1400"
+            data = fetch(url)
             out.append(riso(Image.open(io.BytesIO(data)).convert("RGB")))
         except Exception as ex:
             print("photo indisponible :", n, ex, file=sys.stderr)

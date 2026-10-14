@@ -12,7 +12,10 @@
  },
  "music_mood": "seventies",
  "photos": [
-  "Dirty_Honey_at_PNC_Bank_Arts_Center_in_NJ.jpg"
+  "https://assets.blabbermouth.net/media/dirtyhoneylightsvidsept2026_638.jpg",
+  "Dirty_Honey_at_PNC_Bank_Arts_Center_in_NJ.jpg",
+  "https://amplifymusicmag.com/wp-content/uploads/2024/05/60C6B8F2-8E5E-4FB2-81DB-A27A3153978E.jpeg",
+  "https://amplifymusicmag.com/wp-content/uploads/2024/05/EF334338-DCFA-4B75-8D46-BA39D122A2B2.jpeg"
  ],
  "slides": [
   {
@@ -32,5 +35,6 @@
  "caption": "Exemple, non publié.",
  "hashtags": [
   "riffsetlegendes"
- ]
+ ],
+ "photo_credit": "Photos : Ross Halfin, Natalie Mason, Wikimedia Commons"
 }
