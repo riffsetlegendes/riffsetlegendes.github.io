@@ -1,0 +1,36 @@
+{
+ "type": "focus",
+ "reel": true,
+ "format": "countdown",
+ "label": "La relève",
+ "big": "2027",
+ "hook": "Dirty Honey revient avec un troisième album. Trois choses à savoir.",
+ "title": "Catch My Butterfly",
+ "song": {
+  "title": "Lights Out",
+  "artist": "Dirty Honey"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Dirty_Honey_at_PNC_Bank_Arts_Center_in_NJ.jpg"
+ ],
+ "slides": [
+  {
+   "big": "14 titres, un nouveau producteur",
+   "text": "« Catch My Butterfly » est produit par John Feldmann, qui a travaillé avec Blink-182 et Yungblud."
+  },
+  {
+   "big": "Deux titres déjà sortis",
+   "text": "« Lights Out » et « Butterfly » donnent le ton de l'album."
+  },
+  {
+   "big": "15 janvier 2027",
+   "text": "Sortie de l'album, puis concert à Paris, à La Maroquinerie, le 15 mars 2027."
+  }
+ ],
+ "tracks": [],
+ "caption": "Exemple, non publié.",
+ "hashtags": [
+  "riffsetlegendes"
+ ]
+}
