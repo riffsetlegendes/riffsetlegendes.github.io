@@ -61,7 +61,8 @@ def frame_journal(t, spec, pics, segs):
     d.line((60, 220, W - 60, 220), fill=INK, width=6)
     d.line((60, 232, W - 60, 232), fill=INK, width=2)
     d.text((60, 250), spec.get("dateline", spec.get("big", "")).upper(), font=mono(34), fill=INK)
-    d.text((W - 60, 250), "ÉDITION SPÉCIALE", font=mono(34), fill=INK, anchor="ra")
+    if d.textlength(spec.get("dateline", spec.get("big", "")).upper(), font=mono(34)) < W - 120 - d.textlength("ÉDITION SPÉCIALE", font=mono(34)) - 40:
+        d.text((W - 60, 250), "ÉDITION SPÉCIALE", font=mono(34), fill=INK, anchor="ra")
     d.line((60, 300, W - 60, 300), fill=INK, width=2)
     slides = spec["slides"]
     if seg == 0:  # une : gros titre + photo
