@@ -1,0 +1,52 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "journal",
+ "label": "Ce jour-là",
+ "big": "1971",
+ "dateline": "Vendredi 15 octobre 1971 · New York",
+ "title": "Rick Nelson sifflé au Madison Square Garden",
+ "song": {
+  "title": "Garden Party",
+  "artist": "Rick Nelson and the Stone Canyon Band"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Decca_Records_Rick_Nelson_1966.jpg",
+  "Ricky_Nelson_-_publicity.JPG",
+  "Rick_kris_nelson_1964.JPG",
+  "Ricky_Nelson_free.jpg"
+ ],
+ "slides": [
+  {
+   "head": "Une soirée nostalgique",
+   "big": "Rick Nelson joue au Rock'n'Roll Revival de Richard Nader, avec Chuck Berry et Bo Diddley à l'affiche."
+  },
+  {
+   "head": "Un nouveau son",
+   "big": "Après ses anciens tubes, il joue « Honky Tonk Women » des Stones en version country avec le Stone Canyon Band."
+  },
+  {
+   "head": "Les sifflets",
+   "big": "Une partie de la salle le hue. Il quitte les lieux sans revenir pour le final."
+  },
+  {
+   "head": "1972",
+   "big": "Il en tire « Garden Party », qui le ramène dans le Top 10 américain pour la première fois depuis près de dix ans."
+  }
+ ],
+ "caption": "15 octobre 1971 : sifflé par un public venu entendre ses vieux tubes, Rick Nelson en fait une chanson, et un retour au sommet. L'histoire complète est sur riffsetlegendes.github.io, lien en bio. Photos : Wikimedia Commons.",
+ "hashtags": [
+  "riffsetlegendes",
+  "rickynelson",
+  "ricknelson",
+  "gardenparty",
+  "madisonsquaregarden",
+  "countryrock",
+  "rocknroll",
+  "cejourla",
+  "histoiredurock",
+  "1971"
+ ]
+}

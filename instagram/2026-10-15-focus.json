@@ -1,0 +1,30 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "docu",
+ "label": "Anecdote",
+ "big": "1977",
+ "title": "« Rumours », l'album des cœurs brisés",
+ "song": {
+  "title": "Go Your Own Way",
+  "artist": "Fleetwood Mac"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Fleetwood_Mac_(1977).jpg",
+  "Stevie_Nicks_&_Lindsey_Buckingham_1977.jpg",
+  "Christine_McVie_-_Fleetwood_Mac_(1977).jpg",
+  "Lindsey_Buckingham_1977.jpg",
+  "Stevie_Nicks_1977.jpg"
+ ],
+ "slides": [
+  {"head": "Début 1976", "big": "Fleetwood Mac entre au Record Plant de Sausalito. Les trois couples du groupe se défont."},
+  {"head": "1976", "big": "Buckingham vise Nicks dans « Go Your Own Way ». Christine McVie écrit sur son amant."},
+  {"head": "4 février 1977", "big": "« Rumours » sort, après près d'un an de travail en studio."},
+  {"head": "1977", "big": "« Dreams » devient le seul n° 1 du groupe au Billboard Hot 100."},
+  {"head": "1978", "big": "Grammy de l'album de l'année. Plus de 40 millions d'exemplaires vendus depuis."}
+ ],
+ "caption": "1976 : cinq musiciens en pleine rupture s'enferment en studio pour écrire les uns sur les autres. Le résultat, « Rumours », passe 31 semaines n° 1 aux États-Unis. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": ["riffsetlegendes", "fleetwoodmac", "rumours", "stevienicks", "lindseybuckingham", "christinemcvie", "mickfleetwood", "johnmcvie", "rock70s", "classicrock"]
+}

@@ -1,0 +1,48 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "countdown",
+ "label": "Anecdote",
+ "big": "1980",
+ "hook": "Leur chanteur meurt en février. Cinq mois plus tard, AC/DC sort un album historique.",
+ "title": "AC/DC, Back in Black",
+ "song": {
+  "title": "Back in Black",
+  "artist": "AC/DC"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "ACDClive3.jpg",
+  "Brian_Johnson.jpg",
+  "Angus_Young_(AC_DC)_(5257559786).jpg",
+  "BonScottStatue2_gobeirne.jpg"
+ ],
+ "slides": [
+  {
+   "big": "Un nouveau chanteur",
+   "text": "Après la mort de Bon Scott, AC/DC engage Brian Johnson, qui signe aussi les textes."
+  },
+  {
+   "big": "Direction les Bahamas",
+   "text": "En avril et mai 1980, le groupe enregistre à Compass Point, à Nassau, avec Mutt Lange."
+  },
+  {
+   "big": "Une pochette toute noire",
+   "text": "Signe de deuil pour Bon Scott, l'album sort le 25 juillet 1980 et dépasse 20 millions de ventes aux États-Unis."
+  }
+ ],
+ "caption": "Février 1980 : AC/DC perd Bon Scott. Juillet 1980 : le groupe publie Back in Black, tout en noir. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "acdc",
+  "backinblack",
+  "bonscott",
+  "brianjohnson",
+  "angusyoung",
+  "hardrock",
+  "rock",
+  "1980",
+  "classicrock"
+ ]
+}
