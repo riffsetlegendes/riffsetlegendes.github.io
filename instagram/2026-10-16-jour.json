@@ -1,0 +1,52 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "journal",
+ "label": "Ce jour-là",
+ "big": "1992",
+ "dateline": "Vendredi 16 octobre 1992 · New York",
+ "title": "Sinéad O'Connor huée au Madison Square Garden",
+ "song": {
+  "title": "Nothing Compares 2 U",
+  "artist": "Sinéad O'Connor"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Sinead_O'Connor_1987.jpg",
+  "Sinéad_O'Connor_on_After_Dark_21_January_1995.JPG",
+  "Sinead_O'Connor_(3834565874).jpg",
+  "FIL_2013_-_Sinéad_O'Connor_01.JPG"
+ ],
+ "slides": [
+  {
+   "head": "Hommage à Dylan",
+   "big": "New York fête les 30 ans de carrière de Bob Dylan, avec Stevie Wonder, Neil Young, Eric Clapton et George Harrison."
+  },
+  {
+   "head": "Le contexte",
+   "big": "Deux semaines plus tôt, Sinéad O'Connor a déchiré une photo du pape en direct à Saturday Night Live."
+  },
+  {
+   "head": "Les huées",
+   "big": "Présentée par Kris Kristofferson, elle est conspuée. Elle arrête l'orchestre avant « I Believe in You »."
+  },
+  {
+   "head": "« War »",
+   "big": "Elle scande a cappella « War » de Bob Marley, puis quitte la scène dans les bras de Kristofferson."
+  }
+ ],
+ "caption": "16 octobre 1992 : face à une salle hostile au concert hommage à Bob Dylan, Sinéad O'Connor renonce à sa chanson et répond par « War », a cappella. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "photo_credit": "Photos : Wikimedia Commons",
+ "hashtags": [
+  "riffsetlegendes",
+  "sineadoconnor",
+  "bobdylan",
+  "madisonsquaregarden",
+  "kriskristofferson",
+  "nothingcompares2u",
+  "cejourla",
+  "histoiredurock",
+  "1992"
+ ]
+}

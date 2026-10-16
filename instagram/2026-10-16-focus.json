@@ -1,0 +1,55 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "docu",
+ "label": "Légende",
+ "big": "1967",
+ "title": "The Doors, six années à pousser les portes",
+ "song": {
+  "title": "Light My Fire",
+  "artist": "The Doors"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "The_Doors_1968.JPG",
+  "Doors_electra_publicity_photo.JPG",
+  "Jim_Morrison_performing_1967.jpg",
+  "Jim_Morrison_in_1968.jpg"
+ ],
+ "slides": [
+  {
+   "head": "Été 1965",
+   "big": "Jim Morrison croise Ray Manzarek à Venice Beach. Le nom viendra d'un livre d'Aldous Huxley."
+  },
+  {
+   "head": "Juin 1966",
+   "big": "Le groupe joue au Whisky a Go Go. Jac Holzman, patron d'Elektra, vient les voir."
+  },
+  {
+   "head": "Été 1967",
+   "big": "« Light My Fire » passe trois semaines n° 1 au Billboard Hot 100."
+  },
+  {
+   "head": "1er mars 1969",
+   "big": "Concert chaotique à Miami. Morrison sera condamné en 1970, libre en attendant l'appel."
+  },
+  {
+   "head": "3 juillet 1971",
+   "big": "Morrison meurt à Paris à 27 ans. Il repose au Père-Lachaise. Le groupe s'arrête en 1973."
+  }
+ ],
+ "caption": "Un étudiant en cinéma, un organiste, un guitariste et un batteur : de Venice Beach au Père-Lachaise, six albums avec Jim Morrison ont suffi aux Doors pour imposer leur nuit californienne. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "thedoors",
+  "jimmorrison",
+  "raymanzarek",
+  "robbykrieger",
+  "johndensmore",
+  "lightmyfire",
+  "rock60s",
+  "classicrock",
+  "psychedelicrock"
+ ]
+}

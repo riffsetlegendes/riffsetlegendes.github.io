@@ -1,0 +1,49 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "countdown",
+ "label": "Anecdote",
+ "big": "1991",
+ "hook": "65 000 dollars, un mois en studio : l'album de Nirvana qui a détrôné Michael Jackson.",
+ "title": "Nirvana, Nevermind",
+ "song": {
+  "title": "Smells Like Teen Spirit",
+  "artist": "Nirvana"
+ },
+ "music_mood": "punk",
+ "photos": [
+  "Nirvana_around_1992.jpg",
+  "Dave-Grohl_drums.jpg",
+  "Photo_of_Kurt_Cobain_from_US_Embassy_in_Bern.jpg",
+  "Kurt_Cobain,_Smells_Like_Teen_Spirit_guitar,_EMP_Museum.jpg"
+ ],
+ "slides": [
+  {
+   "big": "Cap sur Sound City",
+   "text": "En mai 1991, Nirvana enregistre à Van Nuys avec Butch Vig, pour un budget prévu de 65 000 dollars."
+  },
+  {
+   "big": "Andy Wallace au mixage",
+   "text": "Les premiers mixages de Butch Vig sont écartés : Andy Wallace, qui a mixé Slayer, prend le relais."
+  },
+  {
+   "big": "Numéro un en 1992",
+   "text": "Sorti le 24 septembre 1991, l'album chasse Dangerous de Michael Jackson du sommet le 11 janvier 1992."
+  }
+ ],
+ "caption": "Printemps 1991 : un trio de Seattle entre à Sound City avec Butch Vig. Janvier 1992 : Nevermind est numéro un aux États-Unis. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "nirvana",
+  "nevermind",
+  "kurtcobain",
+  "davegrohl",
+  "kristnovoselic",
+  "butchvig",
+  "grunge",
+  "rock",
+  "1991",
+  "90srock"
+ ]
+}
