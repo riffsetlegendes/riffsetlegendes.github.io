@@ -1,0 +1,48 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "countdown",
+ "label": "Anecdote",
+ "big": "1965",
+ "hook": "Le riff le plus célèbre des Stones est né chez un Keith Richards à moitié endormi.",
+ "title": "Stones, Satisfaction",
+ "song": {
+  "title": "(I Can't Get No) Satisfaction",
+  "artist": "The Rolling Stones"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Rolling_Stones_in_Beverly_Hills,_1965.jpg",
+  "Keith_Richards_1965.jpg",
+  "Mick_Jagger_1965.jpg",
+  "Rolling-Stones-1965-Finland.jpg"
+ ],
+ "slides": [
+  {
+   "big": "Un riff et des ronflements",
+   "text": "Réveillé en pleine nuit, Keith Richards joue le riff sur un magnétophone, puis se rendort sans l'arrêter."
+  },
+  {
+   "big": "Une fuzz à Hollywood",
+   "text": "Le 12 mai 1965 aux studios RCA, une pédale Gibson Maestro Fuzz-Tone remplace les cuivres qu'il imaginait."
+  },
+  {
+   "big": "Numéro un aux USA",
+   "text": "Sorti le 6 juin 1965, le single atteint la tête du Billboard le 10 juillet et y reste quatre semaines."
+  }
+ ],
+ "caption": "Une nuit de 1965, Keith Richards enregistre un riff à moitié endormi, suivi de longues minutes de ronflements. Quelques semaines plus tard, « Satisfaction » offre aux Rolling Stones leur premier numéro un américain. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "rollingstones",
+  "satisfaction",
+  "keithrichards",
+  "mickjagger",
+  "fuzz",
+  "classicrock",
+  "rock",
+  "1965",
+  "60srock"
+ ]
+}

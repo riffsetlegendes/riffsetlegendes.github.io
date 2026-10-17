@@ -1,0 +1,56 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "docu",
+ "label": "Anecdote",
+ "big": "1975",
+ "title": "Le fantôme de Syd Barrett à Abbey Road",
+ "song": {
+  "title": "Shine On You Crazy Diamond",
+  "artist": "Pink Floyd"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Pink_Floyd,_1974.jpg",
+  "Pink_Floyd_1967_with_Syd_Barrett.jpg",
+  "Pink_Floyd_1967_(Syd_Barrett_headshot_crop).jpg",
+  "Richard_Wright,_1974.jpg",
+  "Nick_Mason_in_1973.jpg"
+ ],
+ "slides": [
+  {
+   "head": "1967",
+   "big": "Syd Barrett mène le premier album de Pink Floyd, avant d'être remplacé par David Gilmour."
+  },
+  {
+   "head": "6 janvier 1975",
+   "big": "Début des séances de « Wish You Were Here » à Abbey Road, pour une suite dédiée à Barrett."
+  },
+  {
+   "head": "5 juin 1975",
+   "big": "Un homme au crâne et aux sourcils rasés entre pendant le mixage de « Shine On ». Personne ne le reconnaît."
+  },
+  {
+   "head": "5 juin 1975",
+   "big": "C'est Syd Barrett. Roger Waters, bouleversé, aurait fondu en larmes."
+  },
+  {
+   "head": "12 septembre 1975",
+   "big": "L'album sort et atteint la première place au Royaume-Uni et aux États-Unis."
+  }
+ ],
+ "caption": "En juin 1975, Pink Floyd mixait une chanson écrite pour Syd Barrett quand un inconnu au crâne rasé est entré à Abbey Road. C'était Barrett lui-même, devenu méconnaissable. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "pinkfloyd",
+  "sydbarrett",
+  "wishyouwerehere",
+  "shineonyoucrazydiamond",
+  "abbeyroad",
+  "rogerwaters",
+  "davidgilmour",
+  "rock70s",
+  "classicrock"
+ ]
+}

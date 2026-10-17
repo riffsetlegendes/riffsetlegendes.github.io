@@ -1,0 +1,52 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "journal",
+ "label": "Ce jour-là",
+ "big": "1989",
+ "dateline": "Mardi 17 octobre 1989 · New York",
+ "title": "Billy Joel lève la tempête avec Storm Front",
+ "song": {
+  "title": "We Didn't Start the Fire",
+  "artist": "Billy Joel"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Billy_Joel_-_Perth_7_November_2006.jpg",
+  "Billy_Joel_3_Shankbone_Metropolitan_Opera_2009.jpg",
+  "BillyJoel.jpg",
+  "BillyJoel2016MSG.jpg"
+ ],
+ "slides": [
+  {
+   "head": "Grand ménage",
+   "big": "Nouveau producteur, Mick Jones de Foreigner, groupe remanié et manager attaqué en justice."
+  },
+  {
+   "head": "Le tube",
+   "big": "« We Didn't Start the Fire » égrène plus d'une centaine de gros titres, de 1949 à 1989."
+  },
+  {
+   "head": "« Leningrad »",
+   "big": "Née de la tournée soviétique de 1987 et de la rencontre avec Viktor, devenu clown de cirque."
+  },
+  {
+   "head": "Numéro un",
+   "big": "Storm Front prend la tête du Billboard 200 et sera quadruple disque de platine aux États-Unis."
+  }
+ ],
+ "caption": "17 octobre 1989 : à quarante ans, Billy Joel publie Storm Front, un disque de rupture coproduit avec Mick Jones. Porté par « We Didn't Start the Fire », il atteint la première place des ventes américaines. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "photo_credit": "Photos : Wikimedia Commons",
+ "hashtags": [
+  "riffsetlegendes",
+  "billyjoel",
+  "stormfront",
+  "wedidntstartthefire",
+  "mickjones",
+  "cejourla",
+  "histoiredurock",
+  "rock80s",
+  "1989"
+ ]
+}
