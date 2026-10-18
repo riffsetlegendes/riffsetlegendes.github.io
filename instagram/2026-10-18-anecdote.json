@@ -1,0 +1,48 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "countdown",
+ "label": "Anecdote",
+ "big": "1991",
+ "hook": "Un million de dollars, trois mixages : l'album noir de Metallica a failli tout casser.",
+ "title": "Metallica, l'album noir",
+ "song": {
+  "title": "Enter Sandman",
+  "artist": "Metallica"
+ },
+ "music_mood": "punk",
+ "photos": [
+  "Metallica_Damaged_Justice_Tour.jpg",
+  "James_Hetfield_-_Cardiff_1996.jpg",
+  "Metallica_Of_Wolf_and_Man_(cropped).jpg"
+ ],
+ "slides": [
+  {
+   "big": "Bob Rock aux manettes",
+   "text": "Le 6 octobre 1990, Metallica entre à One on One (Los Angeles). Hetfield refuse tant d'idées qu'on le surnomme Dr. No."
+  },
+  {
+   "big": "Un riff à 3 h du matin",
+   "text": "Kirk Hammett trouve le riff d'Enter Sandman en pleine nuit, la tête pleine de Soundgarden. Premier titre écrit."
+  },
+  {
+   "big": "Numéro un d'entrée",
+   "text": "Sorti le 12 août 1991 après trois mixages et un million de dollars, l'album entre directement en tête du Billboard."
+  }
+ ],
+ "caption": "Automne 1990 : Metallica s'enferme à One on One avec Bob Rock pour des mois de disputes. Août 1991 : l'album noir entre directement à la première place américaine. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "metallica",
+  "blackalbum",
+  "entersandman",
+  "jameshetfield",
+  "kirkhammett",
+  "larsulrich",
+  "bobrock",
+  "metal",
+  "1991",
+  "90srock"
+ ]
+}
