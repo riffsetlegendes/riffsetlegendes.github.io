@@ -229,7 +229,7 @@ def main():
     def draw_c(t):
         im = draw(t, spec, pics, segs).convert("RGB")
         if credit:
-            ImageDraw.Draw(im).text((W - 40, H - 60), credit, font=mono(26), fill=(200, 200, 200), anchor="rs")
+            ImageDraw.Draw(im).text((W // 2, 14), credit, font=mono(20), fill=(170, 170, 170), anchor="mt")
         return im
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                              "-r", str(FPS), "-i", "-", *audio, "-t", f"{dur:.2f}", *afilter, "-map", "0:v", "-map", "1:a",
