@@ -1,0 +1,53 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "journal",
+ "label": "Ce jour-là",
+ "big": "1969",
+ "dateline": "Samedi 18 octobre 1969 · Los Angeles",
+ "title": "Les Jackson 5 débarquent à la télévision",
+ "song": {
+  "title": "I Want You Back",
+  "artist": "The Jackson 5"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Jackson_5_1969.jpg",
+  "Michael_Jackson_1969.jpg",
+  "Jackson_5_1971.jpg",
+  "Jackson_5_1974.jpg"
+ ],
+ "slides": [
+  {
+   "head": "Prime time",
+   "big": "Sur ABC, l'émission The Hollywood Palace offre aux Jackson 5 leur premier passage national."
+  },
+  {
+   "head": "La marraine",
+   "big": "Diana Ross, star de Motown, présente les cinq frères venus de Gary, dans l'Indiana."
+  },
+  {
+   "head": "Michael, 11 ans",
+   "big": "Leur medley se termine sur I Want You Back, un single sorti onze jours plus tôt."
+  },
+  {
+   "head": "Numéro un",
+   "big": "Le 31 janvier 1970, I Want You Back prend la tête du Billboard Hot 100."
+  }
+ ],
+ "caption": "18 octobre 1969 : présentés par Diana Ross dans The Hollywood Palace, les Jackson 5 font leurs débuts à la télévision nationale. Trois mois plus tard, I Want You Back est numéro un. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "photo_credit": "Photos : Wikimedia Commons",
+ "hashtags": [
+  "riffsetlegendes",
+  "cejourla",
+  "jackson5",
+  "michaeljackson",
+  "dianaross",
+  "motown",
+  "iwantyouback",
+  "hollywoodpalace",
+  "histoiredurock",
+  "1969"
+ ]
+}
