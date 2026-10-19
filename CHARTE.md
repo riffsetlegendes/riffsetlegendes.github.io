@@ -1,3 +1,11 @@
+# Stratégie Reels (19/10/2026, résumé — détail dans strategie/REELS.md et strategie/SWIPE.md)
+
+- Avant de produire : lire strategie/REELS.md, strategie/SWIPE.md et strategie/semaine-<lundi>.md ; les Reels prévus dans le fichier semaine priment, et l'article du jour traite le même sujet.
+- Sujets choisis par concept d'abord, artiste ensuite : origine improbable (13 h, countdown), détail caché derrière une fin (8 h journal ou 18 h docu, calé sur la date), coulisses précises ou relève sous l'angle d'une origine. Plus de portraits « de X à Y en N albums » en Reel.
+- Chaque Reel : accroche contenant le fait étrange, champ "cta" (question de 60 caractères max), légende de 3 à 5 phrases, exactement 5 hashtags.
+- Idées de comptes anglophones permises : faits revérifiés dans deux sources, nos propres mots, jamais leurs vidéos ni images, 10 jours d'écart.
+- Chaque lundi : bilan des Reels de la semaine (médiane, 3 meilleurs, 3 moins bons) dans SWIPE.md ; premier lundi du mois : étude de la niche via Treg (0,05 $ max).
+
 # Charte éditoriale Riffs & Légendes (à respecter strictement)
 
 Site : média rock français, rock et musiques populaires 1950–1999 + rubrique « La relève » (groupes actuels).
