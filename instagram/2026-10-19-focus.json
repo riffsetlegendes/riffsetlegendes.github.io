@@ -5,7 +5,7 @@
  "format": "docu",
  "label": "Anecdote",
  "big": "1983",
- "title": "The Police, chacun dans sa pièce",
+ "title": "Leur plus grand tube, joué dans trois pièces séparées",
  "song": {
   "title": "Every Breath You Take",
   "artist": "The Police"
@@ -21,7 +21,7 @@
  "slides": [
   {
    "head": "Fin 1982",
-   "big": "Aux AIR Studios de Montserrat, Sting, Copeland et Summers enregistrent chacun dans une pièce."
+   "big": "À Montserrat, Sting, Copeland et Summers ne se supportent plus : chacun enregistre dans sa pièce."
   },
   {
    "head": "Fin 1982",
@@ -40,17 +40,13 @@
    "big": "Fin de la tournée mondiale. Synchronicity restera le dernier album studio de The Police."
   }
  ],
- "caption": "Fin 1982 à Montserrat, The Police enregistre Synchronicity avec ses trois membres dans trois pièces différentes, tant ils ne se supportent plus. Il en sort Every Breath You Take et le plus grand succès du groupe, avant un long silence. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "caption": "Fin 1982 à Montserrat, les trois membres de The Police ne se supportent plus : chacun enregistre Synchronicity dans sa propre pièce. Il en sort Every Breath You Take, numéro un aux États-Unis pendant huit semaines. Ce sera pourtant leur dernier album studio. Tu aurais tenu combien de jours dans ce studio ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
  "hashtags": [
   "riffsetlegendes",
   "thepolice",
-  "synchronicity",
   "everybreathyoutake",
-  "sting",
-  "stewartcopeland",
-  "andysummers",
-  "montserrat",
-  "rock80s",
-  "classicrock"
- ]
+  "anecdotemusicale",
+  "rock80s"
+ ],
+ "cta": "Tu aurais tenu combien de jours dans ce studio ?"
 }
