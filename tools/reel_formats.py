@@ -375,7 +375,8 @@ def frame_recit(t, spec, pics, sents, chunks, total):
             x = W / 2 - lw / 2
             for tok in toks:
                 w, a, b = cur[idx]
-                col = YELLOW if a - 0.02 <= t <= b + 0.08 else (255, 255, 255)
+                lit = max([j for j, (_, a2, _) in enumerate(cur) if a2 - 0.02 <= t] or [0])  # un seul mot allumé
+                col = YELLOW if idx == lit else (255, 255, 255)
                 d.text((x, y), tok, font=f, fill=col, stroke_width=9, stroke_fill=(0, 0, 0))
                 x += d.textlength(tok + " ", font=f)
                 idx += 1
@@ -389,8 +390,7 @@ def main_recit(spec_path, spec):
     out = ROOT / "out" / "instagram" / spec_path.stem
     out.mkdir(parents=True, exist_ok=True)
     voice, sents, total = build_narration(spec, out)
-    words = [w for s in sents for w in s["words"]]
-    chunks = _chunks(words)
+    chunks = [c for s in sents for c in _chunks(s["words"])]  # jamais de sous-titre à cheval sur deux phrases
     pics = [grade(p) for p in recit_photos(spec)] or [Image.new("RGB", (W, H), (30, 30, 34))]
     credit = spec.get("photo_credit")
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
