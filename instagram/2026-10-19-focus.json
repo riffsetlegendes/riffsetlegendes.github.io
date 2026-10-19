@@ -1,0 +1,56 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "docu",
+ "label": "Anecdote",
+ "big": "1983",
+ "title": "The Police, chacun dans sa pièce",
+ "song": {
+  "title": "Every Breath You Take",
+  "artist": "The Police"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "The_Police_I.jpg",
+  "The_Police_II.jpg",
+  "The_Police_01.jpg",
+  "The_Police_02.jpg",
+  "The_Police_Clockwise_(All_Members).jpg"
+ ],
+ "slides": [
+  {
+   "head": "Fin 1982",
+   "big": "Aux AIR Studios de Montserrat, Sting, Copeland et Summers enregistrent chacun dans une pièce."
+  },
+  {
+   "head": "Fin 1982",
+   "big": "Copeland joue dans une salle à manger voisine. Dix jours passent sans une prise exploitable."
+  },
+  {
+   "head": "Janvier 1983",
+   "big": "Ajouts et mixage au Québec. La guitare en arpèges de Summers remplace l'orgue d'Every Breath You Take."
+  },
+  {
+   "head": "9 juillet 1983",
+   "big": "Every Breath You Take prend la tête du Hot 100 américain et y reste huit semaines."
+  },
+  {
+   "head": "4 mars 1984",
+   "big": "Fin de la tournée mondiale. Synchronicity restera le dernier album studio de The Police."
+  }
+ ],
+ "caption": "Fin 1982 à Montserrat, The Police enregistre Synchronicity avec ses trois membres dans trois pièces différentes, tant ils ne se supportent plus. Il en sort Every Breath You Take et le plus grand succès du groupe, avant un long silence. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "thepolice",
+  "synchronicity",
+  "everybreathyoutake",
+  "sting",
+  "stewartcopeland",
+  "andysummers",
+  "montserrat",
+  "rock80s",
+  "classicrock"
+ ]
+}
