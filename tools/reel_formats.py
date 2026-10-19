@@ -235,7 +235,7 @@ def _probe(path):
 
 def build_narration(spec, out):
     """Voix off phrase par phrase. Renvoie (chemin audio, phrases [{start, end, photo, words[(mot, t0, t1)]}], durée)."""
-    voice, rate, gap = spec.get("voice", RECIT_VOICE), spec.get("rate", "+8%"), 0.18
+    voice, rate, gap = spec.get("voice", RECIT_VOICE), spec.get("rate", "+8%" if spec.get("voice_on") else "-12%"), 0.18
     parts, sents, t = [], [], 0.25
     allow_silent = os.environ.get("RECIT_ALLOW_SILENT") == "1"
     for i, item in enumerate(spec["narration"]):
@@ -496,7 +496,14 @@ def main_recit(spec_path, spec):
     out = ROOT / "out" / "instagram" / spec_path.stem
     out.mkdir(parents=True, exist_ok=True)
     voice, sents, total = narration_from_file(spec, out) if spec.get("voice_file") else build_narration(spec, out)
-    if spec.get("preview_bed"):
+    if not spec.get("voice_on"):
+        # Décision de Yann du 19/10 : pas de voix off. La synthèse sert seulement à caler les sous-titres ;
+        # la piste audio de la vidéo est muette, la vraie musique est ajoutée à la publication (Metricool).
+        silent = out / "silent.m4a"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+                        "-t", f"{total + RECIT_OUTRO:.2f}", "-c:a", "aac", str(silent)], check=True)
+        voice = silent
+    elif spec.get("preview_bed"):
         voice = add_bed(spec, voice, out, total)
     chunks = [c for s in sents for c in _chunks(s["words"])]  # jamais de sous-titre à cheval sur deux phrases
     pics = [grade(p) for p in recit_photos(spec)] or [Image.new("RGB", (W, H), (30, 30, 34))]

@@ -13,7 +13,9 @@ Ce qui ne marche pas : la biographie « de X à Y en N albums », l'hommage gén
 
 ## 2. Le format : le récit narré, sur les trois créneaux
 
-Décision de Yann du 19/10 (carte blanche) : le format « recit » de tools/reel_formats.py REMPLACE journal, countdown et docu pour tous les Reels. C'est la forme de tous les Reels viraux de la niche : une voix off qui raconte, des photos plein écran qui bougent, de gros sous-titres mot à mot, une accroche parlée dès la première seconde.
+Décision de Yann du 19/10 (carte blanche) : le format « recit » de tools/reel_formats.py REMPLACE journal, countdown et docu pour tous les Reels. C'est la forme de tous les Reels viraux de la niche : des photos plein écran qui bougent, de gros sous-titres mot à mot, une accroche lisible dès la première seconde.
+
+**Mise à jour de Yann du 19/10 au soir : PAS DE VOIX OFF.** On garde le texte (sous-titres), la voix est supprimée jusqu'à nouvel ordre. Le générateur rend la piste audio muette par défaut (la synthèse ne sert qu'à caler le rythme des sous-titres, ralenti à -12 %) ; ne mets jamais "voice_on": true sans accord de Yann.
 
 | Créneau | Fichier | Concept imposé |
 |---|---|---|
@@ -23,13 +25,13 @@ Décision de Yann du 19/10 (carte blanche) : le format « recit » de tools/reel
 
 Champs du JSON : "format": "recit", "title" (bandeau jaune fixe en haut, 30 caractères maximum, une promesse), "narration" [{"text", "photo"}], "photos" (4 à 6, toutes différentes), "song", "caption", "hashtags", "reel": true, "label", "big". Facultatifs : "voice" (défaut fr-FR-HenriNeural), "rate" (défaut +8 %). Le champ "slides" n'est plus utilisé.
 
-Musique à la publication Metricool : le vrai morceau de l'artiste PASSE SOUS LA VOIX, audioConfiguration {audioId, audioVolume: 15, videoVolume: 100}. Jamais audioVolume 100 / videoVolume 0 sur un récit, sinon la voix disparaît.
+Musique à la publication Metricool : le vrai morceau de l'artiste seul, audioConfiguration {audioId, audioVolume: 100, videoVolume: 0}.
 
-Contrôle du rendu (workflow dry_run) : la vidéo doit durer 30 à 45 s, la voix doit s'entendre (ffmpeg volumedetect, mean_volume autour de -16 dB), les sous-titres ne débordent pas.
+Contrôle du rendu (workflow dry_run) : la vidéo doit durer 30 à 45 s, les sous-titres ne débordent pas.
 
 ## 3. Règles d'écriture de la narration
 
-- 80 à 110 mots, 7 à 9 phrases courtes (une phrase = une photo ou un plan). Écrit pour l'oreille : phrases simples, verbes au présent, aucun sigle obscur, nombres que l'on peut dire à voix haute.
+- 80 à 110 mots, 7 à 9 phrases courtes (une phrase = une photo ou un plan). Écrit pour être lu vite : phrases simples, verbes au présent, aucun sigle obscur, nombres que l'on peut dire à voix haute.
 - Phrase 1 = l'accroche : le fait étrange ou la question « Pourquoi… ? », avec un élément précis (nom, nombre, objet). Le sujet est compris en 2 secondes.
 - Une seule promesse : chaque phrase répond à l'accroche, aucune digression biographique.
 - Phrases 2 à 4 : la preuve (date, lieu, chiffre). Vers le milieu, une relance (« Mais… », « Problème : », un chiffre, un retournement).
