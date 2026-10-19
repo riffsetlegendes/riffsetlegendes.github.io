@@ -1,0 +1,53 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "journal",
+ "label": "Ce jour-là",
+ "big": "1993",
+ "dateline": "Mardi 19 octobre 1993 · États-Unis",
+ "title": "Pearl Jam sort Vs. et bat tous les records",
+ "song": {
+  "title": "Go",
+  "artist": "Pearl Jam"
+ },
+ "music_mood": "punk",
+ "photos": [
+  "Eddie_Vedder_and_Pearl_Jam_in_concert_in_Italy_2006.jpg",
+  "Eddie_Vedder_and_Pearl_Jam_live_in_Berlin_September_2006.jpg",
+  "Eddie_Vedder_Pearl_Jam.jpg",
+  "PearlJam-6-17-08.jpg"
+ ],
+ "slides": [
+  {
+   "head": "En studio",
+   "big": "Avec Brendan O'Brien, Pearl Jam enregistre en Californie en jouant ensemble, comme sur scène."
+  },
+  {
+   "head": "Cinq contre un",
+   "big": "Le disque devait s'appeler Five Against One. Le groupe choisit Vs. à la dernière minute."
+  },
+  {
+   "head": "Zéro clip",
+   "big": "Pearl Jam refuse de tourner le moindre clip et limite les interviews."
+  },
+  {
+   "head": "Record",
+   "big": "Environ 950 000 exemplaires vendus en cinq jours, puis cinq semaines en tête du Billboard 200."
+  }
+ ],
+ "caption": "19 octobre 1993 : Pearl Jam publie Vs. aux États-Unis et vend environ 950 000 exemplaires en cinq jours. Un record de première semaine qui tiendra jusqu'en 1998. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "photo_credit": "Photos : Wikimedia Commons",
+ "hashtags": [
+  "riffsetlegendes",
+  "cejourla",
+  "pearljam",
+  "eddievedder",
+  "grunge",
+  "seattle",
+  "vs",
+  "histoiredurock",
+  "rock90s",
+  "1993"
+ ]
+}
