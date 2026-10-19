@@ -6,19 +6,57 @@
  "label": "Origine",
  "big": "1991",
  "title": "Pourquoi « Radiohead » ?",
- "song": {"title": "Creep", "artist": "Radiohead"},
+ "song": {
+  "title": "Creep",
+  "artist": "Radiohead"
+ },
  "music_mood": "punk",
- "photos": ["Radiohead.jpg", "RadioheadMid2010s.jpg", "Meadowbank_Stadium_-_Radiohead.jpg", "Outside_Lands_2017_IMG_8911_(36440091741).jpg", "RadioheadO2211125_composite.jpg"],
+ "photos": [
+  "http://radiox.ru/pics/mag/1992-sheehan/1992-sheehan-08.jpg",
+  "https://preview.redd.it/oxford-1992-v0-m5x7parbwzn31.jpg?auto=webp&s=50523852dbf177b8c4ccc34e98fd5eb7be25d12b",
+  "http://radiox.ru/pics/mag/1992-drill-shoot/1992-allardyce-02.jpg",
+  "https://www.rollingstone.com/wp-content/uploads/2018/06/radiohead-pablo-honey-1993-7b6d5a3d-fe03-46f5-a68d-f628b982c514.jpg",
+  "https://www.rollingstone.com/wp-content/uploads/2018/11/david-byrne-true-stories.jpg",
+  "https://s3.amazonaws.com/criterion-production/editorial_content_posts/hero/6068-/xEIV2mkh8PAUg9amo5YJdAeTdI0oOH_original.jpg",
+  "https://citizeninsane.eu/media/uk/select/01/img/1993-05_select_060-061.jpg"
+ ],
  "narration": [
-  {"text": "Au départ, Radiohead ne s'appelle pas Radiohead.", "photo": 0},
-  {"text": "À Oxford, les cinq copains de lycée jouent sous le nom de On a Friday.", "photo": 1},
-  {"text": "Pourquoi ? Parce qu'ils répètent le vendredi.", "photo": 2},
-  {"text": "Fin 1991, ils signent chez EMI, qui leur demande de trouver mieux.", "photo": 3},
-  {"text": "Ils piochent dans un disque de Talking Heads, True Stories, sorti en 1986.", "photo": 4},
-  {"text": "Le morceau s'appelle Radio Head, en deux mots.", "photo": 0},
-  {"text": "Toi, tu aurais gardé On a Friday ?", "photo": 1}
+  {
+   "text": "Au départ, Radiohead ne s'appelle pas Radiohead.",
+   "photo": 0
+  },
+  {
+   "text": "À Oxford, les cinq copains de lycée jouent sous le nom de On a Friday.",
+   "photo": 1
+  },
+  {
+   "text": "Pourquoi ? Parce qu'ils répètent le vendredi.",
+   "photo": 2
+  },
+  {
+   "text": "Fin 1991, ils signent chez EMI, qui leur demande de trouver mieux.",
+   "photo": 3
+  },
+  {
+   "text": "Ils piochent dans un disque de Talking Heads, True Stories, sorti en 1986.",
+   "photo": 4
+  },
+  {
+   "text": "Le morceau s'appelle Radio Head, en deux mots.",
+   "photo": 5
+  },
+  {
+   "text": "Toi, tu aurais gardé On a Friday ?",
+   "photo": 6
+  }
  ],
  "cta": "Tu aurais gardé On a Friday ?",
  "caption": "Avant d'être Radiohead, le groupe d'Oxford s'appelait On a Friday, parce qu'il répétait le vendredi. Fin 1991, EMI le signe et lui demande un autre nom. Les musiciens le trouvent sur True Stories, un album de Talking Heads de 1986, dans le morceau Radio Head. Tu aurais gardé On a Friday ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
- "hashtags": ["riffsetlegendes", "radiohead", "creep", "histoiredurock", "anecdotemusicale"]
+ "hashtags": [
+  "riffsetlegendes",
+  "radiohead",
+  "creep",
+  "histoiredurock",
+  "anecdotemusicale"
+ ]
 }
