@@ -1,0 +1,48 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "countdown",
+ "label": "Anecdote",
+ "big": "1986",
+ "hook": "Un mur percé d'un coup de pied de micro : Run-DMC et Aerosmith changent l'histoire.",
+ "title": "Walk This Way, 1986",
+ "song": {
+  "title": "Walk This Way",
+  "artist": "Run-DMC"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "Run-DMC_in_1986.jpg",
+  "Steven_Tyler_1996.jpg",
+  "Joe_Perry_2009.jpg",
+  "Aerosmith_(1973).jpg"
+ ],
+ "slides": [
+  {
+   "big": "L'idée de Rick Rubin",
+   "text": "Début 1986, Rubin pousse Run-DMC à reprendre le tube d'Aerosmith de 1975 avec Steven Tyler et Joe Perry."
+  },
+  {
+   "big": "Le mur abattu",
+   "text": "Dans le clip de Jon Small, Tyler perce la cloison qui sépare les deux groupes à coups de pied de micro."
+  },
+  {
+   "big": "4e au Billboard",
+   "text": "Le single grimpe à la 4e place américaine et relance Aerosmith, que l'on disait fini après Done With Mirrors."
+  }
+ ],
+ "caption": "En 1986, Rick Rubin réunit Run-DMC, Steven Tyler et Joe Perry autour d'un tube de 1975. Le morceau atteint la quatrième place américaine et remet Aerosmith en selle. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "rundmc",
+  "aerosmith",
+  "walkthisway",
+  "steventyler",
+  "joeperry",
+  "rickrubin",
+  "raisinghell",
+  "hiphop",
+  "1986"
+ ]
+}
