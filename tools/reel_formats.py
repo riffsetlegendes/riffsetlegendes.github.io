@@ -51,6 +51,13 @@ def fit_size(d, text, maker, start, width, maxl, minsize=60):
     return s
 
 
+def cta_card(d, spec, y, fill):
+    """Question finale facultative (champ "cta", 60 caractères max) qui invite à commenter."""
+    q = spec.get("cta")
+    if q:
+        text_block(d, 0, y, q, serif(64, italic=False), W - 160, fill, 80, 3, anchor_center=True)
+
+
 # ---------- format 1 : la une ----------
 def frame_journal(t, spec, pics, segs):
     im = Image.new("RGB", (W, H), NEWS)
@@ -88,6 +95,7 @@ def frame_journal(t, spec, pics, segs):
         text_block(d, 60, 1350, s["big"], serif(size, italic=False), W - 120, INK, int(size * 1.25), 5,
                    reveal=min(1, lt / (ln * 0.55)))
     else:
+        cta_card(d, spec, 360, INK)
         d.text((W // 2, 700), spec.get("big", ""), font=head(260), fill=INK, anchor="mm")
         d.text((W // 2, 930), "L'HISTOIRE COMPLÈTE", font=head(110), fill=INK, anchor="mm")
         d.text((W // 2, 1050), "lien en bio", font=serif(60), fill=(150, 30, 30), anchor="mm")
@@ -129,6 +137,7 @@ def frame_countdown(t, spec, pics, segs):
             text_block(d, 70, y + 30, s["text"], serif(48, italic=False), W - 140,
                        tuple(int(NAVY[i] + (PAPER[i] - NAVY[i]) * c) for i in range(3)), 62, 4)
     else:
+        cta_card(d, spec, 420, YELLOW)
         d.text((W // 2, 760), "L'HISTOIRE COMPLÈTE", font=head(120), fill=PAPER, anchor="mm")
         d.text((W // 2, 880), "lien en bio", font=serif(60), fill=YELLOW, anchor="mm")
         d.text((W // 2, 990), "riffsetlegendes.github.io", font=mono(40), fill=PAPER, anchor="mm")
@@ -146,9 +155,9 @@ def frame_docu(t, spec, pics, segs):
         if pics:
             ph = cover_fit(ImageOps.grayscale(pics[0]).convert("RGB"), W, H - 2 * BAR, 1.25 - 0.12 * (lt / ln))
             im.paste(ph, (0, BAR))
-            im = Image.blend(Image.new("RGB", (W, H), (8, 8, 10)), im, min(1, lt / 1.0) * 0.75)
+            im = Image.blend(Image.new("RGB", (W, H), (8, 8, 10)), im, 0.45 + 0.3 * min(1, lt / 1.0))
             d = ImageDraw.Draw(im)
-        a = ease((lt - 0.4) / 0.9)
+        a = 0.85 + 0.15 * ease(lt / 0.4)  # titre lisible dès la 1re image (accroche à 0 s)
         d.text((W // 2, 360), "EN 30 SECONDES", font=mono(40), fill=YELLOW, anchor="ma")
         size = fit_size(d, spec["title"].upper(), head, 130, W - 160, 4)
         lines = wrap(d, spec["title"].upper(), head(size), W - 160)[:4]
@@ -183,6 +192,7 @@ def frame_docu(t, spec, pics, segs):
             col = (int(240 * a),) * 3
             text_block(d, 0, H - BAR + 50, s["big"], serif(56, italic=False), W - 160, col, 70, 3, anchor_center=True)
     else:
+        cta_card(d, spec, 460, YELLOW)
         d.text((W // 2, 800), "L'HISTOIRE COMPLÈTE", font=head(120), fill=(240, 240, 240), anchor="mm")
         d.text((W // 2, 920), "lien en bio", font=serif(60), fill=YELLOW, anchor="mm")
         d.text((W // 2, 1030), "riffsetlegendes.github.io", font=mono(40), fill=(240, 240, 240), anchor="mm")
