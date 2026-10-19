@@ -25,6 +25,8 @@ Décision de Yann du 19/10 (carte blanche) : le format « recit » de tools/reel
 
 Champs du JSON : "format": "recit", "title" (bandeau jaune fixe en haut, 30 caractères maximum, une promesse), "narration" [{"text", "photo"}], "photos" (4 à 6, toutes différentes), "song", "caption", "hashtags", "reel": true, "label", "big". Facultatifs : "voice" (défaut fr-FR-HenriNeural), "rate" (défaut +8 %). Le champ "slides" n'est plus utilisé.
 
+**Photos (consigne de Yann du 19/10) : qualité et variété avant tout, droits non bloquants (compte de passionné, non commercial).** Une photo différente par phrase, d'époque (celle de l'histoire racontée), en haute définition (1000 px minimum), trouvée par recherche d'images (presse, séances photo, archives, fans) via des URL directes. Pas de photos floues, pas de scans de magazine pleins de texte, pas de doublons, pas de photos de concerts récents pour une histoire ancienne. Commons seulement si la photo est bonne.
+
 Musique à la publication Metricool : le vrai morceau de l'artiste seul, audioConfiguration {audioId, audioVolume: 100, videoVolume: 0}.
 
 **Qualité du son (exigence de Yann du 19/10) : uniquement la VERSION ALBUM officielle du morceau.** Les « original_sound » repiqués par des particuliers (bruits, enregistrements de concert, qualité dégradée) sont interdits. Ordre de choix dans les candidats Metricool :
