@@ -277,6 +277,80 @@ def build_narration(spec, out):
     return voice_path, sents, total
 
 
+def _speech_regions(path, total):
+    """Plages où la voix parle (hors silences), via silencedetect."""
+    err = subprocess.run(["ffmpeg", "-i", str(path), "-af", "silencedetect=n=-38dB:d=0.18", "-f", "null", "-"],
+                         capture_output=True, text=True).stderr
+    regs, cur = [], 0.0
+    for line in err.splitlines():
+        if "silence_start" in line:
+            st = float(line.split("silence_start:")[1].split()[0])
+            if st - cur > 0.05:
+                regs.append((cur, st))
+        elif "silence_end" in line:
+            cur = float(line.split("silence_end:")[1].split("|")[0])
+    if total - cur > 0.05:
+        regs.append((cur, total))
+    return regs or [(0, total)]
+
+
+def narration_from_file(spec, out):
+    """Voix off fournie (fichier audio enregistré ou généré avec intention de jeu, ex. Gemini TTS).
+    Les mots sont répartis sur les plages parlées au prorata de leur longueur (les pauses suspendent les sous-titres)."""
+    src = ROOT / spec["voice_file"]
+    tempo = float(spec.get("voice_tempo", 1.0))
+    voice = out / "voice_src.wav"
+    af = f"atempo={tempo}," if abs(tempo - 1) > 0.001 else ""
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-af",
+                    af + "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse",
+                    "-ar", "44100", "-ac", "1", str(voice)], check=True)
+    dur = _probe(voice)
+    lead = 0.15
+    regs = [(a + lead, b + lead) for a, b in _speech_regions(voice, dur)]
+    items = spec["narration"]
+    toks = [(w, i) for i, it in enumerate(items) for w in it["text"].split()]
+    weights = [len(w) + 2 for w, _ in toks]
+    speech = sum(b - a for a, b in regs)
+    unit = speech / sum(weights)
+    words, r, pos = [], 0, regs[0][0]
+    for (w, i), wt in zip(toks, weights):
+        need = wt * unit
+        start = pos
+        while need > 1e-6:
+            a, b = regs[r]
+            room = b - pos
+            if need <= room or r == len(regs) - 1:
+                pos += need; need = 0
+            else:
+                need -= room; r += 1; pos = regs[r][0]
+                if start >= b - 0.02:
+                    start = pos
+        words.append((w, i, start, pos))
+    sents = []
+    for i, it in enumerate(items):
+        ws = [(w, a, b) for w, k, a, b in words if k == i]
+        sents.append({"start": ws[0][1] if ws else 0, "end": ws[-1][2] if ws else 0, "photo": it.get("photo", i), "words": ws})
+    total = dur + lead + 0.9
+    voice_path = out / "voice.m4a"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(voice), "-af",
+                    f"adelay={int(lead*1000)},apad,atrim=0:{total:.2f},loudnorm=I=-14:TP=-1.5",
+                    "-c:a", "aac", "-b:a", "192k", str(voice_path)], check=True)
+    return voice_path, sents, total
+
+
+def add_bed(spec, voice_path, out, total):
+    """Aperçu seulement ("preview_bed": true) : musique libre sous la voix pour juger le mixage.
+    À la publication, le vrai morceau est posé par Instagram (audioVolume ~25, videoVolume 100)."""
+    title, filename = pick_music(spec, 7)
+    mp3 = out / "bed.mp3"
+    mp3.write_bytes(fetch("https://incompetech.com/music/royalty-free/mp3-royaltyfree/" + urllib.parse.quote(filename)))
+    mixed = out / "voice_bed.m4a"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(voice_path), "-ss", "3", "-i", str(mp3), "-filter_complex",
+                    f"[1:a]volume=0.16,afade=t=out:st={total-1.5:.2f}:d=1.5[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
+                    "-map", "[a]", "-c:a", "aac", "-b:a", "192k", str(mixed)], check=True)
+    return mixed
+
+
 def _chunks(words, maxw=3, maxc=20):
     """Regroupe les mots en sous-titres courts (3 mots max), façon Reels."""
     merged = []
@@ -389,7 +463,9 @@ def frame_recit(t, spec, pics, sents, chunks, total):
 def main_recit(spec_path, spec):
     out = ROOT / "out" / "instagram" / spec_path.stem
     out.mkdir(parents=True, exist_ok=True)
-    voice, sents, total = build_narration(spec, out)
+    voice, sents, total = narration_from_file(spec, out) if spec.get("voice_file") else build_narration(spec, out)
+    if spec.get("preview_bed"):
+        voice = add_bed(spec, voice, out, total)
     chunks = [c for s in sents for c in _chunks(s["words"])]  # jamais de sous-titre à cheval sur deux phrases
     pics = [grade(p) for p in recit_photos(spec)] or [Image.new("RGB", (W, H), (30, 30, 34))]
     credit = spec.get("photo_credit")

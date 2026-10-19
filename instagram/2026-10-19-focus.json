@@ -86,5 +86,7 @@
    "text": "Toi, tu aurais tenu combien de jours dans ce studio ?",
    "photo": 2
   }
- ]
+ ],
+ "voice_file": "instagram/audio/2026-10-19-focus.m4a",
+ "voice_tempo": 1.06
 }
