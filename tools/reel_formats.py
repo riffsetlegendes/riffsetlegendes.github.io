@@ -503,6 +503,16 @@ def main_recit(spec_path, spec):
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
                         "-t", f"{total + RECIT_OUTRO:.2f}", "-c:a", "aac", str(silent)], check=True)
         voice = silent
+        if spec.get("free_music"):
+            # Aucun morceau officiel disponible sur Instagram : musique libre (incompetech, CC BY) intégrée à la vidéo.
+            title, filename = pick_music(spec, 7)
+            mp3 = out / "bed.mp3"
+            mp3.write_bytes(fetch("https://incompetech.com/music/royalty-free/mp3-royaltyfree/" + urllib.parse.quote(filename)))
+            voice = out / "bed.m4a"
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", "3", "-i", str(mp3), "-t", f"{total + RECIT_OUTRO:.2f}",
+                            "-af", f"loudnorm=I=-14:TP=-1.5,afade=t=out:st={total + RECIT_OUTRO - 1.5:.2f}:d=1.5",
+                            "-c:a", "aac", "-b:a", "192k", str(voice)], check=True)
+            (out / "reel_credit.txt").write_text(f"Musique : « {title} », Kevin MacLeod (incompetech.com), licence CC BY 4.0\n", encoding="utf-8")
     elif spec.get("preview_bed"):
         voice = add_bed(spec, voice, out, total)
     chunks = [c for s in sents for c in _chunks(s["words"])]  # jamais de sous-titre à cheval sur deux phrases
