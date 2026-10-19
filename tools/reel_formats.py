@@ -333,7 +333,7 @@ def narration_from_file(spec, out):
     total = dur + lead + 0.9
     voice_path = out / "voice.m4a"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(voice), "-af",
-                    f"adelay={int(lead*1000)},apad,atrim=0:{total:.2f},loudnorm=I=-14:TP=-1.5",
+                    f"adelay={int(lead*1000)},loudnorm=I=-14:TP=-1.5,apad,atrim=0:{total + RECIT_OUTRO:.2f}",
                     "-c:a", "aac", "-b:a", "192k", str(voice_path)], check=True)
     return voice_path, sents, total
 
@@ -346,7 +346,7 @@ def add_bed(spec, voice_path, out, total):
     mp3.write_bytes(fetch("https://incompetech.com/music/royalty-free/mp3-royaltyfree/" + urllib.parse.quote(filename)))
     mixed = out / "voice_bed.m4a"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(voice_path), "-ss", "3", "-i", str(mp3), "-filter_complex",
-                    f"[1:a]volume=0.16,afade=t=out:st={total-1.5:.2f}:d=1.5[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
+                    f"[1:a]volume=0.16,afade=t=out:st={total + RECIT_OUTRO - 1.5:.2f}:d=1.5[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
                     "-map", "[a]", "-c:a", "aac", "-b:a", "192k", str(mixed)], check=True)
     return mixed
 
@@ -388,7 +388,37 @@ def grade(img):
     return ImageEnhance.Contrast(img).enhance(1.12)
 
 
+RECIT_OUTRO = 2.6
+_LOGO = {}
+
+
+def outro_recit(t, pics, sents, total):
+    """Fin : dernière photo floutée, logo Riffs & Légendes qui arrive, adresse du site."""
+    u = (t - total) / RECIT_OUTRO
+    p = pics[sents[-1]["photo"] % len(pics)]
+    bg = cover_fit(p, W, H, 1.18).filter(ImageFilter.GaussianBlur(18))
+    im = Image.blend(bg, Image.new("RGB", (W, H), (8, 10, 30)), 0.62)
+    if "img" not in _LOGO:
+        _LOGO["img"] = Image.open(ROOT / "brand" / "wordmark-video.png").convert("RGBA")
+    a = ease(min(1, u / 0.35))
+    lw = int((W - 120) * (0.9 + 0.1 * a))
+    logo = _LOGO["img"].resize((lw, int(_LOGO["img"].height * lw / _LOGO["img"].width)), Image.LANCZOS)
+    if a < 1:
+        logo.putalpha(logo.getchannel("A").point(lambda v: int(v * a)))
+    im.paste(logo, ((W - lw) // 2, 760 - logo.height // 2), logo)
+    d = ImageDraw.Draw(im)
+    b = ease(min(1, max(0, (u - 0.25) / 0.3)))
+    if b > 0:
+        col = tuple(int(c * b) for c in (240, 240, 240))
+        d.text((W // 2, 1000), "L'histoire complète", font=serif(64), fill=tuple(int(c * b) for c in YELLOW), anchor="mm")
+        d.text((W // 2, 1090), "riffsetlegendes.github.io", font=mono(46), fill=col, anchor="mm")
+        d.text((W // 2, 1160), "lien en bio", font=mono(34), fill=col, anchor="mm")
+    return im
+
+
 def frame_recit(t, spec, pics, sents, chunks, total):
+    if t >= total:
+        return outro_recit(t, pics, sents, total)
     im = Image.new("RGB", (W, H), (10, 10, 12))
     # phrase courante
     k = 0
@@ -472,11 +502,11 @@ def main_recit(spec_path, spec):
     pics = [grade(p) for p in recit_photos(spec)] or [Image.new("RGB", (W, H), (30, 30, 34))]
     credit = spec.get("photo_credit")
     proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
-                             "-r", str(FPS), "-i", "-", "-i", str(voice), "-t", f"{total:.2f}", "-map", "0:v", "-map", "1:a",
+                             "-r", str(FPS), "-i", "-", "-i", str(voice), "-t", f"{total + RECIT_OUTRO:.2f}", "-map", "0:v", "-map", "1:a",
                              "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "medium", "-crf", "21", "-maxrate", "9M",
                              "-bufsize", "18M", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(out / "reel.mp4")],
                             stdin=subprocess.PIPE)
-    for i in range(int(total * FPS)):
+    for i in range(int((total + RECIT_OUTRO) * FPS)):
         im = frame_recit(i / FPS, spec, pics, sents, chunks, total)
         if credit:
             ImageDraw.Draw(im).text((W // 2, 14), credit, font=mono(20), fill=(170, 170, 170), anchor="mt")
