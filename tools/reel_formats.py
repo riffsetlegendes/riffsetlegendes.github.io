@@ -2,10 +2,13 @@
   journal   : « Ce jour-là » façon une de quotidien vintage, texte tapé à la machine
   countdown : anecdote « Le saviez-vous ? », compte à rebours 3-2-1 avec gros chiffres
   docu      : mini-documentaire, frise chronologique et grain de pellicule
+  recit     : récit narré (format des Reels viraux de la niche) : voix off française (edge-tts), photos plein écran
+              en mouvement, sous-titres mot à mot, titre fixe en haut. Champs : "narration" [{text, photo}], "title",
+              "photos", option "voice" (défaut fr-FR-HenriNeural) et "rate" (défaut +8 %).
 Usage : python3 tools/reel_formats.py instagram/AAAA-MM-JJ-xxx.json [photos locales...]
 Sortie : out/instagram/<stem>/reel.mp4 (+ reel_credit.txt). La vraie musique est ajoutée à la publication
 (Metricool, catalogue Instagram) ; la vidéo garde une musique libre en secours."""
-import json, random, subprocess, sys, urllib.parse
+import io, json, os, random, subprocess, sys, urllib.parse
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
 
@@ -199,6 +202,216 @@ def frame_docu(t, spec, pics, segs):
     return grain(im, 40, int(t * 12))
 
 
+# ---------- format 4 : récit narré (format viral : voix off, photos plein écran, sous-titres mot à mot) ----------
+RECIT_VOICE = "fr-FR-HenriNeural"
+
+
+def _tts_sentence(text, voice, rate):
+    """Synthèse d'une phrase avec edge-tts : (octets mp3, [(mot, début_s, fin_s)])."""
+    import asyncio
+    import edge_tts
+
+    async def run():
+        try:
+            com = edge_tts.Communicate(text, voice, rate=rate, boundary="WordBoundary")
+        except TypeError:
+            com = edge_tts.Communicate(text, voice, rate=rate)
+        audio, words = b"", []
+        async for ch in com.stream():
+            if ch["type"] == "audio":
+                audio += ch["data"]
+            elif ch["type"] == "WordBoundary":
+                st = ch["offset"] / 1e7
+                words.append((ch["text"], st, st + ch["duration"] / 1e7))
+        return audio, words
+    return asyncio.run(run())
+
+
+def _probe(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                         capture_output=True, text=True).stdout.strip()
+    return float(out or 0)
+
+
+def build_narration(spec, out):
+    """Voix off phrase par phrase. Renvoie (chemin audio, phrases [{start, end, photo, words[(mot, t0, t1)]}], durée)."""
+    voice, rate, gap = spec.get("voice", RECIT_VOICE), spec.get("rate", "+8%"), 0.18
+    parts, sents, t = [], [], 0.25
+    allow_silent = os.environ.get("RECIT_ALLOW_SILENT") == "1"
+    for i, item in enumerate(spec["narration"]):
+        text = item["text"].strip()
+        try:
+            audio, words = _tts_sentence(text, voice, rate)
+            seg = out / f"voice_{i}.mp3"
+            seg.write_bytes(audio)
+            dur = _probe(seg)
+        except Exception as ex:
+            if not allow_silent:
+                raise RuntimeError(f"voix off indisponible : {ex}")
+            print("voix off indisponible, aperçu muet :", ex, file=sys.stderr)
+            toks = text.split()
+            dur, words, seg = 0.34 * len(toks) + 0.3, [], None
+            for k, w in enumerate(toks):
+                words.append((w, 0.34 * k, 0.34 * (k + 1)))
+        if not words:
+            toks = text.split()
+            words = [(w, dur * k / len(toks), dur * (k + 1) / len(toks)) for k, w in enumerate(toks)]
+        sents.append({"start": t, "end": t + dur, "photo": item.get("photo", i),
+                      "words": [(w, t + a, t + b) for w, a, b in words]})
+        parts.append((seg, dur))
+        t += dur + gap
+    total = t + 0.9
+    voice_path = out / "voice.m4a"
+    if all(p for p, _ in parts):
+        inputs, filt = [], []
+        for k, (p, d) in enumerate(parts):
+            inputs += ["-i", str(p)]
+            filt.append(f"[{k}:a]aresample=44100,adelay={int((sents[k]['start']) * 1000)}|{int((sents[k]['start']) * 1000)}[a{k}]")
+        mix = "".join(f"[a{k}]" for k in range(len(parts)))
+        filt.append(f"{mix}amix=inputs={len(parts)}:normalize=0,apad,atrim=0:{total:.2f},loudnorm=I=-14:TP=-1.5[v]")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(filt),
+                        "-map", "[v]", "-c:a", "aac", "-b:a", "192k", str(voice_path)], check=True)
+    else:
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+                        "-t", f"{total:.2f}", "-c:a", "aac", str(voice_path)], check=True)
+    return voice_path, sents, total
+
+
+def _chunks(words, maxw=3, maxc=20):
+    """Regroupe les mots en sous-titres courts (3 mots max), façon Reels."""
+    merged = []
+    for w in words:  # « ? », « ! », « : » isolés restent collés au mot précédent
+        if merged and not any(ch.isalnum() for ch in w[0]):
+            pw, a, b = merged[-1]
+            merged[-1] = (pw + "\u00a0" + w[0], a, max(b, w[2]))
+        else:
+            merged.append(w)
+    words = merged
+    out, cur = [], []
+    for w in words:
+        if cur and (len(cur) >= maxw or len(" ".join(x[0] for x in cur + [w])) > maxc or cur[-1][0][-1:] in ".,:;?!"):
+            out.append(cur); cur = []
+        cur.append(w)
+    return out + ([cur] if cur else [])
+
+
+def recit_photos(spec):
+    names = spec.get("photos") or []
+    out = []
+    for n in names:
+        try:
+            url = n if n.startswith(("http", "file:")) else "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(n) + "?width=1600"
+            out.append(Image.open(io.BytesIO(fetch(url))).convert("RGB"))
+        except Exception as ex:
+            print("photo indisponible :", n, ex, file=sys.stderr)
+    return out
+
+
+def grade(img):
+    """Couleurs légèrement désaturées et contrastées, look documentaire."""
+    from PIL import ImageEnhance
+    img = ImageEnhance.Color(img).enhance(0.75)
+    return ImageEnhance.Contrast(img).enhance(1.12)
+
+
+def frame_recit(t, spec, pics, sents, chunks, total):
+    im = Image.new("RGB", (W, H), (10, 10, 12))
+    # phrase courante
+    k = 0
+    for i, s in enumerate(sents):
+        if t >= s["start"] - 0.05:
+            k = i
+    s = sents[k]
+    if pics:
+        p = pics[s["photo"] % len(pics)]
+        span = max(0.1, (sents[k + 1]["start"] if k + 1 < len(sents) else total) - s["start"])
+        u = min(1, max(0, (t - s["start"]) / span))
+        zin = k % 2 == 0
+        z = 1.04 + 0.12 * (u if zin else 1 - u)
+        ph = cover_fit(p, W, H, z, 0.35 + 0.1 * (k % 3) / 2, 0.5)
+        im.paste(ph, (0, 0))
+        if k > 0 and t - s["start"] < 0.25:  # fondu court entre deux photos
+            q = pics[sents[k - 1]["photo"] % len(pics)]
+            prev = cover_fit(q, W, H, 1.16 if (k - 1) % 2 == 0 else 1.04)
+            im = Image.blend(prev, im, max(0, (t - s["start"]) / 0.25))
+    # dégradés haut et bas pour la lisibilité
+    shade = Image.new("L", (1, H))
+    for y in range(H):
+        a = 0
+        if y > H * 0.48:
+            a = int(205 * min(1, (y - H * 0.48) / (H * 0.32)))
+        if y < 420:
+            a = max(a, int(150 * (1 - y / 420)))
+        shade.putpixel((0, y), a)
+    im = Image.composite(Image.new("RGB", (W, H), (0, 0, 0)), im, shade.resize((W, H)))
+    d = ImageDraw.Draw(im)
+    # titre fixe en haut (contexte pour qui arrive en cours de vidéo)
+    if spec.get("title"):
+        f = head(64)
+        lines = wrap(d, spec["title"].upper(), f, W - 160)[:2]
+        y = 150
+        for l in lines:
+            tw = d.textlength(l, font=f)
+            d.rectangle((W / 2 - tw / 2 - 22, y - 6, W / 2 + tw / 2 + 22, y + 70), fill=YELLOW)
+            d.text((W // 2, y), l, font=f, fill=(15, 15, 15), anchor="ma")
+            y += 82
+    # sous-titre mot à mot
+    cur = None
+    for c in chunks:
+        if c[0][1] - 0.05 <= t <= c[-1][2] + 0.25:
+            cur = c
+    if cur:
+        pop = ease((t - cur[0][1]) / 0.12)
+        size = int(118 * (0.86 + 0.14 * pop))
+        f = head(size)
+        words = [w for w, _, _ in cur]
+        full = " ".join(words).upper()
+        lines = wrap(d, full, f, W - 140)
+        y = 1240 - (len(lines) - 1) * size // 2
+        idx = 0
+        for line in lines:
+            toks = line.split(" ")
+            lw = d.textlength(line, font=f)
+            x = W / 2 - lw / 2
+            for tok in toks:
+                w, a, b = cur[idx]
+                col = YELLOW if a - 0.02 <= t <= b + 0.08 else (255, 255, 255)
+                d.text((x, y), tok, font=f, fill=col, stroke_width=9, stroke_fill=(0, 0, 0))
+                x += d.textlength(tok + " ", font=f)
+                idx += 1
+            y += int(size * 0.98)
+    # signature
+    d.text((W // 2, H - 150), "@riffsetlegendes", font=mono(34), fill=(235, 235, 235), anchor="mm")
+    return im
+
+
+def main_recit(spec_path, spec):
+    out = ROOT / "out" / "instagram" / spec_path.stem
+    out.mkdir(parents=True, exist_ok=True)
+    voice, sents, total = build_narration(spec, out)
+    words = [w for s in sents for w in s["words"]]
+    chunks = _chunks(words)
+    pics = [grade(p) for p in recit_photos(spec)] or [Image.new("RGB", (W, H), (30, 30, 34))]
+    credit = spec.get("photo_credit")
+    proc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+                             "-r", str(FPS), "-i", "-", "-i", str(voice), "-t", f"{total:.2f}", "-map", "0:v", "-map", "1:a",
+                             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "medium", "-crf", "21", "-maxrate", "9M",
+                             "-bufsize", "18M", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(out / "reel.mp4")],
+                            stdin=subprocess.PIPE)
+    for i in range(int(total * FPS)):
+        im = frame_recit(i / FPS, spec, pics, sents, chunks, total)
+        if credit:
+            ImageDraw.Draw(im).text((W // 2, 14), credit, font=mono(20), fill=(170, 170, 170), anchor="mt")
+        proc.stdin.write(im.tobytes())
+    proc.stdin.close()
+    proc.wait()
+    (out / "reel_credit.txt").write_text("", encoding="utf-8")
+    (out / "narration.json").write_text(json.dumps(
+        [{"start": round(s["start"], 2), "end": round(s["end"], 2), "text": " ".join(w for w, _, _ in s["words"])} for s in sents],
+        ensure_ascii=False, indent=1), encoding="utf-8")
+    print(out / "reel.mp4", f"{total:.1f}s", "recit")
+
+
 STYLES = {"journal": (frame_journal, 3.2, 4.0, 3.0),
           "countdown": (frame_countdown, 3.0, 4.2, 2.8),
           "docu": (frame_docu, 3.6, 4.6, 3.2)}
@@ -208,6 +421,8 @@ def main():
     spec_path = Path(sys.argv[1])
     spec = json.loads(spec_path.read_text(encoding="utf-8"))
     fmt = spec.get("format", "countdown")
+    if fmt == "recit":
+        return main_recit(spec_path, spec)
     draw, t_in, t_sl, t_out = STYLES[fmt]
     pics = photos(spec, sys.argv[2:])
     slides = spec["slides"][:3] if fmt == "countdown" else spec["slides"][:5]

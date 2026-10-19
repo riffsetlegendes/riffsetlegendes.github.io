@@ -2,10 +2,10 @@
  "type": "focus",
  "reel": true,
  "tracks": [],
- "format": "docu",
+ "format": "recit",
  "label": "Anecdote",
  "big": "1983",
- "title": "Leur plus grand tube, joué dans trois pièces séparées",
+ "title": "3 musiciens, 3 pièces, 1 tube",
  "song": {
   "title": "Every Breath You Take",
   "artist": "The Police"
@@ -48,5 +48,43 @@
   "anecdotemusicale",
   "rock80s"
  ],
- "cta": "Tu aurais tenu combien de jours dans ce studio ?"
+ "cta": "Tu aurais tenu combien de jours dans ce studio ?",
+ "narration": [
+  {
+   "text": "Leur plus grand tube a été enregistré par trois musiciens qui ne se supportaient plus.",
+   "photo": 0
+  },
+  {
+   "text": "Fin 1982, The Police s'installe aux studios AIR, sur l'île de Montserrat, pour enregistrer Synchronicity.",
+   "photo": 1
+  },
+  {
+   "text": "Mais l'ambiance est si tendue que chacun joue dans sa propre pièce.",
+   "photo": 2
+  },
+  {
+   "text": "Stewart Copeland installe même sa batterie dans une salle à manger voisine.",
+   "photo": 3
+  },
+  {
+   "text": "Pendant dix jours, aucune prise n'est exploitable.",
+   "photo": 3
+  },
+  {
+   "text": "Puis Andy Summers trouve l'arpège de guitare qui remplace l'orgue d'Every Breath You Take.",
+   "photo": 4
+  },
+  {
+   "text": "Le morceau reste huit semaines numéro un aux États-Unis.",
+   "photo": 0
+  },
+  {
+   "text": "Et Synchronicity sera le dernier album studio du groupe.",
+   "photo": 1
+  },
+  {
+   "text": "Toi, tu aurais tenu combien de jours dans ce studio ?",
+   "photo": 2
+  }
+ ]
 }

@@ -34,7 +34,7 @@ jobs:
           python-version: "3.12"
       - name: Installer le rendu
         run: |
-          pip install -q playwright pillow
+          pip install -q playwright pillow edge-tts
           python -m playwright install --with-deps chromium
           sudo apt-get install -y -qq ffmpeg >/dev/null
       - name: Publier
