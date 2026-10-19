@@ -1,0 +1,90 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "recit",
+ "label": "Anecdote",
+ "big": "1983",
+ "title": "3 musiciens, 3 pièces, 1 tube",
+ "song": {
+  "title": "Every Breath You Take",
+  "artist": "The Police"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "The_Police_I.jpg",
+  "The_Police_II.jpg",
+  "The_Police_01.jpg",
+  "The_Police_02.jpg",
+  "The_Police_Clockwise_(All_Members).jpg"
+ ],
+ "slides": [
+  {
+   "head": "Fin 1982",
+   "big": "À Montserrat, Sting, Copeland et Summers ne se supportent plus : chacun enregistre dans sa pièce."
+  },
+  {
+   "head": "Fin 1982",
+   "big": "Copeland joue dans une salle à manger voisine. Dix jours passent sans une prise exploitable."
+  },
+  {
+   "head": "Janvier 1983",
+   "big": "Ajouts et mixage au Québec. La guitare en arpèges de Summers remplace l'orgue d'Every Breath You Take."
+  },
+  {
+   "head": "9 juillet 1983",
+   "big": "Every Breath You Take prend la tête du Hot 100 américain et y reste huit semaines."
+  },
+  {
+   "head": "4 mars 1984",
+   "big": "Fin de la tournée mondiale. Synchronicity restera le dernier album studio de The Police."
+  }
+ ],
+ "caption": "Exemple de format récit, non publié.",
+ "hashtags": [
+  "riffsetlegendes",
+  "thepolice",
+  "everybreathyoutake",
+  "anecdotemusicale",
+  "rock80s"
+ ],
+ "cta": "Tu aurais tenu combien de jours dans ce studio ?",
+ "narration": [
+  {
+   "text": "Leur plus grand tube a été enregistré par trois musiciens qui ne se supportaient plus.",
+   "photo": 0
+  },
+  {
+   "text": "Fin 1982, The Police s'installe aux studios AIR, sur l'île de Montserrat, pour enregistrer Synchronicity.",
+   "photo": 1
+  },
+  {
+   "text": "Mais l'ambiance est si tendue que chacun joue dans sa propre pièce.",
+   "photo": 2
+  },
+  {
+   "text": "Stewart Copeland installe même sa batterie dans une salle à manger voisine.",
+   "photo": 3
+  },
+  {
+   "text": "Pendant dix jours, aucune prise n'est exploitable.",
+   "photo": 3
+  },
+  {
+   "text": "Puis Andy Summers trouve l'arpège de guitare qui remplace l'orgue d'Every Breath You Take.",
+   "photo": 4
+  },
+  {
+   "text": "Le morceau reste huit semaines numéro un aux États-Unis.",
+   "photo": 0
+  },
+  {
+   "text": "Et Synchronicity sera le dernier album studio du groupe.",
+   "photo": 1
+  },
+  {
+   "text": "Toi, tu aurais tenu combien de jours dans ce studio ?",
+   "photo": 2
+  }
+ ]
+}

@@ -11,27 +11,34 @@ Deux concepts portent la quasi-totalité des Reels qui dépassent 3 fois la méd
 
 Ce qui ne marche pas : la biographie « de X à Y en N albums », l'hommage générique sans détail, la liste de sorties du jour, le simple « joyeux anniversaire ».
 
-## 2. Les trois créneaux
+## 2. Le format : le récit narré, sur les trois créneaux
 
-| Créneau | Format (reel_formats.py) | Concept imposé | Règle d'accroche |
-|---|---|---|---|
-| 8 h | journal | Détail caché derrière une fin, ou anniversaire + fait étrange | title = une affirmation qui contient le fait étrange, jamais une date seule ni un simple nom d'album |
-| 13 h | countdown | Origine improbable (en priorité) ou « deux dates » (chute puis triomphe) | hook = une question « Pourquoi… ? » ou une affirmation surprenante, 12 mots maximum |
-| 18 h | docu | Détail caché derrière une fin, coulisses d'un disque ou relève sous l'angle d'une origine ou d'une actu | title = une promesse précise, jamais « portrait de X » |
+Décision de Yann du 19/10 (carte blanche) : le format « recit » de tools/reel_formats.py REMPLACE journal, countdown et docu pour tous les Reels. C'est la forme de tous les Reels viraux de la niche : une voix off qui raconte, des photos plein écran qui bougent, de gros sous-titres mot à mot, une accroche parlée dès la première seconde.
 
-Le choix du sujet du jour se fait d'abord sur le concept, ensuite sur l'artiste. Un sujet sans fait étrange vérifiable ne passe pas en Reel (il peut rester un article du site).
+| Créneau | Fichier | Concept imposé |
+|---|---|---|
+| 8 h | instagram/AAAA-MM-JJ-jour.json | Détail caché derrière une fin, ou anniversaire + fait étrange (date du jour) |
+| 13 h | instagram/AAAA-MM-JJ-anecdote.json | Origine improbable (« Pourquoi… ? ») ou « deux dates » (chute puis triomphe) |
+| 18 h | instagram/AAAA-MM-JJ-focus.json | Coulisses d'un disque, détail caché, ou relève sous l'angle d'une origine ou d'une actu |
 
-## 3. Règles d'écriture des cartes
+Champs du JSON : "format": "recit", "title" (bandeau jaune fixe en haut, 30 caractères maximum, une promesse), "narration" [{"text", "photo"}], "photos" (4 à 6, toutes différentes), "song", "caption", "hashtags", "reel": true, "label", "big". Facultatifs : "voice" (défaut fr-FR-HenriNeural), "rate" (défaut +8 %). Le champ "slides" n'est plus utilisé.
 
-- Première carte : le fait étrange ou la question, avec un élément précis (nom, nombre, objet). Le spectateur doit comprendre le sujet en 1 seconde.
-- Une seule promesse : chaque carte répond à l'accroche, aucune digression biographique.
-- Les cartes 2 et 3 apportent la preuve (date, lieu, chiffre). L'avant-dernière relance (« Mais ce n'est pas le plus fou », un chiffre, un retournement).
+Musique à la publication Metricool : le vrai morceau de l'artiste PASSE SOUS LA VOIX, audioConfiguration {audioId, audioVolume: 15, videoVolume: 100}. Jamais audioVolume 100 / videoVolume 0 sur un récit, sinon la voix disparaît.
+
+Contrôle du rendu (workflow dry_run) : la vidéo doit durer 30 à 45 s, la voix doit s'entendre (ffmpeg volumedetect, mean_volume autour de -16 dB), les sous-titres ne débordent pas.
+
+## 3. Règles d'écriture de la narration
+
+- 80 à 110 mots, 7 à 9 phrases courtes (une phrase = une photo ou un plan). Écrit pour l'oreille : phrases simples, verbes au présent, aucun sigle obscur, nombres que l'on peut dire à voix haute.
+- Phrase 1 = l'accroche : le fait étrange ou la question « Pourquoi… ? », avec un élément précis (nom, nombre, objet). Le sujet est compris en 2 secondes.
+- Une seule promesse : chaque phrase répond à l'accroche, aucune digression biographique.
+- Phrases 2 à 4 : la preuve (date, lieu, chiffre). Vers le milieu, une relance (« Mais… », « Problème : », un chiffre, un retournement).
+- Dernière phrase = la question au spectateur (« Toi, tu l'aurais gardée, cette pochette ? »), qui donne envie de commenter. Pas de carte finale « lien en bio » : la vidéo boucle, le lien est dans la légende.
 - Chiffres et faits uniquement repris de l'article vérifié du jour.
-- Champ "cta" (nouveau, affiché sur la carte finale) : UNE question précise liée à l'histoire, 60 caractères maximum, qui donne envie de répondre en commentaire. Exemples : « Tu l'aurais gardée, cette pochette ? », « Tu connaissais l'origine de ce nom ? ». Jamais « Like si… », « Tague un ami ».
 
 ## 4. Légende et hashtags
 
-- Légende : 3 à 5 phrases courtes qui racontent l'histoire (elle sert de sous-titre à ceux qui coupent le son). Première phrase = l'accroche reformulée, pas recopiée de la carte. Avant-dernière phrase = la question du "cta". Dernière phrase : « L'histoire complète est sur riffsetlegendes.github.io, lien en bio. »
+- Légende : 3 à 5 phrases courtes qui racontent l'histoire (elle sert de sous-titre à ceux qui coupent le son). Première phrase = l'accroche reformulée, pas recopiée de la carte. Avant-dernière phrase = la question finale de la narration. Dernière phrase : « L'histoire complète est sur riffsetlegendes.github.io, lien en bio. »
 - 5 hashtags exactement : riffsetlegendes + l'artiste + le morceau ou l'album + 2 hashtags de niche francophones ou génériques (histoiredurock, anecdotemusicale, classicrock, rock70s, etc.).
 - Mentions : comptes officiels vérifiés uniquement.
 
