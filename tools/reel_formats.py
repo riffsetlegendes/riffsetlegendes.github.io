@@ -357,7 +357,7 @@ def _chunks(words, maxw=3, maxc=20):
     for w in words:  # « ? », « ! », « : » isolés restent collés au mot précédent
         if merged and not any(ch.isalnum() for ch in w[0]):
             pw, a, b = merged[-1]
-            merged[-1] = (pw + "\u00a0" + w[0], a, max(b, w[2]))
+            merged[-1] = (pw + w[0], a, max(b, w[2]))
         else:
             merged.append(w)
     words = merged
@@ -448,6 +448,8 @@ def frame_recit(t, spec, pics, sents, chunks, total):
             lw = d.textlength(line, font=f)
             x = W / 2 - lw / 2
             for tok in toks:
+                if idx >= len(cur):
+                    break
                 w, a, b = cur[idx]
                 lit = max([j for j, (_, a2, _) in enumerate(cur) if a2 - 0.02 <= t] or [0])  # un seul mot allumé
                 col = YELLOW if idx == lit else (255, 255, 255)
