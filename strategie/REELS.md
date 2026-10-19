@@ -33,7 +33,7 @@ Musique à la publication Metricool : le vrai morceau de l'artiste seul, audioCo
 1. audioType « music » (catalogue Instagram sous licence) dont displayArtist est l'artiste et le titre celui du morceau, sans « live », « remaster » d'une autre version, « cover », « karaoke », « instrumental », « sped up », « slowed ».
 2. À défaut, « original_sound » publié par le compte officiel de l'artiste ou de son label (igUsername vérifié).
 3. Sinon, changer de morceau du même artiste (chercher par le seul nom de l'artiste pour lister ses titres « music ») plutôt que de prendre un son douteux.
-4. Si l'artiste n'a vraiment rien de propre : mettre "free_music": true dans le JSON (musique libre CC BY intégrée à la vidéo), publier sans audioConfiguration, créditer « Musique : <titre>, Kevin MacLeod (incompetech.com), CC BY 4.0 » dans la légende, et le signaler à Yann.
+4. Si l'artiste n'a vraiment rien de propre : prendre un titre libre de la bibliothèque Instagram (candidats audioType « music », chercher par ambiance, ex. « alternative rock guitar », « blues rock »), de bonne qualité et dans l'esprit de l'artiste. Seulement si ça échoue : mettre "free_music": true dans le JSON (musique libre CC BY intégrée à la vidéo), publier sans audioConfiguration, créditer « Musique : <titre>, Kevin MacLeod (incompetech.com), CC BY 4.0 » dans la légende, et le signaler à Yann.
 
 Contrôle du rendu (workflow dry_run) : la vidéo doit durer 30 à 45 s, les sous-titres ne débordent pas.
 
