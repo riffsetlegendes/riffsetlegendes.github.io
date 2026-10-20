@@ -31,11 +31,12 @@ Champs du JSON : "format": "recit", "title" (bandeau jaune fixe en haut, 30 cara
 
 Musique à la publication Metricool : le vrai morceau de l'artiste seul, audioConfiguration {audioId, audioVolume: 100, videoVolume: 0}.
 
-**Qualité du son (exigence de Yann du 19/10) : uniquement la VERSION ALBUM officielle du morceau.** Les « original_sound » repiqués par des particuliers (bruits, enregistrements de concert, qualité dégradée) sont interdits. Ordre de choix dans les candidats Metricool :
-1. audioType « music » (catalogue Instagram sous licence) dont displayArtist est l'artiste et le titre celui du morceau, sans « live », « remaster » d'une autre version, « cover », « karaoke », « instrumental », « sped up », « slowed ».
-2. À défaut, « original_sound » publié par le compte officiel de l'artiste ou de son label (igUsername vérifié).
-3. Sinon, changer de morceau du même artiste (chercher par le seul nom de l'artiste pour lister ses titres « music ») plutôt que de prendre un son douteux.
-4. Si l'artiste n'a vraiment rien de propre : prendre un titre libre de la bibliothèque Instagram (candidats audioType « music », chercher par ambiance, ex. « alternative rock guitar », « blues rock »), de bonne qualité et dans l'esprit de l'artiste. Seulement si ça échoue : mettre "free_music": true dans le JSON (musique libre CC BY intégrée à la vidéo), publier sans audioConfiguration, créditer « Musique : <titre>, Kevin MacLeod (incompetech.com), CC BY 4.0 » dans la légende, et le signaler à Yann.
+**Musique (correction de Yann du 20/10 au soir : TOUJOURS un vrai morceau de l'artiste, jamais de musique libre de droits).** Les vrais morceaux existent dans les candidats Metricool sous forme de « original_sound ». Méthode :
+1. Chercher « Titre Artiste », puis « Artiste - Titre », puis un autre tube du même artiste si besoin, jusqu'à avoir plusieurs candidats.
+2. Écarter tout titre contenant cover, live, remix, sped up, slowed, acoustic, karaoke, instrumental, piano, ukulele, guitar, voceux, edit, mashup, ou un nom de tiers ; écarter les durées inférieures à 30 s.
+3. Essayer les candidats retenus un par un (createScheduledPost en draft, puis lire igUsername et durationMs) : préférer, dans l'ordre, le compte officiel de l'artiste ou du label, puis un titre propre « Artiste - Titre » de durée longue (60 s et plus, signe d'un extrait de la version album), puis la durée la plus proche du morceau studio.
+4. Supprimer les brouillons d'essai inutiles (ou les laisser en brouillon, jamais publiés) et garder un seul post final.
+5. La musique libre n'est autorisée que si l'artiste n'a VRAIMENT aucun morceau disponible, ce qui doit rester exceptionnel ; le signaler alors à Yann.
 
 Contrôle du rendu (workflow dry_run) : la vidéo doit durer 30 à 45 s, les sous-titres ne débordent pas.
 
