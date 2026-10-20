@@ -12,24 +12,48 @@
  },
  "music_mood": "seventies",
  "photos": [
-  "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10160922416285310",
-  "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122175422600835873",
-  "https://www.ocalagazette.com/wp-content/uploads/2021/07/060821_BA_MartinStephens5_NWS-1024x735.jpg",
-  "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122283967736024201",
   "https://ca-times.brightspotcdn.com/dims4/default/117f73f/2147483647/strip/true/crop/2048x1365+0+0/resize/1440x960!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F3c%2F49%2F873231a7f07d12d38428e9712a4b%2Fla-et-tom-petty-career-in-pictures-pg-026",
+  "http://www.elvis-history-blog.com/images/FollowDreamCandid7.jpeg",
+  "https://www.ocalagazette.com/wp-content/uploads/2021/07/060821_BA_MartinStephens5_NWS-1024x735.jpg",
+  "https://www.ocalagazette.com/wp-content/uploads/2025/12/elvis.jpeg",
+  "http://media.pitchfork.com/photos/59d3bf8e60ca8662a162e982/master/pass/tom-petty.jpg",
   "https://i.ebayimg.com/images/g/1yoAAOSwveNdrlQ3/s-l1200.jpg",
-  "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10154439108615905",
+  "https://sfae.blob.core.windows.net/media/ecommercesite/media/sfae/sfae.artwork/800-tom-petty-heartbreakers_la_1.jpg",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tom_Petty_and_the_Heartbreakers_1977.jpg/1280px-Tom_Petty_and_the_Heartbreakers_1977.jpg"
  ],
  "narration": [
-  {"text": "À dix ans, Tom Petty se retrouve face à Elvis Presley.", "photo": 0},
-  {"text": "Nous sommes en 1961, à Ocala, en Floride, où Elvis tourne le film Follow That Dream.", "photo": 1},
-  {"text": "Sa tante l'emmène sur le tournage, où travaille son oncle.", "photo": 2},
-  {"text": "Quand Elvis passe en coulisses, l'oncle lui présente Tom et ses cousins.", "photo": 3},
-  {"text": "Petty racontera plus tard que ce jour-là a changé sa vie.", "photo": 4},
-  {"text": "Dès son retour, il se met à collectionner les disques.", "photo": 5},
-  {"text": "Il était né le 20 octobre 1950 : il aurait eu 76 ans aujourd'hui.", "photo": 6},
-  {"text": "Et toi, qui t'a donné envie d'écouter du rock ?", "photo": 7}
+  {
+   "text": "À dix ans, Tom Petty se retrouve face à Elvis Presley.",
+   "photo": 0
+  },
+  {
+   "text": "Nous sommes en 1961, à Ocala, en Floride, où Elvis tourne le film Follow That Dream.",
+   "photo": 1
+  },
+  {
+   "text": "Sa tante l'emmène sur le tournage, où travaille son oncle.",
+   "photo": 2
+  },
+  {
+   "text": "Quand Elvis passe en coulisses, l'oncle lui présente Tom et ses cousins.",
+   "photo": 3
+  },
+  {
+   "text": "Petty racontera plus tard que ce jour-là a changé sa vie.",
+   "photo": 4
+  },
+  {
+   "text": "Dès son retour, il se met à collectionner les disques.",
+   "photo": 5
+  },
+  {
+   "text": "Il était né le 20 octobre 1950 : il aurait eu 76 ans aujourd'hui.",
+   "photo": 6
+  },
+  {
+   "text": "Et toi, qui t'a donné envie d'écouter du rock ?",
+   "photo": 7
+  }
  ],
  "cta": "Qui t'a donné envie d'écouter du rock ?",
  "caption": "En 1961, Tom Petty a 10 ans quand son oncle, employé sur le tournage de Follow That Dream, le présente à Elvis Presley. Petty dira plus tard que cette rencontre a changé sa vie : il se met aussitôt à collectionner les disques. Né le 20 octobre 1950, il aurait eu 76 ans aujourd'hui. Qui t'a donné envie d'écouter du rock ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",

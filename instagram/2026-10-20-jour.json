@@ -15,23 +15,53 @@
   "https://upload.wikimedia.org/wikipedia/en/b/bf/StreetSurvivorsFlames.jpg",
   "https://upload.wikimedia.org/wikipedia/commons/9/9c/Lynyrd_Skynyrd_%281977%29.jpg",
   "https://upload.wikimedia.org/wikipedia/commons/1/1a/Convair_240-14_USGS_%286292926884%29.jpg",
-  "http://morrisonhotelgallery.com/cdn/shop/files/ronnie-van-zant-1977michael-zagaris-682115.jpg?v=1712615608",
-  "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=501341722036528",
+  "https://townsquare.media/site/697/files/2021/01/Ronnie-Van-Zant-7-2-1977-.jpg",
+  "https://i.redd.it/latfe043kjn71.jpg",
   "https://i.etsystatic.com/6074485/r/il/9a1f55/2255473453/il_fullxfull.2255473453_9yer.jpg",
   "https://i.redd.it/9u90vuh39aga1.jpg",
-  "https://img.pastemagazine.com/wp-content/uploads/2022/06/20162652/lynyrdskynrd_main_2019.jpg"
+  "https://upload.wikimedia.org/wikipedia/commons/2/2a/Ronnie_Van_Zant_of_Lynyrd_Skynyrd_performing_%22Free_Bird%22_at_Soldier_Field_in_Chicago.jpg"
  ],
  "narration": [
-  {"text": "Sur la pochette de leur nouvel album, les membres de Lynyrd Skynyrd posent au milieu des flammes.", "photo": 0},
-  {"text": "Le disque, Street Survivors, sort le 17 octobre 1977.", "photo": 1},
-  {"text": "Trois jours plus tard, le 20 octobre, l'avion du groupe s'écrase dans le Mississippi.", "photo": 2},
-  {"text": "Six personnes meurent, dont le chanteur Ronnie Van Zant, le guitariste Steve Gaines et sa sœur Cassie.", "photo": 3},
-  {"text": "À la demande de la veuve de Steve Gaines, la maison de disques retire la pochette.", "photo": 4},
-  {"text": "Elle la remplace par une photo du groupe sur fond noir.", "photo": 5},
-  {"text": "Il faudra attendre 2008 pour revoir les flammes, sur une édition Deluxe.", "photo": 6},
-  {"text": "Toi, tu l'aurais gardée, cette pochette ?", "photo": 7}
+  {
+   "text": "Sur la pochette de leur nouvel album, les membres de Lynyrd Skynyrd posent au milieu des flammes.",
+   "photo": 0
+  },
+  {
+   "text": "Le disque, Street Survivors, sort le 17 octobre 1977.",
+   "photo": 1
+  },
+  {
+   "text": "Trois jours plus tard, le 20 octobre, l'avion du groupe s'écrase dans le Mississippi.",
+   "photo": 2
+  },
+  {
+   "text": "Six personnes meurent, dont le chanteur Ronnie Van Zant, le guitariste Steve Gaines et sa sœur Cassie.",
+   "photo": 3
+  },
+  {
+   "text": "À la demande de la veuve de Steve Gaines, la maison de disques retire la pochette.",
+   "photo": 4
+  },
+  {
+   "text": "Elle la remplace par une photo du groupe sur fond noir.",
+   "photo": 5
+  },
+  {
+   "text": "Il faudra attendre 2008 pour revoir les flammes, sur une édition Deluxe.",
+   "photo": 6
+  },
+  {
+   "text": "Toi, tu l'aurais gardée, cette pochette ?",
+   "photo": 7
+  }
  ],
  "cta": "Tu l'aurais gardée, cette pochette ?",
  "caption": "Le 17 octobre 1977, Lynyrd Skynyrd sort Street Survivors avec une pochette où le groupe pose au milieu des flammes. Trois jours plus tard, son avion s'écrase dans le Mississippi. Le label remplace l'image par un simple fond noir, et l'originale ne revient qu'en 2008. Tu l'aurais gardée, cette pochette ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
- "hashtags": ["riffsetlegendes", "lynyrdskynyrd", "streetsurvivors", "histoiredurock", "southernrock"]
+ "hashtags": [
+  "riffsetlegendes",
+  "lynyrdskynyrd",
+  "streetsurvivors",
+  "histoiredurock",
+  "southernrock"
+ ]
 }
