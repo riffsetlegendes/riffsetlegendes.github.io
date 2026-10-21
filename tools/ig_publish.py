@@ -71,7 +71,10 @@ def audio_list(query):
         for it in search_audio(uid, query, kind):
             lines.append(f"{kind} | {it.get('audio_id')} | {(it.get('duration_in_ms') or 0) // 1000} s | "
                          f"{it.get('title')} | {it.get('display_artist') or '@' + str(it.get('ig_username'))}")
-    log("\n".join(lines) or "Aucun son trouvé.")
+    if not lines:
+        raw = json.dumps(call("GET", "ig_audio", user_id=uid, audio_type="music", search_query=query))[:900]
+        lines = ["Aucun son trouvé. Réponse brute : " + raw]
+    log("\n".join(lines))
     # Annotation lisible via l'API GitHub (check-runs/<job>/annotations)
     print("::notice title=Sons Instagram::" + ("%0A".join(lines[:40]) or "Aucun son trouvé."), flush=True)
 
