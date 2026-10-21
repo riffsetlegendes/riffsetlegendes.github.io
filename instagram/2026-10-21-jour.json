@@ -1,0 +1,43 @@
+{
+ "type": "focus",
+ "reel": true,
+ "tracks": [],
+ "format": "recit",
+ "label": "Ce jour-là",
+ "big": "1976",
+ "title": "Son dernier vrai concert",
+ "song": {
+  "title": "Who Are You",
+  "artist": "The Who"
+ },
+ "music_mood": "seventies",
+ "photos": [
+  "https://www.rollingstone.com/wp-content/uploads/2026/07/the-who-1976-50-years-later.jpg?w=1600&h=900&crop=1",
+  "https://upload.wikimedia.org/wikipedia/commons/e/ec/Keith_Moon_4_-_The_Who_-_1975-2.jpg",
+  "https://townsquare.media/site/295/files/2016/03/moon-1080.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89&format=natural",
+  "https://cdn.mos.cms.futurecdn.net/dFhCBBmPiEYkRsfA5ZrAKE.jpg",
+  "https://live.staticflickr.com/8521/8484160948_7ea8d7047e_b.jpg",
+  "https://magbtm.com/wordpress/wp-content/uploads/1978-The-Who-Roger-Daltrey-Shepperton.jpeg",
+  "https://preview.redd.it/on-august-18th-1978-the-who-released-who-are-you-this-is-v0-1c74z1kyefjd1.jpeg?auto=webp&s=91ec00d925be442d9533aff8d386fc2d300c0da6",
+  "https://www.thewho.com/wp-content/uploads/2019/08/keithmoon1000-724x1024.jpg"
+ ],
+ "narration": [
+  {"text": "Ce soir-là à Toronto, personne ne sait que Keith Moon joue son dernier vrai concert.", "photo": 0},
+  {"text": "Nous sommes le 21 octobre 1976, au Maple Leaf Gardens.", "photo": 1},
+  {"text": "Les Who bouclent leur tournée nord-américaine devant une salle pleine.", "photo": 2},
+  {"text": "Ensuite, plus aucun concert payant avec lui.", "photo": 3},
+  {"text": "Il ne rejoue que devant des caméras, pour le film The Kids Are Alright.", "photo": 4},
+  {"text": "Mais le vrai détail est sur la pochette de Who Are You, en août 1978.", "photo": 5},
+  {"text": "Keith y est assis sur une chaise marquée « Not to be taken away ».", "photo": 6},
+  {"text": "Il meurt trois semaines plus tard : tu avais remarqué cette chaise ?", "photo": 7}
+ ],
+ "cta": "Tu avais remarqué la chaise de Keith Moon ?",
+ "caption": "Le 21 octobre 1976 à Toronto, Keith Moon joue avec les Who son dernier concert devant un public payant, sans que personne le sache. Il ne rejouera plus que pour les caméras du film The Kids Are Alright. En août 1978, sur la pochette de Who Are You, il pose sur une chaise où l'on lit « Not to be taken away », et il meurt le 7 septembre. Tu avais remarqué cette chaise ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+ "hashtags": [
+  "riffsetlegendes",
+  "keithmoon",
+  "whoareyou",
+  "histoiredurock",
+  "classicrock"
+ ]
+}
