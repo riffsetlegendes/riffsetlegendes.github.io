@@ -487,6 +487,7 @@ h3 { font-family: var(--f-display); }
 
 /* logo : un 45-tours avec son adaptateur à trois branches */
 .wordmark { display: inline-flex; align-items: center; gap: .6rem; font-stretch: normal; }
+.mark-pic { display: contents; }
 .mark { width: 2.6em; height: 2.6em; flex: none; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
 .wordmark:hover .mark { transform: rotate(120deg); }
 @media (prefers-reduced-motion: reduce) { .wordmark:hover .mark { transform: none; } }

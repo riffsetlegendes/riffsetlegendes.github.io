@@ -1,0 +1,15 @@
+Riffs & Légendes — kit du logo (version 2, octobre 2026)
+
+1-symbole/         Le vinyle à l'esperluette : couleur, fond sombre (avec liseré papier),
+                   noir, blanc, outremer, et version « petit » pour 16 à 32 px. SVG + PNG 1024.
+2-logos/           Assemblages symbole + nom : horizontal et empilé, couleur, fond sombre, noir, blanc.
+3-nom/             Le nom seul : relief couleur, fond sombre, sur jaune, noir et blanc (aplat).
+4-web-et-reseaux/  favicon.svg/.ico, favicon 16/32/48, apple-touch-icon, icônes 192/512,
+                   maskable, site.webmanifest, head-snippet.html, avatar Instagram 1080.
+5-presentation/    Planche de présentation (HTML) et ses diapositives en PNG.
+6-sources/         Script de génération (python3 kit.py <dossier>) et polices OFL.
+guide-logo.pdf     Guide d'utilisation d'une page.
+
+Utiliser les fichiers fournis : ne jamais retaper le nom dans une police.
+Polices sous licence libre OFL (Fraunces, Young Serif, DM Mono). Les lettres sont vectorisées.
+Recherche d'antériorité de marque non effectuée : à faire avant un éventuel dépôt.

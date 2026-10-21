@@ -227,12 +227,13 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <meta property="og:locale" content="fr_FR">
 {og}
 <meta name="theme-color" content="#1b2390">
+<link rel="icon" href="{BASE}/assets/favicon.ico" sizes="48x48">
 <link rel="icon" href="{BASE}/assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)}" href="{BASE}/feed.xml">
 <link rel="preload" href="{BASE}/assets/fonts/bigshoulders.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="{BASE}/assets/fonts/newsreader.woff" as="font" type="font/woff" crossorigin>
 <link rel="manifest" href="{BASE}/manifest.webmanifest">
-<link rel="apple-touch-icon" href="{BASE}/assets/icon-512.png">
+<link rel="apple-touch-icon" href="{BASE}/assets/apple-touch-icon.png">
 <meta name="twitter:card" content="summary_large_image">
 {head_extra}
 <link rel="stylesheet" href="{BASE}/assets/style.css?v={ASSET_V}">
@@ -241,7 +242,7 @@ def layout(title, body, description="", canonical="", og_image="", body_class=""
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="site-head">
   <div class="wrap head-row">
-    <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><img class="mark" src="{BASE}/assets/disque.svg?v={ASSET_V}" alt="" width="42" height="42"><picture class="wm-logo"><source srcset="{BASE}/assets/wordmark-sombre.svg?v={ASSET_V}" media="(prefers-color-scheme: dark)"><img src="{BASE}/assets/wordmark.svg?v={ASSET_V}" alt="" width="1288" height="250"></picture></a>
+    <a class="wordmark" href="{url()}" aria-label="{esc(SITE_NAME)}, accueil"><picture class="mark-pic"><source srcset="{BASE}/assets/disque-sombre.svg?v={ASSET_V}" media="(prefers-color-scheme: dark)"><img class="mark" src="{BASE}/assets/disque.svg?v={ASSET_V}" alt="" width="42" height="42"></picture><picture class="wm-logo"><source srcset="{BASE}/assets/wordmark-sombre.svg?v={ASSET_V}" media="(prefers-color-scheme: dark)"><img src="{BASE}/assets/wordmark.svg?v={ASSET_V}" alt="" width="1288" height="250"></picture></a>
     <nav class="nav" aria-label="Rubriques">{nav}<a href="{url('concerts')}">Concerts</a><a href="{url('bibliotheque')}">Bibliothèque</a><a class="nav-search" href="{url('recherche')}">Rechercher</a><a class="nav-ig" href="https://www.instagram.com/riffsetlegendes/" target="_blank" rel="noopener" aria-label="Instagram @riffsetlegendes"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg></a></nav>
   </div>
 </header>
@@ -806,7 +807,7 @@ def main():
     write("bibliotheque/index.html", page_library(arts))
     write("manifest.webmanifest", json.dumps({"name": SITE_NAME, "short_name": "Riffs & Légendes", "lang": "fr",
         "start_url": BASE + "/", "display": "standalone", "background_color": "#f1f1eb", "theme_color": "#151b5e",
-        "icons": [{"src": BASE + "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"}]}, ensure_ascii=False))
+        "icons": [{"src": BASE + "/assets/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": BASE + "/assets/icon-512.png", "sizes": "512x512", "type": "image/png"}, {"src": BASE + "/assets/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}, ensure_ascii=False))
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
     write(".nojekyll", "")
     write("404.html", layout("Page introuvable", f'<section class="cat-head wrap"><h1>Face introuvable</h1><p>Cette page n\'existe pas ou a changé d\'adresse.</p><p><a class="btn" href="{url()}">Revenir à l\'accueil</a></p></section>'))
