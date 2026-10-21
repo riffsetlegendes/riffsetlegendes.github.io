@@ -66,10 +66,14 @@ def audio_list(query):
     if not FB:
         raise SystemExit("La musique par l'API demande un jeton Facebook (EAA…) : le jeton actuel est un jeton Instagram.")
     uid = get_uid()
+    lines = []
     for kind in ("music", "original_sound"):
         for it in search_audio(uid, query, kind):
-            log(f"{kind:15} {it.get('audio_id')}  {(it.get('duration_in_ms') or 0) // 1000:>4} s  "
-                f"{it.get('title')} / {it.get('display_artist') or '@' + str(it.get('ig_username'))}")
+            lines.append(f"{kind} | {it.get('audio_id')} | {(it.get('duration_in_ms') or 0) // 1000} s | "
+                         f"{it.get('title')} | {it.get('display_artist') or '@' + str(it.get('ig_username'))}")
+    log("\n".join(lines) or "Aucun son trouvé.")
+    # Annotation lisible via l'API GitHub (check-runs/<job>/annotations)
+    print("::notice title=Sons Instagram::" + ("%0A".join(lines[:40]) or "Aucun son trouvé."), flush=True)
 
 
 def log(msg):
