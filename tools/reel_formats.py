@@ -399,7 +399,7 @@ def outro_recit(t, pics, sents, total):
     bg = cover_fit(p, W, H, 1.18).filter(ImageFilter.GaussianBlur(18))
     im = Image.blend(bg, Image.new("RGB", (W, H), (8, 10, 30)), 0.62)
     if "img" not in _LOGO:
-        _LOGO["img"] = Image.open(ROOT / "brand" / "wordmark-video.png").convert("RGBA")
+        _LOGO["img"] = Image.open(next(p for p in (ROOT / "brand" / "v2" / "wordmark-video.png", ROOT / "brand" / "wordmark-video.png") if p.exists())).convert("RGBA")
     a = ease(min(1, u / 0.35))
     lw = int((W - 120) * (0.9 + 0.1 * a))
     logo = _LOGO["img"].resize((lw, int(_LOGO["img"].height * lw / _LOGO["img"].width)), Image.LANCZOS)
