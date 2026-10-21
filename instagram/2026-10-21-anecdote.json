@@ -1,67 +1,68 @@
 {
- "type": "anecdote",
- "reel": true,
- "tracks": [],
- "format": "recit",
- "label": "Origine",
- "big": "1974",
- "title": "Pourquoi « Blondie » ?",
- "song": {
-  "title": "Heart of Glass",
-  "artist": "Blondie"
- },
- "music_mood": "punk",
- "photos": [
-  "https://flashbak.com/wp-content/uploads/2015/11/Deborah-Harry-of-Blondie.jpeg",
-  "https://compote.slate.com/images/0f42991b-efc4-43ed-9660-5fc9ff521d61.jpg",
-  "https://media.vogue.co.uk/photos/6304e04fb708aca597483bb8/4:3/w_4551,h_3413,c_limit/GettyImages-73906809.jpg",
-  "https://www.nydailynews.com/wp-content/uploads/2023/12/GettyImages-158426907.jpg",
-  "https://www.bobgruen.com/wp-content/uploads/2014/06/R-484_Blondie_CBGB_1977_Gruen.jpg",
-  "http://assets.vogue.com/photos/63017d3bb68cf573bcf0d42a/master/pass/_images_uploads_gallery_Blondie_by_Michael_Zagaris_-_1500.jpg",
-  "https://www.rollingstone.com/wp-content/uploads/1979/06/blondie-1979-cover.jpg?w=1581&h=1054&crop=1",
-  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE9O7vH08du9VSt8XP-17uPg6ehU6YC59j_tk3JMABnpxIIaG6zKVkS9Ptg5iroFBaHDGsrhx8BaXs5ZYO4XDtJNoNQO36oBoK2a2HKRK9bJLaKekwOykO503VQcGNakugmhe-UWdAnCM/s1600/398+Blondie.jpg"
- ],
- "narration": [
-  {
-   "text": "Le nom de Blondie, ce sont des camionneurs qui l'ont trouvé.",
-   "photo": 0
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1974",
+  "title": "Pourquoi « Blondie » ?",
+  "song": {
+    "title": "Heart of Glass",
+    "artist": "Blondie"
   },
-  {
-   "text": "New York, 1974 : Debbie Harry se fait remarquer par ses cheveux décolorés.",
-   "photo": 1
-  },
-  {
-   "text": "Dans la rue, les routiers la sifflent depuis leur cabine : « Hey, Blondie ! »",
-   "photo": 2
-  },
-  {
-   "text": "Avec son compagnon, le guitariste Chris Stein, elle fonde un nouveau groupe.",
-   "photo": 3
-  },
-  {
-   "text": "Ils retournent l'interpellation et en font le nom du groupe.",
-   "photo": 4
-  },
-  {
-   "text": "Au CBGB, sur le Bowery, Blondie devient un groupe du club.",
-   "photo": 5
-  },
-  {
-   "text": "En 1979, Heart of Glass est numéro un en Angleterre puis en Amérique.",
-   "photo": 6
-  },
-  {
-   "text": "Toi, tu aurais osé garder ce surnom ?",
-   "photo": 7
-  }
- ],
- "cta": "Tu aurais osé garder ce surnom ?",
- "caption": "Blondie doit son nom aux camionneurs qui interpellaient Debbie Harry dans les rues de New York. Avec Chris Stein, elle transforme ce « Hey, Blondie ! » en nom de groupe en 1974, avant de s'imposer au CBGB. Cinq ans plus tard, Heart of Glass est numéro un des deux côtés de l'Atlantique. Tu aurais osé garder ce surnom ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
- "hashtags": [
-  "riffsetlegendes",
-  "blondie",
-  "debbieharry",
-  "histoiredurock",
-  "anecdotemusicale"
- ]
+  "music_mood": "punk",
+  "photos": [
+    "https://flashbak.com/wp-content/uploads/2015/11/Deborah-Harry-of-Blondie.jpeg",
+    "https://compote.slate.com/images/0f42991b-efc4-43ed-9660-5fc9ff521d61.jpg",
+    "https://media.vogue.co.uk/photos/6304e04fb708aca597483bb8/4:3/w_4551,h_3413,c_limit/GettyImages-73906809.jpg",
+    "https://www.nydailynews.com/wp-content/uploads/2023/12/GettyImages-158426907.jpg",
+    "https://www.bobgruen.com/wp-content/uploads/2014/06/R-484_Blondie_CBGB_1977_Gruen.jpg",
+    "http://assets.vogue.com/photos/63017d3bb68cf573bcf0d42a/master/pass/_images_uploads_gallery_Blondie_by_Michael_Zagaris_-_1500.jpg",
+    "https://www.rollingstone.com/wp-content/uploads/1979/06/blondie-1979-cover.jpg?w=1581&h=1054&crop=1",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE9O7vH08du9VSt8XP-17uPg6ehU6YC59j_tk3JMABnpxIIaG6zKVkS9Ptg5iroFBaHDGsrhx8BaXs5ZYO4XDtJNoNQO36oBoK2a2HKRK9bJLaKekwOykO503VQcGNakugmhe-UWdAnCM/s1600/398+Blondie.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Le nom de Blondie, ce sont des camionneurs qui l'ont trouvé.",
+      "photo": 0
+    },
+    {
+      "text": "New York, 1974 : Debbie Harry se fait remarquer par ses cheveux décolorés.",
+      "photo": 1
+    },
+    {
+      "text": "Dans la rue, les routiers la sifflent depuis leur cabine : « Hey, Blondie ! »",
+      "photo": 2
+    },
+    {
+      "text": "Avec son compagnon, le guitariste Chris Stein, elle fonde un nouveau groupe.",
+      "photo": 3
+    },
+    {
+      "text": "Ils retournent l'interpellation et en font le nom du groupe.",
+      "photo": 4
+    },
+    {
+      "text": "Au CBGB, sur le Bowery, Blondie devient un groupe du club.",
+      "photo": 5
+    },
+    {
+      "text": "En 1979, Heart of Glass est numéro un en Angleterre puis en Amérique.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu aurais osé garder ce surnom ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu aurais osé garder ce surnom ?",
+  "caption": "Blondie doit son nom aux camionneurs qui interpellaient Debbie Harry dans les rues de New York. Avec Chris Stein, elle transforme ce « Hey, Blondie ! » en nom de groupe en 1974, avant de s'imposer au CBGB. Cinq ans plus tard, Heart of Glass est numéro un des deux côtés de l'Atlantique. Tu aurais osé garder ce surnom ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "blondie",
+    "debbieharry",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "26055780330712039"
 }
