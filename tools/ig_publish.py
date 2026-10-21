@@ -20,8 +20,56 @@ ROOT = Path(__file__).resolve().parent.parent
 #  - connexion Instagram (commence par « IG ») : graph.instagram.com
 #  - connexion Facebook (commence par « EAA ») : graph.facebook.com, compte Instagram relié à une Page
 FB = os.environ.get("IG_TOKEN", "").strip().startswith("EAA")
-API = "https://graph.facebook.com/v21.0" if FB else "https://graph.instagram.com"
+API = "https://graph.facebook.com/v22.0" if FB else "https://graph.instagram.com"
 MEDIA_BRANCH = "ig-media"
+
+# Musique des Reels (API audio officielle d'Instagram, gratuite, jeton Facebook « EAA » obligatoire).
+# Dans le JSON du Reel : "audio_id" (choisi à l'avance) sinon recherche automatique d'après "song".
+BAD_AUDIO = ("cover", "live", "remix", "sped up", "slowed", "acoustic", "karaoke", "instrumental",
+             "piano", "ukulele", "guitar", "edit", "mashup", "8d", "reverb", "nightcore", "tribute")
+
+
+def norm(s):
+    return "".join(c for c in (s or "").lower() if c.isalnum() or c == " ")
+
+
+def search_audio(uid, query, audio_type):
+    res = call("GET", "ig_audio", user_id=uid, audio_type=audio_type, search_query=query)
+    return res.get("data", res if isinstance(res, list) else [])
+
+
+def find_audio(uid, title, artist):
+    """Meilleur son pour « titre / artiste » : musique sous licence d'abord, sinon son original propre."""
+    t, a = norm(title), norm(artist)
+    bad = [b for b in BAD_AUDIO if b not in f"{t} {a}"]
+    for kind, queries in (("music", [f"{title} {artist}"]),
+                          ("original_sound", [f"{title} {artist}", f"{artist} - {title}", f"{artist} {title}"])):
+        for q in queries:
+            for it in search_audio(uid, q, kind):
+                label = norm(f"{it.get('title', '')} {it.get('display_artist', '')}")
+                if t not in label or any((b in label) if " " in b else (b in label.split()) for b in bad):
+                    continue
+                if kind == "music" and a and a not in norm(it.get("display_artist", "")):
+                    continue
+                if kind == "original_sound" and a not in label:
+                    continue
+                if (it.get("duration_in_ms") or 0) < 30000:
+                    continue
+                log(f"Son retenu ({kind}) : {it.get('title')} / {it.get('display_artist') or it.get('ig_username')} "
+                    f"[{it.get('audio_id')}, {(it.get('duration_in_ms') or 0) // 1000} s]")
+                return it.get("audio_id")
+    return None
+
+
+def audio_list(query):
+    """Affiche les sons trouvés (ex. audio:Heart of Glass Blondie) pour choisir un audio_id."""
+    if not FB:
+        raise SystemExit("La musique par l'API demande un jeton Facebook (EAA…) : le jeton actuel est un jeton Instagram.")
+    uid = get_uid()
+    for kind in ("music", "original_sound"):
+        for it in search_audio(uid, query, kind):
+            log(f"{kind:15} {it.get('audio_id')}  {(it.get('duration_in_ms') or 0) // 1000:>4} s  "
+                f"{it.get('title')} / {it.get('display_artist') or '@' + str(it.get('ig_username'))}")
 
 
 def log(msg):
@@ -145,8 +193,18 @@ def reel(key, dry):
     credit = (folder / "reel_credit.txt").read_text(encoding="utf-8").strip()
     caption = data.get("caption", "").strip() + ("\n\n" + credit if credit else "") + "\n\n" + " ".join("#" + h for h in data.get("hashtags", []))
     uid = get_uid()
+    # Musique obligatoire (consigne de Yann : toujours un vrai morceau de l'artiste)
+    song = data.get("song") or {}
+    if not FB:
+        raise SystemExit("Pas de musique possible avec un jeton Instagram : il faut un jeton Facebook (EAA…) "
+                         "dans le secret IG_TOKEN. Reel non publié.")
+    audio_id = data.get("audio_id") or find_audio(uid, song.get("title", ""), song.get("artist", ""))
+    if not audio_id:
+        raise SystemExit(f"Aucun son propre trouvé pour {song}. Reel non publié (ajoute \"audio_id\" au JSON).")
+    audio = json.dumps({"audio_id": str(audio_id), "audio_volume": 100, "video_volume": 1})
     time.sleep(20)
-    cid = call("POST", f"{uid}/media", media_type="REELS", video_url=url, caption=caption.strip(), share_to_feed="true")["id"]
+    cid = call("POST", f"{uid}/media", media_type="REELS", video_url=url, caption=caption.strip(),
+               share_to_feed="true", audio_configuration=audio)["id"]
     for _ in range(60):
         st = call("GET", cid, fields="status_code").get("status_code")
         if st == "FINISHED":
@@ -167,6 +225,8 @@ def reel(key, dry):
 
 def main():
     kind = sys.argv[1]
+    if kind.startswith("audio:"):
+        return audio_list(kind.split(":", 1)[1])
     if kind.startswith("reel:"):
         return reel(kind.split(":", 1)[1], "--dry-run" in sys.argv)
     # créneau du soir : Reel si le contenu est prévu en Reel
