@@ -35,7 +35,9 @@ def norm(s):
 
 def search_audio(uid, query, audio_type):
     res = call("GET", "ig_audio", user_id=uid, audio_type=audio_type, search_query=query)
-    return res.get("data", res if isinstance(res, list) else [])
+    if isinstance(res, list):
+        return res
+    return res.get("audio") or res.get("data") or []
 
 
 def find_audio(uid, title, artist):
