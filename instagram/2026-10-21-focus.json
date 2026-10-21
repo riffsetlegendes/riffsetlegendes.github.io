@@ -12,24 +12,48 @@
  },
  "music_mood": "fifties",
  "photos": [
-  "https://c8.alamy.com/comp/BX449X/johnny-hallyday-french-rock-singer-about-1960-BX449X.jpg",
+  "https://i.servimg.com/u/f13/19/81/81/67/getty674.jpg",
   "https://upload.wikimedia.org/wikipedia/commons/2/2c/Johnny-Hallyday-1.jpg",
-  "https://c8.alamy.com/comp/BX44E1/johnny-hallyday-french-rock-singer-about-1960-BX44E1.jpg",
-  "https://c8.alamy.com/compfr/bx44bg/johnny-hallyday-chanteur-de-rock-francais-sur-1960-bx44bg.jpg",
-  "https://c8.alamy.com/comp/2J6K6J2/1960s-paris-montmartre-cafe-restaurant-terrace-alfresco-with-drinkers-and-diners-seated-at-tables-street-artist-drawing-a-portrait-at-table-place-du-tertre-montmartre-paris-france-1965-willem-van-de-poll-photographer-2J6K6J2.jpg",
+  "https://s1.dmcdn.net/v/4xn3u1emq9lsqFyjp/x1080",
+  "https://www.akg-images.co.uk/previews/768x768/k/g/z/i/3952367@0.jpg",
+  "https://inoubliablejohnnyhallyday.wordpress.com/wp-content/uploads/2017/09/1958-golf-drouot.jpg",
   "http://www.tenues-johnny.fr/photos/61-g01-p10.jpg",
   "https://images.rtl.fr/~c/2000v2000/rtl/www/1399077-johnny-hallyday-a-l-olympia-au-debut-des-annees-60-avec-la-chanteuse-gillian-hills.jpg",
   "https://media.admagazine.fr/photos/63ad73e89255ef6dd864c8bb/master/w_1600%2Cc_limit/GettyImages-111069733.jpg"
  ],
  "narration": [
-  {"text": "Johnny Hallyday s'appelle en réalité Jean-Philippe Smet.", "photo": 0},
-  {"text": "Enfant, il grandit en coulisses avec sa cousine Desta, danseuse acrobatique.", "photo": 1},
-  {"text": "Son mari est un danseur américain né dans l'Oklahoma : Lee Halliday.", "photo": 2},
-  {"text": "C'est lui qui surnomme le gamin Johnny, et qui devient son père de cœur.", "photo": 3},
-  {"text": "En 1960, le jeune chanteur décide donc de s'appeler Johnny Halliday, avec un i.", "photo": 4},
-  {"text": "Mais le 14 mars, la pochette de son premier disque Vogue imprime Hallyday, avec un y.", "photo": 5},
-  {"text": "La coquille reste, et le nom de scène aussi.", "photo": 6},
-  {"text": "Toi, tu l'aurais fait corriger, ce y ?", "photo": 7}
+  {
+   "text": "Johnny Hallyday s'appelle en réalité Jean-Philippe Smet.",
+   "photo": 0
+  },
+  {
+   "text": "Enfant, il grandit en coulisses avec sa cousine Desta, danseuse acrobatique.",
+   "photo": 1
+  },
+  {
+   "text": "Son mari est un danseur américain né dans l'Oklahoma : Lee Halliday.",
+   "photo": 2
+  },
+  {
+   "text": "C'est lui qui surnomme le gamin Johnny, et qui devient son père de cœur.",
+   "photo": 3
+  },
+  {
+   "text": "En 1960, le jeune chanteur décide donc de s'appeler Johnny Halliday, avec un i.",
+   "photo": 4
+  },
+  {
+   "text": "Mais le 14 mars, la pochette de son premier disque Vogue imprime Hallyday, avec un y.",
+   "photo": 5
+  },
+  {
+   "text": "La coquille reste, et le nom de scène aussi.",
+   "photo": 6
+  },
+  {
+   "text": "Toi, tu l'aurais fait corriger, ce y ?",
+   "photo": 7
+  }
  ],
  "cta": "Tu aurais fait corriger ce « y » ?",
  "caption": "Le nom de scène de Jean-Philippe Smet vient de Lee Halliday, le danseur américain qui l'a élevé dans les coulisses. C'est lui qui l'a surnommé Johnny. En mars 1960, la pochette de son premier disque Vogue transforme le i de Halliday en y, et le chanteur garde la coquille. Tu aurais fait corriger ce y ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
