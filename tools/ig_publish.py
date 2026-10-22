@@ -211,6 +211,11 @@ def reel(key, dry):
     if not audio_id:
         raise SystemExit(f"Aucun son propre trouvé pour {song}. Reel non publié (ajoute \"audio_id\" au JSON).")
     audio = json.dumps({"audio_id": str(audio_id), "audio_volume": 100, "video_volume": 1})
+    # Anti-doublon : un autre run (cron en retard ou lancement manuel) a pu publier pendant le rendu
+    rel = f"instagram/publies/{key}-reel.txt"
+    subprocess.run(["git", "fetch", "-q", "origin", "main"], cwd=ROOT)
+    if subprocess.run(["git", "cat-file", "-e", f"origin/main:{rel}"], cwd=ROOT).returncode == 0:
+        return log("Reel déjà publié par un autre run : rien à faire.")
     time.sleep(20)
     cid = call("POST", f"{uid}/media", media_type="REELS", video_url=url, caption=caption.strip(),
                share_to_feed="true", audio_configuration=audio)["id"]
