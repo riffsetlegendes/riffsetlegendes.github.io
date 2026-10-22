@@ -240,6 +240,16 @@ def build_narration(spec, out):
     allow_silent = os.environ.get("RECIT_ALLOW_SILENT") == "1"
     for i, item in enumerate(spec["narration"]):
         text = item["text"].strip()
+        if not spec.get("voice_on"):  # consigne de Yann du 22/10 : temps de lecture confortable
+            toks = text.split()
+            per = [0.30 + 0.045 * len(w) for w in toks]  # ~150 mots/min, plus long pour les mots longs
+            dur, words, c = 0.6 + sum(per), [], 0.3
+            for w, d0 in zip(toks, per):
+                words.append((w, c, c + d0)); c += d0
+            sents.append({"start": t, "end": t + dur, "photo": item.get("photo", i),
+                          "words": [(w, t + a, t + b) for w, a, b in words]})
+            parts.append((None, dur)); t += dur + gap
+            continue
         try:
             audio, words = _tts_sentence(text, voice, rate)
             seg = out / f"voice_{i}.mp3"
@@ -351,7 +361,7 @@ def add_bed(spec, voice_path, out, total):
     return mixed
 
 
-def _chunks(words, maxw=3, maxc=20):
+def _chunks(words, maxw=5, maxc=30):
     """Regroupe les mots en sous-titres courts (3 mots max), façon Reels."""
     merged = []
     for w in words:  # « ? », « ! », « : » isolés restent collés au mot précédent
@@ -461,17 +471,24 @@ def frame_recit(t, spec, pics, sents, chunks, total):
             y += 82
     # sous-titre mot à mot
     cur = None
-    for c in chunks:
-        if c[0][1] - 0.05 <= t <= c[-1][2] + 0.25:
+    for n, c in enumerate(chunks):  # reste affiché jusqu'au sous-titre suivant (fin de phrase : +0.6 s)
+        nxt = chunks[n + 1][0][1] - 0.05 if n + 1 < len(chunks) else c[-1][2] + 0.6
+        if c[0][1] - 0.05 <= t < max(nxt, c[-1][2] + 0.6 if nxt - c[-1][2] > 0.6 else nxt):
             cur = c
     if cur:
         pop = ease((t - cur[0][1]) / 0.12)
-        size = int(118 * (0.86 + 0.14 * pop))
+        size = int(100 * (0.9 + 0.1 * pop))
         f = head(size)
         words = [w for w, _, _ in cur]
         full = " ".join(words).upper()
         lines = wrap(d, full, f, W - 140)
         y = 1240 - (len(lines) - 1) * size // 2
+        # bandeau sombre derrière le texte : lisible même sur photo claire
+        bw = max(d.textlength(l, font=f) for l in lines)
+        box = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(box).rounded_rectangle((W / 2 - bw / 2 - 36, y - 24, W / 2 + bw / 2 + 36,
+                                               y + len(lines) * int(size * 0.98) + 18), 28, fill=(0, 0, 0, 150))
+        im.paste(box, (0, 0), box); d = ImageDraw.Draw(im)
         idx = 0
         for line in lines:
             toks = line.split(" ")

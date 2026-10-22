@@ -40,7 +40,7 @@ Musique à la publication Metricool : le vrai morceau de l'artiste seul, audioCo
 4. Supprimer les brouillons d'essai inutiles (ou les laisser en brouillon, jamais publiés) et garder un seul post final.
 5. La musique libre n'est autorisée que si l'artiste n'a VRAIMENT aucun morceau disponible, ce qui doit rester exceptionnel ; le signaler alors à Yann.
 
-Contrôle du rendu (workflow dry_run) : la vidéo doit durer 30 à 45 s, les sous-titres ne débordent pas.
+Contrôle du rendu (workflow dry_run) : la vidéo dure 40 à 60 s (temps de lecture confortable, consigne de Yann du 22/10 : rallonger plutôt que de rendre le texte illisible), les sous-titres ne débordent pas, restent affichés jusqu’au suivant, sur bandeau sombre.
 
 ## 3. Règles d'écriture de la narration
 
