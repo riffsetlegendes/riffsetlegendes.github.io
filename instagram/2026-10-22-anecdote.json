@@ -1,0 +1,68 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1975",
+  "title": "Pourquoi « Iron Maiden » ?",
+  "song": {
+    "title": "Run to the Hills",
+    "artist": "Iron Maiden"
+  },
+  "music_mood": "metal",
+  "photos": [
+    "https://www.southeastofheaven.com/wp-content/uploads/iron-maiden-1980-paul-di-anno-1024x663.jpg",
+    "https://mikestakeonthemovies.com/wp-content/uploads/2018/10/william-and-hale.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/5/5d/Eiserne_Jungfrau_von_N%C3%BCrnberg_15._od._16._Jh._Rothenburg.JPG",
+    "https://guitar.com/wp-content/uploads/2025/11/iron-maiden-1982@2000x1500-1068x801.jpg",
+    "https://cdn.artphotolimited.com/images/652574abbd40b862c676a918/1000x1000/iron-maiden-paul-di-anno-et-dennis-stratton.jpg",
+    "https://www.indieground.net/images/blog/2026/iron-maiden-debut-album-cover-1980.jpg",
+    "https://c.files.bbci.co.uk/97d9/live/af0096d0-8fc7-11ef-80a8-4be99bc37a5c.jpg",
+    "https://media.pitchfork.com/photos/6716a06fc88f6a24c9f0fc25/1:1/w_2150,h_2150,c_limit/Iron-Maiden.jpeg"
+  ],
+  "narration": [
+    {
+      "text": "Le nom d'Iron Maiden vient d'un instrument de torture.",
+      "photo": 0
+    },
+    {
+      "text": "En 1975, à Londres, le bassiste Steve Harris regarde un vieux film à la télé : L'Homme au masque de fer.",
+      "photo": 1
+    },
+    {
+      "text": "Ce masque lui rappelle la vierge de fer, un sarcophage hérissé de pointes.",
+      "photo": 2
+    },
+    {
+      "text": "En anglais : iron maiden. Il tient le nom de son groupe.",
+      "photo": 3
+    },
+    {
+      "text": "Mais cette torture médiévale n'a sans doute jamais existé au Moyen Âge.",
+      "photo": 4
+    },
+    {
+      "text": "Aucune trace avant la fin du dix-huitième siècle : la légende a été inventée.",
+      "photo": 5
+    },
+    {
+      "text": "En 1980, le premier album entre quatrième des ventes anglaises, avec Eddie en pochette.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu aurais osé ce nom de groupe ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu aurais osé ce nom de groupe ?",
+  "caption": "Iron Maiden doit son nom à un instrument de torture, la vierge de fer. En 1975, Steve Harris voit à la télévision L'Homme au masque de fer, et ce masque lui rappelle le fameux sarcophage à pointes, une torture que les historiens jugent en grande partie inventée. Tu aurais osé ce nom de groupe ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "ironmaiden",
+    "heavymetal",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "28297122063207156"
+}

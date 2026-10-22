@@ -1,0 +1,63 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1961",
+  "title": "Numéro un… deux fois",
+  "song": {
+    "title": "The Twist",
+    "artist": "Chubby Checker"
+  },
+  "music_mood": "sixties",
+  "photos": [
+    "https://i.ytimg.com/vi/QDGprGUreOc/maxresdefault.jpg",
+    "https://royalbooks.cdn.bibliopolis.com/pictures/170642.jpg?auto=webp&v=1775271010",
+    "https://cdn.britannica.com/84/273984-050-8A0635F7/chubby-checker-twist-singer-dancer.jpg",
+    "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_1.7777777777777777,w_3840,h_2160,g_auto/dpr_auto/f_jpg/q_auto:eco/v1/144083106_ag9lmn?_a=BAVMn6E80",
+    "https://s.hdnux.com/photos/10/42/34/2238262/6/ratio3x4_1920.jpg",
+    "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_jpg/q_auto:eco/v1/GettyImages-515298692_c4r0c5?_a=BAVMn6E80",
+    "https://cdn.britannica.com/85/273985-050-95AC255A/chubby-checker-twist-singer-dancer-twist-around-the-clock-movie.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Le 22 octobre 1961, Chubby Checker chante chez Ed Sullivan un tube que tout le monde a déjà oublié.",
+      "photo": 0
+    },
+    {
+      "text": "The Twist a été numéro un en septembre 1960, une seule semaine.",
+      "photo": 1
+    },
+    {
+      "text": "Au départ, c'est une face B de Hank Ballard que son propre label jugeait secondaire.",
+      "photo": 2
+    },
+    {
+      "text": "Fin 1961, la haute société new-yorkaise se met à twister au Peppermint Lounge.",
+      "photo": 3
+    },
+    {
+      "text": "Devant les millions de téléspectateurs de Sullivan, les parents s'y mettent à leur tour.",
+      "photo": 4
+    },
+    {
+      "text": "Le 13 janvier 1962, The Twist redevient numéro un, un record qui tiendra près de 59 ans.",
+      "photo": 5
+    },
+    {
+      "text": "Tu connais une autre chanson revenue au sommet ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Tu connais une autre chanson revenue au sommet ?",
+  "caption": "Le 22 octobre 1961, Chubby Checker chante chez Ed Sullivan un tube qui a déjà quitté le sommet un an plus tôt. Porté par la mode du twist chez les adultes new-yorkais, The Twist redevient numéro un aux États-Unis le 13 janvier 1962, un exploit qu'aucune autre chanson ne rééditera avant 2020. Tu connais une autre chanson revenue au sommet ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "chubbychecker",
+    "thetwist",
+    "rocknroll60s",
+    "histoiredurock"
+  ],
+  "audio_id": "1055387469049248"
+}
