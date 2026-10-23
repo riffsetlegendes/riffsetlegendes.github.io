@@ -5,7 +5,7 @@ permissions:
   contents: write
 jobs:
   fetch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - name: Catalogue Incompetech (CC BY 4.0)
