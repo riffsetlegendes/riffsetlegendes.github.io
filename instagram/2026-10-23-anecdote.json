@@ -1,0 +1,68 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1981",
+  "title": "Pourquoi « Indochine » ?",
+  "song": {
+    "title": "J'ai demandé à la lune",
+    "artist": "Indochine"
+  },
+  "music_mood": "new wave",
+  "photos": [
+    "https://i.etsystatic.com/20292418/r/il/bdb9d3/4213707907/il_fullxfull.4213707907_djj8.jpg",
+    "https://focus.telerama.fr/2021/12/16/0/0/0/0/1200/0/60/0/da4372e_703683189-000-arp1698605.jpg",
+    "https://media.sudouest.fr/1335447/1200x-1/vie-1.jpg",
+    "http://nam-viet-voyage.com/wp-content/uploads/2015/11/marguerite-duras-vietnam-fb.jpg",
+    "https://www.franceinfo.fr/pictures/wNPIIxcfF3lS6rYKTrDi-xo1hJM/1200x900/2021/03/30/phpBDfASn.jpg",
+    "https://img.nrj.fr/PByn-wP7cyceAq1EdoJ094Z2Zt0=/http%3A%2F%2Fmedia.nrj.fr%2Fraw%2F2021%2F07%2Findochine-l-anecdote-derriere-la-naissance-du-groupe-1-1626689414.jpg",
+    "https://media.sudouest.fr/3285706/1200x600/so-59b1847f66a4bd2c483a3af5-ph0.jpg",
+    "https://sf2.telestar.fr/wp-content/uploads/telestarv2/2024/01/instant-vintage-quand-indochine-posait-pour-tele-star-1987.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Le groupe Indochine doit son nom à une romancière, pas à la géographie.",
+      "photo": 0
+    },
+    {
+      "text": "Le 10 mai 1981, soir de l'élection de François Mitterrand, Nicola Sirkis choisit ce nom.",
+      "photo": 1
+    },
+    {
+      "text": "Adolescent, il a dévoré Un barrage contre le Pacifique, de Marguerite Duras.",
+      "photo": 2
+    },
+    {
+      "text": "Duras y raconte sa jeunesse dans l'Indochine française.",
+      "photo": 3
+    },
+    {
+      "text": "Et le hasard s'en mêle : la romancière est une amie proche du nouveau président.",
+      "photo": 4
+    },
+    {
+      "text": "Le 29 septembre 1981, premier concert au Rose Bonbon, à Paris.",
+      "photo": 5
+    },
+    {
+      "text": "En 1983, L'Aventurier se vend à environ cinq cent mille exemplaires.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu connaissais l'origine de ce nom ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu connaissais l'origine de ce nom ?",
+  "caption": "Indochine ne tient pas son nom d'un atlas, mais des romans de Marguerite Duras, qui a grandi là-bas. Nicola Sirkis l'arrête le 10 mai 1981, le soir même où Mitterrand, ami de la romancière, est élu. Tu connaissais l'origine de ce nom ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "indochine",
+    "laventurier",
+    "rockfrancais",
+    "histoiredurock"
+  ],
+  "audio_id": "1567776584391788"
+}

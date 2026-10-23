@@ -1,0 +1,68 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Relève",
+  "big": "2016",
+  "title": "Pourquoi « Måneskin » ?",
+  "song": {
+    "title": "I Wanna Be Your Slave",
+    "artist": "Måneskin"
+  },
+  "music_mood": "rock",
+  "photos": [
+    "https://i.ytimg.com/vi/OMe2XIv2qlY/maxresdefault.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/3/3b/Maneskin_2018.jpg",
+    "https://i.ytimg.com/vi/VGo6hT3nM4Y/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/L9YArVWTJm8/maxresdefault.jpg",
+    "https://i.guim.co.uk/img/media/ff66cb7bcfb49249e1cafdbe0d35b9ba38f233ff/0_0_4250_2550/master/4250.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=dae130b685347051433a99d2adccb5b5",
+    "https://pix.eurovisionworld.com/pix/eurovision-2021-winners-maneskin-from-italy.jpg",
+    "https://static.srpcdigital.com/styles/1037xauto/public/2021/05/25/maneskin_of_italy_pose_with_the_trophy_following_a_news_conference_after_winning_the_2021_eurovision_song_contest_in_rotterdam_netherlands._reuters.jpg.webp",
+    "https://wwd.com/wp-content/uploads/2021/05/maneskin-eurovision.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Un groupe de rock romain a pris un nom danois que personne ne sait prononcer.",
+      "photo": 5
+    },
+    {
+      "text": "Pour un concours de quartier, il leur fallait un nom, vite.",
+      "photo": 1
+    },
+    {
+      "text": "La bassiste Victoria De Angelis est à moitié danoise, par sa mère.",
+      "photo": 2
+    },
+    {
+      "text": "Les autres lui demandent des mots danois. Ils gardent måneskin : clair de lune.",
+      "photo": 3
+    },
+    {
+      "text": "Aucun rapport avec eux, avoue Victoria : seul le son leur plaisait.",
+      "photo": 4
+    },
+    {
+      "text": "Avant la télé, ils jouaient dans la rue, sur la via del Corso.",
+      "photo": 0
+    },
+    {
+      "text": "Le 22 mai 2021, à Rotterdam, ce nom gagne l'Eurovision avec 524 points.",
+      "photo": 6
+    },
+    {
+      "text": "Et toi, tu le prononces comment ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Et toi, tu le prononces comment ?",
+  "caption": "Måneskin, groupe de Rome, porte un nom danois qui veut dire « clair de lune ». La bassiste Victoria De Angelis, à moitié danoise, l'a proposé pour un concours de quartier, et le groupe l'a gardé pour sa sonorité, des concerts de rue de la via del Corso jusqu'à la victoire à l'Eurovision 2021. Et toi, tu le prononces comment ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "maneskin",
+    "rockitalien",
+    "eurovision",
+    "anecdotemusicale"
+  ],
+  "audio_id": "791541943775641"
+}
