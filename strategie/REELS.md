@@ -29,6 +29,8 @@ Champs du JSON : "format": "recit", "title" (bandeau jaune fixe en haut, 30 cara
 
 **Anti-répétition (remarque de Yann du 20/10 : « tu parles très souvent des mêmes artistes »).** Avant de choisir un sujet de Reel, liste les artistes des Reels des 30 derniers jours (champ "song.artist" et "title" des fichiers instagram/AAAA-MM-JJ-*.json, plus les artistes cités dans la narration). Un artiste déjà au centre d'un Reel dans les 30 jours est interdit, et un artiste seulement cité (ex. Elvis dans une histoire de Tom Petty) n'est pas le sujet principal non plus pendant 14 jours. Viser chaque semaine au moins 5 artistes jamais traités en Reel, en variant les décennies (50s à 2020s), les genres (rock, punk, metal, soul, pop, chanson, blues, grunge, relève) et les pays (y compris français). Le fichier semaine doit respecter cette règle ; s'il la viole, remplace le sujet.
 
+**Horaires (23/10) :** GitHub lance les crons avec ~35 min de retard, d’où des crons à 5 h 40, 10 h 40 et 15 h 40 UTC (heure d’été). À partir du passage à l’heure d’hiver (25/10), les décaler d’une heure (6 h 40, 11 h 40, 16 h 40 UTC) dans .github/workflows/instagram.yml, lignes schedule ET tests elif.
+
 **Publication (21/10) : quota Metricool atteint.** Les Reels partent par le workflow GitHub programmé (cron 8 h, 13 h, 18 h, tools/ig_publish.py, API Instagram) avec le vrai morceau : mettre "audio_id" dans le JSON (liste des sons via dispatch kind=audio:<Titre Artiste>), sinon recherche automatique d'après "song". Le marqueur instagram/publies/ est écrit par le workflow. Ne plus programmer dans Metricool tant que le quota n'est pas revenu.
 
 Musique à la publication Metricool : le vrai morceau de l'artiste seul, audioConfiguration {audioId, audioVolume: 100, videoVolume: 0}.
