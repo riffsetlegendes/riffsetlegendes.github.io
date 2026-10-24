@@ -1,0 +1,68 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Coulisses",
+  "big": "1987",
+  "title": "Le tube que U2 voulait jeter",
+  "song": {
+    "title": "With or Without You",
+    "artist": "U2"
+  },
+  "music_mood": "rock atmosphérique",
+  "photos": [
+    "https://img1.bonhams.com/image?src=Images/live/2017-10/23/24701523-1-1.jpg",
+    "https://rockroulettepodcast.com/wp-content/uploads/2024/06/u2-the-joshua-tree-credit-anton-corbijn.jpg",
+    "https://images.prismic.io/hightidesite/cf5364f6-1e79-4c26-aa71-354aa1656c32_3_HighTide_U2_Band.jpg?fm=jpg&w=2400",
+    "https://cdn.mos.cms.futurecdn.net/Kitrrp6WFrPdN5SC9mpXTU.jpg",
+    "https://www.wjct.org/wp-content/uploads/2019/07/gettyimages-649665390_custom-0bc4c6fb090bdbff9982bca74090387472fa04d7.jpg",
+    "https://images.prismic.io/hightidesite/7d6125d9-1780-41e2-a121-701cbe3c9707_2_U2_5.jpg?fm=jpg&w=2400",
+    "https://www.billboard.com/wp-content/uploads/media/u2-1987-live-billboard-1548.jpg",
+    "https://arc.stimg.co/startribunemedia/HOC74Q7CLGEYK4PAWH6TBHILUI.jpg?&w=1080&ar=1.500&fit=crop"
+  ],
+  "narration": [
+    {
+      "text": "Cette ballade de U2 a bien failli finir à la poubelle.",
+      "photo": 0
+    },
+    {
+      "text": "Fin 1985, Bono trouve les accords de With or Without You.",
+      "photo": 1
+    },
+    {
+      "text": "Mais pendant des mois, la chanson tourne en rond, et The Edge la trouve mauvaise.",
+      "photo": 2
+    },
+    {
+      "text": "En 1986, les producteurs lâchent l'affaire, et le groupe pense l'abandonner.",
+      "photo": 3
+    },
+    {
+      "text": "Seuls Bono et son ami Gavin Friday s'accrochent.",
+      "photo": 4
+    },
+    {
+      "text": "Puis The Edge essaie un prototype de Michael Brook, une guitare aux notes infinies, et enregistre sa partie en deux prises.",
+      "photo": 5
+    },
+    {
+      "text": "Le 16 mai 1987, c'est le premier numéro un de U2 aux États-Unis.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu l'aurais abandonnée, cette chanson ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Toi, tu l'aurais abandonnée, cette chanson ?",
+  "caption": "With or Without You a passé des mois à résister à U2, au point que le groupe a pensé la laisser tomber. Bono et Gavin Friday l'ont gardée en vie, et une guitare prototype de Michael Brook, jouée par The Edge en deux prises, a tout débloqué. Le 16 mai 1987, elle devient le premier numéro un américain du groupe. Toi, tu l'aurais abandonnée, cette chanson ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "u2",
+    "withorwithoutyou",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "1283847102902584"
+}

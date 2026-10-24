@@ -1,0 +1,68 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1975",
+  "title": "Pourquoi « Motörhead » ?",
+  "song": {
+    "title": "Ace of Spades",
+    "artist": "Motörhead"
+  },
+  "music_mood": "heavy metal",
+  "photos": [
+    "https://cdn.mos.cms.futurecdn.net/7c8SxFKwmo8o4uLps7bpz8-1280-80.jpg",
+    "https://cdn.mos.cms.futurecdn.net/hAYZyhdsT4zy5rpR9QJSq5.jpg",
+    "https://cdn1.dangerousminds.net/uploads/7/images/warriorsdgsgsgse.jpg",
+    "https://www.thisdayinmusic.com/wp-content/uploads/2015/12/GettyImages-84901497.jpg",
+    "https://static.standard.co.uk/s3fs-public/thumbnails/image/2015/11/12/18/motorhead.jpg?crop=8:5,smart&quality=75&auto=webp&width=1000",
+    "https://townsquare.media/site/366/files/2023/09/attachment-motorhead_snaggletooth_origins.jpg?w=1200&q=75&format=natural",
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2023/09/The-story-behind-the-iconic-Motorhead-mascot-Snaggletooth-2023-Far-Out-Magazine-1140x855.jpg",
+    "https://cdn.artphotolimited.com/images/66c89286e2e42e7046294521/1000x1000/a-legendary-motorhead-performance-live-at-queen-s-hall-1981.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Motörhead porte le nom d'une chanson écrite pour le groupe qui a viré Lemmy.",
+      "photo": 0
+    },
+    {
+      "text": "En 1974, le bassiste de Hawkwind écrit Motorhead sur un balcon de Los Angeles.",
+      "photo": 1
+    },
+    {
+      "text": "Ce mot d'argot désigne un accro aux amphétamines.",
+      "photo": 2
+    },
+    {
+      "text": "En mai 1975, il est arrêté à la frontière canadienne pour possession de drogue, puis renvoyé.",
+      "photo": 3
+    },
+    {
+      "text": "Pour son nouveau groupe, il veut d'abord un autre nom : Bastard.",
+      "photo": 4
+    },
+    {
+      "text": "Problème : un nom pareil ne passera jamais à la télé, prévient son manager.",
+      "photo": 5
+    },
+    {
+      "text": "Il reprend donc le titre de sa dernière chanson pour Hawkwind, avec un tréma muet, « pour avoir l'air méchant ».",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu aurais gardé Bastard ou Motörhead ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu aurais gardé Bastard ou Motörhead ?",
+  "caption": "Le nom de Motörhead vient d'une chanson que Lemmy avait écrite pour Hawkwind, le groupe qui l'a renvoyé en 1975. Avant ça, il voulait appeler sa nouvelle formation Bastard, et le tréma n'a été ajouté que pour faire peur. Tu aurais gardé Bastard ou Motörhead ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "motorhead",
+    "aceofspades",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "2018483318692470"
+}

@@ -1,0 +1,43 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1936",
+  "title": "90 ans, une basse sans frettes",
+  "song": {
+    "title": "(Si Si) Je suis un rock star",
+    "artist": "Bill Wyman"
+  },
+  "music_mood": "new wave",
+  "photos": [
+    "https://guitar.com/wp-content/uploads/2018/06/630510-00150-WGW-in-Olympic-Studio-copy-Credit-Bill-Wyman.jpg",
+    "https://cdn.mos.cms.futurecdn.net/fJHkJUJhFt8mtXfTvYnoxn.jpg",
+    "https://www.rollingstone.com/wp-content/uploads/2020/09/bill-wyman-bass-auction.jpg",
+    "https://cdn.sanity.io/images/ib3mo6bj/production/87d14c22bfc4c95674c1c077a8e96d5e8400cc76-3000x2218.webp",
+    "https://myq105.com/uploads/2019/05/GettyImages-3162556.jpg?format=auto&optimize=high&width=1440",
+    "https://i.ebayimg.com/images/g/1X8AAOSwEPJlape6/s-l1200.jpg",
+    "https://myq105.com/uploads/2019/05/GettyImages-3297399.jpg",
+    "https://myq105.com/uploads/2019/05/GettyImages-3247564.jpg"
+  ],
+  "narration": [
+    {"text": "Bill Wyman a 90 ans aujourd'hui, et il affirme avoir inventé la basse fretless.", "photo": 0},
+    {"text": "En 1961, il récupère une basse d'occasion bon marché dont les frettes bourdonnent.", "photo": 1},
+    {"text": "Il les arrache, adore le son obtenu et ne les remplace jamais.", "photo": 2},
+    {"text": "Le premier modèle fretless du commerce n'arrive qu'en 1965.", "photo": 3},
+    {"text": "Le 7 décembre 1962, il auditionne pour les Rolling Stones, fauchés, et ce sont ses amplis qui les convainquent.", "photo": 4},
+    {"text": "En 1981, il signe même un tube solo : Je suis un rock star.", "photo": 5},
+    {"text": "Il quitte le groupe en 1993, après plus de trente ans.", "photo": 6},
+    {"text": "Tu savais que la fretless venait d'un bricolage ?", "photo": 7}
+  ],
+  "cta": "Tu savais que la fretless venait d'un bricolage ?",
+  "caption": "Bill Wyman souffle ses 90 bougies, et il revendique une invention : la basse sans frettes. En 1961, il arrache celles d'une basse bon marché qui bourdonnait, quatre ans avant le premier modèle fretless vendu en magasin, puis ses amplis lui ouvrent la porte des Rolling Stones en 1962. Tu savais que la fretless venait d'un bricolage ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "billwyman",
+    "bassiste",
+    "cejourla",
+    "histoiredurock"
+  ]
+}
