@@ -1,0 +1,62 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1991",
+  "title": "Il a refusé une limousine",
+  "song": {
+    "title": "The Power of Love",
+    "artist": "Huey Lewis and the News"
+  },
+  "music_mood": "rock 80s",
+  "photos": [
+    "https://cloudfront-us-east-1.images.arcpublishing.com/startribunemedia/FRLION23JLNXGWTQ3OKFPHZVIE.jpg",
+    "https://static01.nyt.com/images/2020/02/14/arts/14Graham-Cover-1/14Graham-Cover-1-videoSixteenByNine3000.jpg?year=2020&h=1688&w=3000&s=4b4172986bbba3dcd80e26e8dd6782acfdca5ec9aee80a59122ae9cf1ee69326&k=ZQJBKqZ0VN&tw=1",
+    "https://www.rockcandy-blog.com/wp-content/uploads/2023/11/IMG_3949-scaled.jpg",
+    "https://rockandrollglobe.com/wp-content/uploads/2020/06/Huey-Lewis-and-the-News-40-rnrg-splash-page-.jpg",
+    "https://www.liveabout.com/thmb/B46v8oW33pPxt9ITfwuDlm3ubZ8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/music-file-photos-1980s-90299413-59c0507f845b340011ef34e2.jpg",
+    "https://s.hdnux.com/photos/01/10/20/44/18942258/6/1920x0.jpg",
+    "https://s.hdnux.com/photos/53/67/01/11497597/8/1920x0.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Le 25 octobre 1991, le roi des concerts rock refuse une limousine, et ça lui coûte la vie.",
+      "photo": 0
+    },
+    {
+      "text": "Bill Graham, orphelin juif né à Berlin, a ouvert le Fillmore de San Francisco en 1965.",
+      "photo": 1
+    },
+    {
+      "text": "Ce soir-là, il salue Huey Lewis and the News en coulisses, sous une tempête.",
+      "photo": 3
+    },
+    {
+      "text": "Le bassiste du groupe lui offre sa limousine.",
+      "photo": 4
+    },
+    {
+      "text": "Le pilote, lui, promet de le ramener en quinze minutes.",
+      "photo": 2
+    },
+    {
+      "text": "Onze minutes après le décollage, l'hélicoptère percute un pylône haute tension et y reste accroché.",
+      "photo": 5
+    },
+    {
+      "text": "Tu connaissais l'histoire de Bill Graham ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Tu connaissais l'histoire de Bill Graham ?",
+  "caption": "Le 25 octobre 1991, Bill Graham, le patron des Fillmore, a refusé la limousine que lui offrait le bassiste de Huey Lewis and the News. Il a préféré rentrer en hélicoptère sous la tempête, et l'appareil a fini accroché à un pylône haute tension. Tu connaissais l'histoire de Bill Graham ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "billgraham",
+    "hueylewis",
+    "histoiredurock",
+    "cejourla"
+  ]
+}

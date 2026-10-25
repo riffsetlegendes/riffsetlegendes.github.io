@@ -1,0 +1,68 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1969",
+  "title": "Pourquoi « ZZ Top » ?",
+  "song": {
+    "title": "La Grange",
+    "artist": "ZZ Top"
+  },
+  "music_mood": "blues rock boogie",
+  "photos": [
+    "https://m.media-amazon.com/images/I/71fFRg0HqlL.jpg",
+    "https://i.redd.it/irv6lihk406b1.jpg",
+    "https://hips.hearstapps.com/hmg-prod/images/bb-king-the-king-of-the-blues-performs-with-his-beloved-guitar-lucille-circa-mid-1964-at-the-apollo-theater-in-harlem-new-york-photo-by-michael-ochs-archivesgetty-images.jpg",
+    "https://m.media-amazon.com/images/I/51h-NPyRpNL._UF1000,1000_QL80_.jpg",
+    "https://i.redd.it/jk3q8dtb4wn11.jpg",
+    "https://s.hdnux.com/photos/01/16/01/50/20453891/4/1920x0.jpg",
+    "https://townsquare.media/site/295/files/2020/05/GettyImages-158486701.jpg",
+    "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-181774-86117463.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Le nom de ZZ Top est un hommage à B.B. King, sans son nom.",
+      "photo": 0
+    },
+    {
+      "text": "En 1969, à Houston, Billy Gibbons cherche un nom pour son nouveau trio.",
+      "photo": 1
+    },
+    {
+      "text": "Au mur de leur petit appartement, des affiches de concerts de blues.",
+      "photo": 2
+    },
+    {
+      "text": "Il remarque les initiales : B.B. King d'un côté, Z.Z. Hill de l'autre.",
+      "photo": 3
+    },
+    {
+      "text": "Première idée : marier les deux et s'appeler ZZ King.",
+      "photo": 4
+    },
+    {
+      "text": "Problème : ça ressemble beaucoup trop à B.B. King.",
+      "photo": 5
+    },
+    {
+      "text": "Alors il se dit qu'un roi, c'est tout en haut, au top : ZZ Top est né.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu aurais préféré ZZ King ou ZZ Top ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu aurais préféré ZZ King ou ZZ Top ?",
+  "caption": "ZZ Top cache un hommage à B.B. King dans un nom qui ne le cite jamais. En 1969, Billy Gibbons emprunte les initiales de Z.Z. Hill, repérées sur les affiches de blues de son local, puis remplace « King » par « Top », parce qu'un roi est toujours au sommet. Tu aurais préféré ZZ King ou ZZ Top ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "zztop",
+    "lagrange",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "774493585116957"
+}

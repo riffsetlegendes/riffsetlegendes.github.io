@@ -1,0 +1,68 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Relève",
+  "big": "2019",
+  "title": "Pourquoi « Wet Leg » ?",
+  "song": {
+    "title": "Chaise Longue",
+    "artist": "Wet Leg"
+  },
+  "music_mood": "indie rock",
+  "photos": [
+    "https://www.nme.com/wp-content/uploads/2022/03/nme-cover-2022-wet-leg-image01@2160x2700.jpg",
+    "https://api.floodmagazine.com/wp-content/uploads/2022/07/PC-Hollie-Fernando-Wet-Leg-7-300-dpi-1-copy.jpg",
+    "https://i.guim.co.uk/img/media/8da21b6d3ac1f3150636c75d688b81d5d9f3529e/0_94_4500_2700/master/4500.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=19ba0af47b4d1f5a710a62f9ef312593",
+    "https://npr.brightspotcdn.com/dims4/default/9534ff5/2147483647/strip/true/crop/1676x943+0+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2022%2F04%2F08%2Fwet-leg-2-credit-hollie-fernando_wide-7b67c52846ccaba2a33fea876ff0438c356ba082.jpg",
+    "https://consequence.net/wp-content/uploads/2022/12/PC-Hollie-Fernando-Wet-Leg-9-300-dpi.jpg?quality=80",
+    "https://www.nme.com/wp-content/uploads/2022/03/nme-cover-2022-wet-leg-image07@2160x2700.jpg",
+    "https://townsquare.media/site/366/files/2023/02/attachment-wet-leg-2023-grammy-winners.jpg",
+    "https://guitar.com/wp-content/uploads/2023/02/Wet-Leg-Grammys@2000x1500.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Le nom de Wet Leg vient de deux emojis : une goutte d'eau et une jambe.",
+      "photo": 0
+    },
+    {
+      "text": "Rhian Teasdale et Hester Chambers sont amies depuis dix ans, sur l'île de Wight.",
+      "photo": 1
+    },
+    {
+      "text": "Fin de l'été 2018, au festival End of the Road, elles montent dans une grande roue.",
+      "photo": 2
+    },
+    {
+      "text": "Tout en haut, elles se promettent de monter enfin un groupe.",
+      "photo": 3
+    },
+    {
+      "text": "Pour le nom, elles combinent des emojis au hasard sur leur téléphone.",
+      "photo": 4
+    },
+    {
+      "text": "En 2021, leur premier single parle de la chaise longue du grand-père de Hester.",
+      "photo": 5
+    },
+    {
+      "text": "Chaise Longue fait des millions de vues, puis le duo gagne deux Grammys en 2023.",
+      "photo": 6
+    },
+    {
+      "text": "Quel nom de groupe tes deux derniers emojis donneraient ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Quel nom de groupe tes deux derniers emojis donneraient ?",
+  "caption": "Wet Leg doit son nom à une goutte d'eau et une jambe, deux emojis combinés pour rire sur un téléphone. Le groupe, lui, est né d'une promesse faite en haut d'une grande roue en 2018, avant que Chaise Longue ne l'emmène jusqu'aux Grammys. Quel nom de groupe tes deux derniers emojis donneraient ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "wetleg",
+    "chaiselongue",
+    "indierock",
+    "larelevedurock"
+  ],
+  "audio_id": "28278189028530381"
+}
