@@ -101,7 +101,15 @@ def call(method, path, **params):
 
 
 def sh(*cmd, cwd=None):
-    r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
+    tries = 6 if cmd[:2] == ("git", "push") else 1  # GitHub renvoie parfois des erreurs 500 passagères
+    for n in range(tries):
+        r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
+        if not r.returncode or n == tries - 1:
+            break
+        print(f"push refusé, nouvel essai ({n + 1})", flush=True)
+        time.sleep(15)
+        if "HEAD:main" in cmd:
+            subprocess.run(["git", "pull", "-q", "--rebase", "origin", "main"], cwd=cwd)
     if r.stdout:
         print(r.stdout, end="", flush=True)
     if r.returncode:
