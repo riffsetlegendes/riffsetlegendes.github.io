@@ -1,0 +1,63 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1977",
+  "title": "Pourquoi « Def Leppard » ?",
+  "song": {
+    "title": "Hysteria",
+    "artist": "Def Leppard"
+  },
+  "music_mood": "hard rock arena 80s",
+  "photos": [
+    "https://www.leppardvault.com/cdn/shop/files/012-0002563_0196.jpg?v=1646190306",
+    "https://www.leppardvault.com/cdn/shop/files/012-0002563_281.jpg?v=1646190928",
+    "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:531,cw:1366,ch:1366,q:80,w:1366/zFXK6zzKYtwZ9RqMguEKMQ.jpg",
+    "https://www.deflepparduk.com/assets/images/how-def-leppard-formed-47-years-ago-this-month-in-sheffield.jpg",
+    "https://www.leppardvault.com/cdn/shop/files/012-0002563_094.jpg?v=1646189322",
+    "https://2loud2oldmusic.com/wp-content/uploads/2023/07/img_8695.jpeg?w=1004",
+    "https://www.deflepparduk.com/lephistoryottn19805.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Def Leppard est né d'un léopard sourd dessiné en cours d'arts plastiques.",
+      "photo": 0
+    },
+    {
+      "text": "En 1975, à Sheffield, le lycéen Joe Elliott refuse de peindre des corbeilles de fruits.",
+      "photo": 1
+    },
+    {
+      "text": "Il dessine plutôt des affiches de concerts pour des groupes imaginaires.",
+      "photo": 2
+    },
+    {
+      "text": "Parmi les noms inventés par ennui : Deaf Leopard, le léopard sourd.",
+      "photo": 3
+    },
+    {
+      "text": "En 1977, il rejoint un groupe nommé Atomic Mass et propose ce nom.",
+      "photo": 4
+    },
+    {
+      "text": "Le batteur Tony Kenning change l'orthographe pour ne pas faire punk : Def Leppard, un peu comme Led Zeppelin.",
+      "photo": 5
+    },
+    {
+      "text": "Toi, tu aurais gardé Deaf Leopard ou Atomic Mass ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Tu aurais gardé Deaf Leopard ou Atomic Mass ?",
+  "caption": "Def Leppard doit son nom à une affiche de concert imaginaire dessinée par un lycéen qui s'ennuyait. En 1975, Joe Elliott invente « Deaf Leopard » ; en 1977, son nouveau groupe Atomic Mass l'adopte, et le batteur Tony Kenning en trafique l'orthographe pour ne pas passer pour des punks. Tu aurais gardé Deaf Leopard ou Atomic Mass ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "defleppard",
+    "poursomesugaronme",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "955822695523001"
+}

@@ -1,0 +1,68 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1994",
+  "title": "L'homme caché du MC5",
+  "song": {
+    "title": "Kick Out the Jams",
+    "artist": "MC5"
+  },
+  "music_mood": "proto-punk garage rock saturé",
+  "photos": [
+    "https://images.zoogletools.com/s:bzglfiles/u/290438/bde972353b999df1b5ac5c101189336151faec41/original/mc5-13.jpg",
+    "https://www.thenewsherald.com/wp-content/uploads/2024/09/MC5.jpg",
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2026/09/22The-music-didnt-lend-itself-to-the-studio22-Were-the-MC5-the-ultimate-live-band-Far-Out-Magazine-1140x855.jpg",
+    "https://cms.showstudio.com/images/xcXyY50ijqqWnvgdqbP3uKwTroM=/385695/width-1280/goldsmith_patti_smith_ce_gb_open001_136_137_66938_1910011429_id_1272864.jpg",
+    "https://www.billboard.com/wp-content/uploads/media/Patti-Smith-central-park-1978-billboard-1548.jpg?w=1024",
+    "https://www.theswinging60s.com/wp-content/uploads/1979-patti-smith-im-rockpalast-essen-wdr-_3-1024x684.jpg",
+    "https://www.brooklynvegan.com/wp-content/uploads/2020/07/22/swans-Where-Does-A-Body-End-sonic-youth.jpg",
+    "https://miro.medium.com/v2/resize:fit:1400/1*Pten7rdPYWx6iP7TkndHZg.jpeg"
+  ],
+  "narration": [
+    {
+      "text": "Un guitariste presque oublié se cache derrière un tube planétaire et un groupe culte.",
+      "photo": 0
+    },
+    {
+      "text": "Il s'appelle Fred Smith, et il joue dans le MC5, à Detroit.",
+      "photo": 1
+    },
+    {
+      "text": "Sur scène, son jeu est si brutal qu'on le surnomme Sonic.",
+      "photo": 2
+    },
+    {
+      "text": "En 1976, il rencontre Patti Smith, qui vit à New York.",
+      "photo": 3
+    },
+    {
+      "text": "Un soir de 1977, elle attend son coup de fil, qui n'arrive pas.",
+      "photo": 4
+    },
+    {
+      "text": "Pour patienter, elle écrit les couplets de Because the Night, son plus grand succès.",
+      "photo": 5
+    },
+    {
+      "text": "En 1981, Thurston Moore emprunte son surnom pour baptiser Sonic Youth.",
+      "photo": 6
+    },
+    {
+      "text": "Le 4 novembre 1994, Fred Sonic Smith meurt à Detroit, à 46 ans. Tu savais pour qui Because the Night avait été écrite ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu savais pour qui Because the Night a été écrite ?",
+  "caption": "Un guitariste presque oublié du MC5 se cache derrière Because the Night et derrière le nom de Sonic Youth. Patti Smith a écrit les couplets de son tube en attendant un appel de Fred « Sonic » Smith, mort le 4 novembre 1994 à Detroit. Quelques années plus tôt, Thurston Moore avait emprunté son surnom pour baptiser son groupe. Tu savais pour qui Because the Night a été écrite ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "mc5",
+    "pattismith",
+    "sonicyouth",
+    "histoiredurock"
+  ],
+  "audio_id": "26802140902749191"
+}
