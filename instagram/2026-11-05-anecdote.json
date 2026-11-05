@@ -1,0 +1,63 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1973",
+  "title": "Pourquoi « Kiss » ?",
+  "song": {
+    "title": "Rock and Roll All Nite",
+    "artist": "Kiss"
+  },
+  "music_mood": "hard rock glam 70s",
+  "photos": [
+    "https://upload.wikimedia.org/wikipedia/commons/2/2d/Kiss_debut_album_photo_session_%281974%29.jpg",
+    "https://kisstimeline.com/wp-content/uploads/2023/07/kiss-bill-aucoin-neil-bogart-1973.jpg",
+    "https://kisstimeline.com/wp-content/uploads/2026/05/26-may-1973-paul-stanley-star-makeup-first-snedens-landing-library.webp",
+    "https://kisstimeline.com/wp-content/uploads/2023/04/kiss-live-debut-30-january-1973.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/e/ec/Kiss_-_Ace_Frehley_%281977%29.jpg",
+    "https://kisstimeline.com/wp-content/uploads/2026/03/31-march-1974-kiss-first-outdoor-concert-kshe-kite-fest.webp",
+    "https://upload.wikimedia.org/wikipedia/commons/a/af/Kiss_original_lineup_%281976%29.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Le nom de Kiss est né d'une paire de lèvres.",
+      "photo": 0
+    },
+    {
+      "text": "En 1973, à New York, Simmons et Stanley montent un nouveau groupe avec le batteur Peter Criss.",
+      "photo": 1
+    },
+    {
+      "text": "En voiture, Criss raconte qu'il a joué dans un groupe nommé Lips, les lèvres.",
+      "photo": 2
+    },
+    {
+      "text": "Paul Stanley répond aussitôt : et pourquoi pas Kiss ?",
+      "photo": 3
+    },
+    {
+      "text": "Le guitariste Ace Frehley dessine le logo et change les deux S en éclairs.",
+      "photo": 4
+    },
+    {
+      "text": "Problème : ces éclairs rappellent l'insigne SS nazi, interdit en Allemagne, où le logo est modifié.",
+      "photo": 5
+    },
+    {
+      "text": "Tu préfères Kiss ou Lips ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Tu préfères Kiss ou Lips ?",
+  "caption": "Kiss doit son nom à l'ancien groupe de son batteur, qui s'appelait Lips. En 1973, Peter Criss l'évoque en voiture et Paul Stanley lâche « Kiss », puis Ace Frehley transforme les deux S en éclairs, un logo qu'il a fallu modifier en Allemagne. Tu préfères Kiss ou Lips ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "kiss",
+    "rockandrollallnite",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "742155051850247"
+}

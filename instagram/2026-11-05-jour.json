@@ -1,0 +1,67 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1960",
+  "title": "Le club qui a vu 2 adieux",
+  "song": {
+    "title": "The Battle of New Orleans",
+    "artist": "Johnny Horton"
+  },
+  "music_mood": "country rockabilly 50s narrative",
+  "photos": [
+    "https://sunrecords.com/wp-content/uploads/2021/12/Johnny-Horton-Web.jpg",
+    "https://substackcdn.com/image/fetch/$s_!iyqE!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F87b8cda6-98ec-437d-8962-84c8d26cebb9_1272x1831.jpeg",
+    "https://substack-post-media.s3.amazonaws.com/public/images/e273ae99-a666-4e53-aeab-001d06c4e8c7_2595x2595.jpeg",
+    "https://substack-post-media.s3.amazonaws.com/public/images/37ff291d-c0d5-49fe-89fc-437ef1158bd5_1610x1051.jpeg",
+    "https://substack-post-media.s3.amazonaws.com/public/images/2fb44834-89dc-4f48-8cde-17b4a3903583_1410x1032.jpeg",
+    "https://substack-post-media.s3.amazonaws.com/public/images/08ae0b71-4093-47f4-b6c3-a4001ecd1649_1334x882.png",
+    "https://substack-post-media.s3.amazonaws.com/public/images/59c7b994-97ed-443e-8b6c-60f803cdbcb6_1122x922.jpeg",
+    "https://www.bear-family.com/media/image/99/e5/54/4000127154705.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Johnny Horton est mort en sortant de la salle où Hank Williams avait fait ses adieux.",
+      "photo": 0
+    },
+    {
+      "text": "En 1960, sa Battle of New Orleans l'a mené en tête des ventes américaines.",
+      "photo": 1
+    },
+    {
+      "text": "Le 4 novembre, il chante au Skyline Club d'Austin, au Texas.",
+      "photo": 2
+    },
+    {
+      "text": "Huit ans plus tôt, Hank Williams y avait donné son dernier concert.",
+      "photo": 3
+    },
+    {
+      "text": "Après minuit, Horton prend la route de Shreveport avec deux musiciens.",
+      "photo": 4
+    },
+    {
+      "text": "Sur un pont près de Milano, un étudiant ivre de 19 ans percute sa Cadillac.",
+      "photo": 5
+    },
+    {
+      "text": "Horton meurt à 35 ans, et sa veuve Billie Jean était déjà celle de Hank Williams.",
+      "photo": 6
+    },
+    {
+      "text": "Simple hasard ou malédiction du Skyline, toi, tu en penses quoi ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Hasard ou malédiction du Skyline, tu en penses quoi ?",
+  "caption": "Johnny Horton a donné son dernier concert dans la salle texane où Hank Williams avait fait ses adieux huit ans plus tôt. Le 5 novembre 1960, en rentrant du Skyline Club d'Austin, il meurt percuté par un conducteur ivre, et Billie Jean, l'ancienne épouse de Hank, devient veuve pour la deuxième fois. Hasard ou malédiction du Skyline, tu en penses quoi ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "johnnyhorton",
+    "hankwilliams",
+    "histoiredurock",
+    "cejourla"
+  ]
+}
