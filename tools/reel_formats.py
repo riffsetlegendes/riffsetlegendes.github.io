@@ -492,8 +492,11 @@ def frame_recit(t, spec, pics, sents, chunks, total):
         return im
     # sous-titre mot à mot
     cur = None
+    debut2 = sents[1]["start"] - 0.05 if len(sents) > 1 else 0
     for n, c in enumerate(chunks):  # reste affiché jusqu'au sous-titre suivant (fin de phrase : +0.6 s)
         nxt = chunks[n + 1][0][1] - 0.05 if n + 1 < len(chunks) else c[-1][2] + 0.6
+        if c[0][1] < debut2:  # la phrase 1 est déjà affichée en entier (accroche)
+            continue
         if c[0][1] - 0.05 <= t < max(nxt, c[-1][2] + 0.6 if nxt - c[-1][2] > 0.6 else nxt):
             cur = c
     if cur:
