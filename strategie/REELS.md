@@ -96,4 +96,52 @@ Détail caché derrière une fin (8 h ou 18 h, à la date anniversaire) :
 
 Chaque lundi, avant la production : relever dans Metricool (brandId 7397416, connecteur reels : IGRE02, IGRE03, IGRE23, IGRE11, IGRE27, IGRE28, IGRE21, IGRE12) les Reels des 7 derniers jours, calculer la médiane des vues, noter dans strategie/SWIPE.md (section « Mon compte ») les 3 meilleurs et les 3 moins bons avec leur concept, et ajuster le réservoir. Un Reel à 3 fois la médiane ou plus devient une recette : refaire le même concept sur un autre artiste dans les 14 jours.
 
+Classer avec ces mesures, pas avec les vues brutes (méthode ig-audit, montrer le calcul) :
+
+| Mesure | Calcul | Ce qu'elle juge |
+|---|---|---|
+| Multiple | vues ÷ médiane du compte (30 derniers Reels) | vrai succès ou journée normale |
+| Portée hors abonnés | % de la portée venant de non-abonnés | le Reel a-t-il voyagé |
+| Temps regardé moyen | Metricool | le milieu a-t-il tenu |
+| Partages par portée | partages ÷ portée | le signal le plus fort : quelqu'un met son nom dessus |
+| Abonnements par portée | abonnements gagnés ÷ portée | le profil convertit-il |
+
+Puis comparer les 3 meilleurs et les 3 moins bons dans cet ordre, et s'arrêter au premier écart net : temps regardé (si c'est là que ça diffère, c'est l'accroche et rien d'autre), formule d'accroche (§8), concept (§1), durée, thème, créneau horaire (en dernier). Noter la conclusion en une phrase dans SWIPE.md, même si elle contredit la stratégie.
+
+## 8. Accroches et contrôle qualité (pack instagram-agent, adapté)
+
+**L'accroche (phrase 1 de la narration).** 12 mots maximum, lisible en 2 secondes, le fait étrange ou la question avec un élément concret (nom, nombre, objet) dans les 6 premiers mots. Jamais de date seule en ouverture, de salutation, de « Aujourd'hui », « Le saviez-vous », « Retour sur », « Dans cette vidéo ». Écrire 3 accroches avec des formules différentes, garder la plus concrète. Formules qui marchent pour l'histoire du rock :
+
+| Formule | Exemple de moule |
+|---|---|
+| Pourquoi (origine) | « Pourquoi Kiss s'appelle Kiss ? » |
+| Le prix | « Une limousine refusée lui a coûté la vie. » |
+| Contre-pied | « Ce tube devait finir en face B. » |
+| Personne ne savait | « Personne ne savait que c'était leur dernier concert. » |
+| Le chiffre | « Trois accords. Quarante millions de disques. » |
+| Le seul / le premier | « Le seul album que Bowie a renié. » |
+| Deux dates | « Viré en 1975, numéro un en 1980. » |
+| L'objet | « Cette cassette a sauvé le dernier concert des Beatles. » |
+| En pleine action | « Le batteur s'endort au milieu du concert. » |
+| Le témoin oublié | « Un ingénieur de 19 ans a sauvé cet album. » |
+
+Noter la formule retenue dans le JSON (champ "hook_formule") pour que le bilan du lundi puisse les comparer.
+
+**Rythme.** Une phrase = une photo : au-delà de 16 mots (≈ 8 s), la photo reste fixe trop longtemps et c'est là qu'on décroche ; couper en deux. Une relance au milieu (« Mais… », « Problème : », un chiffre, un retournement). La dernière phrase de la narration est la question, et seulement elle (= "cta").
+
+**Légende.** Seuls les ~125 premiers caractères s'affichent avant « … plus » : la 1re phrase tient dedans, reformule l'accroche sans la recopier et finit sur une curiosité, pas au milieu d'une idée.
+
+**Contrôle obligatoire avant commit :**
+
+```
+python3 tools/ig_qa.py instagram/AAAA-MM-JJ-*.json --content content --fix
+python3 tools/ig_qa.py content/AAAA-MM-JJ-*.md
+```
+
+Zéro ÉCHEC avant commit. Les ALERTES se corrigent sauf raison précise (à dire dans le message à Yann). Le script nettoie seul les caractères invisibles, tirets cadratins et apostrophes courbes (--fix), et signale sans les réécrire les tics d'écriture IA, les chiffres absents de l'article du jour et les comparaisons relève/anciens (vérifier le contexte : « les héritiers de Janis » n'en est pas une).
+
+## 9. Story du jour (Yann la poste lui-même)
+
+Partager le Reel en story sans rien ajouter est la story la plus ignorée de la plateforme. Chaque jour, le message à Yann propose pour le Reel le plus fort un sticker prêt à coller : un **quiz** (la question de l'accroche avec 3 réponses dont la vraie, ex. « Pourquoi AC/DC ? Une machine à coudre / Un ampli / Un juron ») ou un **sondage** (la question finale en deux choix). Texte au centre de l'écran, une idée, tutoiement. Réponse donnée dans la story suivante ou en commentaire du Reel.
+
 Le premier lundi du mois : refaire l'étude de la niche avec Treg (anyapi.instagram.user.reels sur les comptes de la section 5 et 3 ou 4 nouveaux trouvés via anyapi.instagram.hashtag_top_posts sur #histoiredurock et #rockhistory), budget maximum 0,05 $, et mettre à jour les concepts de SWIPE.md.
