@@ -243,7 +243,10 @@ def build_narration(spec, out):
         if not spec.get("voice_on"):  # consigne de Yann du 22/10 : temps de lecture confortable
             toks = text.split()
             per = [0.30 + 0.045 * len(w) for w in toks]  # ~150 mots/min, plus long pour les mots longs
-            dur, words, c = 0.6 + sum(per), [], 0.3
+            if i == 0:  # accroche affichée d'un bloc : 2,5 s maximum (consigne de Yann du 06/11)
+                k0 = min(1, 2.2 / max(0.1, sum(per)))
+                per = [x * k0 for x in per]
+            dur, words, c = (0.3 if i == 0 else 0.6) + sum(per), [], (0 if i == 0 else 0.3)
             for w, d0 in zip(toks, per):
                 words.append((w, c, c + d0)); c += d0
             sents.append({"start": t, "end": t + dur, "photo": item.get("photo", i),
@@ -361,7 +364,7 @@ def add_bed(spec, voice_path, out, total):
     return mixed
 
 
-def _chunks(words, maxw=5, maxc=30):
+def _chunks(words, maxw=8, maxc=44):
     """Regroupe les mots en sous-titres courts (3 mots max), façon Reels."""
     merged = []
     for w in words:  # « ? », « ! », « : » isolés restent collés au mot précédent
@@ -373,7 +376,7 @@ def _chunks(words, maxw=5, maxc=30):
     words = merged
     out, cur = [], []
     for w in words:
-        if cur and (len(cur) >= maxw or len(" ".join(x[0] for x in cur + [w])) > maxc or cur[-1][0][-1:] in ".,:;?!"):
+        if cur and (len(cur) >= maxw or len(" ".join(x[0] for x in cur + [w])) > maxc or cur[-1][0][-1:] in ".?!"):  # coupe aux fins de phrase, plus aux virgules (moins de saccades)
             out.append(cur); cur = []
         cur.append(w)
     return out + ([cur] if cur else [])
@@ -500,8 +503,7 @@ def frame_recit(t, spec, pics, sents, chunks, total):
         if c[0][1] - 0.05 <= t < max(nxt, c[-1][2] + 0.6 if nxt - c[-1][2] > 0.6 else nxt):
             cur = c
     if cur:
-        pop = ease((t - cur[0][1]) / 0.12)
-        size = int(100 * (0.9 + 0.1 * pop))
+        size = 84  # taille fixe : plus d'effet de zoom à chaque bloc
         f = head(size)
         words = [w for w, _, _ in cur]
         full = " ".join(words).upper()
