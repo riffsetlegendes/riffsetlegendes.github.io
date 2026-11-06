@@ -441,8 +441,13 @@ def frame_recit(t, spec, pics, sents, chunks, total):
         span = max(0.1, (sents[k + 1]["start"] if k + 1 < len(sents) else total) - s["start"])
         u = min(1, max(0, (t - s["start"]) / span))
         zin = k % 2 == 0
+        fx = 0.35 + 0.1 * (k % 3) / 2
+        if span > 4.5 and u >= 0.5:  # phrase longue : second cadrage à mi-phrase (pas plus de ~4 s par cadre)
+            zin, fx, u = not zin, 0.75 - fx, (u - 0.5) * 2
+        elif span > 4.5:
+            u = u * 2
         z = 1.04 + 0.12 * (u if zin else 1 - u)
-        ph = cover_fit(p, W, H, z, 0.35 + 0.1 * (k % 3) / 2, 0.5)
+        ph = cover_fit(p, W, H, z, fx, 0.5)
         im.paste(ph, (0, 0))
         if k > 0 and t - s["start"] < 0.25:  # fondu court entre deux photos
             q = pics[sents[k - 1]["photo"] % len(pics)]
@@ -469,6 +474,22 @@ def frame_recit(t, spec, pics, sents, chunks, total):
             d.rectangle((W / 2 - tw / 2 - 22, y - 6, W / 2 + tw / 2 + 22, y + 70), fill=YELLOW)
             d.text((W // 2, y), l, font=f, fill=(15, 15, 15), anchor="ma")
             y += 82
+    # barre de progression fine en haut (aide à rester jusqu'au bout)
+    d.rectangle((0, 0, int(W * min(1, t / total)), 10), fill=YELLOW)
+    # accroche : la phrase 1 entière, en grand, dès la première image (sert aussi de couverture)
+    if k == 0 and sents:
+        f = head(fit_size(d, sents[0]["text"].upper(), head, 120, W - 140, 5))
+        lines = wrap(d, sents[0]["text"].upper(), f, W - 140)[:5]
+        lh = int(f.size * 1.0)
+        y = 820 - len(lines) * lh // 2
+        if spec.get("big"):
+            d.text((W // 2, y - 40), str(spec["big"]), font=head(90), fill=YELLOW, anchor="mb",
+                   stroke_width=8, stroke_fill=(0, 0, 0))
+        for l in lines:
+            d.text((W // 2, y), l, font=f, fill=(255, 255, 255), anchor="ma", stroke_width=10, stroke_fill=(0, 0, 0))
+            y += lh
+        d.text((W // 2, H - 150), "@riffsetlegendes", font=mono(34), fill=(235, 235, 235), anchor="mm")
+        return im
     # sous-titre mot à mot
     cur = None
     for n, c in enumerate(chunks):  # reste affiché jusqu'au sous-titre suivant (fin de phrase : +0.6 s)
