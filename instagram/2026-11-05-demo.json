@@ -1,0 +1,64 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Détail caché",
+  "big": "1970",
+  "title": "Sa dernière prise, une blague",
+  "song": {
+    "title": "Maybe",
+    "artist": "Janis Joplin"
+  },
+  "music_mood": "blues a cappella 1970",
+  "photos": [
+    "https://i.redd.it/e7i3q657evpb1.jpg",
+    "https://i.redd.it/ocf2c1zz29541.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/9/94/Janis_Joplin_seated_1970.JPG",
+    "https://media.wbur.org/wp/2015/08/Joplin_1_WBUR-1.jpg",
+    "https://cdn.artphotolimited.com/images/60913d60bd40b85323893a87/1000x1000/la-derniere-interview-de-janis-joplin.jpg",
+    "https://cdn.artphotolimited.com/images/60913d60bd40b85323893a87/1000x1000/janis-joplin-ny.jpg",
+    "https://www.wideopencountry.com/wp-content/uploads/sites/4/2025/02/janis-joplin.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Trois jours avant sa mort, Janis Joplin chantait pour rire.",
+      "photo": 0
+    },
+    {
+      "text": "Le 1er octobre 1970, à Hollywood, elle est seule au micro, sans un seul instrument.",
+      "photo": 1
+    },
+    {
+      "text": "Elle annonce, très sérieuse, un morceau d'une grande portée sociale et politique.",
+      "photo": 2
+    },
+    {
+      "text": "Puis elle demande à Dieu une Mercedes. Une seule prise, un fou rire.",
+      "photo": 3
+    },
+    {
+      "text": "Problème : trois jours plus tard, le 4 octobre, elle meurt à 27 ans.",
+      "photo": 4
+    },
+    {
+      "text": "Sur l'album Pearl, sorti après sa mort, un autre morceau restera pour toujours sans sa voix.",
+      "photo": 5
+    },
+    {
+      "text": "Toi, tu connaissais l'histoire de cette dernière prise ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Tu connaissais l'histoire de cette dernière prise ?",
+  "caption": "Trois jours avant sa mort, Janis Joplin enregistrait une chanson pour rire. Le 1er octobre 1970, seule au micro de Sunset Sound, elle chante « Mercedes Benz » a cappella, en une seule prise, et le producteur garde même son éclat de rire. Sur Pearl, un autre titre, « Buried Alive in the Blues », restera instrumental, faute de voix. Tu connaissais l'histoire de cette dernière prise ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "janisjoplin",
+    "mercedesbenz",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "26236235282628725",
+  "hook_formule": "Personne ne savait"
+}
