@@ -478,8 +478,8 @@ def frame_recit(t, spec, pics, sents, chunks, total):
     d.rectangle((0, 0, int(W * min(1, t / total)), 10), fill=YELLOW)
     # accroche : la phrase 1 entière, en grand, dès la première image (sert aussi de couverture)
     if k == 0 and sents:
-        f = head(fit_size(d, sents[0]["text"].upper(), head, 120, W - 140, 5))
-        lines = wrap(d, sents[0]["text"].upper(), f, W - 140)[:5]
+        f = head(fit_size(d, spec["narration"][0]["text"].upper(), head, 120, W - 140, 5))
+        lines = wrap(d, spec["narration"][0]["text"].upper(), f, W - 140)[:5]
         lh = int(f.size * 1.0)
         y = 820 - len(lines) * lh // 2
         if spec.get("big"):
