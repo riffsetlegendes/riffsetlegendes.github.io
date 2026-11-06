@@ -1,0 +1,63 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1948",
+  "title": "Les Eagles, groupe de secours",
+  "song": {
+    "title": "Take It Easy",
+    "artist": "Eagles"
+  },
+  "music_mood": "country rock californien 70s",
+  "photos": [
+    "https://upload.wikimedia.org/wikipedia/commons/8/8c/Eagles_Asylum_press_photo.jpg",
+    "https://www.udiscovermusic.com/wp-content/uploads/2024/04/bob-seger-rambin.jpg",
+    "https://i0.wp.com/ontherecords.net/wp-content/uploads/2017/07/FCF0D086-8158-4875-8B8D-9E2437DC8CC1.jpeg?ssl=1",
+    "https://upload.wikimedia.org/wikipedia/commons/e/e5/Linda_Ronstadt_1976.jpg",
+    "https://townsquare.media/site/204/files/2021/01/the-eagles-linda-onstadt.jpg",
+    "https://i.ebayimg.com/images/g/jXcAAOSwt89lkIzJ/s-l1200.jpg",
+    "https://parade.com/.image/ODowMDAwMDAwMDAyNDMxNzkz/eagles-live-in-usa.jpg?profile=w2560&x=50&y=50"
+  ],
+  "narration": [
+    {
+      "text": "Les Eagles sont nés comme simple groupe d'accompagnement d'une chanteuse.",
+      "photo": 0
+    },
+    {
+      "text": "Tout part de Glenn Frey, né à Detroit le 6 novembre 1948.",
+      "photo": 1
+    },
+    {
+      "text": "En 1968, il fait les chœurs sur le premier tube de Bob Seger.",
+      "photo": 2
+    },
+    {
+      "text": "En 1971, à Los Angeles, Linda Ronstadt l'engage pour sa tournée avec Henley, Meisner et Leadon.",
+      "photo": 3
+    },
+    {
+      "text": "Mais les quatre ne jouent ensemble derrière elle qu'une seule fois, à Disneyland.",
+      "photo": 4
+    },
+    {
+      "text": "En tournée, ils fondent les Eagles, et Take It Easy sort en 1972.",
+      "photo": 5
+    },
+    {
+      "text": "Tu connaissais ce passé de musiciens de l'ombre ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Tu connaissais ce passé de musiciens de l'ombre ?",
+  "caption": "Avant d'être les Eagles, ils étaient le groupe d'accompagnement de Linda Ronstadt. Glenn Frey, né à Detroit le 6 novembre 1948, avait déjà chanté dans les chœurs de Bob Seger avant d'être engagé avec Henley, Meisner et Leadon pour la tournée de 1971, où les quatre n'ont joué ensemble qu'une fois, à Disneyland. Tu connaissais ce passé de musiciens de l'ombre ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "eagles",
+    "takeiteasy",
+    "histoiredurock",
+    "classicrock"
+  ],
+  "audio_id": "26846402498325003"
+}

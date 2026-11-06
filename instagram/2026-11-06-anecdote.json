@@ -1,0 +1,63 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1968",
+  "title": "Pourquoi « Alice Cooper » ?",
+  "song": {
+    "title": "School's Out",
+    "artist": "Alice Cooper"
+  },
+  "music_mood": "shock rock hard rock 70s",
+  "photos": [
+    "https://i.redd.it/nz50p6jaqr3d1.jpeg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/Alice_Cooper_band.jpg",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBcmuB0Oa5cTmDWlVxOpBKE0yrcwogtNDF5htgNJEsjeEU476bePiohO7rTakB2XDzKDcCh3c-IOOhYFL9274ZlkkGjJ_uBQ1LRcCra_4-gJGWqL5_N7f_2dAcJWmLggPGY3bH2YkLYwiOqzXVzQ39ZMCd8QPKYbyfi3QH38CfrEYp6ZzjV_r9T5CfEVM/s1200/alice-cooper-band-3.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/f/fc/Alice_Cooper_1972.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/a/ae/Alice_Cooper_Vincent_Price_1975.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/c/c3/Groucho_Marx_and_Alice_Cooper_at_Rancho_Mission_Viejo%2C_1974_%2825770467042%29.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/1/17/Alice_Cooper_%28l%29_en_Barry_Hughes_met_gouden_bal_en_gouden_plaat%2C_Bestanddeelnr_927-0541.jpg"
+  ],
+  "narration": [
+    {
+      "text": "La légende dit qu'Alice Cooper est le nom d'une sorcière du XVIIe siècle.",
+      "photo": 0
+    },
+    {
+      "text": "Une planche Ouija l'aurait révélé au chanteur Vincent Furnier, sa réincarnation.",
+      "photo": 1
+    },
+    {
+      "text": "En vrai, le groupe de Phoenix s'appelle d'abord les Spiders, puis Nazz.",
+      "photo": 2
+    },
+    {
+      "text": "Problème : en 1968, Todd Rundgren a déjà un groupe nommé Nazz.",
+      "photo": 3
+    },
+    {
+      "text": "Furnier choisit alors un nom de gentille vieille dame, pour contraster avec un groupe effrayant.",
+      "photo": 4
+    },
+    {
+      "text": "Et la sorcière ? En 2009, à la BBC, il parle d'une pure légende urbaine.",
+      "photo": 5
+    },
+    {
+      "text": "Toi, tu croyais à l'histoire de la sorcière ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Toi, tu croyais à l'histoire de la sorcière ?",
+  "caption": "Non, Alice Cooper n'est pas une sorcière réincarnée révélée par une planche Ouija. Le groupe de Phoenix s'appelait Nazz jusqu'en 1968, quand il a découvert le Nazz de Todd Rundgren, et Vincent Furnier a choisi un nom de gentille vieille dame pour mieux surprendre. En 2009, sur la BBC, il a lui-même qualifié l'histoire de la sorcière de pure légende urbaine. Toi, tu croyais à l'histoire de la sorcière ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "alicecooper",
+    "schoolsout",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "27266566439692400"
+}

@@ -1,0 +1,63 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Coulisses",
+  "big": "1980",
+  "title": "Le tube qui devait être face B",
+  "song": {
+    "title": "Angora",
+    "artist": "Alain Bashung"
+  },
+  "music_mood": "rock'n'roll chanson française 1980",
+  "photos": [
+    "https://www.galerie-roger-viollet.fr/image-photo/alain-bashung-1947-2009-french-1417888-1440-4273126206.jpg",
+    "https://cdn-images.dzcdn.net/images/cover/8f2929f9bbde4dca297b008daa50048f/1900x1900-000000-80-0-0.jpg",
+    "https://cdn.artphotolimited.com/images/597620ca681a4e5b29462ebe/1000x1000/alain-bashung-1980.jpg",
+    "https://cdn.artphotolimited.com/images/5c2e191bd96b2e012e7a7fc5/1000x1000/alain-bashung.jpg",
+    "https://cdn.artphotolimited.com/images/5cf7ce68274d0274f16f8746/1000x1000/alain-bashung-en-concert.jpg",
+    "http://www.laffichemusicale.fr/cdn/shop/files/Frame4-2.jpg?v=1743175903",
+    "https://cdn-images.dzcdn.net/images/cover/efdd1e98d6626a2e6eb6653ef59733a5/1900x1900-000000-80-0-0.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Le premier tube de Bashung devait finir en face B.",
+      "photo": 0
+    },
+    {
+      "text": "En 1980, il enchaîne les échecs depuis 1966, et Philips veut lui rendre son contrat.",
+      "photo": 1
+    },
+    {
+      "text": "Un producteur finance le disque en douce, avec une partie du budget de Paul Mauriat.",
+      "photo": 2
+    },
+    {
+      "text": "Boris Bergman écrit le texte, Bashung le dit plus qu'il ne le chante.",
+      "photo": 3
+    },
+    {
+      "text": "Pour la fin, Bergman griffonne des phrases absurdes pour le faire rire, et Bashung les chante sans ciller.",
+      "photo": 4
+    },
+    {
+      "text": "Problème : six mois sans une radio, puis numéro un en France en octobre 1980.",
+      "photo": 5
+    },
+    {
+      "text": "Toi, tu l'aurais mise en face A ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Toi, tu l'aurais mise en face A ?",
+  "caption": "« Gaby oh Gaby » était prévue pour le dos d'un 45 tours, enregistré grâce à un budget détourné. Bashung, que son label voulait lâcher après quatorze ans d'échecs, la récite sur un final griffonné par Boris Bergman pour le faire rire, puis attend six mois avant d'être numéro un en octobre 1980. Toi, tu l'aurais mise en face A ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "alainbashung",
+    "gabyohgaby",
+    "rockfrancais",
+    "histoiredurock"
+  ],
+  "audio_id": "589655666314511"
+}
