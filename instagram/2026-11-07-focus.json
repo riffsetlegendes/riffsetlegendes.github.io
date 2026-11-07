@@ -1,0 +1,69 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1964",
+  "title": "Le concert sur le quai mouillé",
+  "song": {
+    "title": "Didn't It Rain",
+    "artist": "Sister Rosetta Tharpe"
+  },
+  "music_mood": "gospel électrique, guitare saturée, 1964",
+  "hook_formule": "En pleine action",
+  "photos": [
+    "https://i.redd.it/0q8i1c2571wc1.jpeg",
+    "https://live.staticflickr.com/4053/4350232274_a5d4a2c363_b.jpg",
+    "https://cdn.mos.cms.futurecdn.net/SEDzcb8EFda9ykE3ssQNcL.jpg",
+    "https://picturingblackhistory.org/wp-content/uploads/2024/01/3232352-scaled.jpg",
+    "https://cdn.mos.cms.futurecdn.net/7yWaa48DjWp7JFgYFUcKLW.jpg",
+    "https://chrisbarber.net/Edjackson/barbersite/tours-concerts-08/srt-1960-lge-01.jpg",
+    "https://dirkdeklein.net/wp-content/uploads/2018/01/160910-kaplan-sister-rosetta-tharpe-tease_hxpndy.jpg",
+    "https://guitar.com/wp-content/uploads/2023/02/sister-rosetta-tharpe@2000x1500-1068x801.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Sister Rosetta Tharpe joue dans une gare abandonnée, sous la pluie.",
+      "photo": 0
+    },
+    {
+      "text": "Manchester, 7 mai 1964 : la télé Granada transforme le quai en décor de western.",
+      "photo": 1
+    },
+    {
+      "text": "Environ 200 jeunes arrivent en train, les musiciens jouent sur le quai d'en face.",
+      "photo": 2
+    },
+    {
+      "text": "Sister Rosetta Tharpe descend de calèche juste après une averse.",
+      "photo": 3
+    },
+    {
+      "text": "Problème : il pleut toujours, alors elle ouvre avec « Didn't It Rain ».",
+      "photo": 4
+    },
+    {
+      "text": "On dit que Clapton et Brian Jones étaient là, mais rien ne le prouve.",
+      "photo": 5
+    },
+    {
+      "text": "Le vrai public arrive en août : environ 10 millions de téléspectateurs.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu serais resté sous la pluie pour elle ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Toi, tu serais resté sous la pluie pour elle ?",
+  "caption": "Une gare fantôme de Manchester, une calèche et une averse : le décor le plus improbable de l'histoire du rock. Le 7 mai 1964, Sister Rosetta Tharpe y attaque « Didn't It Rain » à la guitare électrique devant 200 jeunes trempés, pour la télévision Granada. Toi, tu serais resté sous la pluie pour elle ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "sisterrosettatharpe",
+    "histoiredurock",
+    "gospel",
+    "manchester"
+  ],
+  "audio_id": "811853711476820"
+}
