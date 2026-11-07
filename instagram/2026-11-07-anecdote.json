@@ -1,0 +1,69 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1967",
+  "title": "Pourquoi « Steppenwolf » ?",
+  "song": {
+    "title": "Born to Be Wild",
+    "artist": "Steppenwolf"
+  },
+  "music_mood": "hard rock biker 60s",
+  "hook_formule": "Pourquoi (origine)",
+  "photos": [
+    "https://upload.wikimedia.org/wikipedia/commons/6/68/Steppenwolf_%281970%29.png",
+    "https://cdn.mos.cms.futurecdn.net/VQh9NyWKBHsvyCek9km2Sc.jpg",
+    "https://www.concertarchives.org/image_uploads/photo/image/1365286/large_100712_05.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/a/aa/Steppenwolf_%281971%29.png",
+    "https://cdn.mos.cms.futurecdn.net/vWoFuGcrMeRTFJq8WTgG97.jpg",
+    "https://iconicimagesgallery.com/cdn/shop/products/EC_ST007.jpg?v=1667866025&width=1024",
+    "https://live.staticflickr.com/3087/3249495869_cfd870cc33_c.jpg",
+    "https://i.redd.it/i0hjhlon22dh1.jpeg"
+  ],
+  "narration": [
+    {
+      "text": "Pourquoi un roman allemand de 1927 a baptisé Steppenwolf ?",
+      "photo": 0
+    },
+    {
+      "text": "Avant le loup, il y a les Sparrows, des moineaux de Toronto.",
+      "photo": 1
+    },
+    {
+      "text": "En 1967, à Los Angeles, John Kay reforme le groupe.",
+      "photo": 2
+    },
+    {
+      "text": "Son producteur, Gabriel Mekler, vient de lire « Le Loup des steppes » de Hermann Hesse.",
+      "photo": 3
+    },
+    {
+      "text": "Il propose le titre original : un mot qui claque imprimé.",
+      "photo": 4
+    },
+    {
+      "text": "Mais le vrai rugissement vient d'une ballade écrite par Mars Bonfire, frère du batteur.",
+      "photo": 5
+    },
+    {
+      "text": "Accélérée, elle devient « Born to Be Wild », numéro 2 en 1968.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu savais que ce nom venait d'un livre ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Toi, tu savais que ce nom venait d'un livre ?",
+  "caption": "Steppenwolf doit son nom à un roman de Hermann Hesse qu'un producteur avait sur sa table de chevet. En 1967, Gabriel Mekler propose à John Kay le titre allemand du « Loup des steppes » pour son groupe tout neuf, issu des Sparrows de Toronto. Un an plus tard, « Born to Be Wild », ballade de Mars Bonfire accélérée par le groupe, grimpe à la 2e place du Hot 100. Toi, tu savais que ce nom venait d'un livre ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "steppenwolf",
+    "borntobewild",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "763548499510482"
+}
