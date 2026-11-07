@@ -1,0 +1,69 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1943",
+  "title": "Woodstock vu de la télé",
+  "song": {
+    "title": "Both Sides Now",
+    "artist": "Joni Mitchell"
+  },
+  "music_mood": "folk acoustique fin des années 1960, intime",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://www.rollingstone.com/wp-content/uploads/1969/05/joni-mitchell-1969.jpg",
+    "https://i.redd.it/9wjtyalzx3781.jpg",
+    "https://parade.com/.image/ODowMDAwMDAwMDAyMzI3NzAy/nash-crosby-young-at-altamont.jpg?profile=w2560&ar=16-9",
+    "https://cdn.theatlantic.com/media/img/photo/2019/08/woodstock/w01_50461159-1/original.jpg",
+    "https://www.rollingstone.com/wp-content/uploads/2021/08/JM_JoelBernstein_NewYorkLovesYou.jpg",
+    "https://static.time.com/v3/assets/bltea6093859af6183b/bltc4abb0e2d17f1029/698760b8e53aba00884d5047/woodstock-photos-1969-01.jpg?branch=production&width=3840&quality=75&auto=webp",
+    "https://sfae.blob.core.windows.net/media/ecommercesite/media/sfae/sfae.artwork/800-joni-mitchell-at-the-newport-folk-festival-july-1969.jpg?ext=.jpg",
+    "https://www.billboard.com/wp-content/uploads/2024/08/woodstock-1969-couple-2024-billboard-1548.jpg"
+  ],
+  "narration": [
+    {
+      "text": "L'hymne de Woodstock a été écrit par quelqu'un qui n'y était pas.",
+      "photo": 0
+    },
+    {
+      "text": "Joni Mitchell, née le 7 novembre 1943 au Canada, devait jouer au festival.",
+      "photo": 1
+    },
+    {
+      "text": "Mais le 19 août 1969, elle est attendue au Dick Cavett Show.",
+      "photo": 6
+    },
+    {
+      "text": "Son agent David Geffen craint qu'elle ne revienne pas à temps.",
+      "photo": 3
+    },
+    {
+      "text": "Alors elle suit le festival à la télé, dans une chambre d'hôtel à New York.",
+      "photo": 4
+    },
+    {
+      "text": "De cette frustration naît la chanson Woodstock, publiée en 1970.",
+      "photo": 5
+    },
+    {
+      "text": "Crosby, Stills, Nash & Young la reprennent et grimpent à la 11e place du Billboard.",
+      "photo": 2
+    },
+    {
+      "text": "Tu préfères sa version ou celle de CSNY ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu préfères sa version ou celle de CSNY ?",
+  "caption": "La chanson la plus associée à Woodstock vient d'une femme restée devant sa télé. Joni Mitchell, née le 7 novembre 1943 au Canada, devait jouer au festival, mais David Geffen a préféré qu'elle assure le Dick Cavett Show. Depuis New York, elle a écrit l'hymne que Crosby, Stills, Nash & Young ont ensuite rendu célèbre. Tu préfères sa version ou celle de CSNY ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "jonimitchell",
+    "woodstock",
+    "histoiredurock",
+    "folkrock"
+  ],
+  "audio_id": "3796670257291585"
+}
