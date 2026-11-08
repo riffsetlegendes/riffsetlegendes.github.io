@@ -151,3 +151,7 @@ Le premier lundi du mois : refaire l'étude de la niche avec Treg (anyapi.instag
 - Dernière phrase et "cta" : renvoi explicite, ex. « La fin de l'histoire est sur le site, lien en bio. » (pas de question ce jour-là).
 - Durée visée : 30 à 40 s.
 - Au bilan du 16/11 : comparer la rétention et les visites du site (articles des Reels « suspense » contre les autres).
+
+## 11. Droits du son (incident du 08/11/2026, Fontaines D.C.)
+- Le son « Starburster » d'un compte de fan (@jose_leon_molfino) a déclenché un problème de droits ; Reel republié avec le son officiel de @kexp.
+- Règle : choisir d'abord un son publié par un compte officiel (artiste, label, radio ou festival : @kexp, etc.), puis seulement un compte de fan. Écarter les « edit », « bootleg », remix.

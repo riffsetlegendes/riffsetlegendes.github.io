@@ -1,7 +1,7 @@
 {
  "mois": "2026-11",
  "limite": 20,
- "utilises": 13,
+ "utilises": 14,
  "epuise": false,
  "note": "Forfait gratuit Metricool : 20 publications PUBLIÉES par mois (compteur remis à zéro le 1er). Priorité Metricool ; quand utilises = 20 ou qu'un post renvoie « account limit », epuise = true et on passe à l'API Instagram (cron GitHub) jusqu'à la fin du mois."
 }
