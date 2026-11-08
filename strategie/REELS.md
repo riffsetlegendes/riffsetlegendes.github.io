@@ -145,3 +145,9 @@ Zéro ÉCHEC avant commit. Les ALERTES se corrigent sauf raison précise (à dir
 Partager le Reel en story sans rien ajouter est la story la plus ignorée de la plateforme. Chaque jour, le message à Yann propose pour le Reel le plus fort un sticker prêt à coller : un **quiz** (la question de l'accroche avec 3 réponses dont la vraie, ex. « Pourquoi AC/DC ? Une machine à coudre / Un ampli / Un juron ») ou un **sondage** (la question finale en deux choix). Texte au centre de l'écran, une idée, tutoiement. Réponse donnée dans la story suivante ou en commentaire du Reel.
 
 Le premier lundi du mois : refaire l'étude de la niche avec Treg (anyapi.instagram.user.reels sur les comptes de la section 5 et 3 ou 4 nouveaux trouvés via anyapi.instagram.hashtag_top_posts sur #histoiredurock et #rockhistory), budget maximum 0,05 $, et mettre à jour les concepts de SWIPE.md.
+
+## 10. Test « suspense » (semaine du 09/11/2026, idée tirée de la pub RTL2 repérée par Yann)
+- Sur 1 Reel par jour (l'anecdote de 13 h) : 6 à 7 phrases au présent, racontées comme une scène (un lieu, un geste) ; l'avant-dernière phrase s'arrête juste avant la chute.
+- Dernière phrase et "cta" : renvoi explicite, ex. « La fin de l'histoire est sur le site, lien en bio. » (pas de question ce jour-là).
+- Durée visée : 30 à 40 s.
+- Au bilan du 16/11 : comparer la rétention et les visites du site (articles des Reels « suspense » contre les autres).

@@ -41,3 +41,10 @@ Recherche du 19/10/2026 : 7 comptes de la niche histoire du rock analysés (84 R
 - Flops : portraits « de X à Y, N albums » (13 à 22 %), relève racontée comme une bio (17 à 35 vues), musique générique
 - Partages et enregistrements ≈ 0, temps regardé 2 à 6,6 s : tout se joue sur la 1re carte
 
+
+## Repéré par Yann le 08/11/2026 : RTL2, pub du podcast « Rock'n'Roll Justice » (Tommy James et Morris Levy)
+- 31 s, dont 22 s de récit et 9 s de carte finale « Découvrez toute l'histoire dans le podcast ». Pas de voix off visible, texte sur photos noir et blanc.
+- Accroche en bandeau rouge fixe sur les premiers plans : « Il vend des millions de disques, mais ne touche rien » (contradiction et argent).
+- Récit en scène, au présent : « Alors il va voir Morris Levy dans un restaurant italien de Manhattan… À chaque table, des hommes mangent en silence. »
+- Fin en suspens (« Ce sont les propriétaires de la compagnie ») : la chute n'est pas donnée, elle est dans le podcast.
+- À reprendre : récit en scène, fin en suspens qui renvoie vers l'article, format plus court. À éviter : leurs images d'ambiance, qui semblent générées par IA (on garde de vraies photos d'archive).
