@@ -1,0 +1,69 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1949",
+  "title": "La slide anti-rhume",
+  "song": {
+    "title": "Angel from Montgomery",
+    "artist": "Bonnie Raitt"
+  },
+  "music_mood": "blues rock enlevé, slide guitar, début des années 1990",
+  "hook_formule": "L'objet",
+  "photos": [
+    "https://aadl.org/sites/default/files/photos/laxi001.jpg",
+    "https://www.bonnieraitt.eu/wp-content/uploads/2016/08/Bonnie-Raitt-backstage-at-the-Whisky-A-Go-Go-in-1972Getty-Images.jpg.webp",
+    "https://cdn.mos.cms.futurecdn.net/X7TkjtdaVW24XN5jo5tdpN.jpg",
+    "http://www.markbowmanimages.com/wp-content/uploads/2021/11/Bonnie-Raitt-Austin-1987-by-Mark-Bowman-Images-672x1024.jpg",
+    "https://www.bonnieraitt.com/wp-content/uploads/2022/01/1989-Capitol-publicity-shot.jpg",
+    "https://www.bonnieraitt.eu/wp-content/uploads/2019/03/bonnie-raitt-1989-live-sf-u-billboard-1500-Tim-Mosenfelder.jpg",
+    "https://townsquare.media/site/295/files/2015/03/raitt.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBCFmC-tVkWl9_UO_l4xn57HIjkZV4PlPrkdLwDlAkw-F5fAMLWULdnvwsQusTbPxfHroHXE22980PZAf5Vae7fnoegOYrophSafq3sA6q4ahNV97sQStEltsxuoyipevtgEc294jkwt-bXey6aAEo3bs64EsdVt2B0tPWtlRYpensqmhNh2gMjQ-T2aY/s1200/bonnie-raitt-1980s-4.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Un flacon de Coricidin a lancé la carrière de Bonnie Raitt.",
+      "photo": 0
+    },
+    {
+      "text": "Elle naît le 8 novembre 1949 à Burbank, en Californie.",
+      "photo": 1
+    },
+    {
+      "text": "À 14 ans, elle découvre la slide sur un vieux disque de blues.",
+      "photo": 2
+    },
+    {
+      "text": "Seule dans sa chambre, elle enfile au doigt un flacon de cachets contre le rhume.",
+      "photo": 3
+    },
+    {
+      "text": "Problème : pendant des années, le grand public ne suit pas.",
+      "photo": 4
+    },
+    {
+      "text": "En 1983, Warner Bros la lâche, et elle arrête l'alcool en 1987.",
+      "photo": 5
+    },
+    {
+      "text": "Puis Nick of Time sort, et elle rafle trois Grammys en 1990, à 40 ans.",
+      "photo": 6
+    },
+    {
+      "text": "Tu connaissais l'histoire du flacon ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu connaissais l'histoire du flacon ?",
+  "caption": "Le son de Bonnie Raitt sort d'un petit flacon trouvé dans l'armoire à pharmacie. Née le 8 novembre 1949 à Burbank, elle apprend la slide seule, adolescente, avec un flacon de Coricidin vidé de son étiquette. Lâchée par sa maison de disques en 1983, elle triomphe enfin avec Nick of Time et trois Grammys en 1990. Tu connaissais l'histoire du flacon ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "bonnieraitt",
+    "slideguitar",
+    "histoiredurock",
+    "blues"
+  ],
+  "audio_id": "733258308877505"
+}

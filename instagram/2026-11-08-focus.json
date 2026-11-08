@@ -1,0 +1,69 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "La relève",
+  "big": "2019",
+  "title": "Un nom volé au Parrain",
+  "song": {
+    "title": "Starburster",
+    "artist": "Fontaines D.C."
+  },
+  "music_mood": "post-punk tendu, souffle haletant, cordes",
+  "hook_formule": "Pourquoi (origine)",
+  "photos": [
+    "https://i.guim.co.uk/img/media/62157437af170c42a8afb21bd1164f39fb332871/0_2134_2740_1644/master/2740.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=de77f29b7ff12b6ea552ca656b774b74",
+    "https://upload.wikimedia.org/wikipedia/commons/f/f0/Fontaines_D.C._%2849135254267%29.jpg",
+    "https://totallywiredmag.com/wp-content/uploads/2020/08/fontaines-dc.jpg",
+    "https://media.brooklynvegan.com/xxrzsfjkyw/uploads/2019/03/23/20190308_fontainesdc0_30.jpg",
+    "https://www.nme.com/wp-content/uploads/2022/04/NME-HERO-FONTAINES-D.C.-1@2560x1625.jpg",
+    "https://www.bristol247.com/wp-content/uploads/2019/12/FDC-1.jpg",
+    "https://i.guim.co.uk/img/media/0953ca74c8c24c3d58d4cf842392c7491414a8ca/1462_303_3449_2070/master/3449.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=b483a105342bc83118d231ee79bd8604",
+    "https://i2-prod.dublinlive.ie/article31441118.ece/ALTERNATES/s1200f/0_GettyImages-2168264959.jpg"
+  ],
+  "narration": [
+    {
+      "text": "Pourquoi Fontaines D.C. porte le nom d'un chanteur du Parrain ?",
+      "photo": 0
+    },
+    {
+      "text": "Johnny Fontane, le crooner filleul de Don Corleone, leur donne leur premier nom.",
+      "photo": 1
+    },
+    {
+      "text": "Problème : à Los Angeles, un groupe s'appelle déjà The Fontaines.",
+      "photo": 2
+    },
+    {
+      "text": "Alors les Dublinois ajoutent deux lettres : D.C., pour Dublin City.",
+      "photo": 3
+    },
+    {
+      "text": "Mais avant le rock, il y a la poésie, rencontrée en cours de musique.",
+      "photo": 4
+    },
+    {
+      "text": "Ils autoéditent deux recueils : « Vroom » pour les Beats, « Winding » pour l'Irlande.",
+      "photo": 5
+    },
+    {
+      "text": "En 2019, leur premier album s'appelle « Dogrel », comme les vers de comptoir.",
+      "photo": 6
+    },
+    {
+      "text": "Et toi, tu connaissais l'histoire de ces deux lettres ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Et toi, tu connaissais l'histoire de ces deux lettres ?",
+  "caption": "Un crooner de cinéma, un homonyme californien et deux lettres : voilà d'où vient le nom de Fontaines D.C. Avant leur premier album, les cinq Dublinois publiaient déjà leurs propres recueils de poèmes. Et toi, tu connaissais l'histoire de ces deux lettres ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "fontainesdc",
+    "postpunk",
+    "dublin",
+    "nouveaurock"
+  ],
+  "audio_id": "603078869263820"
+}
