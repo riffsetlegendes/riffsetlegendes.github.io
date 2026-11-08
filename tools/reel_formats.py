@@ -429,6 +429,22 @@ def outro_recit(t, pics, sents, total):
     return im
 
 
+def kb_frame(img, j, u):
+    """Image 1080x1920 recadrée avec zoom lent et léger panoramique, en flottant (transformation affine)."""
+    import math as _m
+    base = max(W / img.width, H / img.height)
+    zin = j % 2 == 0
+    z = 1.04 + 0.07 * (u if zin else 1 - u)  # environ 7 % sur toute la phrase : lent et régulier
+    sc = base * z
+    dx = ((j % 3) - 1) * 0.025 * (u - 0.5)  # dérive horizontale de quelques pixels
+    cx = img.width * (0.5 + dx)
+    cy = img.height * 0.42
+    cx = min(max(cx, W / (2 * sc)), img.width - W / (2 * sc))
+    cy = min(max(cy, H / (2 * sc)), img.height - H / (2 * sc))
+    a = 1 / sc
+    return img.transform((W, H), Image.AFFINE, (a, 0, cx - W / 2 * a, 0, a, cy - H / 2 * a), resample=Image.BICUBIC)
+
+
 def frame_recit(t, spec, pics, sents, chunks, total):
     if t >= total:
         return outro_recit(t, pics, sents, total)
@@ -440,22 +456,21 @@ def frame_recit(t, spec, pics, sents, chunks, total):
             k = i
     s = sents[k]
     if pics:
-        p = pics[s["photo"] % len(pics)]
-        span = max(0.1, (sents[k + 1]["start"] if k + 1 < len(sents) else total) - s["start"])
-        u = min(1, max(0, (t - s["start"]) / span))
-        zin = k % 2 == 0
-        fx = 0.35 + 0.1 * (k % 3) / 2
-        if span > 4.5 and u >= 0.5:  # phrase longue : second cadrage à mi-phrase (pas plus de ~4 s par cadre)
-            zin, fx, u = not zin, 0.75 - fx, (u - 0.5) * 2
-        elif span > 4.5:
-            u = u * 2
-        z = 1.04 + 0.12 * (u if zin else 1 - u)
-        ph = cover_fit(p, W, H, z, fx, 0.5)
-        im.paste(ph, (0, 0))
-        if k > 0 and t - s["start"] < 0.25:  # fondu court entre deux photos
-            q = pics[sents[k - 1]["photo"] % len(pics)]
-            prev = cover_fit(q, W, H, 1.16 if (k - 1) % 2 == 0 else 1.04)
-            im = Image.blend(prev, im, max(0, (t - s["start"]) / 0.25))
+        # Ken Burns continu (06/11, retour de Yann sur la pub RTL2) : un seul mouvement lent par photo,
+        # calculé en sous-pixel (pas de saccade), et fondu depuis la vraie dernière image de la photo précédente.
+        def span_of(j):
+            return max(0.1, (sents[j + 1]["start"] if j + 1 < len(sents) else total) - sents[j]["start"])
+
+        def shot(j, tt):
+            u = min(1.0, max(0.0, (tt - sents[j]["start"]) / span_of(j)))
+            return kb_frame(pics[sents[j]["photo"] % len(pics)], j, u)
+
+        im = shot(k, t)
+        XF = 0.45
+        if k > 0 and t - s["start"] < XF and sents[k - 1]["photo"] != s["photo"]:
+            prev = shot(k - 1, s["start"])
+            a = (t - s["start"]) / XF
+            im = Image.blend(prev, im, a * a * (3 - 2 * a))
     # dégradés haut et bas pour la lisibilité
     shade = Image.new("L", (1, H))
     for y in range(H):
