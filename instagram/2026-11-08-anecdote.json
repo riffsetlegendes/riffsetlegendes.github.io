@@ -1,0 +1,69 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Origine",
+  "big": "1981",
+  "title": "Pourquoi « Mötley Crüe » ?",
+  "song": {
+    "title": "Kickstart My Heart",
+    "artist": "Mötley Crüe"
+  },
+  "music_mood": "glam metal 80s energique",
+  "hook_formule": "Pourquoi (origine)",
+  "photos": [
+    "https://hips.hearstapps.com/hmg-prod/images/gettyimages-86108502-1553282027.jpg",
+    "https://insounder.org/sites/default/files/styles/clanek_full_810x540/public/resized-image-Promo.jpeg?itok=zXLHO-z7",
+    "https://www.thescroller.net/wp-content/uploads/2025/09/photo2-16-900x1200.jpg",
+    "https://www.thescroller.net/wp-content/uploads/2025/09/photo3-14-869x1200.jpg",
+    "https://townsquare.media/site/366/files/2026/10/attachment-social-image-366-2026-10-22-13-41-36.jpg",
+    "https://cdn.artphotolimited.com/images/60387e50bd40b82343baf31f/1000x1000/motley-crue-at-the-los-angeles-forum-august-24-1985.jpg",
+    "https://www.iconvsicon.com/wp-content/uploads/2025/11/Motley-Crue-Photo-Credit_-Ross-Halfin.jpg",
+    "https://2loud2oldmusic.com/wp-content/uploads/2024/09/img_0549.jpeg?w=1019"
+  ],
+  "narration": [
+    {
+      "text": "Pourquoi une bière allemande a mis des trémas sur Mötley Crüe ?",
+      "photo": 0
+    },
+    {
+      "text": "Hollywood, 1981 : Nikki Sixx, Tommy Lee, Mick Mars et Vince Neil cherchent un nom.",
+      "photo": 1
+    },
+    {
+      "text": "Mick Mars se souvient d'une moquerie entendue dans son ancien groupe.",
+      "photo": 2
+    },
+    {
+      "text": "On les avait traités de « motley looking crew », une drôle de troupe dépareillée.",
+      "photo": 3
+    },
+    {
+      "text": "Il l'avait noté : « Mottley Cru ». Le groupe adopte l'idée.",
+      "photo": 4
+    },
+    {
+      "text": "Mais ce soir-là, ils boivent de la Löwenbräu, et Vince Neil ajoute deux trémas.",
+      "photo": 5
+    },
+    {
+      "text": "Problème : en Allemagne, le public scande « Mutley Cruh » !",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu prononces Mötley Crüe comment ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Toi, tu prononces Mötley Crüe comment ?",
+  "caption": "Les deux trémas de Mötley Crüe sortent d'une bouteille de bière, pas d'un cours d'allemand. En 1981, Mick Mars ressort une moquerie entendue dans son groupe White Horse : « a motley looking crew ». Vince Neil y ajoute des trémas inspirés de la Löwenbräu, et en Allemagne le public se met à scander « Mutley Cruh ». Toi, tu prononces Mötley Crüe comment ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "motleycrue",
+    "kickstartmyheart",
+    "histoiredurock",
+    "anecdotemusicale"
+  ],
+  "audio_id": "869952828940260"
+}
