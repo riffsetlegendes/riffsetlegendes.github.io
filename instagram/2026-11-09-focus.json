@@ -1,0 +1,69 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1977",
+  "title": "La voix cachée du tube",
+  "song": {
+    "title": "Ça plane pour moi",
+    "artist": "Plastic Bertrand"
+  },
+  "music_mood": "punk joyeux, guitares saturées, tempo rapide",
+  "hook_formule": "Personne ne savait",
+  "photos": [
+    "https://i.ytimg.com/vi/Ln31raI2ezY/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/lGG-FrtP5f4/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/BwipFk1zUy4/maxresdefault.jpg",
+    "http://alt77.com/wp-content/uploads/2020/08/Plastic-Bertrands-Ca-plane-pour-Moi-1024x576.jpeg",
+    "https://i.ytimg.com/vi/ClxJITJOcGQ/maxresdefault.jpg",
+    "http://alt77.com/wp-content/uploads/2020/08/Plastic-Bertrands-Ca-plane-pour-Moi-2-1024x576.jpeg",
+    "https://m.media-amazon.com/images/M/MV5BODMxM2NjNmMtZTYyMS00MmRmLWI5ZDYtMGY0OWYxZDU4ZmQzXkEyXkFqcGc@._V1_.jpg",
+    "https://external-preview.redd.it/plastic-bertrand-ca-plane-pour-moi-v0-cKN8krRPHtu6UWaUd1FV2Levv3X1gIvbtL3tRML_AY4.jpeg?format=pjpg&auto=webp&s=3ad04c56bf78a9d5eed717b6053892e0e9da4cc1"
+  ],
+  "narration": [
+    {
+      "text": "Sur « Ça plane pour moi », Plastic Bertrand ne chanterait pas.",
+      "photo": 0
+    },
+    {
+      "text": "En 1977, le producteur Lou Deprijck monte ce pastiche punk en deux heures.",
+      "photo": 1
+    },
+    {
+      "text": "Il lui faut un visage : il choisit Roger Jouret, un jeune Bruxellois.",
+      "photo": 2
+    },
+    {
+      "text": "Le tube grimpe à la 8e place au Royaume-Uni en 1978.",
+      "photo": 3
+    },
+    {
+      "text": "Mais Deprijck jure depuis toujours que la voix du disque est la sienne.",
+      "photo": 4
+    },
+    {
+      "text": "En 2010, une expertise entend sur le disque un accent picard, celui de Deprijck.",
+      "photo": 5
+    },
+    {
+      "text": "Plastic Bertrand l'avoue au journal Le Soir, puis se rétracte le lendemain.",
+      "photo": 6
+    },
+    {
+      "text": "Et toi, tu aurais reconnu la voix du producteur ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Et toi, tu aurais reconnu la voix du producteur ?",
+  "caption": "Le visage du tube était celui de Plastic Bertrand, mais la voix du disque serait celle d'un autre homme. En 2010, une expertise a repéré un accent picard, celui du producteur Lou Deprijck. Et toi, tu aurais reconnu la voix du producteur ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "plasticbertrand",
+    "punk",
+    "rockbelge",
+    "anecdoterock"
+  ],
+  "audio_id": "26851127037806713"
+}
