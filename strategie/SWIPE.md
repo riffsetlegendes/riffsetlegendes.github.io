@@ -48,3 +48,18 @@ Recherche du 19/10/2026 : 7 comptes de la niche histoire du rock analysés (84 R
 - Récit en scène, au présent : « Alors il va voir Morris Levy dans un restaurant italien de Manhattan… À chaque table, des hommes mangent en silence. »
 - Fin en suspens (« Ce sont les propriétaires de la compagnie ») : la chute n'est pas donnée, elle est dans le podcast.
 - À reprendre : récit en scène, fin en suspens qui renvoie vers l'article, format plus court. À éviter : leurs images d'ambiance, qui semblent générées par IA (on garde de vraies photos d'archive).
+
+## Bilan du lundi 09/11/2026 (Reels du 04 au 08/11, données Metricool ; les Reels du 08/11 à 13 h et 18 h n'y figurent pas encore)
+- Médiane : 172 vues (contre 138 à la mi-octobre, soit +25 %).
+- Les 3 meilleurs :
+  - 04/11, 8 h, « Un guitariste presque oublié se cache derrière un tube planétaire » : 238 vues (x1,4), 13,2 s regardées, 54 % de vues au-delà de 3 s.
+  - 05/11, 18 h, Janis Joplin, « la dernière chanson est une blague » : 214 vues (x1,24), 6,5 s.
+  - 06/11, 18 h, Bashung, « le premier tube devait finir en face B » : 189 vues (x1,1), 9,7 s.
+- Les moins bons :
+  - 05/11, 8 h, Johnny Horton : 54 vues (x0,31), 5,8 s.
+  - 04/11, 18 h, Gainsbourg en Jamaïque : 141 vues.
+  - 05/11, 13 h, origine du nom de Kiss : 142 vues.
+  - 07/11, 18 h, Sister Rosetta Tharpe : 149 vues, mais seulement 2,9 s regardées et 26 % de vues au-delà de 3 s (le pire temps regardé).
+- Partages : 0 à 1 par Reel, soit environ 0 % de la portée. Les abonnements gagnés ne sont pas disponibles par Reel.
+- Premier écart net, le temps regardé : les accroches qui gagnent annoncent un secret derrière un tube connu (« se cache derrière », « devait finir en face B », « une blague »). Les « Pourquoi ce nom ? » plafonnent à x1 (Steppenwolf 173 vues, 4,3 s). Un artiste peu connu, sans tube cité dans l'accroche (Horton, Tharpe), décroche dès la première carte.
+- Conclusion : priorité au concept « le tube et son secret », avec le titre du tube dans les 6 premiers mots de l'accroche. Les « Pourquoi ce nom ? » passent à 2 par semaine au maximum.
