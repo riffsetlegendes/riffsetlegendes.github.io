@@ -242,7 +242,8 @@ def controler(path, content=None):
 
     # Question finale
     cta = d.get("cta", "")
-    if nt and not nt[-1].rstrip().endswith("?"):
+    suspense = d.get("test") == "suspense"  # REELS.md §10 : fin en renvoi vers le site, pas de question
+    if nt and not suspense and not nt[-1].rstrip().endswith("?"):
         r.echec("QUESTION", "la dernière phrase doit être la question au spectateur")
     if cta and nt and cta.strip().lower() not in nt[-1].strip().lower():
         r.alerte("QUESTION", "cta différent de la dernière phrase de la narration")
@@ -256,7 +257,7 @@ def controler(path, content=None):
         r.echec("LÉGENDE", "doit finir par : " + FIN_LEGENDE)
     if not 3 <= len(ps) <= 6:
         r.alerte("LÉGENDE", f"{len(ps)} phrases (3 à 5 + la phrase de fin)")
-    if cta and cta not in cap:
+    if cta and not suspense and cta not in cap:
         r.alerte("LÉGENDE", "la question finale n'est pas reprise dans la légende")
     if ps and len(ps[0]) > FENETRE:
         r.alerte("LÉGENDE", f"1re phrase {len(ps[0])} car. : coupée par « ... plus » avant la fin")

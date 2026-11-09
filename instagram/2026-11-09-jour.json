@@ -1,0 +1,69 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1967",
+  "title": "7 500 dollars et un proverbe",
+  "song": {
+    "title": "Like a Rolling Stone",
+    "artist": "Bob Dylan"
+  },
+  "music_mood": "blues électrique de Chicago, guitare lancinante, début des années 1950",
+  "hook_formule": "Le chiffre",
+  "photos": [
+    "https://hipquotient.com/wp-content/uploads/2015/10/john-how-i-won-main.jpg",
+    "https://s.hdnux.com/photos/65/50/63/14060797/12/rawImage.jpg",
+    "https://www.rollingstone.com/wp-content/uploads/2018/06/jann-in-office-8b9aedfa-250f-4df2-b6c0-52577891c6bb.jpg?w=800",
+    "http://media.newyorker.com/photos/590976dc1c7a8e33fb38f82c/master/pass/Brody-Ralph-Gleason.jpg",
+    "https://i.redd.it/nibs2vdsfo731.jpg",
+    "https://pmamagazine.org/wp-content/uploads/2025/05/how-i-won-the-war.jpg",
+    "https://www.americanbluesscene.com/wp-content/uploads/2017/10/Muddy-Waters-1950s.jpg",
+    "https://bobcorritore.com/wp-content/uploads/2019/06/muddysailonphoto.jpg"
+  ],
+  "narration": [
+    {
+      "text": "7 500 dollars empruntés ont suffi à lancer Rolling Stone.",
+      "photo": 0
+    },
+    {
+      "text": "Le premier numéro est daté du 9 novembre 1967, à San Francisco.",
+      "photo": 1
+    },
+    {
+      "text": "Aux commandes, Jann Wenner, un étudiant de 21 ans.",
+      "photo": 2
+    },
+    {
+      "text": "À ses côtés, Ralph Gleason, critique de jazz de 50 ans.",
+      "photo": 3
+    },
+    {
+      "text": "Le nom vient d'un proverbe, et d'un blues de Muddy Waters.",
+      "photo": 4
+    },
+    {
+      "text": "En une, John Lennon casqué, dans le film How I Won the War.",
+      "photo": 5
+    },
+    {
+      "text": "Mais le plus fou, c'est le cadeau promis aux abonnés : une pince à joint.",
+      "photo": 6
+    },
+    {
+      "text": "Tu aurais pris l'abonnement pour le cadeau ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu aurais pris l'abonnement pour le cadeau ?",
+  "caption": "Le plus grand magazine rock du monde est né d'un prêt familial et d'un vieux blues. Le 9 novembre 1967, Jann Wenner, 21 ans, et Ralph Gleason lancent Rolling Stone à San Francisco avec 7 500 dollars empruntés. Le nom vient d'un proverbe et du « Rollin' Stone » de Muddy Waters, et les premiers abonnés reçoivent une pince à joint en cadeau. Tu aurais pris l'abonnement pour le cadeau ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "rollingstonemagazine",
+    "muddywaters",
+    "cejourla",
+    "histoiredurock"
+  ],
+  "audio_id": "36708768355404924"
+}

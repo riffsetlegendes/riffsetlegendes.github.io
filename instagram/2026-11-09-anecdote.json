@@ -1,0 +1,65 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "test": "suspense",
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1982",
+  "title": "Le répondeur de Survivor",
+  "song": {
+    "title": "Eye of the Tiger",
+    "artist": "Survivor"
+  },
+  "music_mood": "hard rock 80s riff de guitare tendu",
+  "hook_formule": "L'objet",
+  "photos": [
+    "https://cdn.mos.cms.futurecdn.net/6fSJv9LkRkBt6jg5HczwwE-1280-80.jpg",
+    "https://www.billboard.com/wp-content/uploads/2022/06/Survivor-1982-billboard-1548.jpg",
+    "https://www.rollingstone.com/wp-content/uploads/2019/03/GettyImages-85843241.jpg",
+    "https://cdn.mos.cms.futurecdn.net/GVY6XCp4otsmvHvekoem2E-2560-80.jpg",
+    "https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2024/08/Sylvester-Stallone-facing-against-Hulk-Hogan.jpg?quality=86&strip=all",
+    "https://townsquare.media/site/295/files/2022/05/attachment-Hulk-Rocky-III.jpg",
+    "https://i0.wp.com/musingsofamiddleagedgeek.blog/wp-content/uploads/2022/12/rock1.jpeg?resize=1000%2C539&ssl=1"
+  ],
+  "narration": [
+    {
+      "text": "Un répondeur, un message de Stallone, et Survivor décolle.",
+      "photo": 0
+    },
+    {
+      "text": "Chicago : Jim Peterik rentre chez lui et appuie sur la touche lecture.",
+      "photo": 1
+    },
+    {
+      "text": "Une voix grave : « Yo, Jim. C'est Sylvester Stallone. Rappelle-moi. »",
+      "photo": 2
+    },
+    {
+      "text": "Mais personne ne sait encore que ce message vaudra six semaines de numéro un.",
+      "photo": 3
+    },
+    {
+      "text": "Stallone lui envoie une cassette avec les premières images de Rocky III.",
+      "photo": 4
+    },
+    {
+      "text": "Sur la bande, les coups de poing tombent déjà sur la chanson d'un autre groupe...",
+      "photo": 5
+    },
+    {
+      "text": "La fin de l'histoire est sur le site, lien en bio.",
+      "photo": 6
+    }
+  ],
+  "cta": "La fin de l'histoire est sur le site, lien en bio.",
+  "caption": "Avant d'être un hymne de salle de sport, « Eye of the Tiger » a commencé par un message laissé sur un répondeur. Sylvester Stallone cherche une chanson pour Rocky III et appelle Jim Peterik, de Survivor. Il lui envoie les images du film, déjà montées sur le morceau d'un autre groupe, et c'est là que tout se joue. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "survivor",
+    "eyeofthetiger",
+    "rocky",
+    "histoiredurock"
+  ],
+  "audio_id": "333244196517818"
+}
