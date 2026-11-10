@@ -1,0 +1,65 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "test": "suspense",
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1995",
+  "title": "Le vrai nom de Wonderwall",
+  "song": {
+    "title": "Wonderwall",
+    "artist": "Oasis"
+  },
+  "music_mood": "britpop acoustique, guitare sèche lancinante",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://c.files.bbci.co.uk/2683/production/_114695890_michaelspencerjones-oasistablefootball-rockfieldstudios1995.jpg",
+    "http://orangeamps.com/cdn/shop/articles/noel_969d98b2-3469-4377-bdde-c0654ee28de0.jpg?v=1783926387",
+    "https://www.nme.com/wp-content/uploads/2020/09/OASIS-London-1995-Credit-Stefan-De-Batselier.jpg",
+    "https://i.redd.it/doj1h9fycag51.jpg",
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2019/09/Oasis-press-shot-noel-and-liam-gallagher-Michael-Spencer-Jones.jpeg",
+    "https://hips.hearstapps.com/hmg-prod/images/gettyimages-51129222-1624649306.jpg?crop=0.723xw:1.00xh;0.127xw,0&resize=640:*",
+    "https://i2-prod.mirror.co.uk/article31949541.ece/ALTERNATES/s1200e/0_Downing-StGallaghers-Noel-Meg.jpg"
+  ],
+  "narration": [
+    {
+      "text": "« Wonderwall » ne s'appelait pas Wonderwall.",
+      "photo": 0
+    },
+    {
+      "text": "Pays de Galles, mai 1995 : Noel Gallagher s'assoit sur un muret de Rockfield.",
+      "photo": 1
+    },
+    {
+      "text": "Devant lui, un champ de moutons. Sur sa guitare, une chanson baptisée « Wishing Stone ».",
+      "photo": 2
+    },
+    {
+      "text": "Mais ce titre-là ne lui plaît pas, et il en cherche un autre.",
+      "photo": 3
+    },
+    {
+      "text": "Il fouille dans sa mémoire, du côté des disques des Beatles qu'il vénère.",
+      "photo": 4
+    },
+    {
+      "text": "Et il tombe sur un mot inventé par l'un d'eux, vingt-sept ans plus tôt...",
+      "photo": 5
+    },
+    {
+      "text": "La fin de l'histoire est sur le site, lien en bio.",
+      "photo": 6
+    }
+  ],
+  "cta": "La fin de l'histoire est sur le site, lien en bio.",
+  "caption": "Le plus grand tube d'Oasis a failli porter un tout autre nom, et le vrai vient d'un disque des années 60. En 1995, à Rockfield, Noel Gallagher enregistre une chanson qui s'appelle encore « Wishing Stone ». Le titre définitif, il va le chercher chez un Beatle, puis on le croira écrit pour sa compagne. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "oasis",
+    "wonderwall",
+    "britpop",
+    "histoiredurock"
+  ],
+  "audio_id": "243514578800669"
+}

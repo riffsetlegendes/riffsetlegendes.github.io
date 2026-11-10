@@ -1,0 +1,69 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Légende",
+  "big": "1983",
+  "title": "Le tube que Nicks a refusé",
+  "song": {
+    "title": "Purple Rain",
+    "artist": "Prince"
+  },
+  "music_mood": "ballade rock lente, guitare et orgue, montée finale",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://guitar.com/wp-content/uploads/2021/10/Prince-Credit-Ross-Marino-Getty-Images-HERO@1400x1050.jpg",
+    "https://people.com/thmb/eIyBfYJ4Y41kw8h1xJdw2q4rR9s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(683x274:685x276)/stevie-nicks-snl-10924-978e307384954eaa8bf0de0b96642991.jpg",
+    "https://flashbak.com/wp-content/uploads/2016/12/1983-rolling-stone-Nicks.jpg",
+    "https://i.redd.it/qsrwa9chk7c71.jpg",
+    "https://hips.hearstapps.com/hmg-prod/images/prince-7-1524257236.jpg",
+    "https://arc.stimg.co/startribunemedia/E2DQU6CLL2EAA65HCPL7W3DRI4.jpg?&w=1136",
+    "https://assets1.cbsnewsstatic.com/hub/i/r/2023/08/04/f166137b-c4d8-4e2b-bbdf-4032cf0d4078/thumbnail/1200x630/25cc995d89047f6a16355a091f32bb8b/vlcsnap-2023-08-04-11h59m37s308.png",
+    "https://www.al.com/resizer/v2/GOASRQWOVZG4JDJTMOGMG5ZQAU.JPG?auth=e4a47028454b6334df61a2e3c126bd6615c65c2f91c2628b22c3fa2ae39022e3&width=1280&smart=true"
+  ],
+  "narration": [
+    {
+      "text": "« Purple Rain » a d'abord été offert à Stevie Nicks.",
+      "photo": 0
+    },
+    {
+      "text": "Prince lui envoie une cassette : un instrumental de 10 minutes.",
+      "photo": 1
+    },
+    {
+      "text": "Pas un mot sur la bande. À elle d'écrire les paroles.",
+      "photo": 2
+    },
+    {
+      "text": "Elle écoute, et elle a peur : le morceau la dépasse.",
+      "photo": 3
+    },
+    {
+      "text": "Mais Prince ne laisse pas tomber sa chanson.",
+      "photo": 4
+    },
+    {
+      "text": "Le 3 août 1983, il la joue pour la première fois au First Avenue.",
+      "photo": 5
+    },
+    {
+      "text": "Et c'est cet enregistrement de Minneapolis qu'on entend sur le disque.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu aurais osé écrire sur ce morceau ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Toi, tu aurais osé écrire sur ce morceau ?",
+  "caption": "Le plus grand tube de Prince devait d'abord recevoir les paroles de Stevie Nicks. Il lui envoie un instrumental de 10 minutes, elle prend peur et lui rend la cassette. Prince crée alors « Purple Rain » sur la scène du First Avenue de Minneapolis, le 3 août 1983, et garde cette prise pour le disque. Toi, tu aurais osé écrire sur ce morceau ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "prince",
+    "purplerain",
+    "stevienicks",
+    "histoiredurock"
+  ],
+  "audio_id": "1960534204453701"
+}

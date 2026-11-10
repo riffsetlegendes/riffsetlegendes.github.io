@@ -1,0 +1,70 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1947",
+  "title": "Le tube d'un gamin de 12 ans",
+  "song": {
+    "title": "Float In The Waves (Instrumental)",
+    "artist": "Company Money",
+    "libre": true
+  },
+  "music_mood": "ballade folk acoustique, guitares douces, final au synthétiseur Moog, 1970",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://www.rollingstone.com/wp-content/uploads/2021/04/emerson-lake-and-palmer-1970.jpg",
+    "https://i.pinimg.com/736x/cd/8f/ba/cd8fbaf2ece007309061ed520dcc6654.jpg",
+    "https://assets.newsweek.com/wp-content/uploads/2025/08/507178-elp3.jpg?w=1600&quality=80&webp=1",
+    "https://moogfoundation.org/wp-content/uploads/KeithEmerson_moog.jpeg",
+    "https://moogfoundation.org/wp-content/uploads/13-ELP-A.jpg",
+    "https://moogfoundation.org/wp-content/uploads/Emerson-in-Tuscaloosa-74.jpg",
+    "https://cdm.link/app/uploads/2016/03/keith.jpg",
+    "https://www.slate.com/content/dam/slate/articles/arts/prog_spring/1207_ProgSpring_Part3_ELPBrainSalad.jpg.CROP.original-original.jpg"
+  ],
+  "narration": [
+    {
+      "text": "« Lucky Man » a été écrit par un gamin de 12 ans.",
+      "photo": 0
+    },
+    {
+      "text": "Greg Lake, né le 10 novembre 1947, vient de recevoir sa première guitare.",
+      "photo": 1
+    },
+    {
+      "text": "Avec ses quatre premiers accords, il compose cette ballade.",
+      "photo": 2
+    },
+    {
+      "text": "En 1970, il manque une chanson au premier album d'Emerson, Lake & Palmer.",
+      "photo": 3
+    },
+    {
+      "text": "Mais Emerson et Palmer n'aiment pas du tout le morceau.",
+      "photo": 4
+    },
+    {
+      "text": "Keith Emerson improvise alors un solo de Moog, juste pour essayer.",
+      "photo": 5
+    },
+    {
+      "text": "Il veut le refaire. Impossible : toutes les pistes de la bande sont prises.",
+      "photo": 6
+    },
+    {
+      "text": "Tu aurais gardé ce solo raté ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu aurais gardé ce solo raté ?",
+  "caption": "Le premier tube d'Emerson, Lake & Palmer est une chanson d'enfant, sauvée par un solo que personne ne devait garder. Greg Lake, né le 10 novembre 1947, l'écrit à 12 ans avec sa première guitare. En 1970, Keith Emerson improvise un solo de Moog en une prise, veut le refaire, mais toutes les pistes de la bande sont prises. Tu aurais gardé ce solo raté ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "luckyman",
+    "emersonlakeandpalmer",
+    "greglake",
+    "cejourla"
+  ],
+  "audio_id": "1174983090781223"
+}
