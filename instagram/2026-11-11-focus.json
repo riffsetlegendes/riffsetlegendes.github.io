@@ -1,0 +1,70 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1991",
+  "title": "Le riff né devant la télé",
+  "song": {
+    "title": "This Is Not The End (Instrumental)",
+    "artist": "Ruby Amanfu",
+    "libre": true
+  },
+  "music_mood": "mandoline lancinante, rock alternatif mélancolique",
+  "hook_formule": "L'objet",
+  "photos": [
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2023/09/R.E.M-Michael.-Stipe-Peter-Buck-Mike-Mills-Far-Out-Magazine-F-1140x855.jpg",
+    "https://baltimorepositive.com/wp-content/uploads/2024/12/Peter-Buck-R.E.M.png",
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2023/03/REM-Band-Mike-Mills-Michael-Stripe-Peter-Buck-Bill-Perry-1988-Far-Out-Magazine-F-768x576.jpg",
+    "https://images.ctfassets.net/2658fe8gbo8o/67d1150211da437593ce1346cc2d2444-photo-asset/6d81ad09f3e7ba7bb6dad61aebe98ceb/GettyImages-85848758.jpg?w=2048&fm=webp&q=80",
+    "https://www.rollingstone.com/wp-content/uploads/2016/11/rm-rem-43860984-d38c-44fb-bea7-c56403c265c0.jpg?w=1581&h=1054&crop=1",
+    "https://s.wsj.net/public/resources/images/BN-NN064_RELIGI_12S_20160412122942.jpg",
+    "https://americansongwriter.com/wp-content/uploads/sites/7/2025/05/REM-1992-Grammys.jpg?w=662",
+    "https://wdrv.com/wp-content/uploads/2022/11/Getty_REMPeterBuck_112922.jpg"
+  ],
+  "narration": [
+    {
+      "text": "« Losing My Religion » est né devant une télé allumée.",
+      "photo": 0
+    },
+    {
+      "text": "Peter Buck vient d'acheter une mandoline. Il ne sait pas en jouer.",
+      "photo": 1
+    },
+    {
+      "text": "Le soir, devant la télé, il s'exerce et s'enregistre sur cassette.",
+      "photo": 2
+    },
+    {
+      "text": "Le lendemain, entre deux exercices ratés, il entend un riff.",
+      "photo": 3
+    },
+    {
+      "text": "Mais le titre trompe tout le monde : il ne parle pas de foi.",
+      "photo": 4
+    },
+    {
+      "text": "Dans le Sud des États-Unis, ça veut dire perdre son calme.",
+      "photo": 5
+    },
+    {
+      "text": "Pas de vrai refrain, une mandoline en vedette : il grimpe pourtant 4e du Billboard.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu savais que ce titre parlait de colère ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Toi, tu savais que ce titre parlait de colère ?",
+  "caption": "Le plus grand tube de R.E.M. est sorti d'une cassette d'exercices de mandoline enregistrée devant la télé. Peter Buck débute sur l'instrument et réécoute ses essais le lendemain : le riff est là, coincé entre deux fausses notes. Le titre, lui, est une expression du Sud qui veut dire perdre son calme, pas la foi. Toi, tu savais que ce titre parlait de colère ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "rem",
+    "losingmyreligion",
+    "rockalternatif",
+    "histoiredurock"
+  ],
+  "audio_id": "425758769774050"
+}

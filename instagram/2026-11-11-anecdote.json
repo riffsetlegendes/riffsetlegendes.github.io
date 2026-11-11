@@ -1,0 +1,65 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "test": "suspense",
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "2002",
+  "title": "Le riff mis de côté",
+  "song": {
+    "title": "Seven Nation Army",
+    "artist": "The White Stripes"
+  },
+  "music_mood": "garage rock lourd, riff de basse martelé, batterie sèche",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://www.billboard.com/wp-content/uploads/2023/03/The-White-Stripes-2002-billboard-1548.jpg",
+    "https://www.bobgruen.com/wp-content/uploads/2014/06/C-317_WhiteStripes_2002_8552_Gruen.jpg",
+    "https://www.freep.com/gcdn/authoring/authoring-images/2025/11/04/PDTF/87088544007-freep-negs-digitized-april-2025-1433.jpg",
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2019/07/The-White-Stripes-Young.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/c/cb/Jack_%26_Meg%2C_The_White_Stripes.jpg",
+    "https://www.detroitnews.com/gcdn/authoring/authoring-images/2025/11/05/PDTN/87110468007-white-stripes-06.JPG",
+    "https://www.freep.com/gcdn/presto/2019/07/23/PDTF/caa8abd6-e4ec-4f63-99ec-cdd34f73135e-White_110201_Stripes_pgv.JPG"
+  ],
+  "narration": [
+    {
+      "text": "Le riff de « Seven Nation Army » n'était pas pour les White Stripes.",
+      "photo": 0
+    },
+    {
+      "text": "Melbourne, janvier 2002 : Jack White fait sa balance au Corner Hotel.",
+      "photo": 1
+    },
+    {
+      "text": "Quelques notes sortent de sa guitare, graves comme une basse.",
+      "photo": 2
+    },
+    {
+      "text": "Mais il ne les donne pas à Meg, il les met de côté.",
+      "photo": 3
+    },
+    {
+      "text": "Dans sa tête, ce riff mérite mieux qu'un album de garage rock.",
+      "photo": 4
+    },
+    {
+      "text": "Il attend un coup de fil bien précis, venu du cinéma...",
+      "photo": 5
+    },
+    {
+      "text": "La fin de l'histoire est sur le site, lien en bio.",
+      "photo": 6
+    }
+  ],
+  "cta": "La fin de l'histoire est sur le site, lien en bio.",
+  "caption": "Le riff le plus chanté des stades a failli ne jamais devenir un morceau des White Stripes. En 2002, pendant une balance à Melbourne, Jack White trouve un riff et décide de les garder pour un projet bien plus grand. Il y a aussi une guitare déguisée en basse et un titre né d'une erreur d'enfant. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "thewhitestripes",
+    "sevennationarmy",
+    "jackwhite",
+    "histoiredurock"
+  ],
+  "audio_id": "1514186966701906"
+}
