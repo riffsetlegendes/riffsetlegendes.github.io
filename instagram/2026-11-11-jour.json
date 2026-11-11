@@ -1,0 +1,68 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1977",
+  "title": "Le single que Paul refusait",
+  "song": {
+    "title": "Mull Of Kintyre",
+    "artist": "Wings"
+  },
+  "music_mood": "valse folk écossaise, guitare acoustique, cornemuses en crescendo, 1977",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://www.the-paulmccartney-project.com/_images/wp-uploads/2019/12/MPL77107-9_0-1024x685.jpg",
+    "https://i.ytimg.com/vi/Plhtk_XJqhM/maxresdefault.jpg",
+    "https://cdn.britannica.com/76/241076-050-0E382ECA/Paul-McCartney-Linda-McCartney-Wings-1972.jpg",
+    "https://m.media-amazon.com/images/M/MV5BZDRkNzkxMTItZjhhZS00ZDM1LTg4ZGItOGYyOTQyZGFjYTVmXkEyXkFqcGc@._V1_.jpg",
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2025/01/Paul-McCartney-Musician-The-Beatles-Wings-1970s-Far-Out-Magazine.jpg",
+    "https://miro.medium.com/v2/resize:fit:1200/1*kf6K4TX8HbmwLj5OTEFZtA.jpeg",
+    "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/07/paul-mccartney-performing-still-from-one-hand-clapping-concert-film.jpg",
+    "https://i.guim.co.uk/img/media/89a466d48501afdc9795178d5e4f473727876bcc/717_604_2493_1496/master/2493.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=6b2fd0398bfa45e8b4324e61e65e4606"
+  ],
+  "narration": [
+    {
+      "text": "« Mull of Kintyre » ne devait pas sortir en single.",
+      "photo": 0
+    },
+    {
+      "text": "Le 11 novembre 1977, Wings publie pourtant cette ballade écossaise.",
+      "photo": 1
+    },
+    {
+      "text": "Paul McCartney l'a enregistrée dans sa ferme, avec la fanfare de Campbeltown.",
+      "photo": 2
+    },
+    {
+      "text": "Des fermiers, des fils de fermiers et un ancien flic de Glasgow.",
+      "photo": 3
+    },
+    {
+      "text": "Mais Paul la juge trop pointue pour le grand public.",
+      "photo": 4
+    },
+    {
+      "text": "Un joueur de cornemuse lui lance : « Il faut que ce soit un single. »",
+      "photo": 5
+    },
+    {
+      "text": "Résultat : neuf semaines numéro un, plus de deux millions de disques.",
+      "photo": 6
+    },
+    {
+      "text": "Tu aurais écouté le joueur de cornemuse ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu aurais écouté le joueur de cornemuse ?",
+  "caption": "Le plus gros succès de Paul McCartney au Royaume-Uni est une chanson qu'il refusait de sortir en single. Le 11 novembre 1977, Wings publie « Mull of Kintyre », enregistrée à la ferme avec la fanfare de Campbeltown. Un joueur de cornemuse l'a convaincu, et le disque bat le record de « She Loves You ». Tu aurais écouté le joueur de cornemuse ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "mullofkintyre",
+    "wings",
+    "paulmccartney",
+    "cejourla"
+  ]
+}
