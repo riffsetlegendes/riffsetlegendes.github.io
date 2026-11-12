@@ -1,0 +1,65 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "test": "suspense",
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1970",
+  "title": "Le secret de Derek",
+  "song": {
+    "title": "Layla (live 2014)",
+    "artist": "Eric Clapton"
+  },
+  "music_mood": "rock blues électrique, riff de guitare slide, puis coda au piano mélancolique",
+  "hook_formule": "Personne ne savait",
+  "photos": [
+    "https://external-preview.redd.it/derek-and-the-dominos-1970-v0-1WwA0X9Odlp-nrcdIblNuxuyC65-VcjxeEIP7KVWYT8.jpeg?auto=webp&s=d235bc0e24173b0371608da813c06f81d3a6cea3",
+    "https://www.malvernrockarchive.org.uk/wp-content/uploads/2019/05/derek-and-the-dominoes_1970-08-14_photo-4-653x658.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5ad7fb25f793920d91492a4f/1525833738295-68E6VTNOSRB3C0PTC2EH/1_4iwEmzai9i4NdNvrYhH93A.jpeg",
+    "https://i.redd.it/9bfxfzlm62n81.jpg",
+    "https://bunny-wp-pullzone-cjamrcljf0.b-cdn.net/wp-content/uploads/2021/07/duane-allman_001-801x1024.jpg",
+    "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3b857bac-c8a1-44b3-8601-e4d792a37681_960x620.jpeg",
+    "https://upload.wikimedia.org/wikipedia/commons/7/78/Derek_and_the_Dominos.png"
+  ],
+  "narration": [
+    {
+      "text": "« Layla » cache un secret que Clapton ne peut pas signer.",
+      "photo": 0
+    },
+    {
+      "text": "1970 : Eric Clapton chante sous un faux nom, « Derek ».",
+      "photo": 1
+    },
+    {
+      "text": "À Miami, il trouve son titre dans un vieux poème persan.",
+      "photo": 2
+    },
+    {
+      "text": "Duane Allman fait hurler sa slide, Jim Gordon ajoute un piano.",
+      "photo": 3
+    },
+    {
+      "text": "Mais Clapton chante pour une vraie femme, pas pour une héroïne.",
+      "photo": 4
+    },
+    {
+      "text": "Une femme qu'il n'a pas le droit d'aimer, parce qu'elle est mariée à...",
+      "photo": 5
+    },
+    {
+      "text": "La fin de l'histoire est sur le site, lien en bio.",
+      "photo": 6
+    }
+  ],
+  "cta": "La fin de l'histoire est sur le site, lien en bio.",
+  "caption": "Pourquoi Eric Clapton a-t-il chanté « Layla » caché derrière un groupe au nom inconnu ? En 1970, il devient « Derek » et emprunte son titre à un poème persan du XIIe siècle. Duane Allman y pose sa slide, Jim Gordon une coda au piano. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "ericclapton",
+    "layla",
+    "derekandthedominos",
+    "classicrock"
+  ],
+  "audio_id": "411863658383928"
+}

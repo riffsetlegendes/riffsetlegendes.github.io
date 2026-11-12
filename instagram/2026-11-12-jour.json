@@ -1,0 +1,69 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1945",
+  "title": "Le tube né d'un dos bloqué",
+  "song": {
+    "title": "Heart of Gold",
+    "artist": "Neil Young"
+  },
+  "music_mood": "folk acoustique, harmonica, guitare grattée, ballade douce",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://www.rollingstone.com/wp-content/uploads/2020/02/neil-young-after-the-goldrush-tour.jpg",
+    "https://henrydiltz.com/cdn/shop/files/NeilYoungPensive-May27_1971_8x10_50cc8dab-d5e8-4e7e-8dec-65aba2790737_2048x.jpg?v=1746148766",
+    "http://morrisonhotelgallery.com/cdn/shop/files/neil-young-1971henry-diltz-746179.jpg?v=1712613775",
+    "https://i.redd.it/qpjorfc504aa1.jpg",
+    "http://morrisonhotelgallery.com/cdn/shop/files/neil-young-1971henry-diltz-403927.jpg?v=1712613779",
+    "https://sfae.blob.core.windows.net/media/ecommercesite/media/sfae/individual%20artwork%20images/800-neil-brokenarrowranch.jpg?ext=.jpg",
+    "https://americansongwriter.com/wp-content/uploads/sites/7/2021/11/NeilYoung_GaryBurden.jpg?w=2000",
+    "https://townsquare.media/site/295/files/2022/11/attachment-YoungHarvest.jpg?w=780&q=75"
+  ],
+  "narration": [
+    {
+      "text": "« Heart of Gold » est né d'un dos bloqué.",
+      "photo": 0
+    },
+    {
+      "text": "Neil Young naît le 12 novembre 1945 à Toronto, au Canada.",
+      "photo": 1
+    },
+    {
+      "text": "Au début des années 1970, c'est un roi de la guitare électrique saturée.",
+      "photo": 2
+    },
+    {
+      "text": "Mais son dos lâche : impossible de rester debout avec sa lourde guitare.",
+      "photo": 3
+    },
+    {
+      "text": "Alors il s'assoit, une acoustique sur les genoux, et écrit des chansons douces.",
+      "photo": 4
+    },
+    {
+      "text": "Nashville, février 1971 : Linda Ronstadt et James Taylor sont en ville pour Johnny Cash.",
+      "photo": 5
+    },
+    {
+      "text": "Le producteur les fait venir au studio pour chanter les chœurs.",
+      "photo": 6
+    },
+    {
+      "text": "Tu connaissais l'histoire de cette ballade ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu connaissais l'histoire de cette ballade ?",
+  "caption": "Le seul numéro un américain de Neil Young doit tout à une douleur au dos. Né le 12 novembre 1945 à Toronto, le roi de la guitare saturée ne peut plus tenir debout au début des années 1970. Assis, une acoustique sur les genoux, il écrit « Heart of Gold », sorti en 1972. Tu connaissais l'histoire de cette ballade ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "neilyoung",
+    "heartofgold",
+    "histoiredurock",
+    "cejourla"
+  ],
+  "audio_id": "6139987096065216"
+}

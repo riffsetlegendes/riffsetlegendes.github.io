@@ -1,0 +1,64 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Légende",
+  "big": "1958",
+  "title": "La Bamba, face B de mariage",
+  "song": {
+    "title": "La Bamba (live)",
+    "artist": "Los Lobos"
+  },
+  "music_mood": "rock'n'roll 1958, guitare sautillante, festif",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://upload.wikimedia.org/wikipedia/commons/9/95/Ritchie_Valens_1959_press_photo.jpg",
+    "https://i.redd.it/zej7hf81jv921.jpg",
+    "https://americansongwriter.com/wp-content/uploads/sites/7/2016/08/ritchie-valens-1442517963.jpg?w=1200",
+    "https://www.tdpri.com/attachments/1172108/",
+    "https://www.kenosha.com/wp-content/uploads/2021/01/1_BuddyHolly_800x533.jpg",
+    "https://www.kenosha.com/wp-content/uploads/2021/01/4-BuddyHolly.jpg",
+    "https://people.com/thmb/4trv2KkRS28rfz4_KJCLx5E6xU4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/buddy-holly-ritchie-valens-the-big-bopper-020326-60131e3c9d574eaa8fbce7ce0af6b623.jpg"
+  ],
+  "narration": [
+    {
+      "text": "« La Bamba » était d'abord une chanson de mariage de Veracruz.",
+      "photo": 0
+    },
+    {
+      "text": "En 1958, Ritchie Valens a 17 ans et parle à peine espagnol, il a grandi en anglais.",
+      "photo": 1
+    },
+    {
+      "text": "Sa tante lui apprend les paroles en phonétique. Lui la passe à la guitare électrique.",
+      "photo": 2
+    },
+    {
+      "text": "Mais son label la relègue en face B, derrière la ballade « Donna ».",
+      "photo": 3
+    },
+    {
+      "text": "Elle grimpe quand même à la 22e place du Billboard, sans que personne ne mise sur elle.",
+      "photo": 4
+    },
+    {
+      "text": "Le 3 février 1959, son avion s'écrase avec Buddy Holly à bord. Il a toujours 17 ans.",
+      "photo": 5
+    },
+    {
+      "text": "Toi, tu savais que c'était une chanson de mariage ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Toi, tu savais que c'était une chanson de mariage ?",
+  "caption": "Avant d'enflammer les fêtes du monde entier, « La Bamba » faisait danser les mariés de Veracruz. En 1958, Ritchie Valens, 17 ans, l'apprend en phonétique auprès de sa tante et la change en rock. Son label la cache en face B de « Donna », et il meurt le 3 février 1959 dans l'accident d'avion de Buddy Holly. Toi, tu savais que c'était une chanson de mariage ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "ritchievalens",
+    "labamba",
+    "rocknroll",
+    "histoiredurock"
+  ],
+  "audio_id": "27624744903843427"
+}
