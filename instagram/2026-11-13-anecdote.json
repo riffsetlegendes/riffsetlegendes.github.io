@@ -1,0 +1,65 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "test": "suspense",
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1970",
+  "title": "Le bouche-trou de Sabbath",
+  "song": {
+    "title": "Paranoid",
+    "artist": "Black Sabbath"
+  },
+  "music_mood": "heavy rock rapide et sec, riff de guitare saturé martelé, batterie nerveuse",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://i.redd.it/a9gtlil7cdsb1.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/f/fc/Black_Sabbath_%281970%29.jpg",
+    "https://i.redd.it/msqaz2u8u0fa1.jpg",
+    "https://www.rhino.com/sites/g/files/g2000012691/files/styles/article_image/public/blacksabbathbw3.jpeg",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicRtKZIvZGXmLsOJqHlJJzadcy8PyA6-YXbZf-CbNnCY8gr-t73V88J8-HdmG9KncQUQLMR8FSFbXq6EDr1K0etlUaQdqDPoLcVwNw37XYnHd_3_X3IQsjT-G5Qmi5SEFhAOKlfD49GkaHeHOXp6L0J1LbL_CjlVufJG0iwphmFNi4x1r7OtPD6_TQxHM/s1200/black-sabbath-1970s-26.jpg",
+    "https://i0.wp.com/musicaficionado.blog/wp-content/uploads/2025/01/Black-Sabbath2.jpg",
+    "https://i.redd.it/bxamhpb5vexd1.jpeg"
+  ],
+  "narration": [
+    {
+      "text": "Le tube « Paranoid » de Black Sabbath devait juste boucher un trou.",
+      "photo": 0
+    },
+    {
+      "text": "Londres, 1970 : Black Sabbath enregistre son deuxième disque en quelques jours.",
+      "photo": 1
+    },
+    {
+      "text": "Il manque encore un morceau de trois minutes, et le producteur insiste.",
+      "photo": 2
+    },
+    {
+      "text": "Ozzy, Geezer et Bill partent déjeuner, Tony Iommi reste seul.",
+      "photo": 3
+    },
+    {
+      "text": "Mais en les attendant, il trouve un riff sec et rapide.",
+      "photo": 4
+    },
+    {
+      "text": "Une vingtaine de minutes plus tard, le morceau est enregistré, et il va devenir...",
+      "photo": 5
+    },
+    {
+      "text": "La fin de l'histoire est sur le site, lien en bio.",
+      "photo": 6
+    }
+  ],
+  "cta": "La fin de l'histoire est sur le site, lien en bio.",
+  "caption": "Le morceau le plus célèbre de Black Sabbath a été écrit pendant une pause déjeuner, pour combler un vide. En 1970, il manque trois minutes à leur deuxième album et Tony Iommi reste seul au studio. Une vingtaine de minutes plus tard, « Paranoid » est dans la boîte. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "blacksabbath",
+    "paranoid",
+    "tonyiommi",
+    "heavymetal"
+  ],
+  "audio_id": "770726565293916"
+}
