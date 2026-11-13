@@ -1,0 +1,68 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1972",
+  "title": "Polnareff, fesses à l'Olympia",
+  "song": {
+    "title": "Lettre à France",
+    "artist": "Michel Polnareff"
+  },
+  "music_mood": "chanson française 70s, piano et cordes, nostalgique",
+  "hook_formule": "Le chiffre",
+  "photos": [
+    "https://images.ctfassets.net/iatfclnjf6rx/xuOIW2qMQU4QdFOhjJ12V/9456493132bdbf47880f3ff840c1d25b/Michel-Polnareff-en-repetition-a-l-Olympia-en-1972.jpg?w=1920&q=75&fm=webp&fit=fill&f=center",
+    "https://cdn.artphotolimited.com/images/5c2e191bd96b2e012e7a7fc5/1000x1000/michel-polnareff-a-olympia.jpg",
+    "https://cdn.artphotolimited.com/images/5b9fc1ecac06024957be8806/1000x1000/michel-polnareff-en-concert-en-1972.jpg",
+    "http://paparazziartgallery.com/cdn/shop/files/303-michel-polnareff-photo.jpg?v=1716831468",
+    "https://lres.photo12.com/bdef/jmp01362_010.jpg",
+    "https://img.20mn.fr/Uv1jxaP0TW65xg_I40hlcik/1444x920_cheveux-blonds-boucles-et-lunettes-blanches-aux-verres-sombre-michel-polnareff-est-apparue-sous-son-apparence-iconique-dans-les-annees-1970",
+    "https://www.lavenir.net/resizer/v2/IPLJ4MLVYFA7PE6ZINTZP2ZGZY.jpg?auth=537a3615a4b0b66807dfe0be965f3e543e1b144b3b178f24094fb116222d748f&width=1620&height=1620&quality=85&focal=385%2C256"
+  ],
+  "narration": [
+    {
+      "text": "6 000 affiches de ses fesses pour annoncer « Holidays » à l'Olympia.",
+      "photo": 0
+    },
+    {
+      "text": "En 1972, Michel Polnareff a deux tubes à la radio et une grande salle à remplir.",
+      "photo": 1
+    },
+    {
+      "text": "Il pose de dos, pantalon baissé, devant son photographe attitré, Tony Frank.",
+      "photo": 2
+    },
+    {
+      "text": "Les affiches couvrent tout Paris, et l'afficheur gêné colle un rectangle noir dessus.",
+      "photo": 3
+    },
+    {
+      "text": "Mais les colleurs d'affiches portent plainte pour attentat à la pudeur.",
+      "photo": 4
+    },
+    {
+      "text": "L'amende tombe : 60 000 francs, soit 10 francs pour chaque affiche collée.",
+      "photo": 5
+    },
+    {
+      "text": "Deux mois plus tard, il récidive, nu de face, avec un chapeau pour tout cacher.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu aurais osé cette affiche ?",
+      "photo": 0
+    }
+  ],
+  "cta": "Toi, tu aurais osé cette affiche ?",
+  "caption": "Pour remplir l'Olympia en 1972, Michel Polnareff a misé sur une image que tout Paris a vue : ses fesses. Photographié de dos par Tony Frank, il fait coller 6 000 affiches dans la capitale pendant qu'il chante « Holidays ». Poursuivi pour attentat à la pudeur, il écope de 60 000 francs d'amende, réglés par sa maison de disques. Toi, tu aurais osé cette affiche ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "michelpolnareff",
+    "olympia",
+    "chansonfrancaise",
+    "histoiredurock"
+  ],
+  "audio_id": "1118604880135510"
+}

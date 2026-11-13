@@ -1,0 +1,70 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1976",
+  "title": "La Parisienne était suédoise",
+  "song": {
+    "title": "Remember When",
+    "artist": "Global Genius",
+    "libre": true
+  },
+  "music_mood": "ballade soul langoureuse, saxophone, rythmique douce",
+  "hook_formule": "Personne ne savait",
+  "photos": [
+    "https://upload.wikimedia.org/wikipedia/commons/2/24/Rod_Stewart_%281972%29_by_Allan_Warren.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/5/57/Rod_stewart_05111976_12_400.jpg",
+    "https://www.al.com/resizer/v2/S45VTPPAONDKDIFMBZ5M2GIZ5M.jpg?auth=7a8d8019dd33f33d4be614fc29c89719bd7587678363954f2ee913f48b045b06&width=1280&smart=true",
+    "https://i.redd.it/eyxpjv7c2zn11.jpg",
+    "https://royalbooks.cdn.bibliopolis.com/pictures/162935.jpg?auto=webp&v=1726633399",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigjHTlRAevAAs78J1tv6fu1umHLaRf-fnTvZcX4XnrwSojdOWX7qHwA_OIIBrSH1tEoohp_gW7wf8XTLfYlK2dwtrhf_bEKHWd-esMcP0K-EfkejJ8nhHI6q6FhaHiQ-my86EZPanGf6RKjtdjueyrE4m_zIfDbHadpMIyk7J3jzfGKTsYNqwDDGfYOS4/s1000/rod-stewart-britt-ekland-11.jpg",
+    "https://www.rodstewartfanclub.com/wp/wp-content/uploads/2021/12/206-Copy.jpg",
+    "https://i.redd.it/kvk9tkelyytc1.jpeg"
+  ],
+  "narration": [
+    {
+      "text": "« Tonight's the Night » cache une voix que personne n'a reconnue.",
+      "photo": 0
+    },
+    {
+      "text": "13 novembre 1976 : le slow de Rod Stewart devient numéro un aux États-Unis.",
+      "photo": 1
+    },
+    {
+      "text": "Les paroles parlent si clairement de sexe que la BBC l'interdit.",
+      "photo": 3
+    },
+    {
+      "text": "Mais le vrai mystère est dans les dernières secondes.",
+      "photo": 6
+    },
+    {
+      "text": "Une femme y murmure en français. On imagine une Parisienne.",
+      "photo": 7
+    },
+    {
+      "text": "C'est Britt Ekland, sa compagne. Une actrice suédoise.",
+      "photo": 4
+    },
+    {
+      "text": "Le tube reste huit semaines au sommet, malgré les radios.",
+      "photo": 5
+    },
+    {
+      "text": "Tu avais déjà remarqué ce murmure à la fin ?",
+      "photo": 2
+    }
+  ],
+  "cta": "Tu avais déjà remarqué ce murmure à la fin ?",
+  "caption": "La voix qui chuchote en français à la fin de « Tonight's the Night » n'a rien de parisien. Le 13 novembre 1976, le slow de Rod Stewart devient numéro un aux États-Unis et y reste huit semaines, malgré la BBC qui l'interdit. Le murmure final est celui de Britt Ekland, sa compagne, une actrice suédoise. Tu avais déjà remarqué ce murmure à la fin ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "rodstewart",
+    "tonightsthenight",
+    "histoiredurock",
+    "cejourla"
+  ],
+  "audio_id": "322977654843719"
+}
