@@ -1,0 +1,65 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "test": "suspense",
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "2016",
+  "title": "Stairway au tribunal",
+  "song": {
+    "title": "Stairway to Heaven",
+    "artist": "Led Zeppelin"
+  },
+  "music_mood": "arpège de guitare acoustique en mineur, flûtes douces, montée lente et solennelle",
+  "hook_formule": "En pleine action",
+  "photos": [
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2025/01/Led-Zeppelin-John-Paul-Jones-Jimmy-Page-Robert-Plant-John-Bonham-1969-Becoming-Led-Zeppelin-Far-Out-Magazine-1140x855.jpg",
+    "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-244281-ZB5756_265531_0051.jpg",
+    "https://cdn.mos.cms.futurecdn.net/AisgWU7LSzXwnkmkSHMocZ.jpg",
+    "https://musichead.com/cdn/shop/files/Jimmy-Page-and-Robert-Plant-Led-Zeppelin-Whisky-A-Go-Go-Los-Angeles-1969-by-Robert-M-Knight.png?v=1739471955",
+    "https://cdn.mos.cms.futurecdn.net/wCU4zbtcRDT3S7wFWG9W2C.jpg",
+    "https://cdn.cnn.com/cnn/interactive/2018/10/entertainment/led-zeppelin-cnnphotos/media/04.jpg",
+    "https://wamu.org/wp-content/uploads/2019/01/Led_Zeppelin_acoustic_1973-1500x844.jpg"
+  ],
+  "narration": [
+    {
+      "text": "« Stairway to Heaven » au tribunal : Jimmy Page est à la barre.",
+      "photo": 0
+    },
+    {
+      "text": "Los Angeles, 2016 : la famille de Randy California, guitariste de Spirit, attaque Led Zeppelin.",
+      "photo": 1
+    },
+    {
+      "text": "Elle affirme que l'intro copie « Taurus », un instrumental de Spirit publié en 1968.",
+      "photo": 2
+    },
+    {
+      "text": "Mais Page l'admet : l'album avec « Taurus » dort dans sa collection.",
+      "photo": 3
+    },
+    {
+      "text": "Robert Plant témoigne à son tour, puis les jurés se retirent.",
+      "photo": 4
+    },
+    {
+      "text": "Les jurés reviennent, la salle se tait, et le verdict tombe...",
+      "photo": 5
+    },
+    {
+      "text": "La fin de l'histoire est sur le site, lien en bio.",
+      "photo": 6
+    }
+  ],
+  "cta": "La fin de l'histoire est sur le site, lien en bio.",
+  "caption": "En 2016, l'intro la plus célèbre du rock se retrouve devant un jury de Los Angeles. La famille de Randy California accuse Led Zeppelin d'avoir copié « Taurus », un morceau de Spirit. Jimmy Page et Robert Plant viennent témoigner en personne. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "ledzeppelin",
+    "stairwaytoheaven",
+    "jimmypage",
+    "classicrock"
+  ],
+  "audio_id": "1445398373413392"
+}
