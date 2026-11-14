@@ -1,0 +1,70 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Légende",
+  "big": "1977",
+  "title": "Chuck Berry dans l'espace",
+  "song": {
+    "title": "Born to Cruise",
+    "artist": "Trout Recording",
+    "libre": true
+  },
+  "music_mood": "rock'n'roll 50s, guitare électrique vive, rythme rapide et joyeux",
+  "hook_formule": "Le seul / le premier",
+  "photos": [
+    "https://www.premierguitar.com/media-library/this-classic-promotional-shot-from-1957-features-berry-with-his-1955-gibson-es-350-t-with-two-p-90-pickups-the-strings-were-fla.jpg?id=25739966&width=980&quality=70",
+    "https://www.nasa.gov/wp-content/uploads/2023/03/624362main_1977-08-20_full.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/b/bd/Voyager_Golden_Record_fx.png",
+    "https://clickamericana.com/wp-content/uploads/Chuck-Berry-in-the-70s-750x869.jpg",
+    "https://www.billboard.com/wp-content/uploads/media/chuck-berry-guitar-car-1972-a-billboard-1240.jpg?w=800",
+    "https://science.nasa.gov/wp-content/uploads/2024/04/pia21739.jpg",
+    "https://www.nasa.gov/wp-content/uploads/2023/03/9141932-orig.jpg",
+    "https://www.rootsrockreview.com/wp-content/uploads/2017/03/ChuckBerry-1.jpg"
+  ],
+  "narration": [
+    {
+      "text": "« Johnny B. Goode » est le seul rock envoyé vers les étoiles.",
+      "photo": 0
+    },
+    {
+      "text": "En 1977, la NASA lance deux sondes Voyager hors du système solaire.",
+      "photo": 1
+    },
+    {
+      "text": "À bord, un disque d'or : 27 morceaux pour présenter la Terre.",
+      "photo": 2
+    },
+    {
+      "text": "Mais un savant proteste : le rock serait trop adolescent.",
+      "photo": 3
+    },
+    {
+      "text": "Carl Sagan répond qu'il y a beaucoup d'adolescents sur la planète.",
+      "photo": 4
+    },
+    {
+      "text": "En 1978, Steve Martin imagine la réponse des aliens : « Send more Chuck Berry ».",
+      "photo": 7
+    },
+    {
+      "text": "Depuis 2012, la chanson file hors du système solaire.",
+      "photo": 5
+    },
+    {
+      "text": "Toi, quel morceau tu enverrais aux extraterrestres ?",
+      "photo": 6
+    }
+  ],
+  "cta": "Toi, quel morceau tu enverrais aux extraterrestres ?",
+  "caption": "Un seul morceau de rock voyage entre les étoiles, et c'est Chuck Berry qui le joue. En 1977, le comité de Carl Sagan grave « Johnny B. Goode » sur le disque d'or des sondes Voyager, malgré ceux qui jugeaient le rock trop adolescent. Depuis 2012, Voyager 1 a quitté le système solaire avec la chanson à bord. Toi, quel morceau tu enverrais aux extraterrestres ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "chuckberry",
+    "johnnybgoode",
+    "voyager",
+    "histoiredurock"
+  ],
+  "audio_id": "514457789199791"
+}

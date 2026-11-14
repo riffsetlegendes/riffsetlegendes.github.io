@@ -1,0 +1,69 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1970",
+  "title": "Le tube emprunté de Santana",
+  "song": {
+    "title": "Black Magic Woman / Gypsy Queen",
+    "artist": "Santana"
+  },
+  "music_mood": "rock latin, orgue Hammond, percussions, guitare lyrique",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://www.rollingstone.com/wp-content/uploads/2019/08/santana-woodstock-remembered.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/4/49/Santana_%281971%29.png",
+    "https://jazzrocksoul.com/wp-content/uploads/2018/01/Fleetwood-Mac-1968.jpg",
+    "https://cdn.mos.cms.futurecdn.net/diaSxTqsDmA2ATmw4v6mrf.jpg",
+    "https://www.rhino.com/sites/g/files/g2000012691/files/styles/article_image/public/153santana.jpg?itok=cny5alHd",
+    "https://pophistorydig.com/wp-content/uploads/2019/08/woodstock-2-A-620.jpg",
+    "https://www.bethelwoodscenter.org/assets/img/Santana-Photo-By-Jim-Marshall-a0d324d8e2.jpg",
+    "https://i.redd.it/n94mrkyp66ee1.png"
+  ],
+  "narration": [
+    {
+      "text": "« Black Magic Woman » n'a pas été écrite par Santana.",
+      "photo": 0
+    },
+    {
+      "text": "Le 14 novembre 1970, le single entre pourtant dans le classement américain.",
+      "photo": 1
+    },
+    {
+      "text": "Son auteur s'appelle Peter Green, le guitariste anglais de Fleetwood Mac.",
+      "photo": 2
+    },
+    {
+      "text": "En 1968, sa propre version plafonne à la 37e place en Angleterre.",
+      "photo": 3
+    },
+    {
+      "text": "Mais chez Santana, c'est le claviériste Gregg Rolie qui l'apporte et la chante.",
+      "photo": 4
+    },
+    {
+      "text": "Et le final endiablé vient d'un jazzman hongrois, Gábor Szabó.",
+      "photo": 5
+    },
+    {
+      "text": "Résultat : numéro 4 aux États-Unis, leur plus gros single avant « Smooth ».",
+      "photo": 6
+    },
+    {
+      "text": "Tu savais que ce tube venait de Fleetwood Mac ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Tu savais que ce tube venait de Fleetwood Mac ?",
+  "caption": "Le plus grand tube de Santana des années 70 a été écrit par un Anglais, et Carlos ne le chante même pas. Le 14 novembre 1970, « Black Magic Woman » entre dans le classement américain, avant de grimper à la 4e place. La chanson vient de Peter Green et de Fleetwood Mac, la voix est celle de Gregg Rolie, et le final emprunte « Gypsy Queen » de Gábor Szabó. Tu savais que ce tube venait de Fleetwood Mac ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "santana",
+    "blackmagicwoman",
+    "histoiredurock",
+    "cejourla"
+  ],
+  "audio_id": "584907916884263"
+}
