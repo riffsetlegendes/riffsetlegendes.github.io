@@ -1,0 +1,69 @@
+{
+  "type": "jour",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "Ce jour-là",
+  "big": "1975",
+  "title": "Le tube né pendant un match",
+  "song": {
+    "title": "Evil Woman",
+    "artist": "Electric Light Orchestra"
+  },
+  "music_mood": "pop orchestrale seventies, riff de piano, cordes, groove funky",
+  "hook_formule": "En pleine action",
+  "photos": [
+    "https://upload.wikimedia.org/wikipedia/commons/7/70/ELO_1977.png",
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2025/02/Electric-Light-Orchestra-ELO-Jeff-Lynne-1970s-Far-Out-Magazine.jpg",
+    "http://www.jefflynnesongs.com/ftmtour/tour1.jpg",
+    "https://ultimaterockpix.com/cdn/shop/products/elojl7737_grande.jpg?v=1513039986",
+    "https://i.pinimg.com/736x/55/e0/ab/55e0ab298f4ab3133f5caf5de9268b4f.jpg",
+    "https://cdn1.faroutmagazine.co.uk/uploads/1/2023/03/Electric-Light-Orchestra.jpg",
+    "https://preview.redd.it/english-classic-rock-legends-electric-light-orchestra-elo-v0-q8hsh8jevl6b1.jpg?width=640&crop=smart&auto=webp&s=eb17d8b22f91b4393bed820414dc388f5055e6a4",
+    "https://bestclassicbands.com/wp-content/uploads/2022/12/Jeff-Lynne-Bev-Bevan-ELO-RW-Pic-11-15-75.jpg"
+  ],
+  "narration": [
+    {
+      "text": "« Evil Woman » a été écrite pendant que le groupe jouait au foot.",
+      "photo": 0
+    },
+    {
+      "text": "1975, à Munich : ELO termine son album Face the Music.",
+      "photo": 1
+    },
+    {
+      "text": "Problème : Jeff Lynne trouve qu'il n'y a aucun single dessus.",
+      "photo": 2
+    },
+    {
+      "text": "Alors un matin, il envoie ses musiciens taper dans un ballon.",
+      "photo": 3
+    },
+    {
+      "text": "Seul au piano, il trouve les trois premiers accords tout de suite.",
+      "photo": 4
+    },
+    {
+      "text": "Quand les autres reviennent, la chanson est là, écrite en quelques minutes.",
+      "photo": 5
+    },
+    {
+      "text": "Le 15 novembre 1975, elle entre au Hot 100 et monte jusqu'à la 10e place.",
+      "photo": 6
+    },
+    {
+      "text": "Ton plus beau tube, tu l'aurais écrit en combien de temps ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Ton plus beau tube, tu l'aurais écrit en combien de temps ?",
+  "caption": "Le premier grand tube d'ELO est né un matin où Jeff Lynne avait mis tout son groupe dehors. À Munich, en 1975, l'album Face the Music n'a pas de single, alors Lynne envoie ses musiciens jouer au football et trouve « Evil Woman » au piano en quelques minutes. Le 15 novembre 1975, le titre entre au Hot 100, avant d'atteindre la 10e place aux États-Unis comme en Angleterre. Ton plus beau tube, tu l'aurais écrit en combien de temps ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "elo",
+    "evilwoman",
+    "histoiredurock",
+    "cejourla"
+  ],
+  "audio_id": "1274412910914170"
+}
