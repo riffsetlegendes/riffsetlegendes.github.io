@@ -1,0 +1,69 @@
+{
+  "type": "focus",
+  "reel": true,
+  "tracks": [],
+  "format": "recit",
+  "label": "La relève",
+  "big": "2022",
+  "title": "Les Stones avant le 1er titre",
+  "song": {
+    "title": "Nothing Matters",
+    "artist": "The Last Dinner Party"
+  },
+  "music_mood": "rock baroque ample, piano et guitares, refrain d'hymne qui explose",
+  "hook_formule": "Contre-pied",
+  "photos": [
+    "https://upload.wikimedia.org/wikipedia/commons/e/e4/The_Last_Dinner_Party%2C_Circuit%2C_Kingston.jpg",
+    "https://www.nme.com/wp-content/uploads/2023/04/the-last-dinner-party-band-6.jpg",
+    "https://www.rollingstone.co.uk/wp-content/uploads/sites/2/2023/06/TLDP-OSLO-LIVE-51.jpg",
+    "https://live.staticflickr.com/65535/53015910935_c758b0cbf0_o.jpg",
+    "https://louderthanwar.com/wp-content/uploads/2023/10/NIK_0888.jpg",
+    "https://cutitoutmag.com/wp-content/gallery/the-last-dinner-party-by-michelle-castillo-3/DSC07189.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5b0dd7581aef1d319395b854/1765743544223-R9D6T3DBJ3YT4SL24KMG/8.jpg",
+    "https://api.floodmagazine.com/wp-content/uploads/2026/04/Last_Dinner_Party_Franklin_Music_Hall_Philadelphia_4_15_2026_HIREZ21.jpg"
+  ],
+  "narration": [
+    {
+      "text": "« Nothing Matters » n'existe pas encore, et elles ouvrent pour les Stones.",
+      "photo": 0
+    },
+    {
+      "text": "Juillet 2022, Hyde Park : cinq Londoniennes en robes longues entrent sur scène.",
+      "photo": 1
+    },
+    {
+      "text": "Le public cherche leur nom sur Spotify. Il ne trouve rien.",
+      "photo": 2
+    },
+    {
+      "text": "Tout est parti d'une vidéo de leur quatrième concert, postée sur YouTube.",
+      "photo": 3
+    },
+    {
+      "text": "Mais en avril 2023, « Nothing Matters » sort, et Internet crie au groupe fabriqué.",
+      "photo": 4
+    },
+    {
+      "text": "Elles répondent : photos payées de leur poche, groupe formé à la fac.",
+      "photo": 5
+    },
+    {
+      "text": "Puis le prix Rising Star des BRIT Awards, et un album numéro un.",
+      "photo": 6
+    },
+    {
+      "text": "Toi, tu les crois ou tu doutes encore ?",
+      "photo": 7
+    }
+  ],
+  "cta": "Toi, tu les crois ou tu doutes encore ?",
+  "caption": "Elles ont joué avant les Rolling Stones sans avoir sorti une seule chanson. En juillet 2022, The Last Dinner Party monte sur la scène de Hyde Park, et personne ne trouve le groupe sur Spotify. Quand « Nothing Matters » sort en avril 2023, on les accuse d'être fabriquées par l'industrie. Toi, tu les crois ou tu doutes encore ? L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "thelastdinnerparty",
+    "nothingmatters",
+    "nouveaurock",
+    "histoiredurock"
+  ],
+  "audio_id": "38909966141952346"
+}

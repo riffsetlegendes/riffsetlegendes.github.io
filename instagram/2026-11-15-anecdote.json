@@ -1,0 +1,66 @@
+{
+  "type": "anecdote",
+  "reel": true,
+  "test": "suspense",
+  "tracks": [],
+  "format": "recit",
+  "label": "Anecdote",
+  "big": "1955",
+  "title": "La face B oubliée",
+  "song": {
+    "title": "Born to Cruise",
+    "artist": "Trout Recording",
+    "libre": true
+  },
+  "music_mood": "rock'n'roll 50s, caisse claire claquante, contrebasse slappée, guitare vive et saxophone",
+  "hook_formule": "En pleine action",
+  "photos": [
+    "https://upload.wikimedia.org/wikipedia/commons/6/62/Bill_Haley_and_the_Comets1956.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/0/0e/BillHaley.JPG",
+    "https://upload.wikimedia.org/wikipedia/commons/6/68/Bill_Haley_and_Comets_1956.JPG",
+    "https://www.vintageinn.ca/wp-content/uploads/2019/08/Bill-Halley-and-the-Comets-1956-Performance-1950s-Music-1950s-Photo-1024x842.jpg",
+    "https://static.life.com/wp-content/uploads/2024/06/07142148/00969374-1024x772.jpg",
+    "https://static.life.com/wp-content/uploads/2024/06/07142214/01149571-1024x719.jpg",
+    "https://preview.redd.it/teenagers-at-a-rock-n-roll-dance-1950s-v0-nytzrwkavj6h1.jpeg?width=1080&crop=smart&auto=webp&s=b36211737cad25ffc1b3a48e3effa11129f6a853"
+  ],
+  "narration": [
+    {
+      "text": "« Rock Around the Clock » est gravé en fin de séance.",
+      "photo": 0
+    },
+    {
+      "text": "New York, 1954 : Decca mise tout sur l'autre titre, « Thirteen Women ».",
+      "photo": 1
+    },
+    {
+      "text": "Le morceau atterrit en face B, et presque personne ne le remarque vraiment.",
+      "photo": 2
+    },
+    {
+      "text": "Mais à Hollywood, le fils de Glenn Ford garde ce disque chez lui.",
+      "photo": 3
+    },
+    {
+      "text": "Le réalisateur de « Graine de violence » l'emprunte et le place au générique.",
+      "photo": 4
+    },
+    {
+      "text": "En 1955, les salles s'enflamment, et Decca relance le disque...",
+      "photo": 5
+    },
+    {
+      "text": "La fin de l'histoire est sur le site, lien en bio.",
+      "photo": 6
+    }
+  ],
+  "cta": "La fin de l'histoire est sur le site, lien en bio.",
+  "caption": "En 1954, « Rock Around the Clock » n'est qu'une face B enregistrée à la va-vite. Le disque passe presque inaperçu, jusqu'à ce qu'un enfant d'Hollywood le prête au réalisateur de « Graine de violence ». Ce qui se passe ensuite change l'histoire du rock. L'histoire complète est sur riffsetlegendes.github.io, lien en bio.",
+  "hashtags": [
+    "riffsetlegendes",
+    "billhaley",
+    "rockaroundtheclock",
+    "rocknroll",
+    "annees50"
+  ],
+  "audio_id": "514457789199791"
+}
